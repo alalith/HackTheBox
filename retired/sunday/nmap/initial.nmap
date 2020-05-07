@@ -1,0 +1,20 @@
+# Nmap 7.80 scan initiated Wed May  6 20:16:33 2020 as: nmap -sC -sV -oA nmap/initial 10.10.10.76
+Nmap scan report for 10.10.10.76
+Host is up (0.044s latency).
+Not shown: 992 closed ports
+PORT     STATE    SERVICE      VERSION
+79/tcp   open     finger       Sun Solaris fingerd
+| finger: Login       Name               TTY         Idle    When    Where\x0D
+| sunny    sunny                 pts/2       1:12 Wed 23:40  10.10.14.53         \x0D
+|_sammy    sammy                 pts/3       1:05 Wed 23:41  10.10.14.53         \x0D
+111/tcp  open     rpcbind      2-4 (RPC #100000)
+1047/tcp filtered neod1
+3011/tcp filtered trusted-web
+3995/tcp filtered iss-mgmt-ssl
+5060/tcp filtered sip
+8649/tcp filtered unknown
+9290/tcp filtered unknown
+Service Info: OS: Solaris; CPE: cpe:/o:sun:sunos
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed May  6 20:18:32 2020 -- 1 IP address (1 host up) scanned in 118.86 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed May  6 20:16:33 2020 as: nmap -sC -sV -oA nmap/initial 10.10.10.76
+Host: 10.10.10.76 ()	Status: Up
+Host: 10.10.10.76 ()	Ports: 79/open/tcp//finger//Sun Solaris fingerd/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 1047/filtered/tcp//neod1///, 3011/filtered/tcp//trusted-web///, 3995/filtered/tcp//iss-mgmt-ssl///, 5060/filtered/tcp//sip///, 8649/filtered/tcp//unknown///, 9290/filtered/tcp//unknown///	Ignored State: closed (992)
+# Nmap done at Wed May  6 20:18:32 2020 -- 1 IP address (1 host up) scanned in 118.86 seconds
