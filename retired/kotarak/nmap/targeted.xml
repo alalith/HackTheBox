@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon May 11 13:37:26 2020 as: nmap -sC -sV -p22,8009,8080,60000 -oA nmap/targeted 10.10.10.55 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p22,8009,8080,60000 -oA nmap/targeted 10.10.10.55" start="1589222246" startstr="Mon May 11 13:37:26 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="4" services="22,8009,8080,60000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1589222246" endtime="1589222298"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.55" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 e2:d7:ca:0e:b7:cb:0a:51:f7:2e:75:ea:02:24:17:74 (RSA)&#xa;  256 e8:f1:c0:d3:7d:9b:43:73:ad:37:3b:cb:e1:64:8e:e9 (ECDSA)&#xa;  256 6d:e9:26:ad:86:02:2d:68:e1:eb:ad:66:a0:60:17:b8 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDDfAOLS+7h/C5JtTGQ7mr9dM70qpnhrk8tFSZFncNSMFyfw3JTg16I2KddMFRr3a/+qv+aAfF1VxyUuJl+tXlgvjgH3pRG/mDCl90U6zhz/WVqPaeu8TIu/1ph+mUZHyss/bCVrt5mnbb1nG/AeDnX/+IiUINIdkgMB6aIOtC+B+zKV/aIrk84HgV4IwfC03a2R7FRPwVzjCv97jhWjvqBEYt4UudazAmkBjgEC9xlJ9r8MjV/DrJ6M66rjCTeuLmiB3a/qz+CbC4k/uey2b5D0p5nxMGkINjgL8X1t8BbGj1qOAS+HWWxQETuwYNVpTLeNuy1bev4kd2BZyewut/p</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">e2d7ca0eb7cb0a51f72e75ea02241774</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEvZEilkawbySka+4LZlqha3pjcW2T4wq8WM1cwg/DscLCxypOIh2bRkMitpUOz1kMftIZSGNdmERXvi0znPWFI=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">e8f1c0d37d9b4373ad373bcbe1648ee9</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAID8PURIGd2/vCi9d91JK1f8wlyKrIPLcBBVVFsP8YXQ3</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">6de926ad86022d68e1ebad66a06017b8</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ajp13" product="Apache Jserv" extrainfo="Protocol v1.3" method="probed" conf="10"/><script id="ajp-methods" output="&#xa;  Supported methods: GET HEAD POST PUT DELETE OPTIONS&#xa;  Potentially risky methods: PUT DELETE&#xa;  See https://nmap.org/nsedoc/scripts/ajp-methods.html&#xa;"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache Tomcat" version="8.5.5" method="probed" conf="10"><cpe>cpe:/a:apache:tomcat:8.5.5</cpe></service><script id="http-favicon" output="Apache Tomcat"/><script id="http-methods" output="&#xa;  Potentially risky methods: PUT DELETE"><table key="Potentially risky methods">
+<elem>PUT</elem>
+<elem>DELETE</elem>
+</table>
+</script><script id="http-title" output="Apache Tomcat/8.5.5 - Error report"><elem key="title">Apache Tomcat/8.5.5 - Error report</elem>
+</script></port>
+<port protocol="tcp" portid="60000"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="        Kotarak Web Hosting        "><elem key="title">&#xa;        Kotarak Web Hosting&#xa;        </elem>
+</script></port>
+</ports>
+<times srtt="43259" rttvar="13880" to="100000"/>
+</host>
+<runstats><finished time="1589222298" timestr="Mon May 11 13:38:18 2020" elapsed="52.30" summary="Nmap done at Mon May 11 13:38:18 2020; 1 IP address (1 host up) scanned in 52.30 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

