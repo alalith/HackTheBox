@@ -1,0 +1,46 @@
+# Nmap 7.80 scan initiated Thu May 14 14:18:52 2020 as: nmap -T4 -p80,135,139,445,1521,5985,47001,49152,49153,49154,41955,49158,49160,49161,49162 -sC -sV -oA nmap/targeted 10.10.10.82
+Nmap scan report for 10.10.10.82
+Host is up (0.044s latency).
+
+PORT      STATE  SERVICE      VERSION
+80/tcp    open   http         Microsoft IIS httpd 8.5
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/8.5
+|_http-title: IIS Windows Server
+135/tcp   open   msrpc        Microsoft Windows RPC
+139/tcp   open   netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp   open   microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1521/tcp  open   oracle-tns   Oracle TNS listener 11.2.0.2.0 (unauthorized)
+5985/tcp  open   http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+41955/tcp closed unknown
+47001/tcp open   http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49152/tcp open   msrpc        Microsoft Windows RPC
+49153/tcp open   msrpc        Microsoft Windows RPC
+49154/tcp open   msrpc        Microsoft Windows RPC
+49158/tcp open   msrpc        Microsoft Windows RPC
+49160/tcp open   oracle-tns   Oracle TNS listener (requires service name)
+49161/tcp open   msrpc        Microsoft Windows RPC
+49162/tcp open   msrpc        Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 3m20s, deviation: 0s, median: 3m19s
+|_smb-os-discovery: ERROR: Script execution failed (use -d to debug)
+| smb-security-mode: 
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: supported
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-05-14T19:24:18
+|_  start_date: 2020-05-14T18:50:36
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu May 14 14:21:02 2020 -- 1 IP address (1 host up) scanned in 129.47 seconds

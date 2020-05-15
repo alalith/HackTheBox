@@ -1,0 +1,23 @@
+# Nmap 7.80 scan initiated Thu May 14 13:51:25 2020 as: nmap -T4 -p- -oA nmap/allports 10.10.10.82
+Warning: 10.10.10.82 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.82
+Host is up (0.055s latency).
+Not shown: 65520 closed ports
+PORT      STATE SERVICE
+80/tcp    open  http
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1521/tcp  open  oracle
+5985/tcp  open  wsman
+47001/tcp open  winrm
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49155/tcp open  unknown
+49158/tcp open  unknown
+49160/tcp open  unknown
+49161/tcp open  unknown
+49162/tcp open  unknown
+
+# Nmap done at Thu May 14 14:14:35 2020 -- 1 IP address (1 host up) scanned in 1390.35 seconds
