@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon May 18 10:25:21 2020 as: nmap -sC -sV -oA nmap/initial 10.10.10.81
+Host: 10.10.10.81 (bart.htb)	Status: Up
+Host: 10.10.10.81 (bart.htb)	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/	Ignored State: filtered (999)
+# Nmap done at Mon May 18 10:25:35 2020 -- 1 IP address (1 host up) scanned in 14.27 seconds
