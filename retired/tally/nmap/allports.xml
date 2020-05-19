@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue May 19 09:01:18 2020 as: nmap -T4 -p- -oA nmap/allports 10.10.10.59 -->
+<nmaprun scanner="nmap" args="nmap -T4 -p- -oA nmap/allports 10.10.10.59" start="1589896878" startstr="Tue May 19 09:01:18 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1589896878" endtime="1589898623"><status state="up" reason="reset" reason_ttl="127"/>
+<address addr="10.10.10.59" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65514">
+<extrareasons reason="resets" count="65514"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="81"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="hosts2-ns" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="808"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ccproxy-http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-sql-s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="wsman" method="table" conf="3"/></port>
+<port protocol="tcp" portid="15567"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="32843"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="32844"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="32846"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="winrm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49670"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+</ports>
+<times srtt="220441" rttvar="241636" to="1186985"/>
+</host>
+<runstats><finished time="1589898623" timestr="Tue May 19 09:30:23 2020" elapsed="1745.06" summary="Nmap done at Tue May 19 09:30:23 2020; 1 IP address (1 host up) scanned in 1745.06 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
