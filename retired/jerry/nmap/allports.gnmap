@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri May 15 13:49:59 2020 as: nmap -Pn -T4 -p- -oA nmap/allports 10.10.10.95
+Host: 10.10.10.95 ()	Status: Up
+Host: 10.10.10.95 ()	Ports: 8080/open/tcp//http-proxy///	Ignored State: filtered (65534)
+# Nmap done at Fri May 15 13:51:30 2020 -- 1 IP address (1 host up) scanned in 91.14 seconds
