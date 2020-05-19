@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri May 15 16:26:29 2020 as: nmap -T4 -p- -oA nmap/allports 10.10.10.63
+Host: 10.10.10.63 ()	Status: Up
+Host: 10.10.10.63 ()	Ports: 80/open/tcp//http///, 135/open/tcp//msrpc///, 445/open/tcp//microsoft-ds///, 50000/open/tcp//ibm-db2///	Ignored State: filtered (65531)
+# Nmap done at Fri May 15 16:28:57 2020 -- 1 IP address (1 host up) scanned in 148.65 seconds

@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Fri May 15 16:26:29 2020 as: nmap -T4 -p- -oA nmap/allports 10.10.10.63
+Nmap scan report for 10.10.10.63
+Host is up (0.044s latency).
+Not shown: 65531 filtered ports
+PORT      STATE SERVICE
+80/tcp    open  http
+135/tcp   open  msrpc
+445/tcp   open  microsoft-ds
+50000/tcp open  ibm-db2
+
+# Nmap done at Fri May 15 16:28:57 2020 -- 1 IP address (1 host up) scanned in 148.65 seconds
