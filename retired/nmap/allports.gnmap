@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed May 20 11:59:20 2020 as: nmap -T4 -p- -oA nmap/allports 10.10.10.117
+Host: 10.10.10.117 ()	Status: Up
+Host: 10.10.10.117 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 6697/open/tcp//ircs-u///, 8067/open/tcp//infi-async///, 56535/open/tcp//unknown///, 65534/open/tcp/////	Ignored State: closed (65528)
+# Nmap done at Wed May 20 12:00:10 2020 -- 1 IP address (1 host up) scanned in 50.60 seconds
