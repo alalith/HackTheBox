@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue May 19 13:16:39 2020 as: nmap --script safe -p 445 -oA nmap/smb 10.10.10.100
+Host: 10.10.10.100 ()	Status: Up
+Host: 10.10.10.100 ()	Ports: 445/open/tcp//microsoft-ds///
+# Nmap done at Tue May 19 13:17:48 2020 -- 1 IP address (1 host up) scanned in 69.11 seconds

@@ -1,0 +1,16 @@
+[7/18/2018, 21:16:21] === Logging started: 2018/07/18 21:16:21 ===
+[7/18/2018, 21:16:21] Executable: C:\Windows\SoftwareDistribution\Download\Install\NDP40-KB2468871-v2-x64.exe v10.0.30319.233
+[7/18/2018, 21:16:21] --- logging level: standard ---
+[7/18/2018, 21:16:21] Successfully bound to the ClusApi.dll
+[7/18/2018, 21:16:21] Error 0x80070424: Failed to open the current cluster
+[7/18/2018, 21:16:21] Cluster drive map: ''
+[7/18/2018, 21:16:21] Considering drive: 'C:\'...
+[7/18/2018, 21:16:21] Considering drive: 'D:\'...
+[7/18/2018, 21:16:21] Drive 'D:\' is rejected because of the unknown or unsuitable drive type
+[7/18/2018, 21:16:21] Drive 'C:\' has been selected as the largest fixed drive
+[7/18/2018, 21:16:21] Directory 'C:\29929d415e5c68ccb3b0\' has been selected for file extraction
+[7/18/2018, 21:16:21] Extracting files to: C:\29929d415e5c68ccb3b0\
+[7/18/2018, 21:16:28] Extraction took 7.691 seconds
+[7/18/2018, 21:16:28] Executing command line: 'C:\29929d415e5c68ccb3b0\\Setup.exe  /q /norestart'
+[7/18/2018, 21:19:46] Exiting with result code: 0x0
+[7/18/2018, 21:19:46] === Logging stopped: 2018/07/18 21:19:46 ===

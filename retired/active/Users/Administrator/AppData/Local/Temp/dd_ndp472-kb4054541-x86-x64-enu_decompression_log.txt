@@ -1,0 +1,16 @@
+[7/30/2018, 11:38:30] === Logging started: 2018/07/30 11:38:30 ===
+[7/30/2018, 11:38:30] Executable: C:\Windows\SoftwareDistribution\Download\Install\ndp472-kb4054541-x86-x64-enu.exe v4.7.3062.0
+[7/30/2018, 11:38:30] --- logging level: standard ---
+[7/30/2018, 11:38:30] Successfully bound to the ClusApi.dll
+[7/30/2018, 11:38:30] Error 0x80070424: Failed to open the current cluster
+[7/30/2018, 11:38:30] Cluster drive map: ''
+[7/30/2018, 11:38:30] Considering drive: 'C:\'...
+[7/30/2018, 11:38:30] Considering drive: 'D:\'...
+[7/30/2018, 11:38:30] Drive 'D:\' is rejected because of the unknown or unsuitable drive type
+[7/30/2018, 11:38:30] Drive 'C:\' has been selected as the largest fixed drive
+[7/30/2018, 11:38:30] Directory 'C:\bfeb35f2137d5ffcc2d4d30093ab37ff\' has been selected for file extraction
+[7/30/2018, 11:38:30] Extracting files to: C:\bfeb35f2137d5ffcc2d4d30093ab37ff\
+[7/30/2018, 11:38:40] Extraction took 9.797 seconds
+[7/30/2018, 11:38:40] Executing command line: 'C:\bfeb35f2137d5ffcc2d4d30093ab37ff\\Setup.exe  /q /norestart /chainingpackage NETFX45WURTM /x86 /x64 /redist'
+[7/30/2018, 11:42:33] Exiting with result code: 0x0
+[7/30/2018, 11:42:33] === Logging stopped: 2018/07/30 11:42:33 ===

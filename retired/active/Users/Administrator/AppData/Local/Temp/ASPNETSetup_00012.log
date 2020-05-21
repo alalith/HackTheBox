@@ -1,0 +1,68 @@
+********************************************************************************
+**** Starting ASP.NET Setup at: 2018-07-18 21:19:37
+**** Registering ASP.NET isapi: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_isapi.dll
+**** Internal flags: 0x00000404
+********************************************************************************
+
+2018-07-18 21:19:37	Starting	Stopping service: aspnet_state
+2018-07-18 21:19:37		Starting	Connecting to Service Manager
+2018-07-18 21:19:37		Success 	Connecting to Service Manager
+2018-07-18 21:19:37		Starting	Opening Service handle
+2018-07-18 21:19:37		Success 	Opening Service handle
+2018-07-18 21:19:37		Starting	Stopping service
+2018-07-18 21:19:37			Starting	Finding out service state
+2018-07-18 21:19:37			Success 	Finding out service state
+2018-07-18 21:19:37			Starting	Shutting down service
+2018-07-18 21:19:37			Success 	Shutting down service
+2018-07-18 21:19:37			Starting	Waiting for service to shut down
+2018-07-18 21:19:37			Success 	Waiting for service to shut down
+2018-07-18 21:19:37		Success 	Stopping service
+2018-07-18 21:19:37	Success 	Stopping service: aspnet_state
+2018-07-18 21:19:37	Starting	Changing IIS ApplicationHost.config
+2018-07-18 21:19:37	Success 	Changing IIS ApplicationHost.config
+2018-07-18 21:19:37	Starting	Determining if current ASP.NET isapi has the highest version
+2018-07-18 21:19:37	Success 	Determining if current ASP.NET isapi has the highest version
+2018-07-18 21:19:37	Starting	Installing WMI file:aspnet.mof
+2018-07-18 21:19:37	Success 	Installing WMI file:aspnet.mof
+2018-07-18 21:19:37	Starting	Setting ACLs on dirs and WMI
+2018-07-18 21:19:37		Starting	Getting location of Temporary ASP.Net directory
+2018-07-18 21:19:37		Success 	Getting location of Temporary ASP.Net directory
+2018-07-18 21:19:37		Starting	Setting ACLs on Temporary ASP.Net directory
+2018-07-18 21:19:37		Success 	Setting ACLs on Temporary ASP.Net directory
+2018-07-18 21:19:37		Starting	Setting ACLs on install root directory
+2018-07-18 21:19:37		Success 	Setting ACLs on install root directory
+2018-07-18 21:19:37		Starting	Setting ACLs on config directory
+2018-07-18 21:19:37		Success 	Setting ACLs on config directory
+2018-07-18 21:19:37		Starting	Grant access to WMI namespace: root\aspnet
+2018-07-18 21:19:37		Success 	Grant access to WMI namespace: root\aspnet
+2018-07-18 21:19:37	Success 	Setting ACLs on dirs and WMI
+2018-07-18 21:19:37	Starting	Install all ASP.NET Services
+2018-07-18 21:19:37		Starting	Getting credentials for the service account
+2018-07-18 21:19:37		Success 	Getting credentials for the service account
+2018-07-18 21:19:37		Starting	Connecting to Service Manager
+2018-07-18 21:19:37		Success 	Connecting to Service Manager
+2018-07-18 21:19:37		Starting	aspnet_state
+2018-07-18 21:19:37		Success 	aspnet_state
+2018-07-18 21:19:37		Starting	Reading various service settings for: aspnet_state
+2018-07-18 21:19:37		Success 	Reading various service settings for: aspnet_state
+2018-07-18 21:19:37		Starting	Executing inf section: StateService.Install
+2018-07-18 21:19:37		Success 	Executing inf section: 
+2018-07-18 21:19:37		Starting	Locking service database
+2018-07-18 21:19:37		Success 	Locking service database
+2018-07-18 21:19:37		Starting	Opening Service handle
+2018-07-18 21:19:37		Success 	Opening Service handle
+2018-07-18 21:19:37		Starting	Writing back various service settings for: aspnet_state
+2018-07-18 21:19:37			Starting	Changing the service startup type
+2018-07-18 21:19:37			Success 	Changing the service startup type
+2018-07-18 21:19:37		Success 	Writing back various service settings for: aspnet_state
+2018-07-18 21:19:37		Starting	Changing service account and password
+2018-07-18 21:19:37		Success 	Changing service account and password
+2018-07-18 21:19:37	Success 	Install all ASP.NET Services
+2018-07-18 21:19:37	Starting	Executing inf section: MmcAspNetExtCOMComponents.Install
+2018-07-18 21:19:37	Success 	Executing inf section: MmcAspNetExtCOMComponents.Install
+2018-07-18 21:19:37	Starting	Install the ASP.NET Performance counters
+2018-07-18 21:19:37	Success 	Install the ASP.NET Performance counters
+2018-07-18 21:19:37	Starting	Install common performance counters
+2018-07-18 21:19:38	Success 	Install common performance counters
+2018-07-18 21:19:38	Starting	Starting service: aspnet_state
+2018-07-18 21:19:38	Success 	Starting service: aspnet_state

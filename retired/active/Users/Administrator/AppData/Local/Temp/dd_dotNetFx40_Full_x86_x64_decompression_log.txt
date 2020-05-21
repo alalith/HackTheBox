@@ -1,0 +1,16 @@
+[7/18/2018, 20:50:38] === Logging started: 2018/07/18 20:50:38 ===
+[7/18/2018, 20:50:38] Executable: C:\Windows\SoftwareDistribution\Download\Install\dotNetFx40_Full_x86_x64.exe v4.0.30319.1
+[7/18/2018, 20:50:38] --- logging level: standard ---
+[7/18/2018, 20:50:38] Successfully bound to the ClusApi.dll
+[7/18/2018, 20:50:38] Error 0x80070424: Failed to open the current cluster
+[7/18/2018, 20:50:38] Cluster drive map: ''
+[7/18/2018, 20:50:38] Considering drive: 'C:\'...
+[7/18/2018, 20:50:38] Considering drive: 'D:\'...
+[7/18/2018, 20:50:38] Drive 'D:\' is rejected because of the unknown or unsuitable drive type
+[7/18/2018, 20:50:38] Drive 'C:\' has been selected as the largest fixed drive
+[7/18/2018, 20:50:38] Directory 'C:\5fa84e2a6e02d3069c76c31e72743534\' has been selected for file extraction
+[7/18/2018, 20:50:38] Extracting files to: C:\5fa84e2a6e02d3069c76c31e72743534\
+[7/18/2018, 20:50:48] Extraction took 9.781 seconds
+[7/18/2018, 20:50:48] Executing command line: 'C:\5fa84e2a6e02d3069c76c31e72743534\\Setup.exe  /q /norestart /SkipMSUInstall /chainingpackage NETFX4WURTM /x86 /x64'
+[7/18/2018, 20:54:36] Exiting with result code: 0x0
+[7/18/2018, 20:54:36] === Logging stopped: 2018/07/18 20:54:36 ===

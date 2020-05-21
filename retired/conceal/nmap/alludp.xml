@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue May 19 18:51:52 2020 as: nmap -sU -p- -oA nmap/alludp 10.10.10.116 -->
+<nmaprun scanner="nmap" args="nmap -sU -p- -oA nmap/alludp 10.10.10.116" start="1589932312" startstr="Tue May 19 18:51:52 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="UDP Scan" time="1589932793" percent="17.21" remaining="2315" etc="1589935107"/>
+<taskprogress task="UDP Scan" time="1589932794" percent="17.24" remaining="2314" etc="1589935107"/>
+<taskprogress task="UDP Scan" time="1589934077" percent="51.29" remaining="1677" etc="1589935753"/>

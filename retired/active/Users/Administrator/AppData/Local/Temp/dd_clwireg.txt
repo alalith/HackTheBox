@@ -1,0 +1,1013 @@
+[07/18/18,20:57:28] #####################################################################
+[07/18/18,20:57:28] #####################################################################
+[07/18/18,20:57:28] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/18/18,20:57:28] The following product GUIDs were specified on the commandline:
+[07/18/18,20:57:28] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/18/18,20:57:28] Getting HKLM product\patches reg key
+[07/18/18,20:57:28] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,20:57:28] Getting HKCR product\patches reg key
+[07/18/18,20:57:28] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,20:57:28] Patches sub key does not exist; no sub keys to validate
+[07/18/18,20:57:28] failed to open HKCR registry sub key
+[07/18/18,20:57:28] Getting HKLM product\patches reg key
+[07/18/18,20:57:28] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,20:57:28] Getting HKCR product\patches reg key
+[07/18/18,20:57:28] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,20:57:28] Patches sub key does not exist; no sub keys to validate
+[07/18/18,20:57:28] failed to open HKCR registry sub key
+[07/18/18,20:57:28] ERROR 2: The system cannot find the file specified.
+
+[07/18/18,20:57:28] DEBUG: Final error code 2 - returning zero.
+[07/18/18,21:06:16] #####################################################################
+[07/18/18,21:06:16] #####################################################################
+[07/18/18,21:06:16] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/18/18,21:06:16] The following product GUIDs were specified on the commandline:
+[07/18/18,21:06:16] 	{8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/18/18,21:06:16] ----------------------------------------------------
+[07/18/18,21:06:16] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:06:16] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:06:16] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:06:16] Validating Local Packages
+[07/18/18,21:06:16] Repairing local packages; number to repair: 0
+[07/18/18,21:06:16] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:06:16] ----------------------------------------------------
+[07/18/18,21:06:16] !!Begin removing patch keys under product key not found in AllPatches value
+[07/18/18,21:06:16] Running Test: removing patch keys under product key not found in AllPatches value
+[07/18/18,21:06:16] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:06:16] Processing patch: "18A997D716659513FB29571416EC6D6E"
+[07/18/18,21:06:16] subkey '18A997D716659513FB29571416EC6D6E' found in AllPatches list, not removing
+[07/18/18,21:06:16] Processing patch: "7828AFD463AE964399EF5F86EF8C6135"
+[07/18/18,21:06:16] subkey '7828AFD463AE964399EF5F86EF8C6135' found in AllPatches list, not removing
+[07/18/18,21:06:16] !!End removing patch keys under product key not found in AllPatches value
+[07/18/18,21:06:16] ----------------------------------------------------
+[07/18/18,21:06:16] !!Begin removing or fixing missing patch registration for all patches under product {8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/18/18,21:06:16] DEBUG: found patch {4DFA8287-EA36-3469-99FE-F568FEC81653} under product {8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/18/18,21:06:16] DEBUG: found patch {7D799A81-5661-3159-BF92-754161CED6E6} under product {8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/18/18,21:06:16] DEBUG: checking product registration
+[07/18/18,21:06:16] INFO: the product is registered as SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C
+[07/18/18,21:06:16] DEBUG: checking patch registration for the product
+[07/18/18,21:06:16] INFO: the patch is registered to the product as SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches\18A997D716659513FB29571416EC6D6E
+[07/18/18,21:06:16] DEBUG: getting the registered path to the patch package
+[07/18/18,21:06:16] INFO: the patch package is reported to be located at c:\Windows\Installer\8044e.msp
+[07/18/18,21:06:16] DEBUG: getting the patch's sourcelist key
+[07/18/18,21:06:16] DEBUG: checking product registration
+[07/18/18,21:06:16] INFO: the product is registered as SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C
+[07/18/18,21:06:16] DEBUG: checking patch registration for the product
+[07/18/18,21:06:16] INFO: the patch is registered to the product as SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches\7828AFD463AE964399EF5F86EF8C6135
+[07/18/18,21:06:16] DEBUG: getting the registered path to the patch package
+[07/18/18,21:06:16] INFO: the patch package is reported to be located at c:\Windows\Installer\80429.msp
+[07/18/18,21:06:16] DEBUG: getting the patch's sourcelist key
+[07/18/18,21:06:16] !!End removing or fixing missing patch registration for all patches under product {8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/18/18,21:06:16] DEBUG: Final error code 0 - returning zero.
+[07/18/18,21:06:40] #####################################################################
+[07/18/18,21:06:40] #####################################################################
+[07/18/18,21:06:40] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/18/18,21:06:40] The following product GUIDs were specified on the commandline:
+[07/18/18,21:06:40] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/18/18,21:06:40] Getting HKLM product\patches reg key
+[07/18/18,21:06:40] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:06:40] Getting HKCR product\patches reg key
+[07/18/18,21:06:40] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:06:40] Getting HKLM product\patches reg key
+[07/18/18,21:06:40] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:06:40] Getting HKCR product\patches reg key
+[07/18/18,21:06:40] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:06:40] Getting HKLM product\patches reg key
+[07/18/18,21:06:40] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:06:40] Getting HKCR product\patches reg key
+[07/18/18,21:06:40] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:06:40] 	{8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/18/18,21:06:40] Getting HKLM product\patches reg key
+[07/18/18,21:06:40] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:06:40] Getting HKCR product\patches reg key
+[07/18/18,21:06:40] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:06:40] Getting HKLM product\patches reg key
+[07/18/18,21:06:40] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:06:40] Getting HKCR product\patches reg key
+[07/18/18,21:06:40] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:06:40] Getting HKLM product\patches reg key
+[07/18/18,21:06:40] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:06:40] Getting HKCR product\patches reg key
+[07/18/18,21:06:40] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:06:40] ----------------------------------------------------
+[07/18/18,21:06:40] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:06:40] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:06:40] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:06:40] Cleaning up HKCR 'Patches' values
+[07/18/18,21:06:40] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:06:40] ----------------------------------------------------
+[07/18/18,21:06:40] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:06:40] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:06:40] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:06:40] ----------------------------------------------------
+[07/18/18,21:06:40] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:06:40] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:06:40] Validating Local Packages
+[07/18/18,21:06:40] Repairing local packages; number to repair: 0
+[07/18/18,21:06:40] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:06:40] ----------------------------------------------------
+[07/18/18,21:06:40] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:06:40] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:06:40] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:06:40] Cleaning up HKCR 'Patches' values
+[07/18/18,21:06:40] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:06:40] ----------------------------------------------------
+[07/18/18,21:06:40] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:06:40] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:06:40] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:06:40] ----------------------------------------------------
+[07/18/18,21:06:40] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:06:40] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:06:40] Validating Local Packages
+[07/18/18,21:06:40] Repairing local packages; number to repair: 0
+[07/18/18,21:06:40] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:06:40] DEBUG: Final error code 0 - returning zero.
+[07/18/18,21:07:39] #####################################################################
+[07/18/18,21:07:39] #####################################################################
+[07/18/18,21:07:39] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/18/18,21:07:39] The following product GUIDs were specified on the commandline:
+[07/18/18,21:07:39] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/18/18,21:07:39] Getting HKLM product\patches reg key
+[07/18/18,21:07:39] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:07:39] Getting HKCR product\patches reg key
+[07/18/18,21:07:39] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:07:39] Getting HKLM product\patches reg key
+[07/18/18,21:07:39] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:07:39] Getting HKCR product\patches reg key
+[07/18/18,21:07:39] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:07:39] Getting HKLM product\patches reg key
+[07/18/18,21:07:39] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:07:39] Getting HKCR product\patches reg key
+[07/18/18,21:07:39] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:07:39] 	{8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/18/18,21:07:39] Getting HKLM product\patches reg key
+[07/18/18,21:07:39] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:07:39] Getting HKCR product\patches reg key
+[07/18/18,21:07:39] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:07:39] Getting HKLM product\patches reg key
+[07/18/18,21:07:39] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:07:39] Getting HKCR product\patches reg key
+[07/18/18,21:07:39] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:07:39] Getting HKLM product\patches reg key
+[07/18/18,21:07:39] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:07:39] Getting HKCR product\patches reg key
+[07/18/18,21:07:39] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:07:39] ----------------------------------------------------
+[07/18/18,21:07:39] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:07:39] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:07:39] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:07:39] Cleaning up HKCR 'Patches' values
+[07/18/18,21:07:39] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:07:39] ----------------------------------------------------
+[07/18/18,21:07:39] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:07:39] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:07:39] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:07:39] ----------------------------------------------------
+[07/18/18,21:07:39] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:07:39] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:07:39] Validating Local Packages
+[07/18/18,21:07:39] Repairing local packages; number to repair: 0
+[07/18/18,21:07:39] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:07:39] ----------------------------------------------------
+[07/18/18,21:07:39] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:07:39] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:07:39] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:07:39] Cleaning up HKCR 'Patches' values
+[07/18/18,21:07:39] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:07:39] ----------------------------------------------------
+[07/18/18,21:07:39] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:07:39] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:07:39] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:07:39] ----------------------------------------------------
+[07/18/18,21:07:39] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:07:39] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:07:39] Validating Local Packages
+[07/18/18,21:07:39] Repairing local packages; number to repair: 0
+[07/18/18,21:07:39] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:07:39] DEBUG: Final error code 0 - returning zero.
+[07/18/18,21:08:44] #####################################################################
+[07/18/18,21:08:44] #####################################################################
+[07/18/18,21:08:44] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/18/18,21:08:44] The following product GUIDs were specified on the commandline:
+[07/18/18,21:08:44] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/18/18,21:08:44] Getting HKLM product\patches reg key
+[07/18/18,21:08:44] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:08:44] Getting HKCR product\patches reg key
+[07/18/18,21:08:44] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:08:44] Getting HKLM product\patches reg key
+[07/18/18,21:08:44] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:08:44] Getting HKCR product\patches reg key
+[07/18/18,21:08:44] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:08:44] Getting HKLM product\patches reg key
+[07/18/18,21:08:44] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:08:44] Getting HKCR product\patches reg key
+[07/18/18,21:08:44] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:08:44] 	{8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/18/18,21:08:44] Getting HKLM product\patches reg key
+[07/18/18,21:08:44] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:08:44] Getting HKCR product\patches reg key
+[07/18/18,21:08:44] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:08:44] Getting HKLM product\patches reg key
+[07/18/18,21:08:44] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:08:44] Getting HKCR product\patches reg key
+[07/18/18,21:08:44] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:08:44] Getting HKLM product\patches reg key
+[07/18/18,21:08:44] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:08:44] Getting HKCR product\patches reg key
+[07/18/18,21:08:44] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:08:44] ----------------------------------------------------
+[07/18/18,21:08:44] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:08:44] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:08:44] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:08:44] Cleaning up HKCR 'Patches' values
+[07/18/18,21:08:44] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:08:44] ----------------------------------------------------
+[07/18/18,21:08:44] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:08:44] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:08:44] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:08:44] ----------------------------------------------------
+[07/18/18,21:08:44] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:08:44] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:08:44] Validating Local Packages
+[07/18/18,21:08:44] Repairing local packages; number to repair: 0
+[07/18/18,21:08:44] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:08:44] ----------------------------------------------------
+[07/18/18,21:08:44] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:08:44] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:08:44] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:08:44] Cleaning up HKCR 'Patches' values
+[07/18/18,21:08:44] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:08:44] ----------------------------------------------------
+[07/18/18,21:08:44] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:08:44] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:08:44] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:08:44] ----------------------------------------------------
+[07/18/18,21:08:44] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:08:44] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:08:44] Validating Local Packages
+[07/18/18,21:08:44] Repairing local packages; number to repair: 0
+[07/18/18,21:08:44] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:08:44] DEBUG: Final error code 0 - returning zero.
+[07/18/18,21:11:30] #####################################################################
+[07/18/18,21:11:30] #####################################################################
+[07/18/18,21:11:30] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/18/18,21:11:30] The following product GUIDs were specified on the commandline:
+[07/18/18,21:11:30] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/18/18,21:11:30] Getting HKLM product\patches reg key
+[07/18/18,21:11:30] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:11:30] Getting HKCR product\patches reg key
+[07/18/18,21:11:30] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:11:30] Getting HKLM product\patches reg key
+[07/18/18,21:11:30] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:11:30] Getting HKCR product\patches reg key
+[07/18/18,21:11:30] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:11:30] Getting HKLM product\patches reg key
+[07/18/18,21:11:30] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:11:30] Getting HKCR product\patches reg key
+[07/18/18,21:11:30] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:11:30] 	{8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/18/18,21:11:30] Getting HKLM product\patches reg key
+[07/18/18,21:11:30] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:11:30] Getting HKCR product\patches reg key
+[07/18/18,21:11:30] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:11:30] Getting HKLM product\patches reg key
+[07/18/18,21:11:30] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:11:30] Getting HKCR product\patches reg key
+[07/18/18,21:11:30] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:11:30] Getting HKLM product\patches reg key
+[07/18/18,21:11:30] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:11:30] Getting HKCR product\patches reg key
+[07/18/18,21:11:30] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:11:30] ----------------------------------------------------
+[07/18/18,21:11:30] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:11:30] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:11:30] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:11:30] Cleaning up HKCR 'Patches' values
+[07/18/18,21:11:30] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:11:30] ----------------------------------------------------
+[07/18/18,21:11:30] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:11:30] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:11:30] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:11:30] ----------------------------------------------------
+[07/18/18,21:11:30] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:11:30] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:11:30] Validating Local Packages
+[07/18/18,21:11:30] Repairing local packages; number to repair: 0
+[07/18/18,21:11:30] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:11:30] ----------------------------------------------------
+[07/18/18,21:11:30] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:11:30] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:11:30] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:11:30] Cleaning up HKCR 'Patches' values
+[07/18/18,21:11:30] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:11:30] ----------------------------------------------------
+[07/18/18,21:11:30] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:11:30] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:11:30] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:11:30] ----------------------------------------------------
+[07/18/18,21:11:30] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:11:30] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:11:30] Validating Local Packages
+[07/18/18,21:11:30] Repairing local packages; number to repair: 0
+[07/18/18,21:11:30] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:11:30] DEBUG: Final error code 0 - returning zero.
+[07/18/18,21:14:05] #####################################################################
+[07/18/18,21:14:05] #####################################################################
+[07/18/18,21:14:05] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/18/18,21:14:05] The following product GUIDs were specified on the commandline:
+[07/18/18,21:14:05] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/18/18,21:14:05] Getting HKLM product\patches reg key
+[07/18/18,21:14:05] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:14:05] Getting HKCR product\patches reg key
+[07/18/18,21:14:05] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:14:05] Getting HKLM product\patches reg key
+[07/18/18,21:14:05] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:14:05] Getting HKCR product\patches reg key
+[07/18/18,21:14:05] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:14:05] Getting HKLM product\patches reg key
+[07/18/18,21:14:05] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:14:05] Getting HKCR product\patches reg key
+[07/18/18,21:14:05] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:14:05] ----------------------------------------------------
+[07/18/18,21:14:05] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:14:05] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:14:05] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:14:05] Cleaning up HKCR 'Patches' values
+[07/18/18,21:14:05] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:14:05] ----------------------------------------------------
+[07/18/18,21:14:05] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:14:05] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:14:05] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:14:05] ----------------------------------------------------
+[07/18/18,21:14:05] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:14:05] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:14:05] Validating Local Packages
+[07/18/18,21:14:05] Repairing local packages; number to repair: 0
+[07/18/18,21:14:05] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:14:05] DEBUG: Final error code 0 - returning zero.
+[07/18/18,21:15:02] #####################################################################
+[07/18/18,21:15:02] #####################################################################
+[07/18/18,21:15:02] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/18/18,21:15:02] The following product GUIDs were specified on the commandline:
+[07/18/18,21:15:02] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/18/18,21:15:02] Getting HKLM product\patches reg key
+[07/18/18,21:15:02] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:15:02] Getting HKCR product\patches reg key
+[07/18/18,21:15:02] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:15:02] Getting HKLM product\patches reg key
+[07/18/18,21:15:02] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:15:02] Getting HKCR product\patches reg key
+[07/18/18,21:15:02] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:15:02] Getting HKLM product\patches reg key
+[07/18/18,21:15:02] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:15:02] Getting HKCR product\patches reg key
+[07/18/18,21:15:02] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:15:02] 	{8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/18/18,21:15:02] Getting HKLM product\patches reg key
+[07/18/18,21:15:02] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:15:02] Getting HKCR product\patches reg key
+[07/18/18,21:15:02] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:15:02] Getting HKLM product\patches reg key
+[07/18/18,21:15:02] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:15:02] Getting HKCR product\patches reg key
+[07/18/18,21:15:02] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:15:02] Getting HKLM product\patches reg key
+[07/18/18,21:15:02] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:15:02] Getting HKCR product\patches reg key
+[07/18/18,21:15:02] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:15:02] ----------------------------------------------------
+[07/18/18,21:15:02] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:15:02] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:15:02] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:15:02] Cleaning up HKCR 'Patches' values
+[07/18/18,21:15:02] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:15:02] ----------------------------------------------------
+[07/18/18,21:15:02] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:15:02] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:15:02] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:15:02] ----------------------------------------------------
+[07/18/18,21:15:02] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:15:02] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:15:02] Validating Local Packages
+[07/18/18,21:15:02] Repairing local packages; number to repair: 0
+[07/18/18,21:15:02] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:15:02] ----------------------------------------------------
+[07/18/18,21:15:02] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:15:02] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:15:02] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:15:02] Cleaning up HKCR 'Patches' values
+[07/18/18,21:15:02] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:15:02] ----------------------------------------------------
+[07/18/18,21:15:02] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:15:02] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:15:02] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:15:02] ----------------------------------------------------
+[07/18/18,21:15:02] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:15:02] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:15:02] Validating Local Packages
+[07/18/18,21:15:02] Repairing local packages; number to repair: 0
+[07/18/18,21:15:02] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:15:02] DEBUG: Final error code 0 - returning zero.
+[07/18/18,21:19:46] #####################################################################
+[07/18/18,21:19:46] #####################################################################
+[07/18/18,21:19:46] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/18/18,21:19:46] The following product GUIDs were specified on the commandline:
+[07/18/18,21:19:46] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/18/18,21:19:46] Getting HKLM product\patches reg key
+[07/18/18,21:19:46] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:19:46] Getting HKCR product\patches reg key
+[07/18/18,21:19:46] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:19:46] Getting HKLM product\patches reg key
+[07/18/18,21:19:46] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:19:46] Getting HKCR product\patches reg key
+[07/18/18,21:19:46] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:19:46] Getting HKLM product\patches reg key
+[07/18/18,21:19:46] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:19:46] Getting HKCR product\patches reg key
+[07/18/18,21:19:46] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/18/18,21:19:46] 	{8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/18/18,21:19:46] Getting HKLM product\patches reg key
+[07/18/18,21:19:46] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:19:46] Getting HKCR product\patches reg key
+[07/18/18,21:19:46] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:19:46] Getting HKLM product\patches reg key
+[07/18/18,21:19:46] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:19:46] Getting HKCR product\patches reg key
+[07/18/18,21:19:46] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:19:46] Getting HKLM product\patches reg key
+[07/18/18,21:19:46] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:19:46] Getting HKCR product\patches reg key
+[07/18/18,21:19:46] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/18/18,21:19:46] ----------------------------------------------------
+[07/18/18,21:19:46] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:19:46] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:19:46] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:19:46] Cleaning up HKCR 'Patches' values
+[07/18/18,21:19:46] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:19:46] ----------------------------------------------------
+[07/18/18,21:19:46] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:19:46] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:19:46] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:19:46] ----------------------------------------------------
+[07/18/18,21:19:46] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:19:46] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:19:46] Validating Local Packages
+[07/18/18,21:19:46] Repairing local packages; number to repair: 0
+[07/18/18,21:19:46] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:19:46] ----------------------------------------------------
+[07/18/18,21:19:46] !!Begin Removing non-SQuids from Multi_SZ values
+[07/18/18,21:19:46] Running Test: Removing non-SQuids from Multi_SZ values
+[07/18/18,21:19:46] Cleaning up HKLM 'AllPatches' values
+[07/18/18,21:19:46] Cleaning up HKCR 'Patches' values
+[07/18/18,21:19:46] !!End Removing non-SQuids from Multi_SZ values
+[07/18/18,21:19:46] ----------------------------------------------------
+[07/18/18,21:19:46] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:19:46] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:19:46] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/18/18,21:19:46] ----------------------------------------------------
+[07/18/18,21:19:46] !!Begin Validating and correcting LocalPackage value for patches
+[07/18/18,21:19:46] Running Test: Validating and correcting LocalPackage value for patches
+[07/18/18,21:19:46] Validating Local Packages
+[07/18/18,21:19:46] Repairing local packages; number to repair: 0
+[07/18/18,21:19:46] !!End Validating and correcting LocalPackage value for patches
+[07/18/18,21:19:46] DEBUG: Final error code 0 - returning zero.
+[07/30/18,10:01:21] #####################################################################
+[07/30/18,10:01:21] #####################################################################
+[07/30/18,10:01:21] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,10:01:21] The following product GUIDs were specified on the commandline:
+[07/30/18,10:01:21] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,10:01:21] Getting HKLM product\patches reg key
+[07/30/18,10:01:21] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:01:21] Getting HKCR product\patches reg key
+[07/30/18,10:01:21] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:01:21] Getting HKLM product\patches reg key
+[07/30/18,10:01:21] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:01:21] Getting HKCR product\patches reg key
+[07/30/18,10:01:21] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:01:21] Getting HKLM product\patches reg key
+[07/30/18,10:01:21] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:01:21] Getting HKCR product\patches reg key
+[07/30/18,10:01:21] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:01:21] ----------------------------------------------------
+[07/30/18,10:01:21] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,10:01:21] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,10:01:21] Cleaning up HKLM 'AllPatches' values
+[07/30/18,10:01:21] Cleaning up HKCR 'Patches' values
+[07/30/18,10:01:21] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,10:01:21] ----------------------------------------------------
+[07/30/18,10:01:21] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:01:21] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:01:21] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:01:21] ----------------------------------------------------
+[07/30/18,10:01:21] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,10:01:21] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,10:01:21] Validating Local Packages
+[07/30/18,10:01:21] Repairing local packages; number to repair: 0
+[07/30/18,10:01:21] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,10:01:21] DEBUG: Final error code 0 - returning zero.
+[07/30/18,10:04:21] #####################################################################
+[07/30/18,10:04:21] #####################################################################
+[07/30/18,10:04:21] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,10:04:21] The following product GUIDs were specified on the commandline:
+[07/30/18,10:04:21] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,10:04:21] Getting HKLM product\patches reg key
+[07/30/18,10:04:21] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:04:21] Getting HKCR product\patches reg key
+[07/30/18,10:04:21] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:04:21] Getting HKLM product\patches reg key
+[07/30/18,10:04:21] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:04:21] Getting HKCR product\patches reg key
+[07/30/18,10:04:21] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:04:21] Getting HKLM product\patches reg key
+[07/30/18,10:04:21] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:04:21] Getting HKCR product\patches reg key
+[07/30/18,10:04:21] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:04:21] ----------------------------------------------------
+[07/30/18,10:04:21] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,10:04:21] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,10:04:21] Cleaning up HKLM 'AllPatches' values
+[07/30/18,10:04:21] Cleaning up HKCR 'Patches' values
+[07/30/18,10:04:21] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,10:04:21] ----------------------------------------------------
+[07/30/18,10:04:21] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:04:21] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:04:21] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:04:21] ----------------------------------------------------
+[07/30/18,10:04:21] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,10:04:21] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,10:04:21] Validating Local Packages
+[07/30/18,10:04:21] Repairing local packages; number to repair: 0
+[07/30/18,10:04:21] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,10:04:21] DEBUG: Final error code 0 - returning zero.
+[07/30/18,10:08:33] #####################################################################
+[07/30/18,10:08:33] #####################################################################
+[07/30/18,10:08:33] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,10:08:33] The following product GUIDs were specified on the commandline:
+[07/30/18,10:08:33] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,10:08:33] Getting HKLM product\patches reg key
+[07/30/18,10:08:33] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:08:33] Getting HKCR product\patches reg key
+[07/30/18,10:08:33] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:08:33] Getting HKLM product\patches reg key
+[07/30/18,10:08:33] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:08:33] Getting HKCR product\patches reg key
+[07/30/18,10:08:33] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:08:33] Getting HKLM product\patches reg key
+[07/30/18,10:08:33] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:08:33] Getting HKCR product\patches reg key
+[07/30/18,10:08:33] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:08:33] 	{8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/30/18,10:08:33] Getting HKLM product\patches reg key
+[07/30/18,10:08:33] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:08:33] Getting HKCR product\patches reg key
+[07/30/18,10:08:33] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:08:33] Getting HKLM product\patches reg key
+[07/30/18,10:08:33] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:08:33] Getting HKCR product\patches reg key
+[07/30/18,10:08:33] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:08:33] Getting HKLM product\patches reg key
+[07/30/18,10:08:33] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:08:33] Getting HKCR product\patches reg key
+[07/30/18,10:08:33] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:08:33] ----------------------------------------------------
+[07/30/18,10:08:33] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,10:08:33] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,10:08:33] Cleaning up HKLM 'AllPatches' values
+[07/30/18,10:08:33] Cleaning up HKCR 'Patches' values
+[07/30/18,10:08:33] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,10:08:33] ----------------------------------------------------
+[07/30/18,10:08:33] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:08:33] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:08:33] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:08:33] ----------------------------------------------------
+[07/30/18,10:08:33] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,10:08:33] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,10:08:33] Validating Local Packages
+[07/30/18,10:08:33] Repairing local packages; number to repair: 0
+[07/30/18,10:08:33] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,10:08:33] ----------------------------------------------------
+[07/30/18,10:08:33] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,10:08:33] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,10:08:33] Cleaning up HKLM 'AllPatches' values
+[07/30/18,10:08:33] Cleaning up HKCR 'Patches' values
+[07/30/18,10:08:33] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,10:08:33] ----------------------------------------------------
+[07/30/18,10:08:33] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:08:33] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:08:33] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:08:33] ----------------------------------------------------
+[07/30/18,10:08:33] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,10:08:33] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,10:08:33] Validating Local Packages
+[07/30/18,10:08:33] Repairing local packages; number to repair: 0
+[07/30/18,10:08:33] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,10:08:33] DEBUG: Final error code 0 - returning zero.
+[07/30/18,10:25:18] #####################################################################
+[07/30/18,10:25:18] #####################################################################
+[07/30/18,10:25:18] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,10:25:18] The following product GUIDs were specified on the commandline:
+[07/30/18,10:25:18] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,10:25:18] Getting HKLM product\patches reg key
+[07/30/18,10:25:18] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:25:18] Getting HKCR product\patches reg key
+[07/30/18,10:25:18] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:25:18] Getting HKLM product\patches reg key
+[07/30/18,10:25:18] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:25:18] Getting HKCR product\patches reg key
+[07/30/18,10:25:18] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:25:18] Getting HKLM product\patches reg key
+[07/30/18,10:25:18] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:25:18] Getting HKCR product\patches reg key
+[07/30/18,10:25:18] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:25:18] 	{8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/30/18,10:25:18] Getting HKLM product\patches reg key
+[07/30/18,10:25:18] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:25:18] Getting HKCR product\patches reg key
+[07/30/18,10:25:18] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:25:18] Getting HKLM product\patches reg key
+[07/30/18,10:25:18] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:25:18] Getting HKCR product\patches reg key
+[07/30/18,10:25:18] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:25:18] Getting HKLM product\patches reg key
+[07/30/18,10:25:18] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:25:18] Getting HKCR product\patches reg key
+[07/30/18,10:25:18] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:25:18] ----------------------------------------------------
+[07/30/18,10:25:18] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,10:25:18] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,10:25:18] Cleaning up HKLM 'AllPatches' values
+[07/30/18,10:25:18] Cleaning up HKCR 'Patches' values
+[07/30/18,10:25:18] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,10:25:18] ----------------------------------------------------
+[07/30/18,10:25:18] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:25:18] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:25:18] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:25:18] ----------------------------------------------------
+[07/30/18,10:25:18] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,10:25:18] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,10:25:18] Validating Local Packages
+[07/30/18,10:25:18] Repairing local packages; number to repair: 0
+[07/30/18,10:25:18] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,10:25:18] ----------------------------------------------------
+[07/30/18,10:25:18] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,10:25:18] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,10:25:18] Cleaning up HKLM 'AllPatches' values
+[07/30/18,10:25:18] Cleaning up HKCR 'Patches' values
+[07/30/18,10:25:18] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,10:25:18] ----------------------------------------------------
+[07/30/18,10:25:18] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:25:18] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:25:18] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:25:18] ----------------------------------------------------
+[07/30/18,10:25:18] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,10:25:18] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,10:25:18] Validating Local Packages
+[07/30/18,10:25:18] Repairing local packages; number to repair: 0
+[07/30/18,10:25:18] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,10:25:18] DEBUG: Final error code 0 - returning zero.
+[07/30/18,10:26:42] #####################################################################
+[07/30/18,10:26:42] #####################################################################
+[07/30/18,10:26:42] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,10:26:42] The following product GUIDs were specified on the commandline:
+[07/30/18,10:26:42] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,10:26:42] Getting HKLM product\patches reg key
+[07/30/18,10:26:42] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:26:42] Getting HKCR product\patches reg key
+[07/30/18,10:26:42] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:26:42] Getting HKLM product\patches reg key
+[07/30/18,10:26:42] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:26:42] Getting HKCR product\patches reg key
+[07/30/18,10:26:42] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:26:42] Getting HKLM product\patches reg key
+[07/30/18,10:26:42] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:26:42] Getting HKCR product\patches reg key
+[07/30/18,10:26:42] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:26:42] 	{8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/30/18,10:26:42] Getting HKLM product\patches reg key
+[07/30/18,10:26:42] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:26:42] Getting HKCR product\patches reg key
+[07/30/18,10:26:42] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:26:42] Getting HKLM product\patches reg key
+[07/30/18,10:26:42] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:26:42] Getting HKCR product\patches reg key
+[07/30/18,10:26:42] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:26:42] Getting HKLM product\patches reg key
+[07/30/18,10:26:42] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:26:42] Getting HKCR product\patches reg key
+[07/30/18,10:26:42] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,10:26:42] ----------------------------------------------------
+[07/30/18,10:26:42] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,10:26:42] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,10:26:42] Cleaning up HKLM 'AllPatches' values
+[07/30/18,10:26:42] Cleaning up HKCR 'Patches' values
+[07/30/18,10:26:42] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,10:26:42] ----------------------------------------------------
+[07/30/18,10:26:42] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:26:42] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:26:42] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:26:42] ----------------------------------------------------
+[07/30/18,10:26:42] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,10:26:42] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,10:26:42] Validating Local Packages
+[07/30/18,10:26:42] Repairing local packages; number to repair: 0
+[07/30/18,10:26:42] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,10:26:42] ----------------------------------------------------
+[07/30/18,10:26:42] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,10:26:42] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,10:26:42] Cleaning up HKLM 'AllPatches' values
+[07/30/18,10:26:42] Cleaning up HKCR 'Patches' values
+[07/30/18,10:26:42] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,10:26:42] ----------------------------------------------------
+[07/30/18,10:26:42] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:26:42] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:26:42] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:26:42] ----------------------------------------------------
+[07/30/18,10:26:42] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,10:26:42] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,10:26:42] Validating Local Packages
+[07/30/18,10:26:42] Repairing local packages; number to repair: 0
+[07/30/18,10:26:42] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,10:26:42] DEBUG: Final error code 0 - returning zero.
+[07/30/18,10:38:32] #####################################################################
+[07/30/18,10:38:32] #####################################################################
+[07/30/18,10:38:32] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,10:38:32] The following product GUIDs were specified on the commandline:
+[07/30/18,10:38:32] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,10:38:32] Getting HKLM product\patches reg key
+[07/30/18,10:38:32] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:38:32] Getting HKCR product\patches reg key
+[07/30/18,10:38:32] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:38:32] Getting HKLM product\patches reg key
+[07/30/18,10:38:32] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:38:32] Getting HKCR product\patches reg key
+[07/30/18,10:38:32] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:38:32] Getting HKLM product\patches reg key
+[07/30/18,10:38:32] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:38:32] Getting HKCR product\patches reg key
+[07/30/18,10:38:32] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:38:32] ----------------------------------------------------
+[07/30/18,10:38:32] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,10:38:32] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,10:38:32] Cleaning up HKLM 'AllPatches' values
+[07/30/18,10:38:32] Cleaning up HKCR 'Patches' values
+[07/30/18,10:38:32] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,10:38:32] ----------------------------------------------------
+[07/30/18,10:38:32] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:38:32] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:38:32] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:38:32] ----------------------------------------------------
+[07/30/18,10:38:32] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,10:38:32] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,10:38:32] Validating Local Packages
+[07/30/18,10:38:32] Repairing local packages; number to repair: 0
+[07/30/18,10:38:32] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,10:38:32] DEBUG: Final error code 0 - returning zero.
+[07/30/18,10:51:42] #####################################################################
+[07/30/18,10:51:42] #####################################################################
+[07/30/18,10:51:42] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,10:51:42] The following product GUIDs were specified on the commandline:
+[07/30/18,10:51:42] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,10:51:42] Getting HKLM product\patches reg key
+[07/30/18,10:51:42] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:51:42] Getting HKCR product\patches reg key
+[07/30/18,10:51:42] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:51:42] Getting HKLM product\patches reg key
+[07/30/18,10:51:42] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:51:42] Getting HKCR product\patches reg key
+[07/30/18,10:51:42] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:51:42] Getting HKLM product\patches reg key
+[07/30/18,10:51:42] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:51:42] Getting HKCR product\patches reg key
+[07/30/18,10:51:42] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,10:51:42] ----------------------------------------------------
+[07/30/18,10:51:42] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,10:51:42] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,10:51:42] Cleaning up HKLM 'AllPatches' values
+[07/30/18,10:51:42] Cleaning up HKCR 'Patches' values
+[07/30/18,10:51:42] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,10:51:42] ----------------------------------------------------
+[07/30/18,10:51:42] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:51:42] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:51:42] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,10:51:42] ----------------------------------------------------
+[07/30/18,10:51:42] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,10:51:42] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,10:51:42] Validating Local Packages
+[07/30/18,10:51:42] Repairing local packages; number to repair: 0
+[07/30/18,10:51:42] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,10:51:42] DEBUG: Final error code 0 - returning zero.
+[07/30/18,11:09:35] #####################################################################
+[07/30/18,11:09:35] #####################################################################
+[07/30/18,11:09:35] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,11:09:35] The following product GUIDs were specified on the commandline:
+[07/30/18,11:09:35] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,11:09:35] Getting HKLM product\patches reg key
+[07/30/18,11:09:35] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:09:35] Getting HKCR product\patches reg key
+[07/30/18,11:09:35] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:09:35] Getting HKLM product\patches reg key
+[07/30/18,11:09:35] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:09:35] Getting HKCR product\patches reg key
+[07/30/18,11:09:35] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:09:35] Getting HKLM product\patches reg key
+[07/30/18,11:09:35] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:09:35] Getting HKCR product\patches reg key
+[07/30/18,11:09:35] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:09:35] 	{8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/30/18,11:09:35] Getting HKLM product\patches reg key
+[07/30/18,11:09:35] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,11:09:35] Getting HKCR product\patches reg key
+[07/30/18,11:09:35] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,11:09:35] Getting HKLM product\patches reg key
+[07/30/18,11:09:35] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,11:09:35] Getting HKCR product\patches reg key
+[07/30/18,11:09:35] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,11:09:35] Getting HKLM product\patches reg key
+[07/30/18,11:09:35] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,11:09:35] Getting HKCR product\patches reg key
+[07/30/18,11:09:35] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,11:09:35] ----------------------------------------------------
+[07/30/18,11:09:35] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,11:09:35] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,11:09:35] Cleaning up HKLM 'AllPatches' values
+[07/30/18,11:09:35] Cleaning up HKCR 'Patches' values
+[07/30/18,11:09:35] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,11:09:35] ----------------------------------------------------
+[07/30/18,11:09:35] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:09:35] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:09:35] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:09:35] ----------------------------------------------------
+[07/30/18,11:09:35] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,11:09:35] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,11:09:35] Validating Local Packages
+[07/30/18,11:09:35] Repairing local packages; number to repair: 0
+[07/30/18,11:09:35] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,11:09:35] ----------------------------------------------------
+[07/30/18,11:09:35] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,11:09:35] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,11:09:35] Cleaning up HKLM 'AllPatches' values
+[07/30/18,11:09:35] Cleaning up HKCR 'Patches' values
+[07/30/18,11:09:35] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,11:09:35] ----------------------------------------------------
+[07/30/18,11:09:35] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:09:35] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:09:35] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:09:35] ----------------------------------------------------
+[07/30/18,11:09:35] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,11:09:35] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,11:09:35] Validating Local Packages
+[07/30/18,11:09:35] Repairing local packages; number to repair: 0
+[07/30/18,11:09:35] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,11:09:35] DEBUG: Final error code 0 - returning zero.
+[07/30/18,11:21:01] #####################################################################
+[07/30/18,11:21:01] #####################################################################
+[07/30/18,11:21:01] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,11:21:01] The following product GUIDs were specified on the commandline:
+[07/30/18,11:21:01] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,11:21:01] Getting HKLM product\patches reg key
+[07/30/18,11:21:01] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:21:01] Getting HKCR product\patches reg key
+[07/30/18,11:21:01] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:21:01] Getting HKLM product\patches reg key
+[07/30/18,11:21:01] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:21:01] Getting HKCR product\patches reg key
+[07/30/18,11:21:01] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:21:01] Getting HKLM product\patches reg key
+[07/30/18,11:21:01] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:21:01] Getting HKCR product\patches reg key
+[07/30/18,11:21:01] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:21:01] 	{8E34682C-8118-31F1-BC4C-98CD9675E1C2}
+[07/30/18,11:21:01] Getting HKLM product\patches reg key
+[07/30/18,11:21:01] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,11:21:01] Getting HKCR product\patches reg key
+[07/30/18,11:21:01] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,11:21:01] Getting HKLM product\patches reg key
+[07/30/18,11:21:01] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,11:21:01] Getting HKCR product\patches reg key
+[07/30/18,11:21:01] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,11:21:01] Getting HKLM product\patches reg key
+[07/30/18,11:21:01] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,11:21:01] Getting HKCR product\patches reg key
+[07/30/18,11:21:01] Attempting to open reg key key, "Installer\Products\C28643E881181F13CBC489DC69571E2C\Patches"
+[07/30/18,11:21:01] ----------------------------------------------------
+[07/30/18,11:21:01] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,11:21:01] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,11:21:01] Cleaning up HKLM 'AllPatches' values
+[07/30/18,11:21:01] Cleaning up HKCR 'Patches' values
+[07/30/18,11:21:01] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,11:21:01] ----------------------------------------------------
+[07/30/18,11:21:01] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:21:01] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:21:01] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:21:01] ----------------------------------------------------
+[07/30/18,11:21:01] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,11:21:01] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,11:21:01] Validating Local Packages
+[07/30/18,11:21:01] Repairing local packages; number to repair: 0
+[07/30/18,11:21:01] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,11:21:01] ----------------------------------------------------
+[07/30/18,11:21:01] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,11:21:01] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,11:21:01] Cleaning up HKLM 'AllPatches' values
+[07/30/18,11:21:01] Cleaning up HKCR 'Patches' values
+[07/30/18,11:21:01] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,11:21:01] ----------------------------------------------------
+[07/30/18,11:21:01] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:21:01] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:21:01] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:21:01] ----------------------------------------------------
+[07/30/18,11:21:01] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,11:21:01] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,11:21:01] Validating Local Packages
+[07/30/18,11:21:01] Repairing local packages; number to repair: 0
+[07/30/18,11:21:01] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,11:21:01] DEBUG: Final error code 0 - returning zero.
+[07/30/18,11:23:49] #####################################################################
+[07/30/18,11:23:49] #####################################################################
+[07/30/18,11:23:49] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,11:23:49] The following product GUIDs were specified on the commandline:
+[07/30/18,11:23:49] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,11:23:49] Getting HKLM product\patches reg key
+[07/30/18,11:23:49] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:23:49] Getting HKCR product\patches reg key
+[07/30/18,11:23:49] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:23:49] Getting HKLM product\patches reg key
+[07/30/18,11:23:49] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:23:49] Getting HKCR product\patches reg key
+[07/30/18,11:23:49] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:23:49] Getting HKLM product\patches reg key
+[07/30/18,11:23:49] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:23:49] Getting HKCR product\patches reg key
+[07/30/18,11:23:49] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:23:49] ----------------------------------------------------
+[07/30/18,11:23:49] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,11:23:49] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,11:23:49] Cleaning up HKLM 'AllPatches' values
+[07/30/18,11:23:49] Cleaning up HKCR 'Patches' values
+[07/30/18,11:23:49] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,11:23:49] ----------------------------------------------------
+[07/30/18,11:23:49] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:23:49] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:23:49] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:23:49] ----------------------------------------------------
+[07/30/18,11:23:49] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,11:23:49] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,11:23:49] Validating Local Packages
+[07/30/18,11:23:49] Repairing local packages; number to repair: 0
+[07/30/18,11:23:49] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,11:23:49] DEBUG: Final error code 0 - returning zero.
+[07/30/18,11:29:30] #####################################################################
+[07/30/18,11:29:30] #####################################################################
+[07/30/18,11:29:30] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,11:29:30] The following product GUIDs were specified on the commandline:
+[07/30/18,11:29:30] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,11:29:30] Getting HKLM product\patches reg key
+[07/30/18,11:29:30] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:29:30] Getting HKCR product\patches reg key
+[07/30/18,11:29:30] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:29:30] Getting HKLM product\patches reg key
+[07/30/18,11:29:30] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:29:30] Getting HKCR product\patches reg key
+[07/30/18,11:29:30] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:29:30] Getting HKLM product\patches reg key
+[07/30/18,11:29:30] Attempting to open reg key key, "Software\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:29:30] Getting HKCR product\patches reg key
+[07/30/18,11:29:30] Attempting to open reg key key, "Installer\Products\DFC90B5F2B0FFA63D84FD16F6BF37C4B\Patches"
+[07/30/18,11:29:30] ----------------------------------------------------
+[07/30/18,11:29:30] !!Begin Removing non-SQuids from Multi_SZ values
+[07/30/18,11:29:30] Running Test: Removing non-SQuids from Multi_SZ values
+[07/30/18,11:29:30] Cleaning up HKLM 'AllPatches' values
+[07/30/18,11:29:30] Cleaning up HKCR 'Patches' values
+[07/30/18,11:29:30] !!End Removing non-SQuids from Multi_SZ values
+[07/30/18,11:29:30] ----------------------------------------------------
+[07/30/18,11:29:30] !!Begin Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:29:30] Running Test: Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:29:30] !!End Removing patch values under HKCR\Installer\Products\ that are missing from HKLM\...\S-1-5-18\Products\
+[07/30/18,11:29:30] ----------------------------------------------------
+[07/30/18,11:29:30] !!Begin Validating and correcting LocalPackage value for patches
+[07/30/18,11:29:30] Running Test: Validating and correcting LocalPackage value for patches
+[07/30/18,11:29:30] Validating Local Packages
+[07/30/18,11:29:30] Repairing local packages; number to repair: 0
+[07/30/18,11:29:30] !!End Validating and correcting LocalPackage value for patches
+[07/30/18,11:29:30] DEBUG: Final error code 0 - returning zero.
+[07/30/18,12:04:25] #####################################################################
+[07/30/18,12:04:25] #####################################################################
+[07/30/18,12:04:25] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,12:04:25] The following product GUIDs were specified on the commandline:
+[07/30/18,12:04:25] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,12:04:25] Unable to find product, {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4} (error: 2), skipping that product
+[07/30/18,12:04:25] DEBUG: Final error code 0 - returning zero.
+[07/30/18,12:14:04] #####################################################################
+[07/30/18,12:14:04] #####################################################################
+[07/30/18,12:14:04] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,12:14:04] The following product GUIDs were specified on the commandline:
+[07/30/18,12:14:04] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,12:14:04] Unable to find product, {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4} (error: 2), skipping that product
+[07/30/18,12:14:04] DEBUG: Final error code 0 - returning zero.
+[07/30/18,12:39:29] #####################################################################
+[07/30/18,12:39:29] #####################################################################
+[07/30/18,12:39:29] !Begin Microsoft .NET Framework Registration Correction Tool
+[07/30/18,12:39:29] The following product GUIDs were specified on the commandline:
+[07/30/18,12:39:29] 	{F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}
+[07/30/18,12:39:29] Unable to find product, {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4} (error: 2), skipping that product
+[07/30/18,12:39:29] DEBUG: Final error code 0 - returning zero.

@@ -1,4 +1,0 @@
-# Nmap 7.80 scan initiated Wed May 20 10:42:43 2020 as: nmap -sC -sV -oA nmap/initial 10.10.10.117
-Host: 10.10.10.117 ()	Status: Up
-Host: 10.10.10.117 ()	Ports: 2048/closed/tcp//dls-monitor///, 2100/closed/tcp//amiganetfs///, 3828/closed/tcp//neteh///, 10617/closed/tcp//unknown///	Ignored State: filtered (996)
-# Nmap done at Wed May 20 10:43:23 2020 -- 1 IP address (1 host up) scanned in 40.32 seconds

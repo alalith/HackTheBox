@@ -1,0 +1,68 @@
+# Nmap 7.80 scan initiated Tue May 19 13:16:39 2020 as: nmap --script safe -p 445 -oA nmap/smb 10.10.10.100
+Pre-scan script results:
+| broadcast-listener: 
+|   ether
+|       ARP Request
+|         sender ip      sender mac         target ip
+|         100.64.1.92    dc:54:d7:93:99:32  100.64.15.232
+|         100.64.5.140   6c:94:f8:d4:7b:63  100.64.7.154
+|         100.64.3.86    80:7d:3a:23:23:d8  100.64.3.86
+|         100.64.2.78    f6:f4:71:18:8c:f3  100.64.2.140
+|         100.64.6.124   64:6e:69:dd:c4:83  100.64.1.228
+|         100.64.6.147   3c:9b:d6:92:0c:3b  100.64.10.248
+|         100.64.15.9    a0:6a:44:6c:65:2d  100.64.10.248
+|         100.64.13.105  fc:01:7c:46:06:c9  100.64.5.166
+|         100.64.0.27    10:4f:a8:e4:0d:6c  100.64.0.1
+|   udp
+|       DHCP
+|         srv ip      cli ip        mask           gw          dns         vendor
+|         100.64.0.1  100.64.10.76  255.255.240.0  100.64.0.1  100.64.0.1  -
+|       Spotify
+|         ip
+|_        100.64.13.232
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Linux/3.10.54 UPnP/1.0 Cling/2.0
+|_      Location: http://100.64.1.92:60000/upnp/dev/c4e07af8-62aa-c83c-0000-000073a9ac76/desc
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+Nmap scan report for 10.10.10.100
+Host is up (0.044s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+
+Host script results:
+|_clock-skew: 1m49s
+|_fcrdns: FAIL (No PTR record)
+|_ipidseq: Unknown
+|_msrpc-enum: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_path-mtu: PMTU == 1500
+| smb-mbenum: 
+|_  ERROR: Failed to connect to browser service: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+| smb-protocols: 
+|   dialects: 
+|     2.02
+|_    2.10
+| smb2-capabilities: 
+|   2.02: 
+|     Distributed File System
+|   2.10: 
+|     Distributed File System
+|     Leasing
+|_    Multi-credit operations
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2020-05-19T18:19:14
+|_  start_date: 2020-05-19T17:50:41
+| unusual-port: 
+|_  WARNING: this script depends on Nmap's service/version detection (-sV)
+
+Post-scan script results:
+| reverse-index: 
+|_  445/tcp: 10.10.10.100
+# Nmap done at Tue May 19 13:17:48 2020 -- 1 IP address (1 host up) scanned in 69.11 seconds

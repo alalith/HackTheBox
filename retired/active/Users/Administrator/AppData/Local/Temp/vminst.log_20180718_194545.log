@@ -1,0 +1,1193 @@
+2018-07-18 16:41:55| BootStrapper-build-6677369| Begin Logging
+2018-07-18 16:41:55| BootStrapper-build-6677369| Operating system info:
+2018-07-18 16:41:55| BootStrapper-build-6677369|    Admin install = TRUE
+2018-07-18 16:41:55| BootStrapper-build-6677369|    Major version = 6
+2018-07-18 16:41:55| BootStrapper-build-6677369|    Minor version = 1
+2018-07-18 16:41:55| BootStrapper-build-6677369|    Service pack  = 0
+2018-07-18 16:41:55| BootStrapper-build-6677369|    Build number  = 7600
+2018-07-18 16:41:55| BootStrapper-build-6677369|    Bitness       = 64-bit
+2018-07-18 16:41:55| BootStrapper-build-6677369|    Platform      = NT
+2018-07-18 16:41:55| BootStrapper-build-6677369| Running from: "D:\setup64.exe"
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] MINORUPGRADE = 1
+2018-07-18 16:41:55| BootStrapper-build-6677369| Performing VMware Tools style install/upgrade
+2018-07-18 16:41:55| BootStrapper-build-6677369| Sending rpc command 'info-set guestinfo.toolsInstallErrCode Invalid' to the host
+2018-07-18 16:41:55| BootStrapper-build-6677369| Rpci: Sending request='info-set guestinfo.toolsInstallErrCode Invalid'
+2018-07-18 16:41:55| BootStrapper-build-6677369| Rpci: Sent request='info-set guestinfo.toolsInstallErrCode Invalid', reply='', len=0, status=1, rpcStatus=1
+2018-07-18 16:41:55| BootStrapper-build-6677369| Sending rpc command 'toolinstall.installerActive 1' to the host
+2018-07-18 16:41:55| BootStrapper-build-6677369| Rpci: Sending request='toolinstall.installerActive 1'
+2018-07-18 16:41:55| BootStrapper-build-6677369| Rpci: Sent request='toolinstall.installerActive 1', reply='Unknown command', len=15, status=1, rpcStatus=0
+2018-07-18 16:41:55| BootStrapper-build-6677369| Failed to send rpc command 'toolinstall.installerActive 1'
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] SINGLE_FILE = 1
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] PRODUCT_REG_NAME = <not defined>
+2018-07-18 16:41:55| BootStrapper-build-6677369| Silent installation = FALSE
+2018-07-18 16:41:55| BootStrapper-build-6677369| Upgrade at shutdown = FALSE
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] SKIPADMINCHECK = <not defined>
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] OPERATION = INSTALLUPD
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] PRODUCTNAME = VMware Tools
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] UPGRADECODE = {BA0EA5A0-F474-459F-ABF5-5BCC22965199}
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] PRODUCTCODE = {7CFC363A-72CE-409C-97C2-E497A1D831FC}
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] LANGUAGES = 1028 1031 1034 1036 1040 1041 1042 2052
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] VM_DATABASE64 = <not defined>
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] VM_DATABASE = VMware Tools64.msi
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] SFXINSERT = 864256
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] VMIOPTION = 
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] CACHEMSI = <not defined>
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] MINIMUM_9X_MSI = 200
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] MINIMUM_NT_MSI = 300
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] INSTMSIW = <not defined>
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] VCRUNTIME32 = vcredist_x86.exe
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] VCRUNTIME64 = vcredist_x64.exe
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] PROPERTIES = <not defined>
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] OLDCODES = {B53D42E8-872B-430E-82D4-80065A31FCE1};{3B410500-1802-488E-9EF1-4B11992E0440};{FE2F6A2C-196E-4210-9C04-2B1BC21F07EF}
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Resource] HELPER_UI = <not defined>
+2018-07-18 16:41:55| BootStrapper-build-6677369| [Info] Loading splash bitmap from resource id 1033.
+2018-07-18 16:41:56| BootStrapper-build-6677369| UI thread started successfully
+2018-07-18 16:41:56| BootStrapper-build-6677369| The user's default locale is 1032
+2018-07-18 16:41:56| BootStrapper-build-6677369| Total unpacked size will be 45 MB (46895792 bytes)
+2018-07-18 16:41:56| BootStrapper-build-6677369| [Resource] REQ_MB_SPACE = <not defined>
+2018-07-18 16:41:56| BootStrapper-build-6677369| Total space required to unpack is 104 MB (108703750 bytes)
+2018-07-18 16:41:56| BootStrapper-build-6677369| Attempting to find best location for unpacking temporary installation files
+2018-07-18 16:41:56| BootStrapper-build-6677369| Examining drive for temp folder "C:\Users\ADMINI~1\AppData\Local\Temp\"
+2018-07-18 16:41:56| BootStrapper-build-6677369| Local fixed drive C: has 30098 MB (31559950336 bytes) free
+2018-07-18 16:41:56| BootStrapper-build-6677369| CurrentLocation "C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\"
+2018-07-18 16:41:56| BootStrapper-build-6677369| Not a directory: 2 - C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\
+2018-07-18 16:41:56| BootStrapper-build-6677369| Creating directory 'C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\'
+2018-07-18 16:41:56| BootStrapper-build-6677369| Selecting "C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\" for unpacking temp files
+2018-07-18 16:41:56| BootStrapper-build-6677369| Extracting setup files to "C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\"
+2018-07-18 16:41:56| BootStrapper-build-6677369|   --> VMware Tools64.msi [37208064]
+2018-07-18 16:41:56| BootStrapper-build-6677369|   --> vcredist_x86.exe [4479832]
+2018-07-18 16:41:56| BootStrapper-build-6677369|   --> vcredist_x64.exe [5207896]
+2018-07-18 16:41:56| BootStrapper-build-6677369| IsMsiUpgradeNecessary: No upgrade is necessary. Windows Installer version 500 meets minimum requirements
+2018-07-18 16:41:56| BootStrapper-build-6677369| [Resource] VCRUNTIME_VER = 9
+2018-07-18 16:41:56| BootStrapper-build-6677369| Look for VC 9 x32 runtime libraries.
+2018-07-18 16:41:56| BootStrapper-build-6677369| install state for product code {1F1C2DFC-2D24-3E06-BCB8-725134ADF989} = -1
+2018-07-18 16:41:56| BootStrapper-build-6677369| install state for product code {9BE518E6-ECC6-35A9-88E4-87755C07200F} = -1
+2018-07-18 16:41:56| BootStrapper-build-6677369| VC 9 x32 runtime libraries need to be installed
+2018-07-18 16:41:56| BootStrapper-build-6677369| ** InstallVCRedist [vcredist_x86.exe][ /Q]
+2018-07-18 16:41:56| BootStrapper-build-6677369| Found "C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\vcredist_x86.exe"
+2018-07-18 16:41:56| BootStrapper-build-6677369| Attempting to launch ""C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\vcredist_x86.exe"  /Q"
+2018-07-18 16:42:09| BootStrapper-build-6677369| Child exited with code 0
+2018-07-18 16:42:09| BootStrapper-build-6677369| Process returned 0
+2018-07-18 16:42:11| BootStrapper-build-6677369| Look for VC 9 x64 runtime libraries.
+2018-07-18 16:42:11| BootStrapper-build-6677369| install state for product code {4B6C7001-C7D6-3710-913E-5BC23FCE91E6} = -1
+2018-07-18 16:42:11| BootStrapper-build-6677369| install state for product code {5FCE6D76-F5DC-37AB-B2B8-22AB8CEDB1D4} = -1
+2018-07-18 16:42:11| BootStrapper-build-6677369| VC 9 x64 runtime libraries need to be installed
+2018-07-18 16:42:11| BootStrapper-build-6677369| ** InstallVCRedist [vcredist_x64.exe][ /Q]
+2018-07-18 16:42:11| BootStrapper-build-6677369| Found "C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\vcredist_x64.exe"
+2018-07-18 16:42:11| BootStrapper-build-6677369| Attempting to launch ""C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\vcredist_x64.exe"  /Q"
+2018-07-18 16:42:15| BootStrapper-build-6677369| Child exited with code 0
+2018-07-18 16:42:15| BootStrapper-build-6677369| Process returned 0
+2018-07-18 16:42:17| BootStrapper-build-6677369| Setting Internal UI level to 5
+2018-07-18 16:42:17| BootStrapper-build-6677369| CommandLine Properties = ""
+2018-07-18 16:42:17| BootStrapper-build-6677369| Checking for existing product {7CFC363A-72CE-409C-97C2-E497A1D831FC}
+2018-07-18 16:42:17| BootStrapper-build-6677369| Checking for existing product {B53D42E8-872B-430E-82D4-80065A31FCE1}
+2018-07-18 16:42:17| BootStrapper-build-6677369| Checking for existing product {3B410500-1802-488E-9EF1-4B11992E0440}
+2018-07-18 16:42:17| BootStrapper-build-6677369| Checking for existing product {FE2F6A2C-196E-4210-9C04-2B1BC21F07EF}
+2018-07-18 16:42:17| BootStrapper-build-6677369| No existing products found
+2018-07-18 16:42:17| BootStrapper-build-6677369| The product code {7CFC363A-72CE-409C-97C2-E497A1D831FC} is unknown. Use first time install logic.
+2018-07-18 16:42:17| BootStrapper-build-6677369| MSI logging to "C:\Users\ADMINI~1\AppData\Local\Temp\vmmsi.log"
+2018-07-18 16:42:17| BootStrapper-build-6677369| CWD is now "C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\"
+2018-07-18 16:42:17| BootStrapper-build-6677369| Calling InstallProduct():
+2018-07-18 16:42:17| BootStrapper-build-6677369|   MSI file  : "C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\VMware Tools64.msi"
+2018-07-18 16:42:51| tools-build-6677369| Begin Logging
+2018-07-18 16:42:51| tools-build-6677369| ##############################################################
+2018-07-18 16:42:51| tools-build-6677369| Getting Property Installed = 
+2018-07-18 16:42:51| tools-build-6677369| Getting Property UILevel = 5
+2018-07-18 16:42:51| tools-build-6677369| Starting in full UI mode (Releasebuild-6677369)
+2018-07-18 16:42:51| tools-build-6677369| Tools is not installed
+2018-07-18 16:42:51| tools-build-6677369| End Logging
+2018-07-18 16:42:51| instUtils-build-6677369| Begin Logging
+2018-07-18 16:42:51| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:42:51| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:42:51| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:42:51| instUtils-build-6677369| End Logging
+2018-07-18 16:42:52| tools-build-6677369| Begin Logging
+2018-07-18 16:42:52| tools-build-6677369| --- VMCheckRequirements()
+2018-07-18 16:42:52| tools-build-6677369| Getting Property UILevel = 5
+2018-07-18 16:42:52| tools-build-6677369| Getting Property REMOVE = 
+2018-07-18 16:42:52| tools-build-6677369| Inside a VM or possibly uninstalling from outside of a VM.
+2018-07-18 16:42:52| tools-build-6677369| Setting property VM_TYPE = ESX
+2018-07-18 16:42:52| tools-build-6677369| VMX is ESX (ESX)
+2018-07-18 16:42:52| tools-build-6677369| End Logging
+2018-07-18 16:42:52| instUtils-build-6677369| Begin Logging
+2018-07-18 16:42:52| instUtils-build-6677369| Checking System Version
+2018-07-18 16:42:52| instUtils-build-6677369| Setting property VMSYSVER = :WIN2008:WINDOWS SERVER 2008:STANDARD EDITION:BIT=64:SPMAJ=0:SPMIN=0:BUILD=6000:
+2018-07-18 16:42:52| instUtils-build-6677369| Done System Version
+2018-07-18 16:42:52| instUtils-build-6677369| End Logging
+2018-07-18 16:42:52| instUtils-build-6677369| Begin Logging
+2018-07-18 16:42:52| instUtils-build-6677369| Checking System Version
+2018-07-18 16:42:52| instUtils-build-6677369| Setting property VMSYSVER = :WIN2008:WINDOWS SERVER 2008:STANDARD EDITION:BIT=64:SPMAJ=0:SPMIN=0:BUILD=6000:
+2018-07-18 16:42:52| instUtils-build-6677369| Done System Version
+2018-07-18 16:42:52| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT running
+2018-07-18 16:45:03| instUtils-build-6677369| Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:03| instUtils-build-6677369| VMSetRealVersionNT Done
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:03| instUtils-build-6677369| Stopping services.
+2018-07-18 16:45:03| instUtils-build-6677369| StopRunningService property 0
+2018-07-18 16:45:03| instUtils-build-6677369| Number of services not provided
+2018-07-18 16:45:03| instUtils-build-6677369| End Logging
+2018-07-18 16:45:03| tools-build-6677369| Begin Logging
+2018-07-18 16:45:03| tools-build-6677369| VMFetchSupportFiles: INFO: Getting a temp subfolder name
+2018-07-18 16:45:03| tools-build-6677369| VMFetchSupportFiles: INFO: Prefix name ZQB
+2018-07-18 16:45:03| tools-build-6677369| VMFetchSupportFiles: INFO: Determined support files dir: C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir
+2018-07-18 16:45:03| tools-build-6677369| VMFetchSupportFiles: INFO: Reading Support Files from MSI
+2018-07-18 16:45:03| tools-build-6677369| INFO: Attempting to read entry _DIFXAPI.dll from Binary table
+2018-07-18 16:45:03| tools-build-6677369| INFO: Successfully read 395456 bytes from entry _DIFXAPI.dll from Binary table
+2018-07-18 16:45:03| tools-build-6677369| End Logging
+2018-07-18 16:45:03| tools-build-6676197| Begin Logging
+2018-07-18 16:45:03| tools-build-6676197| --- VMReportExpectedTicks()
+2018-07-18 16:45:03| tools-build-6676197| End Logging
+2018-07-18 16:45:03| tools-build-6677369| Begin Logging
+2018-07-18 16:45:03| tools-build-6677369| --- VMReportExpectedTicks()
+2018-07-18 16:45:03| tools-build-6677369| End Logging
+2018-07-18 16:45:04| tools-build-6677369| Begin Logging
+2018-07-18 16:45:04| tools-build-6677369| --- VMReportExpectedTicks()
+2018-07-18 16:45:04| tools-build-6677369| End Logging
+2018-07-18 16:45:04| tools-build-6677369| Begin Logging
+2018-07-18 16:45:04| tools-build-6677369| --- VMReportExpectedTicks()
+2018-07-18 16:45:04| tools-build-6677369| End Logging
+2018-07-18 16:45:04| tools-build-6677369| Begin Logging
+2018-07-18 16:45:04| tools-build-6677369| --- VMReportExpectedTicks()
+2018-07-18 16:45:04| tools-build-6677369| End Logging
+2018-07-18 16:45:04| tools-build-6677369| Begin Logging
+2018-07-18 16:45:04| tools-build-6677369| --- VMReportExpectedTicks()
+2018-07-18 16:45:04| tools-build-6677369| End Logging
+2018-07-18 16:45:04| tools-build-6677369| Begin Logging
+2018-07-18 16:45:04| tools-build-6677369| --- VMReportExpectedTicks()
+2018-07-18 16:45:04| tools-build-6677369| End Logging
+2018-07-18 16:45:04| tools-build-6677369| Begin Logging
+2018-07-18 16:45:04| tools-build-6677369| --- VMReportExpectedTicks()
+2018-07-18 16:45:04| tools-build-6677369| End Logging
+2018-07-18 16:45:04| tools-build-6677369| Begin Logging
+2018-07-18 16:45:04| tools-build-6677369| --- VMReportExpectedTicks()
+2018-07-18 16:45:04| tools-build-6677369| End Logging
+2018-07-18 16:45:04| tools-build-6677369| Begin Logging
+2018-07-18 16:45:04| tools-build-6677369| --- VMReportExpectedTicks()
+2018-07-18 16:45:04| tools-build-6677369| End Logging
+2018-07-18 16:45:04| tools-build-6677369| Begin Logging
+2018-07-18 16:45:04| tools-build-6677369| --- VMReportExpectedTicks()
+2018-07-18 16:45:04| tools-build-6677369| End Logging
+2018-07-18 16:45:04| tools-build-6677369| Begin Logging
+2018-07-18 16:45:04| tools-build-6677369| Getting Property CustomActionData = [...]
+2018-07-18 16:45:04| tools-build-6677369| VMCopySupportFiles: INFO: Copying support files into C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir
+2018-07-18 16:45:04| tools-build-6677369| CreateNewAdminOnlyDirectory: INFO: Created %temp% subdirectory (C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir)
+2018-07-18 16:45:04| tools-build-6677369| INFO: Attempting to write base16 data to 'C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir\DIFXAPI.dll'
+2018-07-18 16:45:04| tools-build-6677369| Successfully wrote 395456 bytes to file C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir\DIFXAPI.dll
+2018-07-18 16:45:04| tools-build-6677369| VMCopySupportFiles: INFO: Successfully copied support files to directory C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir
+2018-07-18 16:45:04| tools-build-6677369| End Logging
+2018-07-18 16:45:05| tools-build-6677369| Begin Logging
+2018-07-18 16:45:05| tools-build-6677369| Removing old VMDesched kernel driver
+2018-07-18 16:45:05| tools-build-6677369| Inst_UninstallService: Attempting to uninstall service: vmdesched-driver
+2018-07-18 16:45:05| tools-build-6677369| Inst_UninstallService: Attempting to stop service to be uninstalled
+2018-07-18 16:45:05| tools-build-6677369| Inst_StopService: Attempting to stop service: 'vmdesched-driver' [stop dependents = 0]
+2018-07-18 16:45:05| tools-build-6677369| Inst_StopService: Service Manager successfully opened
+2018-07-18 16:45:05| tools-build-6677369| Inst_StopService: Service could not be opened: ERROR_SERVICE_DOES_NOT_EXIST
+2018-07-18 16:45:05| tools-build-6677369| Inst_StopService: Service could not be opened: ERROR_SERVICE_DOES_NOT_EXIST
+2018-07-18 16:45:05| tools-build-6677369| Inst_UninstallService: Service Manager successfully opened
+2018-07-18 16:45:05| tools-build-6677369| Inst_UninstallService: Service could not be opened: ERROR_SERVICE_DOES_NOT_EXIST
+2018-07-18 16:45:05| tools-build-6677369| VMDesch uninstalled
+2018-07-18 16:45:05| tools-build-6677369| End Logging
+2018-07-18 16:45:05| tools-build-6677369| Begin Logging
+2018-07-18 16:45:05| tools-build-6677369| --- VMEtcHostsCleanup() : Cleaning up the 'etc\hosts' file.
+2018-07-18 16:45:05| tools-build-6677369| Found "C:\Windows\system32\Drivers\etc\hosts"
+2018-07-18 16:45:05| tools-build-6677369| Found "C:\Windows\system32\Drivers\etc\hosts"
+2018-07-18 16:45:05| tools-build-6677369| Searching for "127.0.0.1       .host" in file "C:\Windows\system32\Drivers\etc\hosts"
+2018-07-18 16:45:05| tools-build-6677369| Nothing to remove. '127.0.0.1       .host' mapping not present in [C:\Windows\system32\Drivers\etc\hosts].
+2018-07-18 16:45:05| tools-build-6677369| End Logging
+2018-07-18 16:45:05| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:05| instUtils-build-6677369| VMRemoveRegistryValues64 running
+2018-07-18 16:45:05| instUtils-build-6677369| Failed to get active database.
+2018-07-18 16:45:05| instUtils-build-6677369| VMRemoveRegistryValues64 ended
+2018-07-18 16:45:05| instUtils-build-6677369| End Logging
+2018-07-18 16:45:06| tools-build-6677369| Begin Logging
+2018-07-18 16:45:06| tools-build-6677369| --- VMInitializeVGAuthConf()
+2018-07-18 16:45:06| tools-build-6677369| Getting Property CustomActionData = C:\ProgramData\VMware\VMware VGAuth\;C:\ProgramData\VMware\VMware VGAuth\aliasStore\;C:\ProgramData\VMware\VMware VGAuth\msgCatalogs\;C:\Program Files\VMware\VMware Tools\VMware VGAuth\;vgauth.conf
+2018-07-18 16:45:06| tools-build-6677369| Did not find file/directory: "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "# All paths require "\\" path separators
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "[service]
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "samlSchemaDir=C:\\Program Files\\VMware\\VMware Tools\\VMware VGAuth\\schemas
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "logfile=C:\\ProgramData\\VMware\\VMware VGAuth\\logfile.txt
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "aliasStoreDir=C:\\ProgramData\\VMware\\VMware VGAuth\\aliasStore\\
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "loglevel=normal
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "enableLogging=true
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "enableCoreDumps=true
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "maxOldLogFiles=10
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "maxLogSize=10
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "[localization]
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| Appending lines "msgCatalog=C:\\ProgramData\\VMware\\VMware VGAuth\\msgCatalogs\\
+" to file "C:\ProgramData\VMware\VMware VGAuth\vgauth.conf"
+2018-07-18 16:45:06| tools-build-6677369| End Logging
+2018-07-18 16:45:06| tools-build-6677369| Begin Logging
+2018-07-18 16:45:06| tools-build-6677369| --- VMCopyInstallVMWSU()
+2018-07-18 16:45:06| tools-build-6677369| Getting Property CustomActionData = install;C:\Program Files\VMware\VMware Tools\VMware VGAuth\
+2018-07-18 16:45:06| tools-build-6677369| VMCopyInstallVMWSU: action: install, installDir: C:\Program Files\VMware\VMware Tools\VMware VGAuth\
+2018-07-18 16:45:06| tools-build-6677369| VMCopyInstallVMWSU: compiled NOT 64 bit
+2018-07-18 16:45:06| tools-build-6677369| VMCopyInstallVMWSU: IsWow64Process: 1 1
+2018-07-18 16:45:06| tools-build-6677369| VMCopyInstallVMWSU: Wow64DisableWow64FsRedirection(): 1 (err 0)
+2018-07-18 16:45:06| tools-build-6677369| VMCopyInstallVMWSU: sysDir: C:\Windows\system32
+2018-07-18 16:45:06| tools-build-6677369| VMCopyInstallVMWSU: Src path: C:\Program Files\VMware\VMware Tools\VMware VGAuth\\VMWSU_V1_0.DLL, Dest path: C:\Windows\system32\VMWSU_V1_0.DLL
+2018-07-18 16:45:06| tools-build-6677369| InstallVMWSU: calling AddSecurityPackageW() with C:\Windows\system32\VMWSU_V1_0.DLL
+2018-07-18 16:45:07| tools-build-6677369| VMCopyInstallVMWSU: Wow64RevertWow64FsRedirection(): 1 (0)
+2018-07-18 16:45:07| tools-build-6677369| End Logging
+2018-07-18 16:45:07| tools-build-6676197| Begin Logging
+2018-07-18 16:45:07| tools-build-6676197| --- VMInstallVMCIDriver() : Installing VMCI driver
+2018-07-18 16:45:07| tools-build-6676197| Getting Property CustomActionData = C:\Program Files\Common Files\VMware\Drivers\vmci\device\Vista\;5;C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir;vsock;System;C:\Program Files\Common Files\VMware\Drivers\vmci\sockets\Vista\;vsock.inf;vsock.cat;vsock.sys;5
+2018-07-18 16:45:07| tools-build-6676197| LegacyDriverManager::Construct: INFO: Constructing vsock
+2018-07-18 16:45:07| tools-build-6676197| LegacyDriverManager::Construct: INFO: Override args vsock start 2 dmFlags 64
+2018-07-18 16:45:07| tools-build-6676197| LoadSupportFiles: INFO: Successfully loaded C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir\DIFXAPI.dll
+2018-07-18 16:45:07| tools-build-6676197| DriverConfigRegistry::ReadImpl: INFO: Did not find info for vmci driver
+2018-07-18 16:45:07| inst-build-6676197| I1: DInfo_GetDriverInfoFromInf: Got provider for inf: VMware, Inc.
+2018-07-18 16:45:07| inst-build-6676197| I1: DInfo_GetDriverInfoFromInf: verified inf C:\Program Files\Common Files\VMware\Drivers\vmci\device\Vista\vmci.inf signed by Microsoft
+2018-07-18 16:45:07| tools-build-6676197| File versions don't match
+2018-07-18 16:45:07| tools-build-6676197| Driver file versions don't match
+2018-07-18 16:45:07| tools-build-6676197| PnpDriverManager::IsUpdateNeeded: INFO: Determined that vmci has changed
+2018-07-18 16:45:07| tools-build-6676197| PnpDriverManager::IsUpdateNeeded: INFO: prior vmci info:
+2018-07-18 16:45:07| tools-build-6676197| Driver version (invalid) 0.0.0.0 is not WHQL (ca ver 0) inf ""
+2018-07-18 16:45:07| tools-build-6676197| PnpDriverManager::IsUpdateNeeded: INFO: new vmci info:
+2018-07-18 16:45:07| tools-build-6676197| Driver version (valid) 9.8.6.0 is WHQL (ca ver 1) inf ""
+2018-07-18 16:45:07| tools-build-6676197| DriverConfigRegistry::ReadImpl: INFO: Did not find info for vsock driver
+2018-07-18 16:45:07| inst-build-6676197| I1: DInfo_GetDriverInfoFromInf: Got provider for inf: VMware, Inc.
+2018-07-18 16:45:07| inst-build-6676197| I1: DInfo_GetDriverInfoFromInf: verified inf C:\Program Files\Common Files\VMware\Drivers\vmci\sockets\Vista\vsock.inf signed by Microsoft
+2018-07-18 16:45:07| tools-build-6676197| File versions don't match
+2018-07-18 16:45:07| tools-build-6676197| Driver file versions don't match
+2018-07-18 16:45:07| tools-build-6676197| LegacyDriverManager::IsUpdateNeeded: INFO: Determined that vsock has changed
+2018-07-18 16:45:07| tools-build-6676197| LegacyDriverManager::IsUpdateNeeded: INFO: prior vsock info:
+2018-07-18 16:45:07| tools-build-6676197| Driver version (invalid) 0.0.0.0 is not WHQL (ca ver 0) inf ""
+2018-07-18 16:45:07| tools-build-6676197| LegacyDriverManager::IsUpdateNeeded: INFO: new vsock info:
+2018-07-18 16:45:07| tools-build-6676197| Driver version (valid) 9.8.8.0 is WHQL (ca ver 4998961) inf ""
+2018-07-18 16:45:07| tools-build-6676197| UnregisterVsockDlls: Failed to deregister native vsock provider, assuming not installed.
+2018-07-18 16:45:07| tools-build-6676197| UnregisterVsockDlls: Failed to deregister 32-bit vsock provider, assuming not installed.
+2018-07-18 16:45:07| tools-build-6676197| Inst_QueryServiceRunningStatus: Attempting to query service: vsepflt
+2018-07-18 16:45:07| tools-build-6676197| Inst_QueryServiceRunningStatus: Service Manager successfully opened
+2018-07-18 16:45:07| tools-build-6676197| Inst_QueryServiceRunningStatus: Service could not be opened: ERROR_SERVICE_DOES_NOT_EXIST
+2018-07-18 16:45:07| tools-build-6676197| VsockDriverManager::StopVsockDriver: Failed to open vsock driver to issue stop, likely doesn't exist
+2018-07-18 16:45:07| tools-build-6676197| Inst_StopService: Attempting to stop service: 'vsock' [stop dependents = 0]
+2018-07-18 16:45:07| tools-build-6676197| Inst_StopService: Service Manager successfully opened
+2018-07-18 16:45:07| tools-build-6676197| Inst_StopService: Service could not be opened: ERROR_SERVICE_DOES_NOT_EXIST
+2018-07-18 16:45:07| tools-build-6676197| Inst_StopService: Service could not be opened: ERROR_SERVICE_DOES_NOT_EXIST
+2018-07-18 16:45:07| tools-build-6676197| VsockDriverManager::StopVsockDriver: Stopped vsock service
+2018-07-18 16:45:07| tools-build-6676197| LegacyDriverManager::UninstallDriverImpl: INFO: Uninstalling the vsock driver
+2018-07-18 16:45:07| tools-build-6676197| DriverConfigRegistry::ReadImpl: INFO: Did not find info for vsock driver
+2018-07-18 16:45:07| tools-build-6676197| LegacyDriverManager::UninstallDriverImpl: INFO: query if old style vsock legacy driver is installed
+2018-07-18 16:45:07| tools-build-6676197| Inst_QueryServiceRunningStatus: Attempting to query service: vsock
+2018-07-18 16:45:07| tools-build-6676197| Inst_QueryServiceRunningStatus: Service Manager successfully opened
+2018-07-18 16:45:07| tools-build-6676197| Inst_QueryServiceRunningStatus: Service could not be opened: ERROR_SERVICE_DOES_NOT_EXIST
+2018-07-18 16:45:07| tools-build-6676197| DriverConfigRegistry::DeleteImpl: INFO: No info for driver vsockDll to delete
+2018-07-18 16:45:07| tools-build-6676197| DriverConfigRegistry::DeleteImpl: INFO: No info for driver vsockSys to delete
+2018-07-18 16:45:07| tools-build-6676197| StartDependentDriver: INFO: Not starting  service as we did not stop it
+2018-07-18 16:45:07| tools-build-6676197| PnpDriverManager::InstallDriver: INFO: Determining whether to install the vmci driver
+2018-07-18 16:45:07| tools-build-6676197| PnpDriverManager::InstallDriver: INFO: Uninstalling a prior version vmci driver
+2018-07-18 16:45:07| tools-build-6676197| UninstallRootEnumeratedDevice: Driver registry key doesn't exist
+2018-07-18 16:45:07| tools-build-6676197| PnpDriverManager::InstallDriverImpl: INFO: Installing new version of the vmci driver
+2018-07-18 16:45:07| tools-build-6676197| DriverConfigRegistry::DeleteImpl: INFO: No info for driver vmci to delete
+2018-07-18 16:45:07| inst-build-6676197| I1: FindVMwareInSystemTrustedPubStore: didn't find certificate in system trusted publisher store
+2018-07-18 16:45:07| tools-build-6676197| Util_IsTestSigningEnabled
+2018-07-18 16:45:07| tools-build-6676197| INFO: TestSigning not enabled (no TESTSIGNING token)
+2018-07-18 16:45:07| inst-build-6676197| I1: DriverMgmt_TryAddVMwareCerts: Automated cert installation requires test-signing mode
+2018-07-18 16:45:07| tools-build-6676197| Cannot query key value HKEY_LOCAL_MACHINE\SOFTWARE\VMware, Inc.\Wnd: 2
+2018-07-18 16:45:07| tools-build-6676197| Installing driver with INF: "C:\Program Files\Common Files\VMware\Drivers\vmci\device\Vista\vmci.inf", flags: 1
+2018-07-18 16:45:08| tools-build-6676197| Inf file C:\Program Files\Common Files\VMware\Drivers\vmci\device\Vista\vmci.inf was installed as oem1.inf (full path C:\Windows\INF\oem1.inf)
+2018-07-18 16:45:08| tools-build-6676197| GetRealVersionNT: WARNING: Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:08| tools-build-6676197| Attempting to install HID0: PCI\VEN_15AD&DEV_0740&SUBSYS_074015AD
+2018-07-18 16:45:08| tools-build-6676197| Attempting to install HID1: PCI\VEN_15AD&DEV_0740
+2018-07-18 16:45:08| inst-build-6676197| I1: DriverMgmt_CreateNonPnpDevice: Created device with instance ID ROOT\VMWVMCIHOSTDEV\0000
+2018-07-18 16:45:08| tools-build-6676197| InstallRootEnumeratedDevice: InstallRootEnumeratedDevice Created VMWVMCIHOSTDEV device: ROOT\VMWVMCIHOSTDEV\0000
+2018-07-18 16:45:08| tools-build-6676197| InstallRootEnumeratedDevice: Set VMWVMCIHOSTDEV driver registry key
+2018-07-18 16:45:08| tools-build-6676197| Attempting to install HID2: ROOT\VMWVMCIHOSTDEV
+2018-07-18 16:45:08| tools-build-6676197| Success: Reboot not required
+2018-07-18 16:45:08| tools-build-6676197| LegacyDriverManager::InstallDriver: INFO: Determining whether to install the vsock driver
+2018-07-18 16:45:08| tools-build-6676197| LegacyDriverManager::InstallDriverImpl: INFO: Installing new version of the vsock driver
+2018-07-18 16:45:09| tools-build-6676197| DriverConfigRegistry::DeleteImpl: INFO: No info for driver vsock to delete
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): ENTER:  DriverPackageInstallW
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): vsock.inf: checking signature with catalog 'C:\Program Files\Common Files\VMware\Drivers\vmci\sockets\Vista\vsock.cat' ...
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): Driver package 'vsock.inf' is WHQL signed.
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): Copied 'vsock.inf' to driver store...
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): Copied 'vsock.cat' to driver store...
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): Commiting queue...
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): Copied file: 'C:\Program Files\Common Files\VMware\Drivers\vmci\sockets\Vista\vsocklib_x86.dll' -> 'C:\Windows\system32\DRVSTORE\vsock_004713D520D3772BB23CAE5F33DDDA366B53EFD5\vsocklib_x86.dll'.
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): Copied file: 'C:\Program Files\Common Files\VMware\Drivers\vmci\sockets\Vista\vsocklib_x64.dll' -> 'C:\Windows\system32\DRVSTORE\vsock_004713D520D3772BB23CAE5F33DDDA366B53EFD5\vsocklib_x64.dll'.
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): Copied file: 'C:\Program Files\Common Files\VMware\Drivers\vmci\sockets\Vista\vsock.sys' -> 'C:\Windows\system32\DRVSTORE\vsock_004713D520D3772BB23CAE5F33DDDA366B53EFD5\vsock.sys'.
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): Installing INF file "C:\Windows\system32\DRVSTORE\vsock_004713D520D3772BB23CAE5F33DDDA366B53EFD5\vsock.inf" of Type 1.
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): Installing legacy driver 'C:\Windows\system32\DRVSTORE\vsock_004713D520D3772BB23CAE5F33DDDA366B53EFD5\vsock.inf'
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): Success : Installation completed with code 0x0.
+2018-07-18 16:45:09| tools-build-6676197| DifxApiLogCallback: INFO: vsock (Difx): RETURN: DriverPackageInstallW  (0x0)
+2018-07-18 16:45:09| tools-build-6676197| LegacyDriverManager::InstallDriverImpl: INFO: Install of vsock succeeded
+2018-07-18 16:45:09| tools-build-6676197| LegacyDriverManager::InstallDriverImpl: INFO: Install of vsock succeeded with inf installed to C:\Windows\system32\DRVSTORE\vsock_004713D520D3772BB23CAE5F33DDDA366B53EFD5\vsock.inf
+2018-07-18 16:45:09| tools-build-6676197| LegacyDriverManager::PromoteToBootStart: INFO: Promoting vsock to boot start
+2018-07-18 16:45:09| tools-build-6676197| LegacyDriverManager::InstallDriverImpl: INFO: Promote vsock to boot start succeeded
+2018-07-18 16:45:09| tools-build-6676197| WriteStartType: INFO: Entry vsock StartType 2 dmFlags 64
+2018-07-18 16:45:09| tools-build-6676197| WriteStartType: INFO: WriteStartType of vsock of 2->1 from 1 skipped
+2018-07-18 16:45:09| tools-build-6676197| RegisterVsockDlls: Registered both vsock providers
+2018-07-18 16:45:09| tools-build-6676197| VsockDriverManager::InstallDriverImpl: INFO: Not starting vsepflt service as we did not stop it
+2018-07-18 16:45:09| tools-build-6676197| StartDependentDriver: INFO: Not starting  service as we did not stop it
+2018-07-18 16:45:09| tools-build-6676197| UnloadSupportFiles: INFO: Closed module handle for DIFXAPI.dll
+2018-07-18 16:45:09| tools-build-6676197| UnloadSupportFiles: INFO: module DIFXAPI.dll was unloaded
+2018-07-18 16:45:09| tools-build-6676197| End Logging
+2018-07-18 16:45:11| tools-build-6677369| Begin Logging
+2018-07-18 16:45:11| tools-build-6677369| --- VMDisableUSBSelectiveSuspendPwrSettings()
+2018-07-18 16:45:11| tools-build-6677369| Cannot query key value HKEY_LOCAL_MACHINE\SOFTWARE\VMware, Inc.\Wnd: 2
+2018-07-18 16:45:11| tools-build-6677369| Didn't find presence of Intel USB Host Controller
+2018-07-18 16:45:11| tools-build-6677369| End Logging
+2018-07-18 16:45:11| tools-build-6677369| Begin Logging
+2018-07-18 16:45:11| tools-build-6677369| Getting Property CustomActionData = C:\Program Files\Common Files\VMware\Drivers\vmxnet3\Vista\;5
+2018-07-18 16:45:11| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Determining whether to install the vmxnet3 driver
+2018-07-18 16:45:11| tools-build-6677369| DriverConfigRegistry::ReadImpl: INFO: Did not find info for vmxnet3 driver
+2018-07-18 16:45:11| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: Got provider for inf: VMware, Inc.
+2018-07-18 16:45:11| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: verified inf C:\Program Files\Common Files\VMware\Drivers\vmxnet3\Vista\vmxnet3.inf signed by Microsoft
+2018-07-18 16:45:11| tools-build-6677369| File versions don't match
+2018-07-18 16:45:11| tools-build-6677369| Driver file versions don't match
+2018-07-18 16:45:11| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: Determined that vmxnet3 has changed
+2018-07-18 16:45:11| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: prior vmxnet3 info:
+2018-07-18 16:45:11| tools-build-6677369| Driver version (invalid) 0.0.0.0 is not WHQL (ca ver 0) inf ""
+2018-07-18 16:45:11| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: new vmxnet3 info:
+2018-07-18 16:45:11| tools-build-6677369| Driver version (valid) 1.7.3.2 is WHQL (ca ver 1) inf ""
+2018-07-18 16:45:11| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Uninstalling a prior version vmxnet3 driver
+2018-07-18 16:45:11| tools-build-6677369| PnpDriverManager::UninstallDriver: INFO: skipping uninstall
+2018-07-18 16:45:11| tools-build-6677369| DriverConfigRegistry::DeleteImpl: INFO: No info for driver vmxnet3ndis5 to delete
+2018-07-18 16:45:12| tools-build-6677369| DriverConfigRegistry::DeleteImpl: INFO: No info for driver vmxnet3ndis6 to delete
+2018-07-18 16:45:12| tools-build-6677369| PnpDriverManager::InstallDriverImpl: INFO: Installing new version of the vmxnet3 driver
+2018-07-18 16:45:12| tools-build-6677369| DriverConfigRegistry::DeleteImpl: INFO: No info for driver vmxnet3 to delete
+2018-07-18 16:45:12| inst-build-6677369| I1: FindVMwareInSystemTrustedPubStore: didn't find certificate in system trusted publisher store
+2018-07-18 16:45:12| tools-build-6677369| Util_IsTestSigningEnabled
+2018-07-18 16:45:12| tools-build-6677369| INFO: TestSigning not enabled (no TESTSIGNING token)
+2018-07-18 16:45:12| inst-build-6677369| I1: DriverMgmt_TryAddVMwareCerts: Automated cert installation requires test-signing mode
+2018-07-18 16:45:12| tools-build-6677369| Cannot query key value HKEY_LOCAL_MACHINE\SOFTWARE\VMware, Inc.\Wnd: 2
+2018-07-18 16:45:12| tools-build-6677369| Installing driver with INF: "C:\Program Files\Common Files\VMware\Drivers\vmxnet3\Vista\vmxnet3.inf", flags: 1
+2018-07-18 16:45:13| tools-build-6677369| Inf file C:\Program Files\Common Files\VMware\Drivers\vmxnet3\Vista\vmxnet3.inf was installed as oem2.inf (full path C:\Windows\INF\oem2.inf)
+2018-07-18 16:45:13| tools-build-6677369| GetRealVersionNT: WARNING: Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:13| tools-build-6677369| Attempting to install HID0: PCI\VEN_15AD&DEV_07B0&SUBSYS_07B015AD
+2018-07-18 16:45:13| tools-build-6677369| HID0 install status: 0xe000020b. The device instance does not exist in the hardware tree.
+2018-07-18 16:45:13| tools-build-6677369| Attempting to install HID1: PCI\VEN_15AD&DEV_07B0
+2018-07-18 16:45:13| tools-build-6677369| HID1 install status: 0xe000020b. The device instance does not exist in the hardware tree.
+2018-07-18 16:45:13| tools-build-6677369| No devices found.  inf C:\Program Files\Common Files\VMware\Drivers\vmxnet3\Vista\vmxnet3.inf has already been installed
+2018-07-18 16:45:13| tools-build-6677369| Success: Reboot not required
+2018-07-18 16:45:13| tools-build-6677369| End Logging
+2018-07-18 16:45:13| tools-build-6677369| Begin Logging
+2018-07-18 16:45:13| tools-build-6677369| Getting Property CustomActionData = C:\Program Files\Common Files\VMware\Drivers\vmxnet\Win2K8\;5
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Determining whether to install the vmxnet2 driver
+2018-07-18 16:45:13| tools-build-6677369| DriverConfigRegistry::ReadImpl: INFO: Did not find info for vmxnet2 driver
+2018-07-18 16:45:13| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: Got provider for inf: VMware, Inc.
+2018-07-18 16:45:13| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: verified inf C:\Program Files\Common Files\VMware\Drivers\vmxnet\Win2K8\vmxnet.inf signed by Microsoft
+2018-07-18 16:45:13| tools-build-6677369| File versions don't match
+2018-07-18 16:45:13| tools-build-6677369| Driver file versions don't match
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: Determined that vmxnet2 has changed
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: prior vmxnet2 info:
+2018-07-18 16:45:13| tools-build-6677369| Driver version (invalid) 0.0.0.0 is not WHQL (ca ver 0) inf ""
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: new vmxnet2 info:
+2018-07-18 16:45:13| tools-build-6677369| Driver version (valid) 2.2.0.0 is WHQL (ca ver 1) inf ""
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Uninstalling a prior version vmxnet2 driver
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::UninstallDriver: INFO: skipping uninstall
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::InstallDriverImpl: INFO: Installing new version of the vmxnet2 driver
+2018-07-18 16:45:13| tools-build-6677369| DriverConfigRegistry::DeleteImpl: INFO: No info for driver vmxnet2 to delete
+2018-07-18 16:45:13| inst-build-6677369| I1: FindVMwareInSystemTrustedPubStore: didn't find certificate in system trusted publisher store
+2018-07-18 16:45:13| tools-build-6677369| Util_IsTestSigningEnabled
+2018-07-18 16:45:13| tools-build-6677369| INFO: TestSigning not enabled (no TESTSIGNING token)
+2018-07-18 16:45:13| inst-build-6677369| I1: DriverMgmt_TryAddVMwareCerts: Automated cert installation requires test-signing mode
+2018-07-18 16:45:13| tools-build-6677369| Cannot query key value HKEY_LOCAL_MACHINE\SOFTWARE\VMware, Inc.\Wnd: 2
+2018-07-18 16:45:13| tools-build-6677369| Installing driver with INF: "C:\Program Files\Common Files\VMware\Drivers\vmxnet\Win2K8\vmxnet.inf", flags: 1
+2018-07-18 16:45:13| tools-build-6677369| Inf file C:\Program Files\Common Files\VMware\Drivers\vmxnet\Win2K8\vmxnet.inf was installed as oem3.inf (full path C:\Windows\INF\oem3.inf)
+2018-07-18 16:45:13| tools-build-6677369| GetRealVersionNT: WARNING: Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:13| tools-build-6677369| Attempting to install HID0: PCI\VEN_15AD&DEV_0720&SUBSYS_072015AD
+2018-07-18 16:45:13| tools-build-6677369| HID0 install status: 0xe000020b. The device instance does not exist in the hardware tree.
+2018-07-18 16:45:13| tools-build-6677369| Attempting to install HID1: PCI\VEN_15AD&DEV_0720&SUBSYS_00000000
+2018-07-18 16:45:13| tools-build-6677369| HID1 install status: 0xe000020b. The device instance does not exist in the hardware tree.
+2018-07-18 16:45:13| tools-build-6677369| Attempting to install HID2: PCI\VEN_15AD&DEV_0720
+2018-07-18 16:45:13| tools-build-6677369| HID2 install status: 0xe000020b. The device instance does not exist in the hardware tree.
+2018-07-18 16:45:13| tools-build-6677369| No devices found.  inf C:\Program Files\Common Files\VMware\Drivers\vmxnet\Win2K8\vmxnet.inf has already been installed
+2018-07-18 16:45:13| tools-build-6677369| Success: Reboot not required
+2018-07-18 16:45:13| tools-build-6677369| End Logging
+2018-07-18 16:45:13| tools-build-6677369| Begin Logging
+2018-07-18 16:45:13| tools-build-6677369| Getting Property CustomActionData = C:\Program Files\Common Files\VMware\Drivers\pvscsi\Vista\;5
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Determining whether to install the pvscsi driver
+2018-07-18 16:45:13| tools-build-6677369| DriverConfigRegistry::ReadImpl: INFO: Did not find info for pvscsi driver
+2018-07-18 16:45:13| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: Got provider for inf: VMware, Inc.
+2018-07-18 16:45:13| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: verified inf C:\Program Files\Common Files\VMware\Drivers\pvscsi\Vista\pvscsi.inf signed by Microsoft
+2018-07-18 16:45:13| tools-build-6677369| File versions don't match
+2018-07-18 16:45:13| tools-build-6677369| Driver file versions don't match
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: Determined that pvscsi has changed
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: prior pvscsi info:
+2018-07-18 16:45:13| tools-build-6677369| Driver version (invalid) 0.0.0.0 is not WHQL (ca ver 0) inf ""
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: new pvscsi info:
+2018-07-18 16:45:13| tools-build-6677369| Driver version (valid) 1.3.8.0 is WHQL (ca ver 1) inf ""
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Uninstalling a prior version pvscsi driver
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::UninstallDriver: INFO: skipping uninstall
+2018-07-18 16:45:13| tools-build-6677369| PnpDriverManager::InstallDriverImpl: INFO: Installing new version of the pvscsi driver
+2018-07-18 16:45:13| tools-build-6677369| DriverConfigRegistry::DeleteImpl: INFO: No info for driver pvscsi to delete
+2018-07-18 16:45:13| inst-build-6677369| I1: FindVMwareInSystemTrustedPubStore: didn't find certificate in system trusted publisher store
+2018-07-18 16:45:13| tools-build-6677369| Util_IsTestSigningEnabled
+2018-07-18 16:45:13| tools-build-6677369| INFO: TestSigning not enabled (no TESTSIGNING token)
+2018-07-18 16:45:13| inst-build-6677369| I1: DriverMgmt_TryAddVMwareCerts: Automated cert installation requires test-signing mode
+2018-07-18 16:45:13| tools-build-6677369| Cannot query key value HKEY_LOCAL_MACHINE\SOFTWARE\VMware, Inc.\Wnd: 2
+2018-07-18 16:45:13| tools-build-6677369| Installing driver with INF: "C:\Program Files\Common Files\VMware\Drivers\pvscsi\Vista\pvscsi.inf", flags: 1
+2018-07-18 16:45:14| tools-build-6677369| Inf file C:\Program Files\Common Files\VMware\Drivers\pvscsi\Vista\pvscsi.inf was installed as oem4.inf (full path C:\Windows\INF\oem4.inf)
+2018-07-18 16:45:14| tools-build-6677369| GetRealVersionNT: WARNING: Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:14| tools-build-6677369| Attempting to install HID0: PCI\VEN_15AD&DEV_07C0&SUBSYS_07C015AD
+2018-07-18 16:45:14| tools-build-6677369| HID0 install status: 0xe000020b. The device instance does not exist in the hardware tree.
+2018-07-18 16:45:14| tools-build-6677369| Attempting to install HID1: PCI\VEN_15AD&DEV_07C0
+2018-07-18 16:45:14| tools-build-6677369| HID1 install status: 0xe000020b. The device instance does not exist in the hardware tree.
+2018-07-18 16:45:14| tools-build-6677369| No devices found.  inf C:\Program Files\Common Files\VMware\Drivers\pvscsi\Vista\pvscsi.inf has already been installed
+2018-07-18 16:45:14| tools-build-6677369| Success: Reboot not required
+2018-07-18 16:45:14| tools-build-6677369| End Logging
+2018-07-18 16:45:14| tools-build-6677369| Begin Logging
+2018-07-18 16:45:14| tools-build-6677369| Getting Property CustomActionData = C:\Program Files\Common Files\VMware\Drivers\mouse\Vista\;5
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Determining whether to install the vmusbmouse driver
+2018-07-18 16:45:14| tools-build-6677369| DriverConfigRegistry::ReadImpl: INFO: Did not find info for vmusbmouse driver
+2018-07-18 16:45:14| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: Got provider for inf: VMware, Inc.
+2018-07-18 16:45:14| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: verified inf C:\Program Files\Common Files\VMware\Drivers\mouse\Vista\vmusbmouse.inf signed by Microsoft
+2018-07-18 16:45:14| tools-build-6677369| File versions don't match
+2018-07-18 16:45:14| tools-build-6677369| Driver file versions don't match
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: Determined that vmusbmouse has changed
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: prior vmusbmouse info:
+2018-07-18 16:45:14| tools-build-6677369| Driver version (invalid) 0.0.0.0 is not WHQL (ca ver 0) inf ""
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: new vmusbmouse info:
+2018-07-18 16:45:14| tools-build-6677369| Driver version (valid) 12.5.7.0 is WHQL (ca ver 1) inf ""
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Uninstalling a prior version vmusbmouse driver
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::UninstallDriver: INFO: skipping uninstall
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::InstallDriverImpl: INFO: Installing new version of the vmusbmouse driver
+2018-07-18 16:45:14| tools-build-6677369| DriverConfigRegistry::DeleteImpl: INFO: No info for driver vmusbmouse to delete
+2018-07-18 16:45:14| inst-build-6677369| I1: FindVMwareInSystemTrustedPubStore: didn't find certificate in system trusted publisher store
+2018-07-18 16:45:14| tools-build-6677369| Util_IsTestSigningEnabled
+2018-07-18 16:45:14| tools-build-6677369| INFO: TestSigning not enabled (no TESTSIGNING token)
+2018-07-18 16:45:14| inst-build-6677369| I1: DriverMgmt_TryAddVMwareCerts: Automated cert installation requires test-signing mode
+2018-07-18 16:45:14| tools-build-6677369| Cannot query key value HKEY_LOCAL_MACHINE\SOFTWARE\VMware, Inc.\Wnd: 2
+2018-07-18 16:45:14| tools-build-6677369| Installing driver with INF: "C:\Program Files\Common Files\VMware\Drivers\mouse\Vista\vmusbmouse.inf", flags: 1
+2018-07-18 16:45:14| tools-build-6677369| Inf file C:\Program Files\Common Files\VMware\Drivers\mouse\Vista\vmusbmouse.inf was installed as oem5.inf (full path C:\Windows\INF\oem5.inf)
+2018-07-18 16:45:14| tools-build-6677369| GetRealVersionNT: WARNING: Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:14| tools-build-6677369| Attempting to install HID0: HID\VID_0E0F&PID_0003&MI_00
+2018-07-18 16:45:14| tools-build-6677369| HID0 install status: 0xe000020b. The device instance does not exist in the hardware tree.
+2018-07-18 16:45:14| tools-build-6677369| Attempting to install HID1: HID\VID_0E0F&PID_0003&MI_01
+2018-07-18 16:45:14| tools-build-6677369| HID1 install status: 0xe000020b. The device instance does not exist in the hardware tree.
+2018-07-18 16:45:14| tools-build-6677369| No devices found.  inf C:\Program Files\Common Files\VMware\Drivers\mouse\Vista\vmusbmouse.inf has already been installed
+2018-07-18 16:45:14| tools-build-6677369| Success: Reboot not required
+2018-07-18 16:45:14| tools-build-6677369| End Logging
+2018-07-18 16:45:14| tools-build-6677369| Begin Logging
+2018-07-18 16:45:14| tools-build-6677369| Getting Property CustomActionData = C:\Program Files\Common Files\VMware\Drivers\mouse\Vista\;5
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Determining whether to install the vmmouse driver
+2018-07-18 16:45:14| tools-build-6677369| DriverConfigRegistry::ReadImpl: INFO: Did not find info for vmmouse driver
+2018-07-18 16:45:14| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: Got provider for inf: VMware, Inc.
+2018-07-18 16:45:14| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: verified inf C:\Program Files\Common Files\VMware\Drivers\mouse\Vista\vmmouse.inf signed by Microsoft
+2018-07-18 16:45:14| tools-build-6677369| File versions don't match
+2018-07-18 16:45:14| tools-build-6677369| Driver file versions don't match
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: Determined that vmmouse has changed
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: prior vmmouse info:
+2018-07-18 16:45:14| tools-build-6677369| Driver version (invalid) 0.0.0.0 is not WHQL (ca ver 0) inf ""
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: new vmmouse info:
+2018-07-18 16:45:14| tools-build-6677369| Driver version (valid) 12.5.7.0 is WHQL (ca ver 1) inf ""
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Uninstalling a prior version vmmouse driver
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::UninstallDriver: INFO: skipping uninstall
+2018-07-18 16:45:14| tools-build-6677369| PnpDriverManager::InstallDriverImpl: INFO: Installing new version of the vmmouse driver
+2018-07-18 16:45:14| tools-build-6677369| DriverConfigRegistry::DeleteImpl: INFO: No info for driver vmmouse to delete
+2018-07-18 16:45:14| inst-build-6677369| I1: FindVMwareInSystemTrustedPubStore: didn't find certificate in system trusted publisher store
+2018-07-18 16:45:14| tools-build-6677369| Util_IsTestSigningEnabled
+2018-07-18 16:45:14| tools-build-6677369| INFO: TestSigning not enabled (no TESTSIGNING token)
+2018-07-18 16:45:14| inst-build-6677369| I1: DriverMgmt_TryAddVMwareCerts: Automated cert installation requires test-signing mode
+2018-07-18 16:45:14| tools-build-6677369| Cannot query key value HKEY_LOCAL_MACHINE\SOFTWARE\VMware, Inc.\Wnd: 2
+2018-07-18 16:45:14| tools-build-6677369| Installing driver with INF: "C:\Program Files\Common Files\VMware\Drivers\mouse\Vista\vmmouse.inf", flags: 1
+2018-07-18 16:45:15| tools-build-6677369| Inf file C:\Program Files\Common Files\VMware\Drivers\mouse\Vista\vmmouse.inf was installed as oem6.inf (full path C:\Windows\INF\oem6.inf)
+2018-07-18 16:45:15| tools-build-6677369| GetRealVersionNT: WARNING: Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:15| tools-build-6677369| Attempting to install HID0: *VMW0003
+2018-07-18 16:45:16| tools-build-6677369| InstallPnPDevices: INFO: Reboot required to update driver for device *VMW0003
+2018-07-18 16:45:16| tools-build-6677369| Success: Reboot required
+2018-07-18 16:45:16| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Install of vmmouse requires a reboot
+2018-07-18 16:45:16| tools-build-6677369| Reboot requested by 'vmmouse'
+2018-07-18 16:45:16| tools-build-6677369| End Logging
+2018-07-18 16:45:16| tools-build-6677369| Begin Logging
+2018-07-18 16:45:16| tools-build-6677369| Getting Property CustomActionData = C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir;vmmemctl;System;C:\Program Files\Common Files\VMware\Drivers\memctl\Vista\;vmmemctl.inf;vmmemctl.cat;vmmemctl.sys;5
+2018-07-18 16:45:16| tools-build-6677369| LegacyDriverManager::Construct: INFO: Constructing vmmemctl
+2018-07-18 16:45:16| tools-build-6677369| LegacyDriverManager::Construct: INFO: Override args vmmemctl start 3 dmFlags 256
+2018-07-18 16:45:16| tools-build-6677369| LegacyDriverManager::InstallDriver: INFO: Determining whether to install the vmmemctl driver
+2018-07-18 16:45:16| tools-build-6677369| LoadSupportFiles: INFO: Successfully loaded C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir\DIFXAPI.dll
+2018-07-18 16:45:16| tools-build-6677369| DriverConfigRegistry::ReadImpl: INFO: Did not find info for vmmemctl driver
+2018-07-18 16:45:16| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: Got provider for inf: VMware, Inc.
+2018-07-18 16:45:16| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: verified inf C:\Program Files\Common Files\VMware\Drivers\memctl\Vista\vmmemctl.inf signed by Microsoft
+2018-07-18 16:45:16| tools-build-6677369| File versions don't match
+2018-07-18 16:45:16| tools-build-6677369| Driver file versions don't match
+2018-07-18 16:45:16| tools-build-6677369| LegacyDriverManager::IsUpdateNeeded: INFO: Determined that vmmemctl has changed
+2018-07-18 16:45:16| tools-build-6677369| LegacyDriverManager::IsUpdateNeeded: INFO: prior vmmemctl info:
+2018-07-18 16:45:16| tools-build-6677369| Driver version (invalid) 0.0.0.0 is not WHQL (ca ver 0) inf ""
+2018-07-18 16:45:16| tools-build-6677369| LegacyDriverManager::IsUpdateNeeded: INFO: new vmmemctl info:
+2018-07-18 16:45:16| tools-build-6677369| Driver version (valid) 7.4.2.0 is WHQL (ca ver 4998961) inf ""
+2018-07-18 16:45:16| tools-build-6677369| LegacyDriverManager::InstallDriver: INFO: Uninstalling a prior version vmmemctl driver
+2018-07-18 16:45:16| tools-build-6677369| LoadSupportFiles: INFO: DIFXAPI.dll was already in memory
+2018-07-18 16:45:16| tools-build-6677369| LegacyDriverManager::UninstallDriverImpl: INFO: Uninstalling the vmmemctl driver
+2018-07-18 16:45:16| tools-build-6677369| DriverConfigRegistry::ReadImpl: INFO: Did not find info for vmmemctl driver
+2018-07-18 16:45:16| tools-build-6677369| LegacyDriverManager::UninstallDriverImpl: INFO: query if old style vmmemctl legacy driver is installed
+2018-07-18 16:45:16| tools-build-6677369| Inst_QueryServiceRunningStatus: Attempting to query service: vmmemctl
+2018-07-18 16:45:16| tools-build-6677369| Inst_QueryServiceRunningStatus: Service Manager successfully opened
+2018-07-18 16:45:16| tools-build-6677369| Inst_QueryServiceRunningStatus: Service could not be opened: ERROR_SERVICE_DOES_NOT_EXIST
+2018-07-18 16:45:16| tools-build-6677369| UnloadSupportFiles: INFO: Closed module handle for DIFXAPI.dll
+2018-07-18 16:45:16| tools-build-6677369| UnloadSupportFiles: INFO: module DIFXAPI.dll was unloaded
+2018-07-18 16:45:16| tools-build-6677369| StartDependentDriver: INFO: Not starting  service as we did not stop it
+2018-07-18 16:45:16| tools-build-6677369| LegacyDriverManager::InstallDriverImpl: INFO: Installing new version of the vmmemctl driver
+2018-07-18 16:45:16| tools-build-6677369| DriverConfigRegistry::DeleteImpl: INFO: No info for driver vmmemctl to delete
+2018-07-18 16:45:16| inst-build-6677369| I1: FindVMwareInSystemTrustedPubStore: didn't find certificate in system trusted publisher store
+2018-07-18 16:45:16| tools-build-6677369| Util_IsTestSigningEnabled
+2018-07-18 16:45:16| tools-build-6677369| INFO: TestSigning not enabled (no TESTSIGNING token)
+2018-07-18 16:45:16| inst-build-6677369| I1: DriverMgmt_TryAddVMwareCerts: Automated cert installation requires test-signing mode
+2018-07-18 16:45:16| tools-build-6677369| DifxApiLogCallback: INFO: vmmemctl (Difx): ENTER:  DriverPackageInstallW
+2018-07-18 16:45:16| tools-build-6677369| DifxApiLogCallback: INFO: vmmemctl (Difx): vmmemctl.inf: checking signature with catalog 'C:\Program Files\Common Files\VMware\Drivers\memctl\Vista\vmmemctl.cat' ...
+2018-07-18 16:45:16| tools-build-6677369| DifxApiLogCallback: INFO: vmmemctl (Difx): Driver package 'vmmemctl.inf' is WHQL signed.
+2018-07-18 16:45:16| tools-build-6677369| DifxApiLogCallback: INFO: vmmemctl (Difx): Copied 'vmmemctl.inf' to driver store...
+2018-07-18 16:45:16| tools-build-6677369| DifxApiLogCallback: INFO: vmmemctl (Difx): Copied 'vmmemctl.cat' to driver store...
+2018-07-18 16:45:16| tools-build-6677369| DifxApiLogCallback: INFO: vmmemctl (Difx): Commiting queue...
+2018-07-18 16:45:16| tools-build-6677369| DifxApiLogCallback: INFO: vmmemctl (Difx): Copied file: 'C:\Program Files\Common Files\VMware\Drivers\memctl\Vista\vmmemctl.sys' -> 'C:\Windows\system32\DRVSTORE\vmmemctl_E3D7457EC841D2617FE253052472022096FB6CAC\vmmemctl.sys'.
+2018-07-18 16:45:16| tools-build-6677369| DifxApiLogCallback: INFO: vmmemctl (Difx): Installing INF file "C:\Windows\system32\DRVSTORE\vmmemctl_E3D7457EC841D2617FE253052472022096FB6CAC\vmmemctl.inf" of Type 1.
+2018-07-18 16:45:16| tools-build-6677369| DifxApiLogCallback: INFO: vmmemctl (Difx): Installing legacy driver 'C:\Windows\system32\DRVSTORE\vmmemctl_E3D7457EC841D2617FE253052472022096FB6CAC\vmmemctl.inf'
+2018-07-18 16:45:17| tools-build-6677369| DifxApiLogCallback: INFO: vmmemctl (Difx): Success : Installation completed with code 0x0.
+2018-07-18 16:45:17| tools-build-6677369| DifxApiLogCallback: INFO: vmmemctl (Difx): RETURN: DriverPackageInstallW  (0x0)
+2018-07-18 16:45:17| tools-build-6677369| LegacyDriverManager::InstallDriverImpl: INFO: Install of vmmemctl succeeded
+2018-07-18 16:45:17| tools-build-6677369| LegacyDriverManager::InstallDriverImpl: INFO: Install of vmmemctl succeeded with inf installed to C:\Windows\system32\DRVSTORE\vmmemctl_E3D7457EC841D2617FE253052472022096FB6CAC\vmmemctl.inf
+2018-07-18 16:45:17| tools-build-6677369| LegacyDriverManager::InstallDriverImpl: INFO: Promote vmmemctl to boot start skipped
+2018-07-18 16:45:17| tools-build-6677369| WriteStartType: INFO: Entry vmmemctl StartType 3 dmFlags 256
+2018-07-18 16:45:17| tools-build-6677369| WriteStartType: INFO: WriteStartType of vmmemctl of 3->3 from 3 skipped
+2018-07-18 16:45:17| tools-build-6677369| StartDependentDriver: INFO: Not starting  service as we did not stop it
+2018-07-18 16:45:17| tools-build-6677369| End Logging
+2018-07-18 16:45:17| tools-build-6677369| Begin Logging
+2018-07-18 16:45:17| tools-build-6677369| Getting Property CustomActionData = C:\Program Files\Common Files\VMware\Drivers\audio\Vista\;5
+2018-07-18 16:45:17| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Determining whether to install the es1371 driver
+2018-07-18 16:45:17| tools-build-6677369| DriverConfigRegistry::ReadImpl: INFO: Did not find info for es1371 driver
+2018-07-18 16:45:17| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: Got provider for inf: VMware
+2018-07-18 16:45:17| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: verified inf C:\Program Files\Common Files\VMware\Drivers\audio\Vista\vmaudio.inf signed by Microsoft
+2018-07-18 16:45:17| tools-build-6677369| File versions don't match
+2018-07-18 16:45:17| tools-build-6677369| Driver file versions don't match
+2018-07-18 16:45:17| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: Determined that es1371 has changed
+2018-07-18 16:45:17| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: prior es1371 info:
+2018-07-18 16:45:17| tools-build-6677369| Driver version (invalid) 0.0.0.0 is not WHQL (ca ver 0) inf ""
+2018-07-18 16:45:17| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: new es1371 info:
+2018-07-18 16:45:17| tools-build-6677369| Driver version (valid) 5.10.0.3506 is WHQL (ca ver 1) inf ""
+2018-07-18 16:45:17| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Uninstalling a prior version es1371 driver
+2018-07-18 16:45:17| tools-build-6677369| PnpDriverManager::UninstallDriver: INFO: skipping uninstall
+2018-07-18 16:45:17| tools-build-6677369| PnpDriverManager::InstallDriverImpl: INFO: Installing new version of the es1371 driver
+2018-07-18 16:45:18| tools-build-6677369| DriverConfigRegistry::DeleteImpl: INFO: No info for driver es1371 to delete
+2018-07-18 16:45:18| inst-build-6677369| I1: FindVMwareInSystemTrustedPubStore: didn't find certificate in system trusted publisher store
+2018-07-18 16:45:18| tools-build-6677369| Util_IsTestSigningEnabled
+2018-07-18 16:45:18| tools-build-6677369| INFO: TestSigning not enabled (no TESTSIGNING token)
+2018-07-18 16:45:18| inst-build-6677369| I1: DriverMgmt_TryAddVMwareCerts: Automated cert installation requires test-signing mode
+2018-07-18 16:45:18| tools-build-6677369| Cannot query key value HKEY_LOCAL_MACHINE\SOFTWARE\VMware, Inc.\Wnd: 2
+2018-07-18 16:45:18| tools-build-6677369| Installing driver with INF: "C:\Program Files\Common Files\VMware\Drivers\audio\Vista\vmaudio.inf", flags: 1
+2018-07-18 16:45:18| tools-build-6677369| Inf file C:\Program Files\Common Files\VMware\Drivers\audio\Vista\vmaudio.inf was installed as oem7.inf (full path C:\Windows\INF\oem7.inf)
+2018-07-18 16:45:18| tools-build-6677369| GetRealVersionNT: WARNING: Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:18| tools-build-6677369| Attempting to install HID0: PCI\VEN_1274&DEV_1371&SUBSYS_13711274
+2018-07-18 16:45:18| tools-build-6677369| HID0 install status: 0xe000020b. The device instance does not exist in the hardware tree.
+2018-07-18 16:45:18| tools-build-6677369| No devices found.  inf C:\Program Files\Common Files\VMware\Drivers\audio\Vista\vmaudio.inf has already been installed
+2018-07-18 16:45:18| tools-build-6677369| Success: Reboot not required
+2018-07-18 16:45:18| tools-build-6677369| End Logging
+2018-07-18 16:45:18| tools-build-6677369| Begin Logging
+2018-07-18 16:45:18| tools-build-6677369| --- VMSetDiskTimeOut() : Setting disk time-out
+2018-07-18 16:45:18| tools-build-6677369| End Logging
+2018-07-18 16:45:18| tools-build-6677369| Begin Logging
+2018-07-18 16:45:18| tools-build-6677369| Getting Property CustomActionData = C:\Program Files\Common Files\VMware\Drivers\video_wddm\Vista\;5
+2018-07-18 16:45:18| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Determining whether to install the svga_wddm driver
+2018-07-18 16:45:18| tools-build-6677369| DriverConfigRegistry::ReadImpl: INFO: Did not find info for svga_wddm driver
+2018-07-18 16:45:18| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: Got provider for inf: VMware, Inc.
+2018-07-18 16:45:18| inst-build-6677369| I1: DInfo_GetDriverInfoFromInf: verified inf C:\Program Files\Common Files\VMware\Drivers\video_wddm\Vista\vm3d.inf signed by Microsoft
+2018-07-18 16:45:18| tools-build-6677369| File versions don't match
+2018-07-18 16:45:18| tools-build-6677369| Driver file versions don't match
+2018-07-18 16:45:18| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: Determined that svga_wddm has changed
+2018-07-18 16:45:18| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: prior svga_wddm info:
+2018-07-18 16:45:18| tools-build-6677369| Driver version (invalid) 0.0.0.0 is not WHQL (ca ver 0) inf ""
+2018-07-18 16:45:18| tools-build-6677369| PnpDriverManager::IsUpdateNeeded: INFO: new svga_wddm info:
+2018-07-18 16:45:18| tools-build-6677369| Driver version (valid) 8.15.1.51 is WHQL (ca ver 1) inf ""
+2018-07-18 16:45:18| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Uninstalling a prior version svga_wddm driver
+2018-07-18 16:45:18| tools-build-6677369| PnpDriverManager::UninstallDriver: INFO: skipping uninstall
+2018-07-18 16:45:18| tools-build-6677369| DriverConfigRegistry::DeleteImpl: INFO: No info for driver svga_xpdm to delete
+2018-07-18 16:45:18| tools-build-6677369| PnpDriverManager::InstallDriverImpl: INFO: Installing new version of the svga_wddm driver
+2018-07-18 16:45:18| tools-build-6677369| DriverConfigRegistry::DeleteImpl: INFO: No info for driver svga_wddm to delete
+2018-07-18 16:45:18| inst-build-6677369| I1: FindVMwareInSystemTrustedPubStore: didn't find certificate in system trusted publisher store
+2018-07-18 16:45:18| tools-build-6677369| Util_IsTestSigningEnabled
+2018-07-18 16:45:18| tools-build-6677369| INFO: TestSigning not enabled (no TESTSIGNING token)
+2018-07-18 16:45:18| inst-build-6677369| I1: DriverMgmt_TryAddVMwareCerts: Automated cert installation requires test-signing mode
+2018-07-18 16:45:18| tools-build-6677369| Cannot query key value HKEY_LOCAL_MACHINE\SOFTWARE\VMware, Inc.\Wnd: 2
+2018-07-18 16:45:18| tools-build-6677369| Installing driver with INF: "C:\Program Files\Common Files\VMware\Drivers\video_wddm\Vista\vm3d.inf", flags: 1
+2018-07-18 16:45:21| tools-build-6677369| Inf file C:\Program Files\Common Files\VMware\Drivers\video_wddm\Vista\vm3d.inf was installed as oem8.inf (full path C:\Windows\INF\oem8.inf)
+2018-07-18 16:45:21| tools-build-6677369| GetRealVersionNT: WARNING: Couldn't query SOFTWARE\Microsoft\Windows NT\CurrentVersion\#CurrentMajorVersionNumber
+2018-07-18 16:45:21| tools-build-6677369| Attempting to install HID0: PCI\VEN_15AD&DEV_0405&SUBSYS_040515AD&REV_00
+2018-07-18 16:45:22| tools-build-6677369| InstallPnPDevices: INFO: Reboot required to update driver for device PCI\VEN_15AD&DEV_0405&SUBSYS_040515AD&REV_00
+2018-07-18 16:45:22| tools-build-6677369| Success: Reboot required
+2018-07-18 16:45:22| tools-build-6677369| PnpDriverManager::InstallDriver: INFO: Install of svga_wddm requires a reboot
+2018-07-18 16:45:22| tools-build-6677369| Reboot requested by 'svga_wddm'
+2018-07-18 16:45:22| tools-build-6677369| End Logging
+2018-07-18 16:45:22| tools-build-6677369| Begin Logging
+2018-07-18 16:45:22| tools-build-6677369| --- VMMofCompile()
+2018-07-18 16:45:22| tools-build-6677369| Getting Property CustomActionData = C:\Windows\system32\wbem\vmstatsprovider.mof;1
+2018-07-18 16:45:22| tools-build-6677369| Found "C:\Windows\system32\wbem\vmstatsprovider.mof"
+2018-07-18 16:45:26| tools-build-6677369| Successfully compiled 'C:\Windows\system32\wbem\vmstatsprovider.mof'
+2018-07-18 16:45:26| tools-build-6677369| End Logging
+2018-07-18 16:45:26| tools-build-6677369| Begin Logging
+2018-07-18 16:45:26| tools-build-6677369| Resetting the Icon Cache
+2018-07-18 16:45:26| tools-build-6677369| End Logging
+2018-07-18 16:45:26| tools-build-6677369| Begin Logging
+2018-07-18 16:45:26| tools-build-6677369| Getting Property CustomActionData = C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir
+2018-07-18 16:45:26| tools-build-6677369| VMCleanupSupportFiles: INFO: Cleaning up any support files in C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir
+2018-07-18 16:45:26| tools-build-6677369| VMCleanupSupportFiles: WARNING: Couldn't clean up C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir\DIFXAPI.dll (5)
+2018-07-18 16:45:26| tools-build-6677369| VMCleanupSupportFiles: WARNING: Couldn't clean up directory C:\Users\ADMINI~1\AppData\Local\Temp\ZQBD40A.tmp.dir (145)
+2018-07-18 16:45:26| tools-build-6677369| End Logging
+2018-07-18 16:45:26| tools-build-6677369| Begin Logging
+2018-07-18 16:45:26| tools-build-6677369| --- VMRun()
+2018-07-18 16:45:26| tools-build-6677369| Getting Property VM_Run = 
+2018-07-18 16:45:26| tools-build-6677369| Getting Property CustomActionData = "C:\Program Files\VMware\VMware Tools\guestproxycerttool.exe"; -g;0;0
+2018-07-18 16:45:26| tools-build-6677369| Found "C:\Program Files\VMware\VMware Tools\guestproxycerttool.exe"
+2018-07-18 16:45:26| tools-build-6677369| Attempting to launch ""C:\Program Files\VMware\VMware Tools\guestproxycerttool.exe"  -g"
+2018-07-18 16:45:26| tools-build-6677369| Child exited with code 0
+2018-07-18 16:45:26| tools-build-6677369| Process returned 0
+2018-07-18 16:45:26| tools-build-6677369| End Logging
+2018-07-18 16:45:26| tools-build-6677369| Begin Logging
+2018-07-18 16:45:26| tools-build-6677369| --- VMStartVMwareProcesses() : Launching VMWare processes with RunAs.
+2018-07-18 16:45:26| tools-build-6677369| Getting Property CustomActionData = C:\Program Files\VMware\VMware Tools\
+2018-07-18 16:45:26| tools-build-6677369| <XP>Logged on user token 1040
+2018-07-18 16:45:26| tools-build-6677369| Found "C:\Program Files\VMware\VMware Tools\vmtoolsd.exe"
+2018-07-18 16:45:26| tools-build-6677369| CreateProcessAsUser successfully launched "C:\Program Files\VMware\VMware Tools\vmtoolsd.exe" -n vmusr
+2018-07-18 16:45:26| tools-build-6677369| End Logging
+2018-07-18 16:45:26| instUtils-build-6677369| Begin Logging
+2018-07-18 16:45:26| instUtils-build-6677369| Getting Property CustomActionData = C:\Program Files\VMware\VMware Tools\vmStatsProvider\win32\;vmStatsProvider.dll;C:\Program Files\VMware\VMware Tools\vmStatsProvider\win64\;vmStatsProvider.dll
+2018-07-18 16:45:26| instUtils-build-6677369| File to be registered C:\Program Files\VMware\VMware Tools\vmStatsProvider\win32\\vmStatsProvider.dll
+2018-07-18 16:45:26| instUtils-build-6677369| Found "C:\Program Files\VMware\VMware Tools\vmStatsProvider\win32\\vmStatsProvider.dll"
+2018-07-18 16:45:26| instUtils-build-6677369| Failed to load dll "C:\Program Files\VMware\VMware Tools\vmStatsProvider\win32\\vmStatsProvider.dll": 193
+2018-07-18 16:45:26| instUtils-build-6677369| Found "C:\Program Files\VMware\VMware Tools\vmStatsProvider\win32\\vmStatsProvider.dll"
+2018-07-18 16:45:26| instUtils-build-6677369| Found "C:\Windows\system32\regsvr32.exe"
+2018-07-18 16:45:26| instUtils-build-6677369| Attempting to launch ""C:\Windows\system32\regsvr32.exe" "C:\Program Files\VMware\VMware Tools\vmStatsProvider\win32\\vmStatsProvider.dll" /s"
+2018-07-18 16:45:27| instUtils-build-6677369| Child exited with code 0
+2018-07-18 16:45:27| instUtils-build-6677369| File to be registered C:\Program Files\VMware\VMware Tools\vmStatsProvider\win64\\vmStatsProvider.dll
+2018-07-18 16:45:27| instUtils-build-6677369| Found "C:\Program Files\VMware\VMware Tools\vmStatsProvider\win64\\vmStatsProvider.dll"
+2018-07-18 16:45:27| instUtils-build-6677369| Successfully registered dll: "C:\Program Files\VMware\VMware Tools\vmStatsProvider\win64\\vmStatsProvider.dll"
+2018-07-18 16:45:27| instUtils-build-6677369| End Logging
+2018-07-18 16:45:27| tools-build-6677369| Begin Logging
+2018-07-18 16:45:27| tools-build-6677369| --- VMInstallVMToolsService() : Installing VMTools service
+2018-07-18 16:45:27| tools-build-6677369| Getting Property CustomActionData = C:\Program Files\VMware\VMware Tools\;vmtoolsd.exe;;winmgmt
+2018-07-18 16:45:27| tools-build-6677369| Inst_InstallService: Stopping any pre-existing instances of service
+2018-07-18 16:45:27| tools-build-6677369| Inst_StopService: Attempting to stop service: 'VMTools' [stop dependents = 1]
+2018-07-18 16:45:27| tools-build-6677369| Inst_StopService: Service Manager successfully opened
+2018-07-18 16:45:27| tools-build-6677369| Inst_StopService: Service could not be opened: ERROR_SERVICE_DOES_NOT_EXIST
+2018-07-18 16:45:27| tools-build-6677369| Inst_StopService: Service could not be opened: ERROR_SERVICE_DOES_NOT_EXIST
+2018-07-18 16:45:27| tools-build-6677369| Inst_InstallService: installing service: VMTools
+2018-07-18 16:45:27| tools-build-6677369| Inst_InstallService: service manager opened
+2018-07-18 16:45:27| tools-build-6677369| Inst_InstallService: service manager successfully opened
+2018-07-18 16:45:27| tools-build-6677369| Dependencies wide char winmgmt
+2018-07-18 16:45:27| tools-build-6677369| Inst_InstallService: Service created: VMTools
+2018-07-18 16:45:27| tools-build-6677369| Inst_InstallService: Attempting to store service description
+2018-07-18 16:45:27| tools-build-6677369| Inst_InstallService: advapi32.dll loaded
+2018-07-18 16:45:27| tools-build-6677369| Inst_InstallService: config function loaded
+2018-07-18 16:45:27| tools-build-6677369| Inst_InstallService: Description config successful
+2018-07-18 16:45:27| tools-build-6677369| Inst_InstallService: returning success
+2018-07-18 16:45:27| tools-build-6677369| VMTools service successfully installed
+2018-07-18 16:45:27| tools-build-6677369| Inst_StartService: Attempting to start service: VMTools
+2018-07-18 16:45:27| tools-build-6677369| Inst_StartService: Service Manager successfully opened
+2018-07-18 16:45:27| tools-build-6677369| Inst_StartService: Service successfully opened
+2018-07-18 16:45:27| tools-build-6677369| Inst_StartService: Service has been started
+2018-07-18 16:45:27| tools-build-6677369| Inst_StartService: service status: SERVICE_START_PENDING cp=0x00000000
+2018-07-18 19:45:29| tools-build-6677369| Inst_StartService: service status: SERVICE_RUNNING cp=0x00000000
+2018-07-18 19:45:29| tools-build-6677369| Inst_StartService: Service is running
+2018-07-18 19:45:29| tools-build-6677369| VMTools service successfully started
+2018-07-18 19:45:29| tools-build-6677369| End Logging
+2018-07-18 19:45:29| tools-build-6677369| Begin Logging
+2018-07-18 19:45:29| tools-build-6677369| --- CA exec: VMServiceConfigRestart
+2018-07-18 19:45:29| tools-build-6677369| Getting Property CustomActionData = VMTools;1800;300
+2018-07-18 19:45:29| tools-build-6677369| End Logging
+2018-07-18 19:45:29| tools-build-6677369| Begin Logging
+2018-07-18 19:45:29| tools-build-6677369| --- VMConfigRunRegistry()
+2018-07-18 19:45:29| tools-build-6677369| Getting Property CustomActionData = C:\Program Files\VMware\VMware Tools\
+2018-07-18 19:45:29| tools-build-6677369| End Logging
+2018-07-18 19:45:29| instUtils-build-6677369| Begin Logging
+2018-07-18 19:45:29| instUtils-build-6677369| --- VMSetFilePermissions()
+2018-07-18 19:45:29| instUtils-build-6677369| Getting Property CustomActionData = C:\ProgramData\VMware\VMware Tools\tools.conf|Administrators:268435456:Everyone:1179817;
+2018-07-18 19:45:29| instUtils-build-6677369| File not found C:\ProgramData\VMware\VMware Tools\tools.conf
+2018-07-18 19:45:29| instUtils-build-6677369| End Logging
+2018-07-18 19:45:31| tools-build-6677369| Begin Logging
+2018-07-18 19:45:31| tools-build-6677369| --- VMUpdateManifestFile() : Updating full tools manifest.
+2018-07-18 19:45:31| tools-build-6677369| Getting Property VMUpdateManifestDir = C:\ProgramData\VMware\VMware Tools\
+2018-07-18 19:45:31| tools-build-6677369| Did not find file/directory: "C:\ProgramData\VMware\VMware Tools\manifest.txt"
+2018-07-18 19:45:31| tools-build-6677369| Processing file: Unity
+2018-07-18 19:45:31| tools-build-6677369| Current Unity.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current Unity.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'Unity' - component: '_unity.dll.869A7E00_8648_0000_83A8_EF0F76CF0001' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing Unity.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing Unity.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmaudio_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current vmaudio_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmaudio_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmaudio_Vista' - component: '_driver_vmaudio_Vista.D549868E_41DC_43CB_8703_8CBB2211BAF6' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmaudio_Vista.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmaudio_Vista.version = 5.10.0.7013
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmacthlp
+2018-07-18 19:45:31| tools-build-6677369| Current vmacthlp.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmacthlp.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmacthlp' - component: '_vmacthlp.exe.9BE26984_A19E_412C_B1FB_B6BA1C8D2BE2' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmacthlp.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmacthlp.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmrawdsk_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current vmrawdsk_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmrawdsk_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmrawdsk_Vista' - component: '_driver_vmrawdsk_Vista.AEFD99FD_A354_4B53_989E_193A1CB6B925' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmrawdsk_Vista.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmrawdsk_Vista.version = 1.1.0.3
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmrawdsk_Win8
+2018-07-18 19:45:31| tools-build-6677369| Current vmrawdsk_Win8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmrawdsk_Win8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmrawdsk_Win8' - component: '_driver_vmrawdsk_Win8.A99758DF_1C13_4BFD_AB9A_CE4F304026D2' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmrawdsk_Win8.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmrawdsk_Win8.version = 1.1.0.3
+2018-07-18 19:45:31| tools-build-6677369| Processing file: hgfsclient
+2018-07-18 19:45:31| tools-build-6677369| Current hgfsclient.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current hgfsclient.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'hgfsclient' - component: '_VMwareHgfsClient.6FAF7CD0_70BA_40E7_8919_A7C226C867E4' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing hgfsclient.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing hgfsclient.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: hgfs_driver_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current hgfs_driver_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current hgfs_driver_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'hgfs_driver_Vista' - component: '_driver_vmhgfs.sys_Vista.7DB59F61_11D0_48D1_9DE6_2E7789EBD659' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing hgfs_driver_Vista.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing hgfs_driver_Vista.version = 11.0.14.5
+2018-07-18 19:45:31| tools-build-6677369| Processing file: hgfs_driver_Win8
+2018-07-18 19:45:31| tools-build-6677369| Current hgfs_driver_Win8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current hgfs_driver_Win8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'hgfs_driver_Win8' - component: '_driver_vmhgfs.sys_Win8.8BDCA6AC_F45F_4C88_A93E_5CE65A466AB7' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing hgfs_driver_Win8.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing hgfs_driver_Win8.version = 11.0.14.5
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmmemctl_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current vmmemctl_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmmemctl_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmmemctl_Vista' - component: '_driver_memctl_Vista.6CB3047C_F26E_42F0_8382_9685D291E5DD' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmmemctl_Vista.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmmemctl_Vista.version = 7.4.2.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmmemctl_Win8
+2018-07-18 19:45:31| tools-build-6677369| Current vmmemctl_Win8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmmemctl_Win8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmmemctl_Win8' - component: '_driver_memctl_Win8.0F4802C6_CE38_481B_9975_D83F2C758F8C' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmmemctl_Win8.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmmemctl_Win8.version = 7.4.2.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmmouse_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current vmmouse_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmmouse_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmmouse_Vista' - component: '_driver_mouse_Vista.CB532A43_B61F_406D_AFB4_BA7BC4D425E2' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmmouse_Vista.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmmouse_Vista.version = 12.5.7.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmmouse_Win8
+2018-07-18 19:45:31| tools-build-6677369| Current vmmouse_Win8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmmouse_Win8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmmouse_Win8' - component: '_driver_mouse_Win8.869A7E00_6687_0000_83A8_EF0F76CF0001' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmmouse_Win8.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmmouse_Win8.version = 12.5.7.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmusbmouse_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current vmusbmouse_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmusbmouse_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmusbmouse_Vista' - component: '_driver_usbmouse_Vista.12781D4A_03BA_4CA6_83CF_69655235516A' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmusbmouse_Vista.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmusbmouse_Vista.version = 12.5.7.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmusbmouse_Win8
+2018-07-18 19:45:31| tools-build-6677369| Current vmusbmouse_Win8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmusbmouse_Win8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmusbmouse_Win8' - component: '_driver_usbmouse_Win8.54D6295A_D7A7_442B_AC06_35032EF17F36' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmusbmouse_Win8.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmusbmouse_Win8.version = 12.5.7.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: pvscsi_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current pvscsi_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current pvscsi_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'pvscsi_Vista' - component: '_driver_pvscsi_Vista.E3C2961E_3524_4169_97FF_B616A43D0E19' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing pvscsi_Vista.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing pvscsi_Vista.version = 1.3.8.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: pvscsi_Win8
+2018-07-18 19:45:31| tools-build-6677369| Current pvscsi_Win8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current pvscsi_Win8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'pvscsi_Win8' - component: '_driver_pvscsi_Win8.AABDCEBD_E77A_45D4_A8B2_DC5D6EEBE384' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing pvscsi_Win8.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing pvscsi_Win8.version = 1.3.8.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vsep_plugin
+2018-07-18 19:45:31| tools-build-6677369| Current vsep_plugin.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vsep_plugin.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vsep_plugin' - component: '_vsep.dll.945A5EB7_CCE1_463B_AF2A_673A64BF52F1' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vsep_plugin.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vsep_plugin.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vsepflt_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current vsepflt_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vsepflt_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vsepflt_Vista' - component: '_Driver_vsepflt.sys_Vista.85D1D54F_131C_40A3_9B64_5EEA4BA631CA' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vsepflt_Vista.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vsepflt_Vista.version = 10.1.10.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vsep_umc_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current vsep_umc_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vsep_umc_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vsep_umc_Vista' - component: '_Driver_vsepumc.dll_Vista.85D1D54F_131C_40A3_9B64_5EEA4BA631CA' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vsep_umc_Vista.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vsep_umc_Vista.version = 10.1.10.0
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vsepflt_Win8
+2018-07-18 19:45:31| tools-build-6677369| Current vsepflt_Win8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vsepflt_Win8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vsepflt_Win8' - component: '_Driver_vsepflt.sys_Win8.DAE70599_1A67_4972_A77C_48963DCD2349' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vsepflt_Win8.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vsepflt_Win8.version = 10.1.10.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vsep_umc_Win8
+2018-07-18 19:45:31| tools-build-6677369| Current vsep_umc_Win8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vsep_umc_Win8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vsep_umc_Win8' - component: '_Driver_vsepumc.dll_Win8.DAE70599_1A67_4972_A77C_48963DCD2349' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vsep_umc_Win8.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vsep_umc_Win8.version = 10.1.10.0
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vnetflt_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current vnetflt_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vnetflt_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vnetflt_Vista' - component: '_Driver_vnetflt_Vista.A84E4966_DBA7_46DD_9A06_C1DA5F87130F' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vnetflt_Vista.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vnetflt_Vista.version = 10.1.10.0
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vnetflt_Win8
+2018-07-18 19:45:31| tools-build-6677369| Current vnetflt_Win8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vnetflt_Win8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vnetflt_Win8' - component: '_Driver_vnetflt_Win8.881346EB_2E57_4541_85A5_00FD9357D161' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vnetflt_Win8.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vnetflt_Win8.version = 10.1.10.0
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vnetWFP_Win10
+2018-07-18 19:45:31| tools-build-6677369| Current vnetWFP_Win10.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vnetWFP_Win10.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vnetWFP_Win10' - component: '_Driver_vnetflt_Win10.04BB26C6_CA92_4BE9_892A_CBDC343F4724' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vnetWFP_Win10.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vnetWFP_Win10.version = 10.1.10.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmci_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current vmci_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmci_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmci_Vista' - component: '_driver_vmci_Vista.20BE52C5_0815_4F26_9816_FB06A9A9F012' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmci_Vista.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmci_Vista.version = 9.8.6.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vsock_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current vsock_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vsock_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vsock_Vista' - component: '_driver_vsock_Vista.20BE52C5_0815_4F26_9816_FB06A9A9F012' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing vsock_Vista.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing vsock_Vista.version = 9.8.8.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmci_Win8
+2018-07-18 19:45:31| tools-build-6677369| Current vmci_Win8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmci_Win8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmci_Win8' - component: '_driver_vmci_Win8.E45EBC46_D1B3_409D_A0C6_85BC30038A07' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmci_Win8.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmci_Win8.version = 9.8.6.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vsock_Win8
+2018-07-18 19:45:31| tools-build-6677369| Current vsock_Win8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vsock_Win8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vsock_Win8' - component: '_driver_vsock_Win8.E45EBC46_D1B3_409D_A0C6_85BC30038A07' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vsock_Win8.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vsock_Win8.version = 9.8.8.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: wddm_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current wddm_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current wddm_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'wddm_Vista' - component: '_wddm_driver_video_Vista.0FF146E0_2F5B_4A58_BD2B_00E00CE8E7B5' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing wddm_Vista.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing wddm_Vista.version = 8.15.1.103
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmxnet_Win2K8
+2018-07-18 19:45:31| tools-build-6677369| Current vmxnet_Win2K8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmxnet_Win2K8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmxnet_Win2K8' - component: '_driver_vmxnet_Win2K8.FC1A87D7_FAA5_44BA_ABC8_1DE18DB198E8' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmxnet_Win2K8.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmxnet_Win2K8.version = 2.2.0.1
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmxnet3_Vista
+2018-07-18 19:45:31| tools-build-6677369| Current vmxnet3_Vista.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmxnet3_Vista.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmxnet3_Vista' - component: '_driver_vmxnet3_Vista.65A6FECF_ACB9_4B44_8A79_885950293BA1' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmxnet3_Vista.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmxnet3_Vista.version = 1.7.3.5
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmxnet3_Win8
+2018-07-18 19:45:31| tools-build-6677369| Current vmxnet3_Win8.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmxnet3_Win8.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmxnet3_Win8' - component: '_driver_vmxnet3_Win8.FC7BF8B8_27FB_4212_B385_AA45F07D667E' - state: 2 - action: -1.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmxnet3_Win8.installed = FALSE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmxnet3_Win8.version = 1.7.3.5
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vcbprovider
+2018-07-18 19:45:31| tools-build-6677369| Current vcbprovider.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vcbprovider.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vcbprovider' - component: '_VCBSnapshotProvider_dll_vista.869A7E00_8770_0000_83A8_EF0F76CF0001' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing vcbprovider.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing vcbprovider.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: vmtoolsd
+2018-07-18 19:45:31| tools-build-6677369| Current vmtoolsd.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current vmtoolsd.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'vmtoolsd' - component: '_VMwareService.869A7E00_8665_0000_83A8_EF0F76CF0001' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing vmtoolsd.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing vmtoolsd.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: perfmon
+2018-07-18 19:45:31| tools-build-6677369| Current perfmon.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current perfmon.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'perfmon' - component: '_vmStatsProvider.dll_32.869A7E00_7E7F_0000_83A8_EF0F76CF0001' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing perfmon.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing perfmon.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginAutoLogon
+2018-07-18 19:45:31| tools-build-6677369| Current PluginAutoLogon.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginAutoLogon.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginAutoLogon' - component: '_autoLogon.dll.C55D5E3D_B61D_4059_BE91_87C886029BA1' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginAutoLogon.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginAutoLogon.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginAutoUpgrade
+2018-07-18 19:45:31| tools-build-6677369| Current PluginAutoUpgrade.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginAutoUpgrade.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginAutoUpgrade' - component: '_autoUpgrade.dll.35832FE1_810D_48AC_B987_E3F2819C5035' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginAutoUpgrade.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginAutoUpgrade.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginBitMapper
+2018-07-18 19:45:31| tools-build-6677369| Current PluginBitMapper.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginBitMapper.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginBitMapper' - component: '_bitMapper.dll.C5803B92_0505_4CAE_A2CF_15CC9C340DEA' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginBitMapper.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginBitMapper.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginDeployPkg
+2018-07-18 19:45:31| tools-build-6677369| Current PluginDeployPkg.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginDeployPkg.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginDeployPkg' - component: '_deployPkgPlugin.dll.28130838_965E_4E69_8051_CFAE98B8CC63' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginDeployPkg.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginDeployPkg.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginDesktopEvents
+2018-07-18 19:45:31| tools-build-6677369| Current PluginDesktopEvents.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginDesktopEvents.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginDesktopEvents' - component: '_desktopEvents.dll.3555C23A_2956_4C5E_91A2_8F1D7B6F4309' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginDesktopEvents.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginDesktopEvents.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginDisableGuestHib
+2018-07-18 19:45:31| tools-build-6677369| Current PluginDisableGuestHib.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginDisableGuestHib.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginDisableGuestHib' - component: '_disableGuestHibernate.dll.65750020_888F_41D9_88E1_6BFED72B1F56' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginDisableGuestHib.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginDisableGuestHib.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginDiskWiper
+2018-07-18 19:45:31| tools-build-6677369| Current PluginDiskWiper.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginDiskWiper.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginDiskWiper' - component: '_diskWiper.dll.F691DC15_4165_BC1F_5431_A6D700131BCF' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginDiskWiper.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginDiskWiper.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginDndcp
+2018-07-18 19:45:31| tools-build-6677369| Current PluginDndcp.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginDndcp.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginDndcp' - component: '_dndcp.dll.3320107B_FF55_4BFC_8F0F_F97FE1DC77EB' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginDndcp.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginDndcp.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginGRabbitMQProxy
+2018-07-18 19:45:31| tools-build-6677369| Current PluginGRabbitMQProxy.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginGRabbitMQProxy.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginGRabbitMQProxy' - component: '_grabbitmqProxy.dll.4C0DB109_8AD5_42BD_BB99_3F2DC1747162' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginGRabbitMQProxy.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginGRabbitMQProxy.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginGuestInfo
+2018-07-18 19:45:31| tools-build-6677369| Current PluginGuestInfo.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginGuestInfo.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginGuestInfo' - component: '_guestInfo.dll.A9D4D7A5_A161_4ECB_B772_0F01F69A57C0' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginGuestInfo.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginGuestInfo.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginHgfsServer
+2018-07-18 19:45:31| tools-build-6677369| Current PluginHgfsServer.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginHgfsServer.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginHgfsServer' - component: '_hgfsServer.dll.936CF96C_F18D_4E42_A528_D9923D9AE902' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginHgfsServer.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginHgfsServer.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginHgfsUsability
+2018-07-18 19:45:31| tools-build-6677369| Current PluginHgfsUsability.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginHgfsUsability.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginHgfsUsability' - component: '_hgfsUsability.dll.B3A41E33_3D4C_44DF_B7D7_C32E91170661' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginHgfsUsability.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginHgfsUsability.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginHwUpgradeHelper
+2018-07-18 19:45:31| tools-build-6677369| Current PluginHwUpgradeHelper.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginHwUpgradeHelper.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginHwUpgradeHelper' - component: '_hwUpgradeHelper.dll.9459BE1F_70BD_4014_9FCC_ABB5C86E8A99' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginHwUpgradeHelper.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginHwUpgradeHelper.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginPowerOps
+2018-07-18 19:45:31| tools-build-6677369| Current PluginPowerOps.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginPowerOps.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginPowerOps' - component: '_powerOps.dll.006C3949_AEAE_42A4_B580_FD366F1C40B4' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginPowerOps.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginPowerOps.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginResolutionSet
+2018-07-18 19:45:31| tools-build-6677369| Current PluginResolutionSet.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginResolutionSet.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginResolutionSet' - component: '_resolutionSet.dll.758CF844_5B50_413D_9E8A_C9FDB5C5049A' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginResolutionSet.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginResolutionSet.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginTimeSync
+2018-07-18 19:45:31| tools-build-6677369| Current PluginTimeSync.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginTimeSync.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginTimeSync' - component: '_timeSync.dll.25A8AF62_68B5_424F_B00C_4353146E793A' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginTimeSync.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginTimeSync.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginVix
+2018-07-18 19:45:31| tools-build-6677369| Current PluginVix.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginVix.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginVix' - component: '_vix.dll.395573EE_04A9_4F22_82AA_12E76A85269D' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginVix.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginVix.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginVmBackup
+2018-07-18 19:45:31| tools-build-6677369| Current PluginVmBackup.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginVmBackup.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginVmBackup' - component: '_vmbackup.dll.F80F420F_FD85_4D82_8922_8BC4880042F8' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginVmBackup.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginVmBackup.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Processing file: PluginVmtray
+2018-07-18 19:45:31| tools-build-6677369| Current PluginVmtray.installed: (null)
+2018-07-18 19:45:31| tools-build-6677369| Current PluginVmtray.version: (null)
+2018-07-18 19:45:31| tools-build-6677369| Name: 'PluginVmtray' - component: '_vmtray.dll.0BC94AAF_645A_47C9_9678_5EE842E2BB8F' - state: 2 - action: 3.
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginVmtray.installed = TRUE
+2018-07-18 19:45:31| tools-build-6677369| Writing PluginVmtray.version = 10.1.15.65452
+2018-07-18 19:45:31| tools-build-6677369| Writing monolithic.version = 10.1.15
+2018-07-18 19:45:31| inst-build-6677369| E1: FILE: FileDeletionRetry: Non-retriable error encountered (C:\ProgramData\VMware\VMware Tools\manifest.txt~): The system cannot find the file specified (2)
+2018-07-18 19:45:31| tools-build-6677369| Setting property VMUpdateManifestFull = 0
+2018-07-18 19:45:31| tools-build-6677369| Setting property VMUpdateManifest = 0
+2018-07-18 19:45:31| tools-build-6677369| End Logging
+2018-07-18 19:45:32| tools-build-6677369| Begin Logging
+2018-07-18 19:45:32| tools-build-6677369| --- VMCheckReboot()
+2018-07-18 19:45:32| tools-build-6677369| Util_NeedReboot: Checking if we need to reboot
+2018-07-18 19:45:32| tools-build-6677369| Did not find file/directory: "C:\Users\ADMINI~1\AppData\Local\Temp\\vmreboot.tmp"
+2018-07-18 19:45:32| tools-build-6677369| The reboot file does not exist
+2018-07-18 19:45:32| tools-build-6677369| Did not find file/directory: "C:\Users\ADMINI~1\AppData\Local\Temp\\vmwareboot.tmp"
+2018-07-18 19:45:32| tools-build-6677369| The reboot file does not exist
+2018-07-18 19:45:32| tools-build-6677369| Util_GetKeyValueString(HKEY_LOCAL_MACHINE\SOFTWARE\VMware, Inc.\NeedReboot\Components) = "vmmouse;svga_wddm"
+2018-07-18 19:45:32| tools-build-6677369| Util_NeedReboot: Reboot required!
+2018-07-18 19:45:32| tools-build-6677369| Setting property VMREBOOT = 1
+2018-07-18 19:45:32| tools-build-6677369| End Logging
+2018-07-18 19:45:32| tools-build-6677369| Begin Logging
+2018-07-18 19:45:32| tools-build-6677369| --- VMUnmountImageSuccess() : Unmounting Tools image after successful install
+2018-07-18 19:45:32| tools-build-6677369| Unmounting image [1]
+2018-07-18 19:45:32| tools-build-6677369| Rpci: Sending request='toolinstall.end 1'
+2018-07-18 19:45:32| tools-build-6677369| Rpci: Sent request='toolinstall.end 1', reply='', len=0, status=1, rpcStatus=1
+2018-07-18 19:45:32| tools-build-6677369| Rpci: Sending request='toolinstall.installerActive 0'
+2018-07-18 19:45:32| tools-build-6677369| Rpci: Sent request='toolinstall.installerActive 0', reply='Unknown command', len=15, status=1, rpcStatus=0
+2018-07-18 19:45:32| tools-build-6677369| ERROR: 'toolinstall.installerActive 0' command failed
+2018-07-18 19:45:32| tools-build-6677369| End Logging
+2018-07-18 19:45:45| BootStrapper-build-6677369| InstallProduct() returned: 1641
+2018-07-18 19:45:45| BootStrapper-build-6677369| Util_NeedReboot: Checking if we need to reboot
+2018-07-18 19:45:45| BootStrapper-build-6677369| Did not find file/directory: "C:\Users\ADMINI~1\AppData\Local\Temp\\vmreboot.tmp"
+2018-07-18 19:45:45| BootStrapper-build-6677369| The reboot file does not exist
+2018-07-18 19:45:45| BootStrapper-build-6677369| Did not find file/directory: "C:\Users\ADMINI~1\AppData\Local\Temp\\vmwareboot.tmp"
+2018-07-18 19:45:45| BootStrapper-build-6677369| The reboot file does not exist
+2018-07-18 19:45:45| BootStrapper-build-6677369| Util_GetKeyValueString(HKEY_LOCAL_MACHINE\SOFTWARE\VMware, Inc.\NeedReboot\Components) = "vmmouse;svga_wddm"
+2018-07-18 19:45:45| BootStrapper-build-6677369| Util_NeedReboot: Reboot required!
+2018-07-18 19:45:45| BootStrapper-build-6677369| Returned to [D:\]
+2018-07-18 19:45:45| BootStrapper-build-6677369| Cleaning up temp dir "C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\"
+2018-07-18 19:45:45| BootStrapper-build-6677369| Deleting [C:\Users\ADMINI~1\AppData\Local\Temp\{7CFC363A-72CE-409C-97C2-E497A1D831FC}~setup\]
+2018-07-18 19:45:45| BootStrapper-build-6677369| Sending rpc command 'info-set guestinfo.toolsInstallErrCode 1641' to the host
+2018-07-18 19:45:45| BootStrapper-build-6677369| Rpci: Sending request='info-set guestinfo.toolsInstallErrCode 1641'
+2018-07-18 19:45:45| BootStrapper-build-6677369| Rpci: Sent request='info-set guestinfo.toolsInstallErrCode 1641', reply='', len=0, status=1, rpcStatus=1
+2018-07-18 19:45:45| BootStrapper-build-6677369| Sending rpc command 'toolinstall.installerActive 0' to the host
+2018-07-18 19:45:45| BootStrapper-build-6677369| Rpci: Sending request='toolinstall.installerActive 0'
+2018-07-18 19:45:45| BootStrapper-build-6677369| Rpci: Sent request='toolinstall.installerActive 0', reply='Unknown command', len=15, status=1, rpcStatus=0
+2018-07-18 19:45:45| BootStrapper-build-6677369| Failed to send rpc command 'toolinstall.installerActive 0'
+2018-07-18 19:45:45| BootStrapper-build-6677369| Setup exit code is: 1641
+2018-07-18 19:45:45| BootStrapper-build-6677369| End Logging
