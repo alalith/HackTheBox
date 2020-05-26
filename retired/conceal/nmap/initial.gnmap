@@ -1,4 +1,4 @@
-# Nmap 7.80 scan initiated Tue May 19 18:48:05 2020 as: nmap -sC -sV -oA nmap/initial 10.10.10.116
+# Nmap 7.80 scan initiated Fri May 22 09:45:31 2020 as: nmap -sT -sC -sV -oA nmap/initial 10.10.10.116
 Host: 10.10.10.116 ()	Status: Up
-Host: 10.10.10.116 ()	Status: Up
-# Nmap done at Tue May 19 18:48:51 2020 -- 1 IP address (1 host up) scanned in 45.59 seconds
+Host: 10.10.10.116 ()	Ports: 21/open/tcp//ftp//Microsoft ftpd/, 80/open/tcp//http//Microsoft IIS httpd 10.0/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds?///	Ignored State: closed (995)
+# Nmap done at Fri May 22 09:45:58 2020 -- 1 IP address (1 host up) scanned in 26.75 seconds
