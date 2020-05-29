@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri May 29 08:40:57 2020 as: nmap -T4 -p- -oA nmap/allports 10.10.10.131
+Host: 10.10.10.131 ()	Status: Up
+Host: 10.10.10.131 ()	Ports: 13/filtered/tcp//daytime///, 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 443/open/tcp//https///, 6170/filtered/tcp/////, 6200/open/tcp//lm-x///, 6564/filtered/tcp/////, 7346/filtered/tcp//swx///, 7421/filtered/tcp//mtportmon///, 10055/filtered/tcp//qptlmd///, 11735/filtered/tcp//unknown///, 17706/filtered/tcp/////, 19825/filtered/tcp/////, 25466/filtered/tcp/////, 25981/filtered/tcp/////, 31993/filtered/tcp/////, 34371/filtered/tcp/////, 35855/filtered/tcp/////, 48537/filtered/tcp/////, 52540/filtered/tcp/////, 53614/filtered/tcp/////, 56396/filtered/tcp/////, 57902/filtered/tcp/////, 58708/filtered/tcp/////	Ignored State: closed (65510)
+# Nmap done at Fri May 29 09:01:51 2020 -- 1 IP address (1 host up) scanned in 1253.84 seconds

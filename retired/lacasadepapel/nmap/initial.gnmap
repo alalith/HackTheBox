@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri May 29 08:36:53 2020 as: nmap -sC -sV -oA nmap/initial 10.10.10.131
+Host: 10.10.10.131 ()	Status: Up
+Host: 10.10.10.131 ()	Ports: 21/open/tcp//ftp//vsftpd 2.3.4/, 22/open/tcp//ssh//OpenSSH 7.9 (protocol 2.0)/, 80/open/tcp//http//Node.js (Express middleware)/, 443/open/tcp//ssl|http//Node.js Express framework/	Ignored State: closed (996)
+# Nmap done at Fri May 29 08:37:45 2020 -- 1 IP address (1 host up) scanned in 51.96 seconds

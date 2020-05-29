@@ -1,0 +1,33 @@
+# Nmap 7.80 scan initiated Fri May 29 08:40:57 2020 as: nmap -T4 -p- -oA nmap/allports 10.10.10.131
+Warning: 10.10.10.131 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.131
+Host is up (0.046s latency).
+Not shown: 65510 closed ports
+PORT      STATE    SERVICE
+13/tcp    filtered daytime
+21/tcp    open     ftp
+22/tcp    open     ssh
+80/tcp    open     http
+443/tcp   open     https
+6170/tcp  filtered unknown
+6200/tcp  open     lm-x
+6564/tcp  filtered unknown
+7346/tcp  filtered swx
+7421/tcp  filtered mtportmon
+10055/tcp filtered qptlmd
+11735/tcp filtered unknown
+17706/tcp filtered unknown
+19825/tcp filtered unknown
+25466/tcp filtered unknown
+25981/tcp filtered unknown
+31993/tcp filtered unknown
+34371/tcp filtered unknown
+35855/tcp filtered unknown
+48537/tcp filtered unknown
+52540/tcp filtered unknown
+53614/tcp filtered unknown
+56396/tcp filtered unknown
+57902/tcp filtered unknown
+58708/tcp filtered unknown
+
+# Nmap done at Fri May 29 09:01:51 2020 -- 1 IP address (1 host up) scanned in 1253.84 seconds
