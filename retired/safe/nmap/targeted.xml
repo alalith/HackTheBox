@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat May 30 12:43:04 2020 as: nmap -sC -sV -p22,80,1337 -oA nmap/targeted 10.10.10.147 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p22,80,1337 -oA nmap/targeted 10.10.10.147" start="1590860584" startstr="Sat May 30 12:43:04 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="3" services="22,80,1337"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1590860584" endtime="1590860675"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.147" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.4p1 Debian 10+deb9u6" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 6d:7c:81:3d:6a:3d:f9:5f:2e:1f:6a:97:e5:00:ba:de (RSA)&#xa;  256 99:7e:1e:22:76:72:da:3c:c9:61:7d:74:d7:80:33:d2 (ECDSA)&#xa;  256 6a:6b:c3:8e:4b:28:f7:60:85:b1:62:ff:54:bc:d8:d6 (ED25519)"><table>
+<elem key="fingerprint">6d7c813d6a3df95f2e1f6a97e500bade</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC1lhlptw4YE96mogUlBKcqkeUXEOiCLbQxwjfzb4Zv7ddGBtF3jBi1mitjd+njlQQn9KqVXjPjtoEp17iSyI851O++s5SiSt1bIALdd4DA+n65dGZUvotBah+rTCrPa8yUyQ9NaXO1e2ALHZ+qWJJDBYULqTYrqObF1fErk+uaJ2EInSm4O3E4a1rDJP9M6OFInq9er3dVVXzR7pyIyLLiGOnmwrm+XX9/YZ3i9R+S4yb4OexUzLE6s52ZQMPaznExnAnA7EXFojw1+VT5sncZ4hiqBvaYXFHLRZTytiKYO4Bf/Ntl1+IOOQjyvpSnxVy+Riew/AZXMm3qwl/MrNdX</elem>
+</table>
+<table>
+<elem key="fingerprint">997e1e227672da3cc9617d74d78033d2</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCBjZCYZ/SIu/q2bMhVAICKM1a09kOxqXxGZ/Skm0OnzqhoF3Tj2+F6OfYr7yFoF8/SzWiKAOdmyYafg/mTJVT8=</elem>
+</table>
+<table>
+<elem key="fingerprint">6a6bc38e4b28f76085b162ff54bcd8d6</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAINspYs2G7atyE7B4AbsflH8zPxqXWDZv89V1FD9q5ZtB</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.25" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.25</cpe></service><script id="http-server-header" output="Apache/2.4.25 (Debian)"><elem>Apache/2.4.25 (Debian)</elem>
+</script><script id="http-title" output="Apache2 Debian Default Page: It works"><elem key="title">Apache2 Debian Default Page: It works</elem>
+</script></port>
+<port protocol="tcp" portid="1337"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="waste" servicefp="SF-Port1337-TCP:V=7.80%I=7%D=5/30%Time=5ED29B2F%P=x86_64-pc-linux-gnu%r(NULL,3E,&quot;\x2013:47:10\x20up\x204\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.05,\x200\.03,\x200\.00\n&quot;)%r(GenericLines,63,&quot;\x2013:47:10\x20up\x204\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.05,\x200\.03,\x200\.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20\r\n&quot;)%r(GetRequest,71,&quot;\x2013:47:16\x20up\x205\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.05,\x200\.03,\x200\.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20GET\x20/\x20HTTP/1\.0\r\n&quot;)%r(HTTPOptions,75,&quot;\x2013:47:16\x20up\x205\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.05,\x200\.03,\x200\.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20OPTIONS\x20/\x20HTTP/1\.0\r\n&quot;)%r(RTSPRequest,75,&quot;\x2013:47:16\x20up\x205\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.05,\x200\.03,\x200\.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20OPTIONS\x20/\x20RTSP/1\.0\r\n&quot;)%r(RPCCheck,3E,&quot;\x2013:47:16\x20up\x205\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.05,\x200\.03,\x200\.00\n&quot;)%r(DNSVersionBindReqTCP,3E,&quot;\x2013:47:21\x20up\x205\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.04,\x200\.03,\x200\.00\n&quot;)%r(DNSStatusRequestTCP,3E,&quot;\x2013:47:26\x20up\x205\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.04,\x200\.03,\x200\.00\n&quot;)%r(Help,67,&quot;\x2013:47:31\x20up\x205\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.04,\x200\.03,\x200\.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20HELP\r\n&quot;)%r(SSLSessionReq,64,&quot;\x2013:47:32\x20up\x205\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.04,\x200\.03,\x200\.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20\x16\x03\n&quot;)%r(TerminalServerCookie,63,&quot;\x2013:47:32\x20up\x205\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.04,\x200\.03,\x200\.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20\x03\n&quot;)%r(TLSSessionReq,64,&quot;\x2013:47:32\x20up\x205\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.04,\x200\.03,\x200\.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20\x16\x03\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP: &#xa;    13:47:26 up 5 min, 0 users, load average: 0.04, 0.03, 0.00&#xa;  DNSVersionBindReqTCP: &#xa;    13:47:21 up 5 min, 0 users, load average: 0.04, 0.03, 0.00&#xa;  GenericLines: &#xa;    13:47:10 up 4 min, 0 users, load average: 0.05, 0.03, 0.00&#xa;    What do you want me to echo back?&#xa;  GetRequest: &#xa;    13:47:16 up 5 min, 0 users, load average: 0.05, 0.03, 0.00&#xa;    What do you want me to echo back? GET / HTTP/1.0&#xa;  HTTPOptions: &#xa;    13:47:16 up 5 min, 0 users, load average: 0.05, 0.03, 0.00&#xa;    What do you want me to echo back? OPTIONS / HTTP/1.0&#xa;  Help: &#xa;    13:47:31 up 5 min, 0 users, load average: 0.04, 0.03, 0.00&#xa;    What do you want me to echo back? HELP&#xa;  NULL: &#xa;    13:47:10 up 4 min, 0 users, load average: 0.05, 0.03, 0.00&#xa;  RPCCheck: &#xa;    13:47:16 up 5 min, 0 users, load average: 0.05, 0.03, 0.00&#xa;  RTSPRequest: &#xa;    13:47:16 up 5 min, 0 users, load average: 0.05, 0.03, 0.00&#xa;    What do you want me to echo back? OPTIONS / RTSP/1.0&#xa;  SSLSessionReq, TLSSessionReq, TerminalServerCookie: &#xa;    13:47:32 up 5 min, 0 users, load average: 0.04, 0.03, 0.00&#xa;    What do you want me to echo back?"><elem key="DNSStatusRequestTCP">&#xa;    13:47:26 up 5 min, 0 users, load average: 0.04, 0.03, 0.00</elem>
+<elem key="DNSVersionBindReqTCP">&#xa;    13:47:21 up 5 min, 0 users, load average: 0.04, 0.03, 0.00</elem>
+<elem key="GenericLines">&#xa;    13:47:10 up 4 min, 0 users, load average: 0.05, 0.03, 0.00&#xa;    What do you want me to echo back?</elem>
+<elem key="GetRequest">&#xa;    13:47:16 up 5 min, 0 users, load average: 0.05, 0.03, 0.00&#xa;    What do you want me to echo back? GET / HTTP/1.0</elem>
+<elem key="HTTPOptions">&#xa;    13:47:16 up 5 min, 0 users, load average: 0.05, 0.03, 0.00&#xa;    What do you want me to echo back? OPTIONS / HTTP/1.0</elem>
+<elem key="Help">&#xa;    13:47:31 up 5 min, 0 users, load average: 0.04, 0.03, 0.00&#xa;    What do you want me to echo back? HELP</elem>
+<elem key="NULL">&#xa;    13:47:10 up 4 min, 0 users, load average: 0.05, 0.03, 0.00</elem>
+<elem key="RPCCheck">&#xa;    13:47:16 up 5 min, 0 users, load average: 0.05, 0.03, 0.00</elem>
+<elem key="RTSPRequest">&#xa;    13:47:16 up 5 min, 0 users, load average: 0.05, 0.03, 0.00&#xa;    What do you want me to echo back? OPTIONS / RTSP/1.0</elem>
+<elem key="SSLSessionReq, TLSSessionReq, TerminalServerCookie">&#xa;    13:47:32 up 5 min, 0 users, load average: 0.04, 0.03, 0.00&#xa;    What do you want me to echo back?</elem>
+</script></port>
+</ports>
+<times srtt="43808" rttvar="18648" to="118400"/>
+</host>
+<runstats><finished time="1590860675" timestr="Sat May 30 12:44:35 2020" elapsed="91.52" summary="Nmap done at Sat May 30 12:44:35 2020; 1 IP address (1 host up) scanned in 91.52 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
